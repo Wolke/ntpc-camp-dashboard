@@ -73,10 +73,11 @@ export function formatDate(dateStr: string): string {
 // 格式化時間範圍
 export function formatTimeRange(course: Course): string {
     const { startDate, endDate, startTime, endTime, weekday } = course.schedule;
+    const weekdayStr = weekday ? `(${weekday})` : '';
     if (startDate === endDate) {
-        return `${formatDate(startDate)} (${weekday}) ${startTime}-${endTime}`;
+        return `${formatDate(startDate)} ${weekdayStr} ${startTime}-${endTime}`.replace(/\s+/g, ' ').trim();
     }
-    return `${formatDate(startDate)} - ${formatDate(endDate)} ${startTime}-${endTime}`;
+    return `${formatDate(startDate)} - ${formatDate(endDate)} ${weekdayStr} ${startTime}-${endTime}`.replace(/\s+/g, ' ').trim();
 }
 
 // 計算報名截止剩餘天數
