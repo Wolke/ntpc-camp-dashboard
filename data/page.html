@@ -1,0 +1,679 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Metro UI CSS">
+<meta name="author" content="Sergey Pimenov">
+<meta name="keywords" content="windows 8, modern style, Metro UI, style, modern, css, framework">
+
+<title>新北市中小學寒暑假育樂營</title>
+<!-- 新北市網站點擊統計js -->
+<script type="text/javascript" src="https://boe.ntpc.edu.tw/Scripts/wre.js"></script>
+
+ <script type="text/javascript" src="/web-resource/app/bower_components/jquery/jquery.min.js"></script>
+ <script type="text/javascript" src="/newjs/others/bootstrap.min.js"></script>
+ <script type="text/javascript" src="/newjs/act_register/js/ie_promise_support.js"></script>
+<script type="text/javascript" src="/web-resource/app/bower_components/jquery-form/dist/jquery.form.min.js"></script>
+<script type="text/javascript" src="/web-resource/app/bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/web-resource/app/bower_components/jquery-ui-datepicker-tw/jquery.ui.datepicker.tw.js"></script>
+<script type="text/javascript" src="/newjs/act_register/js/metro/metro-slider.js"></script>
+<script type="text/javascript" src="/newjs/act_register/js/metro/metro-live-tile.js"></script>
+<script type="text/javascript" src="/newjs/others/ajaxfileupload.js"></script>
+<script type="text/javascript" src="/web-resource/app/bower_components/jquery.blockUI/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/newjs/act_register/js/popover.js"></script>
+
+<!--  - add by Tracy : 20181018  加入popover 套件 -  -->  
+<link rel="stylesheet" href="/jsp/act_register/css/bootstrap/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/web-resource/app/bower_components/jquery-ui/jquery-ui.min.css" type="text/css">
+<link href="/css/metroui/metro-bootstrap.css" rel="stylesheet" type="text/css">
+<link href="/css/metroui/fontico.css" rel="stylesheet" type="text/css">
+<link href="/jsp/act_register/css/act_register.css" rel="stylesheet" type="text/css">
+<link href="/jsp/act_register/css/act_setup.css" rel="stylesheet" type="text/css">
+<link href="/jsp/act_register/css/breadcrumbs.css" rel="stylesheet" type="text/css">
+<link href="/jsp/act_register/css/tabs.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/jsp/act_register/css/font-awesome/css/font-awesome.css" type="text/css">
+
+<script type="text/javascript" src="/newjs/act_register/js/actstd_outindex.js"></script>
+<script type="text/javascript">
+var today;
+var add_sec = false;
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+function getServerDate(){
+	console.log("---取得伺服器時間---");
+    try {//FF, Opera, Safari, Chrome
+        xmlHttp = new XMLHttpRequest();
+    }catch (err1) {
+        try { //IE
+            xmlHttp = new ActiveXObject('Msxml2.XMLHTTP');
+        } catch (err2) {
+            try {
+                xmlHttp = new ActiveXObject('Microsoft.XMLHTTP');
+            }catch (eerr3) {
+                alert("AJAX not supported"); //AJAX not supported, use CPU time.
+            }
+        }
+    }
+    xmlHttp.open('HEAD',window.location.href.toString(),false);
+    xmlHttp.setRequestHeader("Content-Type", "text/html");
+    xmlHttp.send('');
+    var date = xmlHttp.getResponseHeader("Date");
+    return new Date(date);
+}
+
+function startTime(){
+    //var today = new Date();
+    //var today = getServerDate();
+	if(add_sec == false){
+   	 today.setSeconds(today.getSeconds() +1);
+   	 add_sec = true;
+   }
+	
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    var timestr = h + ":" + m + ":" + s;
+   	//console.log("timestr", timestr);
+    document.getElementById('pg_clock').innerHTML =  timestr;
+    today.setSeconds(today.getSeconds() +1);
+    var t = setTimeout(startTime, 1000);
+}
+
+$(function () {
+	today = getServerDate();
+	
+		
+	var len1 = $("#bgndate").length;
+	var len2 = $("#enddate").length;	
+
+	if(len1 > 0 && len2 > 0){
+		$('#bgndate').datepicker({
+			changeMonth : true,
+			changeYear : true,
+			dateFormat : 'yymmdd',
+			yearRange : "-3:+3",
+			showOn : 'both',
+			buttonImage : '/images/date.gif',
+			buttonImageOnly : true,
+			closeAtTop : true,
+			duration : '',
+			onClose : function(d, inst) {
+				if (d.length == 8) {
+					d = (eval(d.substring(0, 4)) - 1911) + "-" + d.substring(4, 6) + "-" + d.substring(6, 8);
+					$("input[name=bgndate_desc]").val(d);
+				}
+			}
+		});
+
+		$('#enddate').datepicker({
+			changeMonth : true,
+			changeYear : true,
+			dateFormat : 'yymmdd',
+			yearRange : "-3:+3",
+			showOn : 'both',
+			buttonImage : '/images/date.gif',
+			buttonImageOnly : true,
+			closeAtTop : true,
+			duration : '',
+			onClose : function(d, inst) {
+				if (d.length == 8) {
+					d = (eval(d.substring(0, 4)) - 1911) + "-" + d.substring(4, 6) + "-" + d.substring(6, 8);
+					$("input[name=enddate_desc]").val(d);
+				}
+			}
+		});
+		
+		$("img[src$='date.gif']").mouseover(function() {
+			$(this).css('cursor', 'pointer');
+			$(this).attr('title', '點此開啟月曆選單');
+		});
+	}
+	
+	$(window).scroll(function () {
+		var scrollVal = $(this).scrollTop(); //scrollbar高度
+	    var divposit =  $('#fixdiv').position(); //報名div高度
+	    var top_set = 230;
+	    var bulletsize = $("#bulletsize").val();
+		 if(scrollVal > 0){
+			 $("#clslist_tb").css("margin-top", 5);
+		 }
+		 if(parseInt(bulletsize,10) == 0){ //若無公告，則top需減少，否則回複時table的title會不見
+			 top_set = top_set - 60;
+		 }
+		 if(scrollVal > top_set){
+	    	$('#fixdiv').css("background-color","#e8dada").css("position", "fixed").css("top", 0);
+	    }else{
+	    	$('#fixdiv').css("background-color","#FFF").css("position", "absolute").css("top", top_set);
+	    }
+	});
+	
+	setTimeout(function(){
+		$("[data-toggle=popover]").each(function(i, obj) {
+			$(this).popover({
+			  html: true,
+			  content: function() {
+			    var id = $(this).attr('id');
+			    var txt1 = $(this).attr('txt1');
+			    return txt1;
+			  }
+			});
+		});
+	}, 2000);
+	
+});
+</script>
+<style>
+input[type=checkbox], input[type=radio]{
+	zoom:1.5; vertical-align:middle; margin:0px;
+}
+.reginfo_txt {
+	font-family: verdana; font-size:15px;height:35px;color:#316BAA;border-radius:5px; border:1px solid #BBB;padding:2px;
+}
+.pg_act{
+	border:1px solid #028a8f;font-size:15px;font-family:Verdana;margin-top:5px;margin-bottom:5px;padding: 2px 5px 2px 5px;color:#FFF;background-color:#41BEC0;cursor:pointer;
+}
+.pg_dis{
+	border:1px solid #028a8f;font-size:15px;font-family:Verdana;margin-top:5px;margin-bottom:5px;padding: 2px 5px 2px 5px;color:#014d50;cursor:pointer;
+}
+.quest1{
+	margin-left:10px;float:left;color:#009688;text-decoration:underline;cursor:pointer;background-color:#f5ec88;padding:6px 5px 0px 5px;line-height:30px;
+}
+#outquery_detail {
+	vertical-align:middle;  width:1200px; background-color:#FFF; margin:auto; position:absolute; left: 0; right: 0; float:center; z-index:5; opacity:1;
+    /*兼容IE8及以下版本浏览器*/
+    filter: alpha(opacity=100); display:none; padding-top:30px;font-size:20px;border-radius:10px;line-height:40px;  box-shadow : 2px 2px 4px rgba(0,0,0,0.2);
+}
+.ui-dialog .ui-dialog-titlebar-close span {
+     margin: -8px -8px;
+}
+.ui-widget-overlay { /* 解決dialog的遮罩無fullscreen 的問題 */
+    position: fixed !important;
+}
+.ui-widget-content {
+	display:none;
+}
+.open_url_btn{
+   cursor:pointer; margin: 0 auto;  padding: 2px 6px; border: 1px solid #CDCDCD;  width: fit-content;  font-size: 14px;  text-align: center;  background-color: #6395e8; color: #FFF;  border-radius: 5px;
+}
+.m15{
+margin-left:15px;
+}
+</style>
+</head>
+
+<body style="margin: 0 auto;" onload="setPosit(0)">
+	<div style="margin: 0 auto;">
+		<input type="hidden" id="iscamp" name="iscamp" value="true">
+		<table width="1200px" border="0" style="float:center;text-align:center;margin: 0 auto;background-color:#FFF;">
+			<tbody><tr>
+				<td>
+										<img src="/images/act_register/ntpccamp/header2.jpg" width="1200px" height="106px">
+									</td>
+			</tr>
+			<!-- 運動會在新北
+			<tr>
+				<td>
+					<div style="margin: 10px 0px;" >
+						<a href="https://sport110ntpc.com/" target="_blank"><img alt="sport110ntpc" style="display: block;margin: auto;" src="/images/act_register/67SportBanner_1200x106.jpg" width="1200px" height="auto"></a>
+					</div>
+				</td>
+			</tr>	
+			 -->
+		</tbody></table>
+		<table id="tb1" width="1200px" border="0" style="float:center;text-align:center;margin: 0 auto;background-color:#FFF;">
+			<tbody><tr>
+				<td>
+												&nbsp;&nbsp;<span style="line-height:51px;">&nbsp;</span>
+										</td>
+			</tr>
+			<tr>
+				<td style="height:75px; overflow: hidden;text-overflow: ellipsis;">
+					<input type="hidden" name="hid_seyear" id="hid_seyear" value="114">
+										<table style="width:100%;font-size:15px;">
+						<tbody><tr><td style="line-height:18px;">
+							<div class="input-control span2 select" style="float: left; ">
+									類別：<select id="sublib" name="sublib"><option value="all">所有類別</option>
+										<option value="9">科技</option>
+										<option value="10">語文</option>
+										<option value="11">藝術</option>
+										<option value="12">公益</option>
+										<option value="13">健康與體育</option>
+										<option value="6">其他</option>
+										<option value="7">國中 - 職業試探營隊</option>
+										<option value="8">國小 - 職業試探營隊</option>
+										<option value="15">國小 - 多元職業試探營隊</option>
+									</select>
+							</div>
+							<div class="input-control span2 select m15" style="float: left;">
+									辦理單位/學校：<select id="subarea" name="subarea" onchange="getschlist(this.value)">
+										<option value="all">所有區域</option>
+										<option value="out_country">外縣市</option> 
+																				<option value="other">其他單位</option> 
+																				<option value="1">土城區</option> 
+																				<option value="2">樹林區</option> 
+																				<option value="3">三峽區</option> 
+																				<option value="4">淡水區</option> 
+																				<option value="5">瑞芳區</option> 
+																				<option value="6">鶯歌區</option> 
+																				<option value="7">八里區</option> 
+																				<option value="8">三芝區</option> 
+																				<option value="9">五股區</option> 
+																				<option value="10">石門區</option> 
+																				<option value="11">石碇區</option> 
+																				<option value="12">三重區</option> 
+																				<option value="13">平溪區</option> 
+																				<option value="15">林口區</option> 
+																				<option value="16">坪林區</option> 
+																				<option value="17">泰山區</option> 
+																				<option value="18">烏來區</option> 
+																				<option value="19">貢寮區</option> 
+																				<option value="20">深坑區</option> 
+																				<option value="21">萬里區</option> 
+																				<option value="22">中和區</option> 
+																				<option value="23">雙溪區</option> 
+																				<option value="24">永和區</option> 
+																				<option value="25">板橋區</option> 
+																				<option value="26">新店區</option> 
+																				<option value="27">新莊區</option> 
+																				<option value="28">蘆洲區</option> 
+																				<option value="29">汐止區</option> 
+																				<option value="83">金山區</option> 
+																			</select>
+									<select id="findsch" name="findsch" style="width:300px;">
+										<option value="all">所有學校/單位</option> 
+																			</select>
+							</div>
+							<div class="input-control span2 m15" style="float:left;line-height:23px;">
+								<input type="checkbox" value="1" name="outcountry" id="outcountry"> 非本縣市活動			
+							</div>
+							<div class="input-control span2 m15" style="float:left;line-height:23px;">
+								<input type="checkbox" value="1" name="overage" id="overage"> 尚有餘額課程						
+							</div>
+							 
+							<br><br>
+							<div class="input-control span2" style="float:left;margin:0px;vertical-align:middle;">
+								關鍵字：<input type="text" value="" class="txt_time" name="keyword" id="keyword" placeholder="活動、課程名稱查詢" style="width:132px;padding-left:3px;text-align:left;">	
+							</div>
+							<div class="input-control span2" style="float:left;margin-left:10px;vertical-align:middle;">
+								 參加對象：<select name="stdyear" id="stdyear">
+									<option value="">全部</option>
+									<option value="1">一年級</option>
+									<option value="2">二年級</option>
+									<option value="3">三年級</option>
+									<option value="4">四年級</option>
+									<option value="5">五年級</option>
+									<option value="6">六年級</option>
+									<option value="7">七年級</option>
+									<option value="8">八年級</option>
+									<option value="9">九年級</option>
+									<option value="A">高一</option>
+									<option value="B">高二</option>
+									<option value="C">高三</option>
+									<option value="J">外校學生</option>
+								</select>
+							</div>
+							<div class="input-control span2 m15" style="float:left;">
+								 活動地點：<select name="place_area_id" id="place_area_id" style="width:110px">
+									<option value="">全部區域</option> 									<option value="other">其他單位</option> 									<option value="1">土城區</option> 									<option value="2">樹林區</option> 									<option value="3">三峽區</option> 									<option value="4">淡水區</option> 									<option value="5">瑞芳區</option> 									<option value="6">鶯歌區</option> 									<option value="7">八里區</option> 									<option value="8">三芝區</option> 									<option value="9">五股區</option> 									<option value="10">石門區</option> 									<option value="11">石碇區</option> 									<option value="12">三重區</option> 									<option value="13">平溪區</option> 									<option value="15">林口區</option> 									<option value="16">坪林區</option> 									<option value="17">泰山區</option> 									<option value="18">烏來區</option> 									<option value="19">貢寮區</option> 									<option value="20">深坑區</option> 									<option value="21">萬里區</option> 									<option value="22">中和區</option> 									<option value="23">雙溪區</option> 									<option value="24">永和區</option> 									<option value="25">板橋區</option> 									<option value="26">新店區</option> 									<option value="27">新莊區</option> 									<option value="28">蘆洲區</option> 									<option value="29">汐止區</option> 									<option value="83">金山區</option> 								</select>
+							</div>
+							<div class="input-control m15" style="float:left;">	
+								<div style="display: inline; float: left;"> 
+								 課程日期：
+									<input type="text" class="txt_time" id="bgndate_desc" name="bgndate_desc" value="115/02/02" readonly="">
+									<input type="hidden" name="bgndate" id="bgndate" value="20260202" class="hasDatepicker"><img class="ui-datepicker-trigger" src="/images/date.gif" alt="..." title="...">
+									<input type="hidden" name="hide_today" id="hide_today" value="20260202">
+									<input type="hidden" name="hide_today_desc" id="hide_today_desc" value="115/02/02">
+								</div>
+								<div style="display: inline; float: left;"> ~ </div>
+								<div style="display: inline; float: left;">
+									<input type="text" class="txt_time" id="enddate_desc" name="enddate_desc" value="115/08/01" readonly="">
+									<input type="hidden" name="enddate" id="enddate" value="115/12/31" class="hasDatepicker"><img class="ui-datepicker-trigger" src="/images/date.gif" alt="..." title="...">
+								</div>
+								<div style="display: inline; float: left;margin-left:10px;margin-top:4px;">
+									<input type="checkbox" value="1" id="queryHistory" name="queryHistory"> 已結束課程
+								</div>
+							</div>
+						</td>
+						<td width="8%">
+							<input type="hidden" id="hid_queryActive" name="hid_queryActive" value="queryActive">
+							<div class="btn_new" style="float:left;"><button type="button" onclick="subPage('now', 1)" style="width:50px;">查詢</button></div>
+						</td>
+						<td width="9%">
+							<div style="float:right;font-size:13px;vertical-align:middle;margin-top:5px;margin-bottom:5px;">
+								每頁：<select id="shownum" name="shownum" onchange="subPage('now', 1);">
+								<option value="5">5</option>
+								<option value="10" selected="">10</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								</select> 筆
+							</div>
+						</td>
+					</tr></tbody></table>
+									</td>
+			</tr>
+			<tr>
+				<td height="35px;">
+					<div id="fixdiv" style="width: 1200px; background-color: rgb(255, 255, 255); z-index: 0; position: absolute; top:230px;">
+					
+					<span style="float:left;">
+																							
+											</span>
+					
+					<!-- 問卷調查dialog -->
+					<div id="dialog-quest" title="" style="display:none;">
+						<table width="100%" id="quest_tb"></table>
+					</div>
+					
+					<div style="float:right;">
+						<div id="userinfo_div" style="display:none">
+							<font style="color:#22B394;letter-spacing:-0.5px">已登入: 
+																					 </font> <font style="text-decoration:underline;cursor:pointer;color:#2e92cf" onclick="Actstd_MyCourse()"> (我的報名記錄)</font>
+							<div class="btn_delete" style="display:inline-block;vertical-align:middle;"><button type="button" style="width:50px;" onclick="Actstd_Outlogout('019999');">登出</button></div>
+						</div>
+						 
+						<div id="querybtn_div" class="btn_green" style="z-index:10;display:inline-block;vertical-align:middle;position:relative;">
+							<font style="color:#ff3333;font-size:15px;padding-bottom:3px;"> 請點選右邊按鍵，輸入學生資料驗證後，開始報名或查詢錄取課程！</font> <!-- 學生或家長 -->
+															<img src="../../images/act_register/login.gif" width="130px" height="37px;" title="登入報名" style="vertical-align:middle;cursor:pointer;" onclick="Actstd_Outlogin(true);">
+													</div>
+					</div>
+					
+					</div>
+				</td>
+			</tr>	
+		</tbody></table>
+	</div>
+
+	<div id="dialog_announce" name="dialog_announce" title="** 注意事項 **" style="display:none;">
+		<table width="100%" style="line-height:40px;">
+			<tbody><tr>
+				<td colspan="2">歡迎使用校園活動報名網站，報名前請詳閱下列注意事項：<br> </td>
+			</tr>
+			<tr>
+				<td width="5%" style="vertical-align:top;text-align:right;padding:0px 7px 0px 0px"> (1) </td>
+				<td>報名前請衡量自身的興趣、身體狀況及家長能準時接送再行報名，以免上課成效不彰，影響整體作業。 </td>
+			</tr>		
+			<tr>
+				<td width="5%" style="vertical-align:top;text-align:right;padding:0px 7px 0px 0px"> (2) </td>
+				<td>所有課程結束20分鐘內家長未能接回學生，經登錄2次者，次一學期不得報名。 </td>
+			</tr>	
+			<tr>
+				<td width="5%" style="vertical-align:top;text-align:right;padding:0px 7px 0px 0px"> (3)</td>
+				<td>為維護教學品質與上課學生權益及安全，若有影響、干擾上課、破壞學校設備、違反資安之情事，經勸阻仍未改善則計點1次並發給糾正單，請家長簽名並繳回，計點達3次者（含3次,不同班別亦需倂同累計），予以退班。情節嚴重者，除依校規處置外，得逕以退班。退費方式依說明辦理之。</td>
+			</tr>
+			<tr>
+				<td width="5%" style="vertical-align:top;text-align:right;padding:0px 7px 0px 0px"> (4)</td>
+				<td>無故缺席未請假學生，經登錄3次者，予以退班，退費方式依說明辦理之。</td>
+			</tr>
+			<tr>
+				<td width="5%" style="vertical-align:top;text-align:right;padding:0px 7px 0px 0px"> (5)</td>
+				<td> 第二階段加選後所有錄取者，若未能於期限內繳費，次一學期不得報名。</td>
+			</tr>
+			<tr>
+				<td width="5%" style="vertical-align:top;text-align:right;padding:0px 7px 0px 0px"> (6)</td>
+				<td> 轉換班規定：經報名繳費後，不得要求轉換班別。</td>
+			</tr>
+			<tr>
+				<td width="5%" style="vertical-align:top;text-align:right;padding:0px 7px 0px 0px"> (7)</td>
+				<td>「社團部分」：請家長在「第一階段」及「第二階段」報名時間隨時留意有缺額的社團，並把握機會選課。本學期不進行「人工現場加選」。</td>
+			</tr>
+			<tr>
+				<td style="text-align:center;line-height:80px;" colspan="2">
+					<div class="btn_green" style="display:inline-block;vertical-align:middle;"><button type="button" style="width:120px;" onclick="Actstd_AnnounceAggree()">同意</button></div>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<div class="btn_delete" style="display:inline-block;vertical-align:middle;"><button type="button" style="width:120px;" onclick="Actstd_AnnounceDisaggree()">不同意且離開</button></div>
+				</td>
+			</tr>	
+		</tbody></table>
+	</div>
+					
+	<!-- 課程資料列表 div -->
+	<div id="outquery_div" class="detailContainer" style="margin: 0 auto;padding-bottom:50px;">
+		<!-- 切換分頁，ajax會取代整個table START -->
+		<table id="clslist_tb" border="0" class="tableCover" style="width:1200px;margin: 0 auto;font-size:15px;font-family:Verdana;">
+			<thead>
+				<tr>
+					<th width="7%">課程序號</th>
+					<th width="25%">活動類別 / 課程名稱</th>		
+					<th width="14%">課程日期 / 時段</th>	
+					<th width="6%">費用</th>
+					<th width="10%">報名資格</th>
+					<th width="15%">報名錄取名額</th>
+					<th>狀態</th>
+				</tr>
+			</thead>
+			<tbody>
+								
+								<tr><td colspan="7" style="font-weight:bold;line-height:45px;text-align:center;color:#888;font-size:15px;letter-spacing:3px;">查無資料&nbsp;&nbsp;&nbsp;&nbsp;( 請以上方複合式查詢篩選所需課程； ** 本網頁不呈現已結束之課程 ** )</td></tr>
+								
+												<tr>
+					<td colspan="7" style="text-align:center;line-height:40px;border-right:1px solid #A6C9E2;background-color:#FFF">
+												
+											
+						   							<span class="pg_act" onclick="subPage('now', '1');">1</span>
+												
+												<input type="hidden" id="hid_page" name="hid_page" value="0">
+					</td>
+				</tr>
+							</tbody>
+		</table>
+		<!-- 切換分頁，ajax會取代整個table  END-->	
+	</div>
+	<!-- 課程資料列表 div end -->
+
+	<!-- 課程詳細資料 -->
+	<div id="outquery_detail" style="display:none;"> </div>
+	
+	<!-- 午餐調查 -->
+	<div id="lh_dialog" style="display:none;margin:0px auto;width:550px;height:150px;" title="參加調查">
+		<span id="askdiv"></span>
+	</div>
+
+	<!-- 員額報名畫面 -->
+	<div id="sign_dialog" style="display:none;margin:0px auto;width:950px;height:150px;z-index:1000;" title="我要報名">
+		<span id="signdiv"></span>
+	</div>
+	
+	<!-- 登入畫面div -->
+	<div id="outlogin_div" style="display:none;">
+				<span style="font-size:20px;color:#FF4444;line-height:70px;font-weight:bold;">請輸入報名者身分證號與生日，以報名及查詢錄取結果</span><br>
+				<table cellpadding="0" cellspacing="0" border="0" style="width:850px;margin: 0 auto;margin-top:20px;">
+			<tbody><tr>
+				<td colspan="2" style="line-height:30px;">
+										<input type="radio" value="in_city" name="user_type" checked="checked" onchange="log_tpchange('1')"> 本縣市學生&nbsp;&nbsp;
+					<input type="radio" value="out_city" name="user_type" onchange="log_tpchange('0')"> 外縣市學生&nbsp;&nbsp;
+									</td>
+			</tr>
+			<tr>
+				<td width="70%" style="line-height:40px;padding:5px;">
+										<span id="incity_schsp">
+							所屬學校：
+							<select id="incity_subcountry" name="incity_subcountry" onchange="getarealist2(this.value)" style="display:none">
+								<option value="none">請選擇縣市</option>
+								 <option value="17">基隆市</option> <option value="31">台北市</option>  <option value="03">桃園縣</option> <option value="18">新竹市</option> <option value="04">新竹縣</option> <option value="05">苗栗縣</option> <option value="06">台中市</option> <option value="07">彰化縣</option> <option value="08">南投縣</option> <option value="09">雲林縣</option> <option value="20">嘉義市</option> <option value="10">嘉義縣</option> <option value="11">台南市</option> <option value="12">高雄市</option> <option value="13">屏東縣</option> <option value="14">臺東縣</option> <option value="15">花蓮縣</option> <option value="02">宜蘭縣</option> <option value="16">澎湖縣</option> <option value="71">金門縣</option> <option value="72">連江縣</option>								<option value="overseas">海外學校</option>
+							</select>
+							<select id="incity_subarea" name="incity_subarea" onchange="getschlist2(this.value)">
+								<option value="none">請選擇區域</option>
+																																		<option value="1">土城區</option>																	<option value="2">樹林區</option>																	<option value="3">三峽區</option>																	<option value="4">淡水區</option>																	<option value="5">瑞芳區</option>																	<option value="6">鶯歌區</option>																	<option value="7">八里區</option>																	<option value="8">三芝區</option>																	<option value="9">五股區</option>																	<option value="10">石門區</option>																	<option value="11">石碇區</option>																	<option value="12">三重區</option>																	<option value="13">平溪區</option>																	<option value="15">林口區</option>																	<option value="16">坪林區</option>																	<option value="17">泰山區</option>																	<option value="18">烏來區</option>																	<option value="19">貢寮區</option>																	<option value="20">深坑區</option>																	<option value="21">萬里區</option>																	<option value="22">中和區</option>																	<option value="23">雙溪區</option>																	<option value="24">永和區</option>																	<option value="25">板橋區</option>																	<option value="26">新店區</option>																	<option value="27">新莊區</option>																	<option value="28">蘆洲區</option>																	<option value="29">汐止區</option>																	<option value="83">金山區</option>															</select> 
+							<select id="incity_findsch" name="incity_findsch" style="width:300px;"><option value="none">--請選擇學校--</option></select><br>
+					</span>
+										身分證號：<input type="text" value="" name="ac" id="ac" class="reginfo_txt" style="width:150px;"> 
+					<font style="font-size:13px;color:#DF7401">(非本國人請輸入護照號碼)</font> 					<br>					
+					<span id="pw_sp">生 &nbsp;&nbsp;&nbsp;&nbsp; 日：<input type="text" value="" name="pw" id="pw" class="reginfo_txt" style="width:150px;"> <font style="font-size:13px;color:#DF7401">(民國年格式：097-01-01)</font><br></span>
+					圖形驗證：<input type="text" value="" name="number" id="number" class="reginfo_txt" style="width:150px"><img id="verimg" style="vertical-align:middle;margin:2px;" src="/RandomNum?t="> 
+				</td>
+				<td style="line-height:35px;text-align:center;padding:5px;">
+					<div id="commit_btn" style="width:250px;">
+												<div class="btn_new" style="display:inline-block;vertical-align:middle"><button type="button" style="width:50px;" onclick="ActStd_CheckAC2('019999');">確定</button></div>&nbsp;&nbsp;
+						<div class="btn_orange" style="display:inline-block;vertical-align:middle"><button type="button" style="width:50px;" onclick="Actstd_Outlogin_Cancel();">取消</button></div>
+											</div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	<!-- 報名者個人資料填寫畫面 -->
+	<div id="user_reginfo_div" style="display:none;padding-bottom:20px;">
+		<table style="width:850px;margin: 0 auto;margin-top:20px;border:1px solid #CDCDCD;line-height:35px;">
+			<tbody><tr>
+				<td colspan="2" style="background-color:#1bb4ba;color:#FFF;font-weight:bold;text-align:center;letter-spacing:3px;">報名者基本資料</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="color:#DF3A01;line-height:26px;padding-left:4px;">
+					 1. 因涉及學生校園安全保險理賠相關權益，請輸入正確的身分證字號，若有仿冒造假者本校得取消<br>&nbsp;&nbsp;&nbsp;&nbsp;錄取資格且不得申請退費。<br>
+					 2. 請務必輸入聯絡人正確完整資料，以便承辦學校緊急聯繫。<br>
+					 3. 如有個人資料異動或錯誤，請洽各校註冊組協助更正，本次修改資料僅為單次報名處理作業，感謝您的配合。<br>
+					 4. 星號(<font style="color:#FF0000">*</font>)為必填資料<br>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="padding:4px;">
+					<div id="schdiv" style="display:none">
+						<font style="color:#FF0000">*</font> 就讀學校：<span id="reginfo_sch"></span>
+						<span id="reginfo_class" style="padding-left:20px"></span> 
+						<span id="reginfo_no_desc" style="padding-left:20px"></span>
+					</div>
+					<input type="hidden" value="019999" id="hid_schno" name="hid_schno">
+					<input type="hidden" value="" id="reginfo_schno" name="reginfo_schno">
+					<input type="hidden" value="" id="reginfo_schname" name="reginfo_schname">
+					<input type="hidden" value="" id="reginfo_classname" name="reginfo_classname">
+					<input type="hidden" value="" id="reginfo_classno" name="reginfo_classno">
+					<input type="hidden" value="" id="reginfo_no" name="reginfo_no">
+					<input type="hidden" value="" id="reginfo_usertype" name="reginfo_usertype">
+					<input type="hidden" value="" id="reginfo_stdid" name="reginfo_stdid">
+					<input type="hidden" value="" id="reginfo_stdno" name="reginfo_stdno">
+					<input type="hidden" value="" id="reginfo_christic" name="reginfo_christic">
+					<input type="hidden" value="" id="reginfo_christic2" name="reginfo_christic2">
+				</td>
+			</tr>
+			<tr>
+				<td style="padding:4px;">
+					<font style="color:#FF0000">*</font> 姓名 ：<input type="text" value="" name="reginfo_stdname" id="reginfo_stdname" class="reginfo_txt" style="width:120px">
+				</td>
+				<td style="padding:4px;">
+					<div style="float:left;"><font style="color:#FF0000">*</font> 身分證號：<input type="text" value="" name="reginfo_idno" id="reginfo_idno" class="reginfo_txt" style="width:120px"></div>
+					<div style="margin-top:13px;line-height:15px;float:left;padding-left:5px;font-size:13px;color:#DF7401">(非本國人請輸入居留證號碼)</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding:4px;"><font style="color:#FF0000">*</font> 英文姓名：<input type="text" value="" name="reginfo_stdename" id="reginfo_stdename" class="reginfo_txt" style="width:120px"></td>
+				<td style="padding:4px;">
+					<font style="color:#FF0000">*</font> 生日：<input type="text" value="" name="reginfo_birthday" id="reginfo_birthday" class="reginfo_txt" style="width:120px">
+					<font style="font-size:13px;color:#DF7401">(民國年格式：097-01-01)</font>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding:4px;">
+					<font style="color:#FF0000">*</font> 性別：<input type="radio" value="1" name="reginfo_gender"> 男生&nbsp;&nbsp;
+					<input type="radio" value="0" name="reginfo_gender"> 女生
+				</td>
+				<td style="padding:4px;">
+					<font style="color:#FF0000">*</font> 電話：<input type="text" value="" name="reginfo_phone" id="reginfo_phone" class="reginfo_txt" style="width:120px"> 
+				</td>
+			</tr>
+			<tr>
+				<td style="padding:4px;">
+					<font style="color:#FF0000">*</font>
+					聯絡人姓名：<input type="text" value="" name="reginfo_attname" id="reginfo_attname" class="reginfo_txt" style="width:120px" onkeyup="syncDataToHidden('reginfo_attname', 'reginfo_attname_hidden')">
+					<input type="hidden" value="" name="reginfo_attname_hidden" id="reginfo_attname_hidden">
+				</td>
+				<td style="padding:4px;">
+					<font style="color:#FF0000">*</font>
+					聯絡人電話：<input type="text" value="" name="reginfo_attphone" id="reginfo_attphone" class="reginfo_txt" style="width:120px" onkeyup="syncDataToHidden('reginfo_attphone', 'reginfo_attphone_hidden')"> 
+					<input type="hidden" value="" name="reginfo_attphone_hidden" id="reginfo_attphone_hidden"> 
+				</td>
+			</tr>
+			<tr>
+				<td style="padding:4px;">
+					<font style="color:#FF0000">*</font>
+					聯絡人手機：<input type="text" value="" name="reginfo_attmobile" id="reginfo_attmobile" class="reginfo_txt" style="width:120px" onkeyup="ActStd_SyncSms()" maxlength="10"> <font style="font-size:13px;color:#DF7401;">(限10碼)</font>
+				</td>
+				<td style="padding:5px;">
+					<font style="color:#FF0000">*</font>
+					與聯絡人關係：<input type="text" value="" name="reginfo_attrel" id="reginfo_attrel" class="reginfo_txt" style="width:60px">
+				</td>
+			</tr>
+			<tr>
+				<td style="padding:4px;">
+											<span><font style="color:#FF0000">&nbsp;&nbsp;</font> 到校簡訊聯絡手機：<input type="text" value="" name="reginfo_attsms" id="reginfo_attsms" class="reginfo_txt" style="width:120px" maxlength="10"> <font style="font-size:13px;color:#DF7401;">(限10碼)</font></span>
+									</td> 
+				<td style="padding:4px;"><font style="color:#FF0000">*</font> 聯絡人Email：<input type="text" value="" name="reginfo_attemail" id="reginfo_attemail" class="reginfo_txt" style="width:260px"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="padding:4px;"><font style="color:#FF0000">*</font> 通訊地址：
+					<select id="reginfo_country" name="reginfo_country" onchange="ActStd_getRegCity(this.value, '')">
+						<option value="none" selected="selected">--請選擇縣市--</option>
+												<option value="17">基隆市</option>
+												<option value="31">台北市</option>
+												<option value="01">新北市</option>
+												<option value="03">桃園縣</option>
+												<option value="18">新竹市</option>
+												<option value="04">新竹縣</option>
+												<option value="05">苗栗縣</option>
+												<option value="06">台中市</option>
+												<option value="07">彰化縣</option>
+												<option value="08">南投縣</option>
+												<option value="09">雲林縣</option>
+												<option value="20">嘉義市</option>
+												<option value="10">嘉義縣</option>
+												<option value="11">台南市</option>
+												<option value="12">高雄市</option>
+												<option value="13">屏東縣</option>
+												<option value="14">臺東縣</option>
+												<option value="15">花蓮縣</option>
+												<option value="02">宜蘭縣</option>
+												<option value="16">澎湖縣</option>
+												<option value="71">金門縣</option>
+												<option value="72">連江縣</option>
+											</select>
+					<select id="reginfo_city" name="reginfo_city"><option value="none">--請選擇區域--</option></select>
+					<input type="text" value="" name="reginfo_addr" id="reginfo_addr" class="reginfo_txt" style="width:300px" onkeyup="syncDataToHidden('reginfo_addr', 'reginfo_addr_hidden')">
+					<input type="hidden" value="" name="reginfo_addr_hidden" id="reginfo_addr_hidden">
+				</td>
+			</tr>
+			<tr id="user_roletype_tr">
+				<td colspan="2" style="padding:4px;"><font style="color:#FF0000">&nbsp;&nbsp;</font> <span style="vertical-align:top;">學生身分：</span>
+					<!-- 校務身分別 -->
+					<div id="user_roletype_sp" style="width:400px;display:inline-block;line-height:26px;"></div>
+					<div style="float:right;width:330px;font-size:13px;line-height:22px;color:#DF7401">
+						*身分異動會更新「報名中」的課程減免身分，系統將擇優認定。<br>
+						*校務系統帶入資料若有誤，請洽班導師修正。<br>
+						 *新北市只認列「社福資料」。<br>
+						<div style="color:#444;font-size:11px;width:100%" id="docmemo_div"></div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="padding:4px;"><font style="color:#FF0000">&nbsp;&nbsp;</font> 備註(重大疾病說明)：<input type="text" value="" name="reginfo_memo" id="reginfo_memo" class="reginfo_txt" style="width:500px"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="padding:4px;text-align:center;">
+					<div class="btn_new" style="display:inline-block;vertical-align:middle"><button type="button" style="width:100px;" onclick="Actstd_ReginfoSave()">資料確認</button></div>&nbsp;&nbsp;
+					<div class="btn_orange" style="display:inline-block;vertical-align:middle"><button type="button" style="width:50px;" onclick="Actstd_Outlogin_Cancel();">取消</button></div>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	<div>
+	
+	</div>
+	
+	<div style="position: fixed;right: 0;top: 40vh;">
+    	<a href="https://www.tyai.doe.gov.taipei/" target="_blank" title="前往臺北市青少年活動資訊平台(另開視窗)">
+    	<span style="display: flex;width: 7em;height: 7em;border-radius: 50%;background-color: #2d60a3;color: #FFFFFF;align-items: center;justify-content: center;margin-bottom: 0.5em;font-size: 14px;font-weight: 600;padding: 0.5em;">臺北市青少年<br>活動資訊平台</span>
+    	</a>
+    	<a href="https://holiday.tp.edu.tw/" target="_blank" title="前往臺北市國民小學暑期體驗學習營(另開視窗)">
+    		<span style="display: flex;width: 7em;height: 7em;border-radius: 50%;background-color: #26c196;color: #FFFFFF;align-items: center;justify-content: center;margin-bottom: 0.5em;font-size: 14px;font-weight: 600;padding: 0.5em;">臺北市國民小學暑期體驗學習營</span>
+    	</a>
+	</div>
+	<footer>
+		本系統建議使用Firefox、chrome瀏覽器
+	</footer>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
