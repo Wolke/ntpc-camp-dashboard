@@ -45,3 +45,16 @@ jobs:
           git add data/
           git commit -m "🔄 自動更新課程資料 $(date -u '+%Y-%m-%d')"
           git push
+
+      - name: Send GitHub Notification
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          COMMIT_SHA=$(git rev-parse HEAD)
+          gh api \
+            --method POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/${{ github.repository }}/commits/$COMMIT_SHA/comments \
+            -f body="@${{ github.actor }} 🎉 爬蟲每週排程已成功執行，並更新了最新的課程資料！"
