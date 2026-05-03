@@ -1,13 +1,5558 @@
 {
-  "lastUpdated": "2026-04-26T00:35:18.763Z",
+  "lastUpdated": "2026-05-03T00:40:25.244Z",
   "stats": {
-    "total": 80,
-    "allowExternalStudents": 39,
-    "free": 0,
-    "canRegister": 41,
-    "schools": 2
+    "total": 151,
+    "allowExternalStudents": 74,
+    "free": 52,
+    "canRegister": 112,
+    "schools": 4
   },
   "courses": [
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "001"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-1圍棋",
+      "courseName": "",
+      "teacher": "教練：陳惠敏 邱金珠",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2680,
+        "isFree": false,
+        "description": "$2680元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=001",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-001-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2680元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "002"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-2 JACK 創意魔術與桌遊",
+      "courseName": "",
+      "teacher": "教練：鄭東原",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 3780,
+        "isFree": false,
+        "description": "$3780元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=002",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-002-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$3780元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "003"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-3網球",
+      "courseName": "",
+      "teacher": "教練：蔡林峻",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2560,
+        "isFree": false,
+        "description": "$2560元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=003",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-003-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2560元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "004"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-4足球",
+      "courseName": "",
+      "teacher": "教練：林煜閔 曾筱媛",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2380,
+        "isFree": false,
+        "description": "$2380元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=004",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-004-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2380元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "005"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-5桌球",
+      "courseName": "",
+      "teacher": "教練：曾彩靜",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2050,
+        "isFree": false,
+        "description": "$2050元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=005",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-005-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2050元",
+        "eligibility": "1,2,3,4",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "006"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-6跆拳道",
+      "courseName": "",
+      "teacher": "教練：王婷",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2380,
+        "isFree": false,
+        "description": "$2380元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=006",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-006-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2380元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "007"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-7旋風球",
+      "courseName": "",
+      "teacher": "教練：賴照勳",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2380,
+        "isFree": false,
+        "description": "$2380元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=007",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-007-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2380元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "008"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-8扯鈴",
+      "courseName": "",
+      "teacher": "教練：黃寶珠 陳世勛",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2420,
+        "isFree": false,
+        "description": "$2420元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=008",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-008-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2420元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "009"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-9中港創客STEAM課程-仿生機械獸",
+      "courseName": "",
+      "teacher": "教練：洪偉翔 林美瑩",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 4285,
+        "isFree": false,
+        "description": "$4285元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=009",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-009-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$4285元",
+        "eligibility": "4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "010"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "1-10 MV舞蹈",
+      "courseName": "",
+      "teacher": "教練：陳革臻 蔡昕靜",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2380,
+        "isFree": false,
+        "description": "$2380元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=010",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-010-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/17\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2380元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "011"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "2-1圍棋",
+      "courseName": "",
+      "teacher": "教練：陳惠敏 邱金珠",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-31",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2680,
+        "isFree": false,
+        "description": "$2680元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=011",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-011-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/31\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2680元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "012"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "2-2 列印筆與拚豆",
+      "courseName": "",
+      "teacher": "教練：鄭東原",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-31",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 3980,
+        "isFree": false,
+        "description": "$3980元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=012",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-012-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/31\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$3980元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "013"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "2-3網球",
+      "courseName": "",
+      "teacher": "教練：蔡林峻",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-31",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2560,
+        "isFree": false,
+        "description": "$2560元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=013",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-013-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/31\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2560元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "014"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "2-4足球",
+      "courseName": "",
+      "teacher": "教練：林煜閔 曾筱媛",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-31",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2380,
+        "isFree": false,
+        "description": "$2380元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=014",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-014-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/31\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2380元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "015"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "2-5桌球",
+      "courseName": "",
+      "teacher": "教練：曾彩靜",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-31",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2050,
+        "isFree": false,
+        "description": "$2050元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=015",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-015-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/31\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2050元",
+        "eligibility": "1,2,3,4",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "016"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "2-6 MV舞蹈",
+      "courseName": "",
+      "teacher": "教練：陳革臻 蔡昕靜",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-31",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2380,
+        "isFree": false,
+        "description": "$2380元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=016",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-016-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/31\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2380元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "017"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "2-7 扯鈴",
+      "courseName": "",
+      "teacher": "教練：黃寶珠 陳世勛",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-31",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 2420,
+        "isFree": false,
+        "description": "$2420元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=017",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-017-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/31\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$2420元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "018"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "2-8 中港創客-木作玩具",
+      "courseName": "",
+      "teacher": "洪偉翔",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-31",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 3100,
+        "isFree": false,
+        "description": "$3100元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=018",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-018-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/31\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$3100元",
+        "eligibility": "4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014730",
+        "actId": "00142",
+        "courseId": "020"
+      },
+      "school": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "schoolName": "新北市新莊區中港國民小學",
+      "campName": "新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "originalSchool": "新北市新莊區中港國民小學 - 新莊區中港國民小學114學年度暑假育樂營  活動簡章",
+      "address": "",
+      "category": "3-1 趣味田徑",
+      "courseName": "",
+      "teacher": "教練：林庭恩詹哲安柯怡嘉胡ㄙ宇",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-08-27",
+        "weekday": "週一",
+        "startTime": "08:30",
+        "endTime": "11:50"
+      },
+      "fee": {
+        "amount": 3390,
+        "isFree": false,
+        "description": "$3390元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-22T10:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014730&act_no=00142&cls_no=020",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014730/uploadfile/act_register/public/file/00142-020-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/08/27\n週一 08:30~11:50\n週二 08:30~11:50\n週三 08:30~11:50\n週四 08:30~11:50\n週五 08:30~11:50",
+        "fee": "$3390元",
+        "eligibility": "3,4,5,6",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/22 10:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "004"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "粉彩美術與桌遊手作1A(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "李怡臻",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "週三",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=004",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-004-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/03\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "065"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "粉彩美術與桌遊手作1B(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "李怡臻",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "週三",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=065",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-065-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/03\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "066"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "粉彩美術與桌遊手作2A(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "李怡臻",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=066",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-066-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "070"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "粉彩美術與桌遊手作2B(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "李怡臻",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=070",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-070-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "067"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "粉彩美術與桌遊手作3A(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "李怡臻",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=067",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-067-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "069"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "粉彩美術與桌遊手作3B(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "李怡臻",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=069",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-069-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "068"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "粉彩美術與桌遊手作4A(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "李怡臻",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=068",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-068-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "071"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "粉彩美術與桌遊手作4B(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "李怡臻",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=071",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-071-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "011"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "桌球一A(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "教練：許智凱",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "週二",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=011",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-011-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/03\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "012"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "桌球一B(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "教練：許智凱",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "週二",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=012",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-012-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/03\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "013"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "桌球二A(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "教練：許智凱",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=013",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-013-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "014"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "桌球二B(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "教練：許智凱",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=014",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-014-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "015"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "桌球三A(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "教練：許智凱",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=015",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-015-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "016"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "桌球三B(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "教練：許智凱",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=016",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-016-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "017"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "桌球四A(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "教練：許智凱",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=017",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-017-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "018"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "桌球四B(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "教練：許智凱",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=018",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-018-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "019"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "羽球綜合二A(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "郭旻昌",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=019",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-019-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "021"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "羽球進階二B(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "郭旻昌",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=021",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-021-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "072"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "羽球綜合三A(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "郭旻昌",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=072",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-072-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "073"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "羽球進階三B(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "郭旻昌",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=073",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-073-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "025"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "休閒直排輪一B(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "教練：葉一凡",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "週三",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=025",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-025-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/03\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "026"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "休閒直排輪二B(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "教練：葉一凡",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=026",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-026-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "027"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "休閒直排輪三B((7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "教練：葉一凡",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=027",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-027-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "028"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "休閒直排輪四B(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "教練：葉一凡",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=028",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-028-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "076"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "遊戲式防身概念二A(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "教練：郭哲瑋",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=076",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-076-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "074"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "遊戲式防身概念二B(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "教練：郭哲瑋",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=074",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-074-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "029"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "遊戲式防身概念三A(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "教練：郭哲瑋",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=029",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-029-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "077"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "遊戲式防身概念三B(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "教練：郭哲瑋",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=077",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-077-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "075"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "遊戲式防身概念四A(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "教練：郭哲瑋",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "10:10"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=075",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-075-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 08:40~10:10\n週二 08:40~10:10\n週三 08:40~10:10\n週四 08:40~10:10\n週五 08:40~10:10",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "078"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "遊戲式防身概念四B(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "教練：郭哲瑋",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=078",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-078-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 10:30~12:00\n週二 10:30~12:00\n週三 10:30~12:00\n週四 10:30~12:00\n週五 10:30~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "079"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "大家藝起畫吧！二C(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "謝雨書",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=079",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-079-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "037"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "立體創作藝起來！三C(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "謝雨書",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=037",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-037-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "053"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "跆拳道2C(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "教練：余杉綺",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=053",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-053-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "080"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "跆拳道3C(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "教練：余杉綺",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=080",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-080-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "081"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "跆拳道4C(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "教練：余杉綺",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=081",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-081-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "061"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "棒球一C(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "教練：陳曉梅",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=061",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-061-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/24\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "082"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "棒球二C(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "教練：陳曉梅",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=082",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-082-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "084"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "棒球三C(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "教練：陳曉梅",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=084",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-084-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "083"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "棒球四C(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "教練：陳曉梅",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=083",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-083-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "042"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "水箭特攻隊(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "得亦教育文化推廣協會",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "週三",
+        "startTime": "09:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=042",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-042-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/03\n週三 09:00~16:00\n週四 09:00~16:00\n週五 09:00~16:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "085"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "幻彩水精靈(7/6-7/8)",
+      "courseName": "健康與體育",
+      "teacher": "得亦教育文化推廣協會",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-08",
+        "weekday": "週一",
+        "startTime": "09:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=085",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-085-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/08\n週一 09:00~16:00\n週二 09:00~16:00\n週三 09:00~16:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "086"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "城市工程車學院(7/9-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "得亦教育文化推廣協會",
+      "schedule": {
+        "startDate": "2026-07-09",
+        "endDate": "2026-07-10",
+        "weekday": "週四",
+        "startTime": "09:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=086",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-086-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/09 至 115/07/10\n週四 09:00~16:00\n週五 09:00~16:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "044"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "奇幻水世界探險隊2C(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "伊索教育",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=044",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-044-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "087"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "魔法化學實驗社3C(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "伊索教育",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=087",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-087-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "088"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "電力超能特攻隊4C(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "伊索教育",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=088",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-088-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "050"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "ESL美語-小小外交導覽員(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "余和安",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=050",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-050-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "047"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "麥塊AI世界探險王(7/13-7/17)",
+      "courseName": "健康與體育",
+      "teacher": "李蕙如",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=047",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-047-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "048"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "Roblox生存遊戲AI創作營(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "李蕙如",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=048",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-048-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/20 至 115/07/24\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "049"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "蟲蟲大對決一C(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "倍思師資群",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "週三",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=049",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-049-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/03\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "089"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "空氣大風吹二C(7/6-7/10)",
+      "courseName": "健康與體育",
+      "teacher": "倍思師資群",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=089",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-089-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/06 至 115/07/10\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "051"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "空中冒險家-無人機3C(7/20-7/24)",
+      "courseName": "健康與體育",
+      "teacher": "倍思師資群",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "週一",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=051",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-051-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/13 至 115/07/17\n週一 08:40~12:00\n週二 08:40~12:00\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "1,2,3,4,5,6,外校學生",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014743",
+        "actId": "00065",
+        "courseId": "090"
+      },
+      "school": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "schoolName": "新北市五股區五股國民小學",
+      "campName": "新北市五股國小115年度暑假育樂營",
+      "originalSchool": "新北市五股區五股國民小學 - 新北市五股國小115年度暑假育樂營",
+      "address": "",
+      "category": "輕鬆玩動畫-紙偶動畫製作一C(7/1-7/3)",
+      "courseName": "健康與體育",
+      "teacher": "李福雄",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "週三",
+        "startTime": "08:40",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": ""
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2025-05-18T12:00:00+08:00",
+        "endTime": "2025-05-25T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014743&act_no=00065&cls_no=090",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014743/uploadfile/act_register/public/file/00065-090-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/01 至 115/07/03\n週三 08:40~12:00\n週四 08:40~12:00\n週五 08:40~12:00",
+        "fee": "",
+        "eligibility": "2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n05/18 12:00 至 05/25 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
     {
       "source": {
         "type": "ntpc_camp",
