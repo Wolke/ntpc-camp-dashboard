@@ -1,6 +1,6 @@
 import type { Course } from '../types/course';
 import { getCourseStatus } from '../store/courseStore';
-import { getCourseDisplayTitle } from './campAnalysis';
+import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, getTraitMatchedThemes, normalizeText } from './courseTaxonomy';
 
 export interface AdvisorProfile {
     area: string;
@@ -41,35 +41,10 @@ export const TRAIT_OPTIONS = [
     { id: 'confidence', label: '需要建立自信、適合小班' },
 ];
 
-const TRAIT_KEYWORDS: Record<string, string[]> = {
-    active: ['運動', '體育', '籃球', '足球', '羽球', '桌球', '網球', '躲避', '飛盤', '跆拳', '柔道', '直排輪', '扯鈴', '體能'],
-    tech: ['Roblox', '麥塊', 'Minecraft', 'Scratch', 'AI', '程式', '電競', '電玩', '電腦', '機器人', '科技'],
-    art: ['藝術', '手作', '繪畫', '美術', '彩繪', '串珠', '氣球', '捏塑', '拼豆', '水彩', '書法', '設計'],
-    strategy: ['桌遊', '圍棋', '象棋', '心算', '珠心算', '邏輯', '策略', '科學', '寶可夢', '卡牌'],
-    social: ['營', '球', '舞蹈', '團體', '戲劇', '探索', '社'],
-    performance: ['舞蹈', 'KPOP', '街舞', '魔術', '戲劇', '弦樂', '古箏', '烏克麗麗', '太鼓', '表演'],
-    outdoor: ['生態', '海洋', '戶外', '探索', '天文', '自然', '浮潛', '輕艇'],
+const NON_THEME_TRAIT_KEYWORDS: Record<string, string[]> = {
+    social: ['營', '團體', '社團', '合作', '互動'],
     confidence: ['小班', '體驗', '入門', '基礎', '初階'],
 };
-
-function normalize(value: string): string {
-    return value.toLowerCase().split('臺').join('台');
-}
-
-function courseText(course: Course): string {
-    const genericCourseNames = new Set(['', '健康與體育', '藝術', '語文', '[不開班]']);
-    return [
-        getCourseDisplayTitle(course),
-        course.schoolName,
-        course.campName,
-        genericCourseNames.has(course.category) ? '' : course.category,
-        genericCourseNames.has(course.courseName) ? '' : course.courseName,
-        course.teacher,
-        course.fee.description,
-        course.eligibility.gradeNames.join(' '),
-        course.tags?.join(' '),
-    ].join(' ');
-}
 
 function getTimeSlot(course: Course): 'morning' | 'afternoon' | 'full_day' | 'unknown' {
     const { startTime, endTime } = course.schedule;
@@ -122,11 +97,11 @@ function buildSummary(profile: AdvisorProfile, candidateCount: number): string {
 
 function scoreCourse(course: Course, profile: AdvisorProfile): AdvisorRecommendation | null {
     const title = getCourseDisplayTitle(course);
-    const text = courseText(course);
-    const normalizedText = normalize(text);
-    const area = normalize(profile.area.trim());
+    const normalizedText = normalizeText(getCourseSearchText(course));
+    const area = normalizeText(profile.area.trim());
     const now = new Date();
     const status = getCourseStatus(course, now);
+    const theme = classifyTheme(course);
 
     if (title.includes('[不開班]')) return null;
     if (!course.eligibility.grades.includes(profile.grade)) return null;
@@ -143,7 +118,7 @@ function scoreCourse(course: Course, profile: AdvisorProfile): AdvisorRecommenda
     const reasons: string[] = [];
     const cautions: string[] = [];
 
-    if (area && normalize(course.schoolName).includes(area)) {
+    if (area && normalizeText(course.schoolName).includes(area)) {
         score += 18;
         reasons.push(`地點符合「${profile.area}」`);
     }
@@ -166,9 +141,15 @@ function scoreCourse(course: Course, profile: AdvisorProfile): AdvisorRecommenda
     }
 
     profile.traits.forEach((trait) => {
-        const matches = (TRAIT_KEYWORDS[trait] || []).filter((keyword) => normalizedText.includes(normalize(keyword)));
+        const matchedThemes = getTraitMatchedThemes(trait, theme);
+        if (matchedThemes.length > 0) {
+            score += 14;
+            reasons.push(`符合「${getTraitLabel(trait)}」：${theme.label}`);
+        }
+
+        const matches = (NON_THEME_TRAIT_KEYWORDS[trait] || []).filter((keyword) => normalizedText.includes(normalizeText(keyword)));
         if (matches.length > 0) {
-            score += Math.min(18, matches.length * 6);
+            score += Math.min(10, matches.length * 5);
             reasons.push(`符合「${getTraitLabel(trait)}」：${matches.slice(0, 2).join('、')}`);
         }
     });

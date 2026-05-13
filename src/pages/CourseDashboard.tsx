@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import CourseList from '../components/courses/CourseList';
 import DateRangeFilter from '../components/courses/DateRangeFilter';
 import SchoolMap from '../components/courses/SchoolMap';
@@ -6,10 +8,69 @@ import StatusFilter from '../components/courses/StatusFilter';
 import SubscribePanel from '../components/SubscribePanel';
 import { useCourses } from '../hooks/useCourses';
 import { useCourseStore } from '../store/courseStore';
+import { getThemeById } from '../utils/courseTaxonomy';
 
 export default function CourseDashboard() {
     const { courses, allCourses, stats, lastUpdated, isLoading, error } = useCourses();
-    const { selectedSchool, setSelectedSchool } = useCourseStore();
+    const { filters, selectedSchool, setSelectedSchool, setFilters, resetFilters } = useCourseStore();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const themeId = searchParams.get('theme');
+    const selectedTheme = getThemeById(themeId);
+
+    useEffect(() => {
+        if (themeId && !selectedTheme) {
+            const nextParams = new URLSearchParams(searchParams);
+            nextParams.delete('theme');
+            setSearchParams(nextParams, { replace: true });
+            resetFilters();
+            return;
+        }
+
+        if (!selectedTheme) {
+            if (filters.themeIds.length > 0) {
+                setFilters({
+                    themeIds: [],
+                    registrationStatus: ['available', 'closing_soon', 'not_started'],
+                    courseTimeStatus: ['upcoming', 'ongoing'],
+                    quotaStatus: ['available', 'almost_full', 'may_not_open'],
+                });
+            }
+            return;
+        }
+
+        const themeAlreadyApplied = filters.themeIds.length === 1 && filters.themeIds[0] === selectedTheme.id;
+        const statusFiltersCleared =
+            filters.registrationStatus.length === 0 &&
+            filters.courseTimeStatus.length === 0 &&
+            filters.quotaStatus.length === 0;
+
+        if (!themeAlreadyApplied || !statusFiltersCleared) {
+            setFilters({
+                themeIds: [selectedTheme.id],
+                registrationStatus: [],
+                courseTimeStatus: [],
+                quotaStatus: [],
+            });
+        }
+    }, [
+        filters.courseTimeStatus.length,
+        filters.quotaStatus.length,
+        filters.registrationStatus.length,
+        filters.themeIds,
+        resetFilters,
+        searchParams,
+        selectedTheme,
+        setFilters,
+        setSearchParams,
+        themeId,
+    ]);
+
+    const clearThemeFilter = () => {
+        const nextParams = new URLSearchParams(searchParams);
+        nextParams.delete('theme');
+        setSearchParams(nextParams, { replace: true });
+        resetFilters();
+    };
 
     const updatedDate = lastUpdated
         ? new Date(lastUpdated).toLocaleDateString('zh-TW', { year: 'numeric', month: 'numeric', day: 'numeric' })
@@ -64,6 +125,22 @@ export default function CourseDashboard() {
                                         type="button"
                                         onClick={() => setSelectedSchool(null)}
                                         className="shrink-0 rounded-md px-2 py-1 text-sm font-medium text-indigo-700 hover:bg-indigo-100"
+                                    >
+                                        顯示全部
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+
+                        {selectedTheme && (
+                            <div className="rounded-lg border border-orange-200 bg-orange-50 px-4 py-3">
+                                <p className="text-sm font-medium text-orange-950">正在篩選主題</p>
+                                <div className="mt-2 flex items-center justify-between gap-3">
+                                    <span className="text-sm text-orange-700">{selectedTheme.label}</span>
+                                    <button
+                                        type="button"
+                                        onClick={clearThemeFilter}
+                                        className="shrink-0 rounded-md px-2 py-1 text-sm font-medium text-orange-700 hover:bg-orange-100"
                                     >
                                         顯示全部
                                     </button>

@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import type { Course, FilterOptions, CourseFeature, RegistrationStatus, CourseTimeStatus, QuotaStatus } from '../types/course';
+import { classifyTheme, getCourseSearchText, normalizeText } from '../utils/courseTaxonomy';
 
 interface CourseStore {
     // 資料
@@ -32,6 +33,7 @@ const defaultFilters: FilterOptions = {
     allowExternalStudents: null, // 預設不篩選
     dateRange: { start: null, end: null },
     grades: [],
+    themeIds: [],
     registrationStatus: ['available', 'closing_soon', 'not_started'], // 預設顯示尚未截止的課程
     courseTimeStatus: ['upcoming', 'ongoing'], // 預設只顯示未結束
     quotaStatus: ['available', 'almost_full', 'may_not_open'], // 預設不隱藏剛公布、尚未累積報名人數的課程
@@ -100,10 +102,6 @@ export function getSchoolType(schoolName: string | undefined): 'high_school' | '
     return 'high_school';
 }
 
-function normalizeSearchText(value: string): string {
-    return value.toLowerCase().split('臺').join('台');
-}
-
 export const useCourseStore = create<CourseStore>((set, get) => ({
     courses: [],
     filteredCourses: [],
@@ -142,24 +140,17 @@ export const useCourseStore = create<CourseStore>((set, get) => ({
         const filtered = courses.filter((course) => {
             // 搜尋文字
             if (filters.searchQuery) {
-                const query = normalizeSearchText(filters.searchQuery);
-                const searchFields = [
-                    course.source?.name,
-                    course.source?.type,
-                    course.school,
-                    course.schoolName,
-                    course.campName,
-                    course.category,
-                    course.courseName,
-                    course.teacher,
-                    course.address,
-                    course.fee.description,
-                    course.eligibility.allowExternalStudents ? '開放外校 外校學生' : '',
-                    course.eligibility.gradeNames.join(' '),
-                    course.tags?.join(' '),
-                ].join(' ');
+                const query = normalizeText(filters.searchQuery);
 
-                if (!normalizeSearchText(searchFields).includes(query)) {
+                if (!normalizeText(getCourseSearchText(course)).includes(query)) {
+                    return false;
+                }
+            }
+
+            // 主題篩選
+            if (filters.themeIds.length > 0) {
+                const theme = classifyTheme(course);
+                if (!filters.themeIds.includes(theme.id)) {
                     return false;
                 }
             }
