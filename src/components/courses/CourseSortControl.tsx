@@ -1,6 +1,14 @@
-import { ArrowDownUp, CircleDollarSign, LocateFixed } from 'lucide-react';
+import { ArrowDownUp, CalendarDays, CircleDollarSign, LocateFixed } from 'lucide-react';
 
-export type CourseSortMode = 'default' | 'distance' | 'fee-asc' | 'fee-desc';
+export type CourseSortMode =
+    | 'default'
+    | 'distance'
+    | 'fee-asc'
+    | 'fee-desc'
+    | 'course-date-asc'
+    | 'course-date-desc'
+    | 'registration-date-asc'
+    | 'registration-date-desc';
 
 interface CourseSortControlProps {
     sortMode: CourseSortMode;
@@ -15,6 +23,10 @@ const sortOptions = [
     { mode: 'distance', label: '距離', icon: LocateFixed },
     { mode: 'fee-asc', label: '費用低', icon: CircleDollarSign },
     { mode: 'fee-desc', label: '費用高', icon: CircleDollarSign },
+    { mode: 'course-date-asc', label: '課程近', icon: CalendarDays },
+    { mode: 'course-date-desc', label: '課程遠', icon: CalendarDays },
+    { mode: 'registration-date-asc', label: '報名近', icon: CalendarDays },
+    { mode: 'registration-date-desc', label: '報名遠', icon: CalendarDays },
 ] as const;
 
 export default function CourseSortControl({

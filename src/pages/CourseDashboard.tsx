@@ -24,6 +24,14 @@ function getSortableFee(course: Course, direction: 'asc' | 'desc'): number {
     return direction === 'asc' ? Number.MAX_SAFE_INTEGER : -1;
 }
 
+function getSortableDate(dateValue: string | undefined, direction: 'asc' | 'desc'): number {
+    if (!dateValue) return direction === 'asc' ? Number.MAX_SAFE_INTEGER : -1;
+
+    const time = new Date(dateValue).getTime();
+    if (Number.isNaN(time)) return direction === 'asc' ? Number.MAX_SAFE_INTEGER : -1;
+    return time;
+}
+
 function getDistanceKm(from: UserLocation, to: [number, number]): number {
     const earthRadiusKm = 6371;
     const toRadians = (value: number) => value * Math.PI / 180;
@@ -155,6 +163,34 @@ export default function CourseDashboard() {
 
                 return aDistance - bDistance || a.schoolName.localeCompare(b.schoolName, 'zh-TW');
             });
+        }
+
+        if (sortMode === 'course-date-asc') {
+            return nextCourses.sort((a, b) =>
+                getSortableDate(a.schedule.startDate, 'asc') - getSortableDate(b.schedule.startDate, 'asc') ||
+                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
+            );
+        }
+
+        if (sortMode === 'course-date-desc') {
+            return nextCourses.sort((a, b) =>
+                getSortableDate(b.schedule.startDate, 'desc') - getSortableDate(a.schedule.startDate, 'desc') ||
+                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
+            );
+        }
+
+        if (sortMode === 'registration-date-asc') {
+            return nextCourses.sort((a, b) =>
+                getSortableDate(a.registration.startTime, 'asc') - getSortableDate(b.registration.startTime, 'asc') ||
+                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
+            );
+        }
+
+        if (sortMode === 'registration-date-desc') {
+            return nextCourses.sort((a, b) =>
+                getSortableDate(b.registration.startTime, 'desc') - getSortableDate(a.registration.startTime, 'desc') ||
+                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
+            );
         }
 
         return nextCourses;
