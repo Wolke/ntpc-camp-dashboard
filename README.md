@@ -13,7 +13,7 @@
 - **報名日期**：顯示報名期間，不錯過報名時機
 - **活動簡章**：直接查看課程簡章 PDF
 - **加入行事曆**：一鍵加入 Google 日曆
-- **報名通知**：訂閱當天開放報名的活動通知，也可將單一課程加入 Google Tasks
+- **報名通知**：訂閱當天開放報名的活動通知，也可將單一課程加入 Google 日曆提醒
 
 ## 資料來源
 
@@ -38,15 +38,9 @@ npm run crawl:taipei
 npm run build
 ```
 
-### Google Tasks 報名通知
+### Google 日曆報名提醒
 
-若要讓「新增報名通知」直接寫入 Google Tasks，請在 Google Cloud 建立 OAuth Client ID、啟用 Google Tasks API，並在本機或部署環境設定：
-
-```bash
-VITE_GOOGLE_CLIENT_ID=你的_OAuth_Client_ID
-```
-
-未設定時，按鈕會複製待辦內容並開啟 Google Tasks，方便手動貼上。
+「新增報名通知」會開啟 Google 日曆新增事件頁，並自動帶入課程名稱、報名時間、費用、報名入口與簡章連結。這個做法不需要 Google OAuth 審核；使用者在 Google 日曆確認後即可儲存提醒。
 
 ### Email 訂閱與每日通知
 
@@ -54,6 +48,19 @@ VITE_GOOGLE_CLIENT_ID=你的_OAuth_Client_ID
 
 ```bash
 VITE_SUBSCRIBE_ENDPOINT=https://example.com/subscribe
+```
+
+若使用 Google Apps Script，可建立 Google Sheet 後開啟 Apps Script，貼上 `scripts/google-apps-script/subscribe-endpoint.gs`，部署為 Web app：
+
+```text
+Execute as: Me
+Who has access: Anyone
+```
+
+接著把 Web app URL 設為 GitHub repository variable：
+
+```bash
+VITE_SUBSCRIBE_ENDPOINT=https://script.google.com/macros/s/.../exec
 ```
 
 如果沒有 endpoint，也可以設定管理者信箱，前端會改開 email 草稿：
@@ -75,7 +82,13 @@ MAIL_FROM="新北育樂營 <notice@example.com>"
 MAIL_TO=notice@example.com
 ```
 
-`SUBSCRIBERS_JSON` 也可改用私有的 `data/subscribers.json`，格式可參考 `data/subscribers.example.json`；實際訂閱名單已被 `.gitignore` 排除，避免誤提交個資。
+若訂閱名單放在 GAS 的 Google Sheet，請在 Apps Script Project Settings 的 Script properties 設定 `SUBSCRIBERS_API_TOKEN`，再將帶 token 的讀取 URL 設為 GitHub repository secret：
+
+```bash
+SUBSCRIBERS_JSON_URL=https://script.google.com/macros/s/.../exec?token=你的_token
+```
+
+Action 讀取訂閱名單的優先順序是 `SUBSCRIBERS_JSON`、`SUBSCRIBERS_JSON_URL`、私有 `data/subscribers.json`。`data/subscribers.json` 格式可參考 `data/subscribers.example.json`；實際訂閱名單已被 `.gitignore` 排除，避免誤提交個資。
 
 ## 專案結構
 

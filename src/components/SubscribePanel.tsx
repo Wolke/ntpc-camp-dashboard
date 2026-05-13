@@ -6,6 +6,10 @@ const SUBSCRIBE_CONTACT_EMAIL = import.meta.env.VITE_SUBSCRIBE_CONTACT_EMAIL as 
 
 type SubscribeStatus = 'idle' | 'submitting' | 'success' | 'fallback' | 'error';
 
+function isGoogleAppsScriptEndpoint(endpoint: string) {
+    return endpoint.includes('script.google.com');
+}
+
 function buildMailto(email: string) {
     if (!SUBSCRIBE_CONTACT_EMAIL) return null;
     const subject = encodeURIComponent('訂閱新北育樂營報名通知');
@@ -27,16 +31,35 @@ export default function SubscribePanel() {
 
         try {
             if (SUBSCRIBE_ENDPOINT) {
+                const payload = {
+                    email: normalizedEmail,
+                    source: 'ntpc-camp-dashboard',
+                    createdAt: new Date().toISOString(),
+                    userAgent: window.navigator.userAgent,
+                };
+
+                if (isGoogleAppsScriptEndpoint(SUBSCRIBE_ENDPOINT)) {
+                    await fetch(SUBSCRIBE_ENDPOINT, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'text/plain;charset=utf-8',
+                        },
+                        body: JSON.stringify(payload),
+                    });
+
+                    setStatus('success');
+                    setMessage('已送出訂閱申請。');
+                    setEmail('');
+                    return;
+                }
+
                 const response = await fetch(SUBSCRIBE_ENDPOINT, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({
-                        email: normalizedEmail,
-                        source: 'ntpc-camp-dashboard',
-                        createdAt: new Date().toISOString(),
-                    }),
+                    body: JSON.stringify(payload),
                 });
 
                 if (!response.ok) {

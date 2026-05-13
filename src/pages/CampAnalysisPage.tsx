@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BarChart3, Compass, ExternalLink, Flame, Gauge, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, BarChart3, Compass, ExternalLink, Flame, Gauge, Sparkles, Users } from 'lucide-react';
 import { useMemo } from 'react';
 import { useCourses } from '../hooks/useCourses';
 import { analyzeCamps } from '../utils/campAnalysis';
@@ -121,7 +121,12 @@ export default function CampAnalysisPage() {
                                                         <span className="flex h-7 w-7 items-center justify-center rounded-md bg-slate-100 text-sm font-semibold text-slate-700">
                                                             {index + 1}
                                                         </span>
-                                                        <h3 className="text-base font-semibold text-slate-950">{theme.label}</h3>
+                                                        <Link
+                                                            to={`/courses?theme=${theme.id}`}
+                                                            className="text-base font-semibold text-slate-950 hover:text-orange-700"
+                                                        >
+                                                            {theme.label}
+                                                        </Link>
                                                     </div>
                                                     <div className="mt-3 flex flex-wrap gap-2 text-xs text-slate-600">
                                                         <span className="rounded-full bg-slate-100 px-2 py-1">{theme.courseCount} 門課</span>
@@ -140,6 +145,13 @@ export default function CampAnalysisPage() {
                                                 <div className="min-w-28 text-left sm:text-right">
                                                     <p className="text-xs text-slate-500">熱度分數</p>
                                                     <p className="text-lg font-semibold text-slate-950">{Math.round(theme.score)}</p>
+                                                    <Link
+                                                        to={`/courses?theme=${theme.id}`}
+                                                        className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-orange-600 hover:text-orange-700"
+                                                    >
+                                                        查看全部 {theme.courseCount} 門
+                                                        <ArrowRight className="h-3 w-3" />
+                                                    </Link>
                                                 </div>
                                             </div>
 

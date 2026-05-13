@@ -108,6 +108,7 @@ export interface FilterOptions {
     allowExternalStudents: boolean | null; // 是否允許外校生
     dateRange: { start: string | null; end: string | null };
     grades: number[];
+    themeIds: string[];
     registrationStatus: RegistrationStatus[];
     courseTimeStatus: CourseTimeStatus[];
     quotaStatus: QuotaStatus[];

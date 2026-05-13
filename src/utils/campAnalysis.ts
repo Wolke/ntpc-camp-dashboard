@@ -1,4 +1,5 @@
 import type { Course } from '../types/course';
+import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, normalizeText } from './courseTaxonomy';
 
 export interface ThemeInsight {
     id: string;
@@ -39,59 +40,6 @@ export interface CampAnalysis {
     };
 }
 
-const THEME_RULES = [
-    {
-        id: 'water-outdoor',
-        label: '水域與戶外體驗',
-        keywords: ['浮潛', '輕艇', '水域', '海洋', '戶外', '探索'],
-    },
-    {
-        id: 'sports-ball',
-        label: '球類與綜合運動',
-        keywords: ['籃球', '足球', '桌球', '羽球', '排球', '棒球', '躲避', '飛盤', '乒乓', '疊杯', '球', '運動', '體育'],
-    },
-    {
-        id: 'martial-fitness',
-        label: '武術與體能',
-        keywords: ['跆拳', '柔道', '體能', '直排輪', '網球', '冰石壺'],
-    },
-    {
-        id: 'tech-game',
-        label: '科技、程式與電競',
-        keywords: ['Roblox', '麥塊', 'Minecraft', 'Scratch', '3D列印', 'EV3', 'AI', '人工智慧', '程式', '電競', '電玩', '電腦', '電路', '機器人', '科技'],
-    },
-    {
-        id: 'arts-craft',
-        label: '藝術手作與設計',
-        keywords: ['藝術', '手作', '彩繪', '繪畫', '串珠', '氣球', '奶油畫', '泡泡畫', '石英砂', '編織', '書法', '水彩', '壓克力', '捏塑', 'DIY', '香氛', '木匠', '拼豆', '美術', '設計'],
-    },
-    {
-        id: 'dance-performance',
-        label: '舞蹈與表演',
-        keywords: ['舞蹈', '表演', '流行舞', 'KPOP', '街舞', '律動', '太鼓', '扯鈴', '魔術', '戲劇'],
-    },
-    {
-        id: 'language',
-        label: '英語與語文',
-        keywords: ['英語', '英文', '語文', '閱讀', '寫作'],
-    },
-    {
-        id: 'strategy-science',
-        label: '策略、科學與探索',
-        keywords: ['寶可夢', '卡牌', '策略', '桌遊', '圍棋', '象棋', '心算', '珠心算', '邏輯', '科學', '外太空', '天文'],
-    },
-    {
-        id: 'life-career',
-        label: '生活實作與職涯探索',
-        keywords: ['醫師', '料理', '烘焙', '小廚師', '空靈鼓', '古箏', '烏克麗麗', '樂器'],
-    },
-    {
-        id: 'care-support',
-        label: '照顧與銜接服務',
-        keywords: ['午餐班', '照顧班', '課前照顧', '課後照顧', '中午照顧'],
-    },
-];
-
 const FEATURE_KEYWORDS = [
     { keyword: '浮潛', reason: '水域體驗，主題稀有' },
     { keyword: '輕艇', reason: '戶外水域運動，辨識度高' },
@@ -116,37 +64,6 @@ const FEATURE_KEYWORDS = [
     { keyword: '拼豆', reason: '精細手作課程' },
 ];
 
-function getCourseText(course: Course): string {
-    return [
-        course.category,
-        course.courseName,
-        course.campName,
-        course.teacher,
-        course.fee.description,
-        course.eligibility.gradeNames.join(' '),
-    ].join(' ');
-}
-
-export function getCourseDisplayTitle(course: Course): string {
-    const genericCourseNames = new Set(['', '健康與體育', '藝術', '語文', '[不開班]']);
-    if (course.category && !genericCourseNames.has(course.category)) {
-        return course.category;
-    }
-    if (course.courseName && !genericCourseNames.has(course.courseName)) {
-        return course.courseName;
-    }
-    return course.campName || course.schoolName;
-}
-
-function classifyTheme(course: Course): { id: string; label: string } {
-    const text = getCourseText(course).toLowerCase();
-    const rule = THEME_RULES.find(({ keywords }) =>
-        keywords.some((keyword) => text.includes(keyword.toLowerCase()))
-    );
-
-    return rule ? { id: rule.id, label: rule.label } : { id: 'other', label: '其他探索課程' };
-}
-
 function uniqueCount(values: string[]): number {
     return new Set(values.filter(Boolean)).size;
 }
@@ -163,13 +80,13 @@ function getRepresentativeCourses(courses: Course[]): Course[] {
 }
 
 function getFeaturedReasons(course: Course, titleCounts: Map<string, number>, themeCounts: Map<string, number>): string[] {
-    const text = getCourseText(course);
+    const text = normalizeText(getCourseSearchText(course));
     const title = getCourseDisplayTitle(course);
     const theme = classifyTheme(course);
     const reasons: string[] = [];
 
     FEATURE_KEYWORDS.forEach(({ keyword, reason }) => {
-        if (text.toLowerCase().includes(keyword.toLowerCase()) && !reasons.includes(reason)) {
+        if (text.includes(normalizeText(keyword)) && !reasons.includes(reason)) {
             reasons.push(reason);
         }
     });
@@ -268,7 +185,7 @@ export function analyzeCamps(courses: Course[]): CampAnalysis {
             const reasons = getFeaturedReasons(course, titleCounts, themeCounts);
             const theme = classifyTheme(course);
             const specialMatches = FEATURE_KEYWORDS.filter(({ keyword }) =>
-                getCourseText(course).toLowerCase().includes(keyword.toLowerCase())
+                normalizeText(getCourseSearchText(course)).includes(normalizeText(keyword))
             ).length;
             const score =
                 specialMatches * 25 +

@@ -46,9 +46,27 @@ function normalizeSubscribers(input) {
         .filter((email, index, array) => array.indexOf(email) === index);
 }
 
-function loadSubscribers() {
+async function fetchSubscribers(url) {
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch subscribers: ${response.status} ${response.statusText}`);
+    }
+
+    const payload = await response.json();
+    if (payload.ok === false) {
+        throw new Error(`Failed to fetch subscribers: ${payload.error || 'unknown_error'}`);
+    }
+
+    return normalizeSubscribers(payload);
+}
+
+async function loadSubscribers() {
     if (process.env.SUBSCRIBERS_JSON) {
         return normalizeSubscribers(JSON.parse(process.env.SUBSCRIBERS_JSON));
+    }
+
+    if (process.env.SUBSCRIBERS_JSON_URL) {
+        return fetchSubscribers(process.env.SUBSCRIBERS_JSON_URL);
     }
 
     if (existsSync(SUBSCRIBERS_FILE)) {
@@ -131,7 +149,7 @@ async function main() {
         return;
     }
 
-    const subscribers = loadSubscribers();
+    const subscribers = await loadSubscribers();
     if (subscribers.length === 0) {
         console.log('No subscribers configured. Skipping email.');
         return;

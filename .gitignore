@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-node_modules/
-=======
 # 依賴
-node_modules
+node_modules/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -11,8 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # 建置結果
-dist
-dist-ssr
+dist/
+dist-ssr/
 *.local
 data/subscribers.json
 
@@ -41,4 +38,3 @@ data/subscribers.json
 # 其他
 *.tgz
 *.tar.gz
->>>>>>> origin/main

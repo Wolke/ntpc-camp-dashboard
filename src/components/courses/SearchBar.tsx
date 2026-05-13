@@ -7,6 +7,10 @@ export default function SearchBar() {
     const [inputValue, setInputValue] = useState(filters.searchQuery);
 
     useEffect(() => {
+        setInputValue(filters.searchQuery);
+    }, [filters.searchQuery]);
+
+    useEffect(() => {
         const timeoutId = setTimeout(() => {
             setFilters({ searchQuery: inputValue });
         }, 300);
