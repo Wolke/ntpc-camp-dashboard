@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import CourseList from '../components/courses/CourseList';
 import DateRangeFilter from '../components/courses/DateRangeFilter';
+import EligibilityFilter from '../components/courses/EligibilityFilter';
 import SchoolMap from '../components/courses/SchoolMap';
 import SearchBar from '../components/courses/SearchBar';
 import StatusFilter from '../components/courses/StatusFilter';
@@ -112,6 +113,7 @@ export default function CourseDashboard() {
                 <div className="grid gap-5 lg:grid-cols-[360px_minmax(0,1fr)] lg:items-start">
                     <aside className="space-y-4 lg:sticky lg:top-20">
                         <SearchBar />
+                        <EligibilityFilter />
                         <SubscribePanel />
                         <StatusFilter />
                         <DateRangeFilter courses={allCourses.length > 0 ? allCourses : courses} />
