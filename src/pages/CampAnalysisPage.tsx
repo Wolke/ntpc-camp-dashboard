@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, Compass, ExternalLink, Flame, Gauge, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, BarChart3, CalendarDays, Compass, ExternalLink, Flame, Gauge, Sparkles, Users } from 'lucide-react';
 import { useMemo } from 'react';
 import { useCourses } from '../hooks/useCourses';
 import { analyzeCamps } from '../utils/campAnalysis';
@@ -216,6 +216,69 @@ export default function CampAnalysisPage() {
                                         報名開放後，已報名人數與額滿程度會逐步變成更可靠的熱門指標；現在適合先看哪些主題供給多、哪些營隊稀有。
                                     </div>
                                 </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div className="mb-3 flex items-center gap-2">
+                                <CalendarDays className="h-5 w-5 text-indigo-500" />
+                                <div>
+                                    <h2 className="text-base font-semibold text-slate-900">短天數營隊</h2>
+                                    <p className="text-sm text-slate-500">整理一天與兩天完成的課程，適合想先試水溫或排入零碎假期的家庭。</p>
+                                </div>
+                            </div>
+
+                            <div className="grid gap-4 lg:grid-cols-2">
+                                {analysis.shortCamps.map((group) => (
+                                    <article key={group.dayCount} className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+                                        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                                            <div>
+                                                <h3 className="text-base font-semibold text-slate-950">{group.label}</h3>
+                                                <div className="mt-3 flex flex-wrap gap-2 text-xs text-slate-600">
+                                                    <span className="rounded-full bg-slate-100 px-2 py-1">{group.courseCount} 門課</span>
+                                                    <span className="rounded-full bg-slate-100 px-2 py-1">{group.schoolCount} 校/單位</span>
+                                                    {group.externalCount > 0 && (
+                                                        <span className="rounded-full bg-sky-50 px-2 py-1 text-sky-700">外校 {group.externalCount}</span>
+                                                    )}
+                                                    {group.freeCount > 0 && (
+                                                        <span className="rounded-full bg-emerald-50 px-2 py-1 text-emerald-700">免費 {group.freeCount}</span>
+                                                    )}
+                                                </div>
+                                            </div>
+                                            <Link
+                                                to="/courses"
+                                                className="inline-flex items-center gap-1 text-sm font-medium text-indigo-600 hover:text-indigo-700"
+                                            >
+                                                到課程查詢
+                                                <ArrowRight className="h-4 w-4" />
+                                            </Link>
+                                        </div>
+
+                                        <div className="mt-4 grid gap-2">
+                                            {group.representativeCourses.length > 0 ? (
+                                                group.representativeCourses.map((course) => (
+                                                    <Link
+                                                        key={`${group.dayCount}-${course.schoolName}-${course.category}-${course.schedule.startDate}`}
+                                                        to="/courses"
+                                                        className="rounded-md border border-slate-100 bg-slate-50 p-3 hover:bg-slate-100"
+                                                    >
+                                                        <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                                                            <div>
+                                                                <p className="line-clamp-2 text-sm font-medium text-slate-800">
+                                                                    {course.category || course.campName}
+                                                                </p>
+                                                                <p className="mt-1 text-xs text-slate-500">{shortSchoolName(course.schoolName)}</p>
+                                                            </div>
+                                                            <p className="shrink-0 text-xs text-slate-500">{formatTimeRange(course)}</p>
+                                                        </div>
+                                                    </Link>
+                                                ))
+                                            ) : (
+                                                <p className="rounded-md bg-slate-50 p-3 text-sm text-slate-500">目前沒有符合的課程。</p>
+                                            )}
+                                        </div>
+                                    </article>
+                                ))}
                             </div>
                         </section>
 
