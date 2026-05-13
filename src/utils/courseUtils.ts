@@ -1,5 +1,6 @@
 import type { Course } from '../types/course';
 import { getCourseStatus, getSchoolType } from '../store/courseStore';
+import { formatCourseWeekSummary } from './courseSchedule';
 
 // 狀態標籤顏色
 export const statusColors = {
@@ -216,9 +217,11 @@ export function formatScheduleParts(course: Course) {
     const periodSummary = formatPeriodSummary(course, entries);
     const clockSummary = formatClockSummary(course, entries);
     const dateRange = startDate === endDate ? formatDate(startDate) : `${formatDate(startDate)} - ${formatDate(endDate)}`;
+    const weekSummary = formatCourseWeekSummary(course);
 
     return {
         dateRange,
+        weekSummary,
         weekdaySummary,
         periodSummary,
         clockSummary,
@@ -227,8 +230,8 @@ export function formatScheduleParts(course: Course) {
 
 // 格式化時間範圍
 export function formatTimeRange(course: Course): string {
-    const { dateRange, weekdaySummary, periodSummary, clockSummary } = formatScheduleParts(course);
-    return [dateRange, weekdaySummary, periodSummary, clockSummary].filter(Boolean).join(' ');
+    const { dateRange, weekSummary, weekdaySummary, periodSummary, clockSummary } = formatScheduleParts(course);
+    return [dateRange, weekSummary, weekdaySummary, periodSummary, clockSummary].filter(Boolean).join(' ');
 }
 
 // 計算報名截止剩餘天數

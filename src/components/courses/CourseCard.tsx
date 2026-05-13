@@ -96,6 +96,9 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
 
             <div className="mt-4 flex flex-wrap gap-2">
                 <MetaTag icon={CalendarDays} label={scheduleParts.dateRange} tone="indigo" />
+                {scheduleParts.weekSummary && (
+                    <MetaTag icon={CalendarDays} label={scheduleParts.weekSummary} tone="indigo" />
+                )}
                 {scheduleParts.weekdaySummary && (
                     <MetaTag icon={CalendarDays} label={scheduleParts.weekdaySummary} tone="indigo" />
                 )}
