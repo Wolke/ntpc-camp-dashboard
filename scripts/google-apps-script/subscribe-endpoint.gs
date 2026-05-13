@@ -1,5 +1,6 @@
 const SHEET_NAME = 'subscribers';
 const API_TOKEN_PROPERTY = 'SUBSCRIBERS_API_TOKEN';
+const SPREADSHEET_ID_PROPERTY = 'SPREADSHEET_ID';
 
 function doPost(e) {
   const payload = parsePayload_(e);
@@ -68,7 +69,17 @@ function parsePayload_(e) {
 }
 
 function getSubscribersSheet_() {
-  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const spreadsheetId = PropertiesService
+    .getScriptProperties()
+    .getProperty(SPREADSHEET_ID_PROPERTY);
+  const spreadsheet = spreadsheetId
+    ? SpreadsheetApp.openById(spreadsheetId)
+    : SpreadsheetApp.getActiveSpreadsheet();
+
+  if (!spreadsheet) {
+    throw new Error('Missing active spreadsheet or SPREADSHEET_ID script property.');
+  }
+
   let sheet = spreadsheet.getSheetByName(SHEET_NAME);
 
   if (!sheet) {
