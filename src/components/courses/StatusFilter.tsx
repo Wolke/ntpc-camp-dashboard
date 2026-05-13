@@ -154,22 +154,6 @@ export default function StatusFilter() {
                         </div>
                     </div>
 
-                    {/* 其他篩選 */}
-                    <div>
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">其他</h4>
-                        <div className="flex gap-2">
-                            <button
-                                onClick={() => setFilters({ allowExternalStudents: filters.allowExternalStudents === true ? null : true })}
-                                className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.allowExternalStudents === true
-                                    ? 'bg-blue-100 border-blue-300 text-blue-700'
-                                    : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                    }`}
-                            >
-                                🌍 開放外校生
-                            </button>
-                        </div>
-                    </div>
-
                     {/* 身份選擇（學校類型） */}
                     <div>
                         <h4 className="text-sm font-medium text-gray-700 mb-2">身份</h4>
@@ -213,42 +197,6 @@ export default function StatusFilter() {
                             >
                                 📚 高中職生
                             </button>
-                        </div>
-                    </div>
-
-                    {/* 年級選擇 */}
-                    <div>
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">年級</h4>
-                        <div className="flex flex-wrap gap-2">
-                            {[
-                                { value: 1, label: '一年級' },
-                                { value: 2, label: '二年級' },
-                                { value: 3, label: '三年級' },
-                                { value: 4, label: '四年級' },
-                                { value: 5, label: '五年級' },
-                                { value: 6, label: '六年級' },
-                                { value: 7, label: '七年級' },
-                                { value: 8, label: '八年級' },
-                                { value: 9, label: '九年級' },
-                            ].map((grade) => (
-                                <button
-                                    key={grade.value}
-                                    onClick={() => {
-                                        const current = filters.grades;
-                                        if (current.includes(grade.value)) {
-                                            setFilters({ grades: current.filter(g => g !== grade.value) });
-                                        } else {
-                                            setFilters({ grades: [...current, grade.value] });
-                                        }
-                                    }}
-                                    className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.grades.includes(grade.value)
-                                        ? 'bg-purple-100 border-purple-300 text-purple-700'
-                                        : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                        }`}
-                                >
-                                    {grade.label}
-                                </button>
-                            ))}
                         </div>
                     </div>
 

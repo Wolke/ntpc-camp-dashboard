@@ -224,7 +224,7 @@ export default function CampAnalysisPage() {
                                 <Sparkles className="h-5 w-5 text-emerald-500" />
                                 <div>
                                     <h2 className="text-base font-semibold text-slate-900">特色營隊</h2>
-                                    <p className="text-sm text-slate-500">依主題稀有度、特殊關鍵字、免費、外校與跨年級條件挑選。</p>
+                                    <p className="text-sm text-slate-500">依少見體驗、表演型課程、特殊媒材、免費、外校與跨年級條件挑選。</p>
                                 </div>
                             </div>
 
