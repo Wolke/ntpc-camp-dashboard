@@ -32,6 +32,7 @@ jobs:
         env:
           TARGET_DATE: ${{ inputs.target_date }}
           SUBSCRIBERS_JSON: ${{ secrets.SUBSCRIBERS_JSON }}
+          SUBSCRIBERS_JSON_URL: ${{ secrets.SUBSCRIBERS_JSON_URL }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_SECURE: ${{ secrets.SMTP_SECURE }}

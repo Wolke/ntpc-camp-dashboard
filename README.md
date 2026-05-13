@@ -46,7 +46,13 @@ npm run build
 VITE_GOOGLE_CLIENT_ID=你的_OAuth_Client_ID
 ```
 
-未設定時，按鈕會複製待辦內容並開啟 Google Tasks，方便手動貼上。
+GitHub Pages 部署時請在 repository variables 設定 `VITE_GOOGLE_CLIENT_ID`，並在 OAuth Client ID 的 Authorized JavaScript origins 加入：
+
+```bash
+https://wolke.github.io
+```
+
+未設定時，按鈕只能複製待辦內容並開啟 Google Tasks，方便手動貼上；不會真的建立 Task。
 
 ### Email 訂閱與每日通知
 
@@ -54,6 +60,19 @@ VITE_GOOGLE_CLIENT_ID=你的_OAuth_Client_ID
 
 ```bash
 VITE_SUBSCRIBE_ENDPOINT=https://example.com/subscribe
+```
+
+若使用 Google Apps Script，可建立 Google Sheet 後開啟 Apps Script，貼上 `scripts/google-apps-script/subscribe-endpoint.gs`，部署為 Web app：
+
+```text
+Execute as: Me
+Who has access: Anyone
+```
+
+接著把 Web app URL 設為 GitHub repository variable：
+
+```bash
+VITE_SUBSCRIBE_ENDPOINT=https://script.google.com/macros/s/.../exec
 ```
 
 如果沒有 endpoint，也可以設定管理者信箱，前端會改開 email 草稿：
@@ -75,7 +94,13 @@ MAIL_FROM="新北育樂營 <notice@example.com>"
 MAIL_TO=notice@example.com
 ```
 
-`SUBSCRIBERS_JSON` 也可改用私有的 `data/subscribers.json`，格式可參考 `data/subscribers.example.json`；實際訂閱名單已被 `.gitignore` 排除，避免誤提交個資。
+若訂閱名單放在 GAS 的 Google Sheet，請在 Apps Script Project Settings 的 Script properties 設定 `SUBSCRIBERS_API_TOKEN`，再將帶 token 的讀取 URL 設為 GitHub repository secret：
+
+```bash
+SUBSCRIBERS_JSON_URL=https://script.google.com/macros/s/.../exec?token=你的_token
+```
+
+Action 讀取訂閱名單的優先順序是 `SUBSCRIBERS_JSON`、`SUBSCRIBERS_JSON_URL`、私有 `data/subscribers.json`。`data/subscribers.json` 格式可參考 `data/subscribers.example.json`；實際訂閱名單已被 `.gitignore` 排除，避免誤提交個資。
 
 ## 專案結構
 
