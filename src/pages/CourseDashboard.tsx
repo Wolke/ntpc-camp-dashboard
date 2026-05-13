@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import CourseList from '../components/courses/CourseList';
+import CourseSortControl, { type CourseSortMode } from '../components/courses/CourseSortControl';
 import DateRangeFilter from '../components/courses/DateRangeFilter';
 import EligibilityFilter from '../components/courses/EligibilityFilter';
 import GradeFilter from '../components/courses/GradeFilter';
@@ -10,12 +11,40 @@ import StatusFilter from '../components/courses/StatusFilter';
 import SubscribePanel from '../components/SubscribePanel';
 import { useCourses } from '../hooks/useCourses';
 import { useCourseStore } from '../store/courseStore';
+import type { Course } from '../types/course';
 import { getThemeById } from '../utils/courseTaxonomy';
+import { SCHOOL_COORDINATES } from '../utils/schoolCoordinates';
+
+type UserLocation = { latitude: number; longitude: number };
+type LocationStatus = 'idle' | 'requesting' | 'ready' | 'error' | 'unsupported';
+
+function getSortableFee(course: Course, direction: 'asc' | 'desc'): number {
+    if (course.fee.isFree) return 0;
+    if (Number.isFinite(course.fee.amount) && course.fee.amount > 0) return course.fee.amount;
+    return direction === 'asc' ? Number.MAX_SAFE_INTEGER : -1;
+}
+
+function getDistanceKm(from: UserLocation, to: [number, number]): number {
+    const earthRadiusKm = 6371;
+    const toRadians = (value: number) => value * Math.PI / 180;
+    const latDelta = toRadians(to[0] - from.latitude);
+    const lngDelta = toRadians(to[1] - from.longitude);
+    const fromLat = toRadians(from.latitude);
+    const toLat = toRadians(to[0]);
+    const a =
+        Math.sin(latDelta / 2) ** 2 +
+        Math.cos(fromLat) * Math.cos(toLat) * Math.sin(lngDelta / 2) ** 2;
+
+    return 2 * earthRadiusKm * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
 
 export default function CourseDashboard() {
     const { courses, allCourses, stats, lastUpdated, isLoading, error } = useCourses();
     const { filters, selectedSchool, setSelectedSchool, setFilters, resetFilters } = useCourseStore();
     const [searchParams, setSearchParams] = useSearchParams();
+    const [sortMode, setSortMode] = useState<CourseSortMode>('default');
+    const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
+    const [locationStatus, setLocationStatus] = useState<LocationStatus>('idle');
     const themeId = searchParams.get('theme');
     const selectedTheme = getThemeById(themeId);
 
@@ -78,6 +107,59 @@ export default function CourseDashboard() {
         ? new Date(lastUpdated).toLocaleDateString('zh-TW', { year: 'numeric', month: 'numeric', day: 'numeric' })
         : null;
 
+    const requestLocation = () => {
+        if (!navigator.geolocation) {
+            setLocationStatus('unsupported');
+            return;
+        }
+
+        setLocationStatus('requesting');
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                setUserLocation({
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude,
+                });
+                setLocationStatus('ready');
+            },
+            () => {
+                setLocationStatus('error');
+            },
+            { enableHighAccuracy: false, timeout: 10000, maximumAge: 1000 * 60 * 10 },
+        );
+    };
+
+    const sortedCourses = useMemo(() => {
+        const nextCourses = [...courses];
+
+        if (sortMode === 'fee-asc') {
+            return nextCourses.sort((a, b) =>
+                getSortableFee(a, 'asc') - getSortableFee(b, 'asc') ||
+                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
+            );
+        }
+
+        if (sortMode === 'fee-desc') {
+            return nextCourses.sort((a, b) =>
+                getSortableFee(b, 'desc') - getSortableFee(a, 'desc') ||
+                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
+            );
+        }
+
+        if (sortMode === 'distance' && userLocation) {
+            return nextCourses.sort((a, b) => {
+                const aCoords = SCHOOL_COORDINATES[a.schoolName];
+                const bCoords = SCHOOL_COORDINATES[b.schoolName];
+                const aDistance = aCoords ? getDistanceKm(userLocation, aCoords) : Number.MAX_SAFE_INTEGER;
+                const bDistance = bCoords ? getDistanceKm(userLocation, bCoords) : Number.MAX_SAFE_INTEGER;
+
+                return aDistance - bDistance || a.schoolName.localeCompare(b.schoolName, 'zh-TW');
+            });
+        }
+
+        return nextCourses;
+    }, [courses, sortMode, userLocation]);
+
     return (
         <div className="min-h-screen bg-slate-50">
             <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
@@ -112,7 +194,7 @@ export default function CourseDashboard() {
                 </section>
 
                 <div className="grid gap-5 lg:grid-cols-[360px_minmax(0,1fr)] lg:items-start">
-                    <aside className="space-y-4 lg:sticky lg:top-20">
+                    <aside className="space-y-4 lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:overscroll-contain lg:pr-2">
                         <SearchBar />
                         <EligibilityFilter />
                         <GradeFilter />
@@ -171,11 +253,20 @@ export default function CourseDashboard() {
                         </section>
 
                         <section>
-                            <div className="mb-3 flex items-center justify-between">
+                            <div className="mb-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                                 <h2 className="text-base font-semibold text-slate-900">課程列表</h2>
-                                <span className="text-sm text-slate-500">{courses.length} 門</span>
+                                <div className="flex flex-col gap-2 sm:items-end">
+                                    <span className="text-sm text-slate-500">{sortedCourses.length} 門</span>
+                                    <CourseSortControl
+                                        sortMode={sortMode}
+                                        hasLocation={Boolean(userLocation)}
+                                        locationStatus={locationStatus}
+                                        onSortModeChange={setSortMode}
+                                        onRequestLocation={requestLocation}
+                                    />
+                                </div>
                             </div>
-                            <CourseList courses={courses} isLoading={isLoading} />
+                            <CourseList courses={sortedCourses} isLoading={isLoading} />
                         </section>
                     </main>
                 </div>
