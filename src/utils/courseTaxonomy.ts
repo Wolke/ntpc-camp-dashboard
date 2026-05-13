@@ -37,7 +37,7 @@ export const THEME_RULES: CourseTheme[] = [
     {
         id: 'dance-performance',
         label: '舞蹈與表演',
-        keywords: ['舞蹈', '表演', '流行舞', 'KPOP', '街舞', '律動', '太鼓', '扯鈴', '魔術', '戲劇'],
+        keywords: ['舞蹈', '表演', '流行舞', 'KPOP', '街舞', '律動', '太鼓', '扯鈴', '魔術', '戲劇', '劇場', '戲曲', '扮戲', '演戲'],
     },
     {
         id: 'language',
@@ -80,6 +80,19 @@ export function normalizeText(value: string): string {
     return value.toLowerCase().split('臺').join('台');
 }
 
+export function matchesCourseKeyword(text: string, keyword: string): boolean {
+    const normalizedText = normalizeText(text);
+    const normalizedKeyword = normalizeText(keyword);
+
+    if (/^[a-z0-9]+$/.test(normalizedKeyword)) {
+        const escapedKeyword = normalizedKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const boundaryPattern = new RegExp(`(^|[^a-z0-9])${escapedKeyword}($|[^a-z0-9])`);
+        return boundaryPattern.test(normalizedText);
+    }
+
+    return normalizedText.includes(normalizedKeyword);
+}
+
 export function getCourseDisplayTitle(course: Course): string {
     if (course.category && !GENERIC_COURSE_NAMES.has(course.category)) {
         return course.category;
@@ -116,9 +129,9 @@ export function getThemeById(themeId: string | null | undefined): CourseTheme | 
 }
 
 export function classifyTheme(course: Course): CourseTheme {
-    const text = normalizeText(getCourseSearchText(course));
+    const text = getCourseSearchText(course);
     const rule = THEME_RULES.find(({ keywords }) =>
-        keywords.some((keyword) => text.includes(normalizeText(keyword)))
+        keywords.some((keyword) => matchesCourseKeyword(text, keyword))
     );
 
     return rule || OTHER_THEME;

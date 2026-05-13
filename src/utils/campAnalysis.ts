@@ -1,5 +1,5 @@
 import type { Course } from '../types/course';
-import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, normalizeText } from './courseTaxonomy';
+import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, matchesCourseKeyword } from './courseTaxonomy';
 
 export interface ThemeInsight {
     id: string;
@@ -44,18 +44,16 @@ const FEATURE_KEYWORDS = [
     { keyword: '浮潛', reason: '水域體驗，主題稀有' },
     { keyword: '輕艇', reason: '戶外水域運動，辨識度高' },
     { keyword: '冰石壺', reason: '少見運動項目' },
+    { keyword: '扮戲', reason: '少見戲劇表演體驗' },
+    { keyword: '戲劇', reason: '戲劇表演體驗' },
+    { keyword: '劇場', reason: '劇場表演體驗' },
+    { keyword: '戲曲', reason: '傳統戲曲體驗' },
+    { keyword: '魔術', reason: '表演型課程' },
     { keyword: '醫師', reason: '職涯探索主題' },
     { keyword: '料理', reason: '生活實作課程' },
     { keyword: '烘焙', reason: '生活實作課程' },
     { keyword: '古箏', reason: '傳統音樂體驗' },
     { keyword: '烏克麗麗', reason: '樂器體驗課程' },
-    { keyword: 'Roblox', reason: '遊戲設計與數位創作' },
-    { keyword: '麥塊', reason: '遊戲世界建構主題' },
-    { keyword: 'AI', reason: '科技與新興應用' },
-    { keyword: '電競', reason: '數位競技主題' },
-    { keyword: '寶可夢', reason: '卡牌策略主題' },
-    { keyword: '卡牌', reason: '策略與對戰設計' },
-    { keyword: '外太空', reason: '科學探索主題' },
     { keyword: '奶油畫', reason: '特殊藝術媒材' },
     { keyword: '泡泡畫', reason: '特殊藝術媒材' },
     { keyword: '石英砂', reason: '特殊肌理創作' },
@@ -63,6 +61,13 @@ const FEATURE_KEYWORDS = [
     { keyword: '串珠', reason: '精細手作課程' },
     { keyword: '拼豆', reason: '精細手作課程' },
 ];
+
+const FEATURE_EXCLUDED_THEME_IDS = new Set([
+    'tech-game',
+    'strategy-science',
+]);
+
+const HIGH_FEATURE_KEYWORDS = ['扮戲', '戲劇', '劇場', '戲曲'];
 
 function uniqueCount(values: string[]): number {
     return new Set(values.filter(Boolean)).size;
@@ -80,13 +85,13 @@ function getRepresentativeCourses(courses: Course[]): Course[] {
 }
 
 function getFeaturedReasons(course: Course, titleCounts: Map<string, number>, themeCounts: Map<string, number>): string[] {
-    const text = normalizeText(getCourseSearchText(course));
+    const text = getCourseSearchText(course);
     const title = getCourseDisplayTitle(course);
     const theme = classifyTheme(course);
     const reasons: string[] = [];
 
     FEATURE_KEYWORDS.forEach(({ keyword, reason }) => {
-        if (text.includes(normalizeText(keyword)) && !reasons.includes(reason)) {
+        if (matchesCourseKeyword(text, keyword) && !reasons.includes(reason)) {
             reasons.push(reason);
         }
     });
@@ -185,10 +190,14 @@ export function analyzeCamps(courses: Course[]): CampAnalysis {
             const reasons = getFeaturedReasons(course, titleCounts, themeCounts);
             const theme = classifyTheme(course);
             const specialMatches = FEATURE_KEYWORDS.filter(({ keyword }) =>
-                normalizeText(getCourseSearchText(course)).includes(normalizeText(keyword))
+                matchesCourseKeyword(getCourseSearchText(course), keyword)
+            ).length;
+            const highFeatureMatches = HIGH_FEATURE_KEYWORDS.filter((keyword) =>
+                matchesCourseKeyword(getCourseSearchText(course), keyword)
             ).length;
             const score =
                 specialMatches * 25 +
+                highFeatureMatches * 25 +
                 ((themeCounts.get(theme.id) || 0) <= 8 ? 12 : 0) +
                 ((titleCounts.get(title) || 0) === 1 ? 5 : 0) +
                 (course.eligibility.allowExternalStudents ? 5 : 0) +
@@ -198,7 +207,14 @@ export function analyzeCamps(courses: Course[]): CampAnalysis {
 
             return { course, title, score, reasons, specialMatches, themeCount: themeCounts.get(theme.id) || 0 };
         })
-        .filter((camp) => camp.reasons.length >= 2 && (camp.specialMatches > 0 || camp.themeCount <= 8))
+        .filter((camp) => {
+            const theme = classifyTheme(camp.course);
+            if (FEATURE_EXCLUDED_THEME_IDS.has(theme.id)) {
+                return false;
+            }
+
+            return camp.reasons.length >= 2 && (camp.specialMatches > 0 || camp.themeCount <= 8);
+        })
         .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title, 'zh-TW'));
 
     const seenFeatured = new Set<string>();
