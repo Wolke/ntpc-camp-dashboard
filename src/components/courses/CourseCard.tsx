@@ -1,127 +1,133 @@
+import { CalendarPlus, Clock, ExternalLink, GraduationCap, School, Users } from 'lucide-react';
 import type { Course } from '../../types/course';
-import { getCourseStatusInfo, formatTimeRange, getSchoolTypeLabel } from '../../utils/courseUtils';
+import { formatTimeRange, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
+import GoogleTaskButton from './GoogleTaskButton';
 
 interface CourseCardProps {
     course: Course;
     onClick?: () => void;
 }
 
+function formatRegistrationRange(course: Course) {
+    if (!course.registration?.startTime || !course.registration?.endTime) return '未提供報名期間';
+
+    const options: Intl.DateTimeFormatOptions = {
+        month: 'numeric',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+    };
+
+    return `${new Date(course.registration.startTime).toLocaleString('zh-TW', options)} - ${new Date(course.registration.endTime).toLocaleString('zh-TW', options)}`;
+}
+
+function calendarUrl(course: Course) {
+    const title = course.category || course.courseName || '育樂營課程';
+    const start = course.schedule.startDate?.replace(/-/g, '') || '';
+    const end = course.schedule.endDate?.replace(/-/g, '') || start;
+    const details = [
+        `學校/單位：${course.schoolName}`,
+        course.campName ? `營隊：${course.campName}` : '',
+        `報名期間：${formatRegistrationRange(course)}`,
+        `費用：${course.fee.description || (course.fee.isFree ? '免費' : '未提供')}`,
+        course.urls?.registration ? `報名入口：${course.urls.registration}` : '',
+    ].filter(Boolean).join('\n');
+
+    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${end}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(course.schoolName || '')}`;
+}
+
 export default function CourseCard({ course, onClick }: CourseCardProps) {
     const status = getCourseStatusInfo(course);
 
     return (
-        <div
-            className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 hover:shadow-md transition-shadow cursor-pointer"
+        <article
+            className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
             onClick={onClick}
         >
-            {/* 頂部：學校與類型 */}
-            <div className="flex items-start justify-between mb-2">
-                <div className="flex-1">
-                    <span className="inline-block px-2 py-0.5 text-xs font-medium bg-indigo-100 text-indigo-700 rounded-full mr-2">
-                        {getSchoolTypeLabel(course.schoolName)}
-                    </span>
-                    <h3 className="font-semibold text-gray-900 mt-1">{course.schoolName}</h3>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div className="min-w-0">
+                    <div className="mb-2 flex flex-wrap items-center gap-2">
+                        <span className="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-600">
+                            <School className="h-3.5 w-3.5" />
+                            {getSchoolTypeLabel(course.schoolName)}
+                        </span>
+                        <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${status.registrationColor}`}>
+                            {status.registrationLabel}
+                            {status.daysLeft !== null && status.daysLeft <= 7 && (
+                                <span className="ml-1">剩 {status.daysLeft} 天</span>
+                            )}
+                        </span>
+                        <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${status.quotaColor}`}>
+                            {status.quotaLabel}
+                        </span>
+                    </div>
+
+                    <h3 className="text-base font-semibold leading-6 text-slate-950">
+                        {course.category || course.courseName}
+                    </h3>
+                    <p className="mt-1 text-sm text-slate-500">{course.schoolName}</p>
+                </div>
+
+                <div className="text-left sm:text-right">
+                    <p className={`text-sm font-semibold ${course.fee.isFree ? 'text-emerald-700' : 'text-slate-700'}`}>
+                        {course.fee.isFree ? '免費' : course.fee.description}
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">
+                        報名 {course.quota.enrolled} / 預計 {course.quota.planned}
+                    </p>
                 </div>
             </div>
 
-            {/* 課程名稱 */}
-            <p className="text-lg font-bold text-gray-800 mb-2">{course.category}</p>
-
-            {/* 時間 */}
-            <div className="flex items-center text-sm text-gray-600 mb-2">
-                <span className="mr-2">📅</span>
-                <span>{formatTimeRange(course)}</span>
-            </div>
-
-            {/* 地址 */}
-            {course.address && (
-                <div className="flex items-center text-sm text-gray-500 mb-2">
-                    <span className="mr-2">📍</span>
-                    <span className="truncate">{course.address}</span>
+            <dl className="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
+                <div className="flex items-center gap-2">
+                    <Clock className="h-4 w-4 shrink-0 text-slate-400" />
+                    <span>{formatTimeRange(course)}</span>
                 </div>
-            )}
-
-            {/* 報名日期 */}
-            {course.registration?.startTime && (
-                <div className="flex items-center text-sm text-gray-600 mb-3">
-                    <span className="mr-2">📝</span>
-                    <span>
-                        報名期間：{new Date(course.registration.startTime).toLocaleDateString('zh-TW', { month: 'numeric', day: 'numeric' })}
-                        ~ {new Date(course.registration.endTime).toLocaleDateString('zh-TW', { month: 'numeric', day: 'numeric' })}
-                    </span>
+                <div className="flex items-center gap-2">
+                    <CalendarPlus className="h-4 w-4 shrink-0 text-slate-400" />
+                    <span>報名 {formatRegistrationRange(course)}</span>
                 </div>
-            )}
+                {course.courseName && (
+                    <div className="flex items-center gap-2">
+                        <GraduationCap className="h-4 w-4 shrink-0 text-slate-400" />
+                        <span>{course.courseName}</span>
+                    </div>
+                )}
+                {course.eligibility.gradeNames.length > 0 && (
+                    <div className="flex items-center gap-2">
+                        <Users className="h-4 w-4 shrink-0 text-slate-400" />
+                        <span>{course.eligibility.gradeNames.join('、')}</span>
+                    </div>
+                )}
+            </dl>
 
-            {/* 狀態徽章區 */}
-            <div className="flex flex-wrap gap-2 mb-3">
-                {/* 報名狀態 */}
-                <span className={`inline-flex items-center px-2 py-1 text-xs font-medium rounded-full border ${status.registrationColor}`}>
-                    {status.registrationIcon} {status.registrationLabel}
-                    {status.daysLeft !== null && status.daysLeft <= 7 && (
-                        <span className="ml-1">({status.daysLeft}天)</span>
-                    )}
-                </span>
-
-                {/* 課程狀態 */}
-                <span className={`inline-flex items-center px-2 py-1 text-xs font-medium rounded-full border ${status.courseTimeColor}`}>
-                    {status.courseTimeIcon} {status.courseTimeLabel}
-                </span>
-
-                {/* 名額狀態 */}
-                <span className={`inline-flex items-center px-2 py-1 text-xs font-medium rounded-full border ${status.quotaColor}`}>
-                    {status.quotaIcon} {status.quotaLabel}
-                </span>
-            </div>
-
-            {/* 費用與報名人數 */}
-            <div className="flex items-center justify-between text-sm pt-2 border-t border-gray-100">
-                <span className={course.fee.isFree ? 'text-green-600 font-semibold' : 'text-gray-700'}>
-                    {course.fee.isFree ? '🎉 免費' : `💰 ${course.fee.description}`}
-                </span>
-                <span className="text-gray-500">
-                    報名 {course.quota.enrolled} 人 / 預計 {course.quota.planned} 人
-                </span>
-            </div>
-
-            {/* 簡章連結 */}
-            {course.urls?.prospectus && (
-                <div className="mt-3 pt-2 border-t border-gray-100">
+            <div className="mt-4 flex flex-wrap gap-2 border-t border-slate-100 pt-3">
+                {course.urls?.prospectus && (
                     <a
                         href={course.urls.prospectus}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 hover:underline"
+                        onClick={(event) => event.stopPropagation()}
+                        className="inline-flex items-center justify-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300 hover:bg-slate-50"
                     >
-                        📄 查看活動簡章
+                        <ExternalLink className="h-4 w-4" />
+                        活動簡章
                     </a>
-                </div>
-            )}
+                )}
 
-            {/* Google 行事曆 & Tasks */}
-            <div className="mt-2 flex flex-wrap gap-2">
-                {/* 加入 Google 行事曆 (課程日期) */}
                 <a
-                    href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(course.courseName || course.category)}&dates=${course.schedule.startDate?.replace(/-/g, '')}/${course.schedule.endDate?.replace(/-/g, '')}&details=${encodeURIComponent(`學校: ${course.schoolName}\n營隊: ${course.campName}\n費用: ${course.fee.description || '免費'}`)}&location=${encodeURIComponent(course.schoolName || '')}`}
+                    href={calendarUrl(course)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center gap-1 px-2 py-1 text-xs bg-blue-50 text-blue-600 rounded hover:bg-blue-100"
+                    onClick={(event) => event.stopPropagation()}
+                    className="inline-flex items-center justify-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700"
                 >
-                    📅 加入行事曆
+                    <CalendarPlus className="h-4 w-4" />
+                    加入日曆
                 </a>
 
-                {/* 加入 Google Tasks (報名待辦) */}
-                <a
-                    href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(`[報名] ${course.courseName || course.category}`)}&dates=${course.registration.startTime ? new Date(course.registration.startTime).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z' : ''}/${course.registration.endTime ? new Date(course.registration.endTime).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z' : ''}&details=${encodeURIComponent(`報名期間提醒\n學校: ${course.schoolName}\n課程: ${course.courseName || course.category}\n報名連結: ${course.urls?.registration || 'https://camp.ntpc.edu.tw/'}`)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    className="inline-flex items-center gap-1 px-2 py-1 text-xs bg-green-50 text-green-600 rounded hover:bg-green-100"
-                >
-                    ✅ 報名提醒
-                </a>
+                <GoogleTaskButton course={course} />
             </div>
-        </div>
+        </article>
     );
 }

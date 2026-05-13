@@ -1,0 +1,3861 @@
+{
+  "lastUpdated": "2026-05-13T04:34:51.991Z",
+  "stats": {
+    "total": 50,
+    "allowExternalStudents": 50,
+    "free": 0,
+    "canRegister": 50,
+    "schools": 14
+  },
+  "courses": [
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "8",
+        "courseId": "1"
+      },
+      "school": "臺北市陽明山國小 - 陽明山生態探索體驗營",
+      "schoolName": "臺北市陽明山國小",
+      "campName": "陽明山生態探索體驗營",
+      "originalSchool": "臺北市陽明山國小 - 陽明山生態探索體驗營",
+      "address": "",
+      "category": "陽明山生態探索體驗營",
+      "courseName": "陽明山生態探索體驗營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-07",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 2160,
+        "isFree": false,
+        "description": "2160元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=8",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/07~07/10\n全天",
+        "fee": "2160元",
+        "eligibility": "二年級,三年級,四年級,五年級",
+        "quota": "一般生:23\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "9",
+        "courseId": "2"
+      },
+      "school": "臺北市雙溪國小 - 外雙溪生態探索體驗營",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "外雙溪生態探索體驗營",
+      "originalSchool": "臺北市雙溪國小 - 外雙溪生態探索體驗營",
+      "address": "",
+      "category": "外雙溪生態探索體驗營",
+      "courseName": "外雙溪生態探索體驗營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-15",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 1600,
+        "isFree": false,
+        "description": "1600元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=9",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/15\n全天",
+        "fee": "1600元",
+        "eligibility": "二年級,三年級,四年級,五年級",
+        "quota": "一般生:23\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "41",
+        "courseId": "3"
+      },
+      "school": "臺北市雙蓮國小 - 領航未來-品德及人權法治教育暑期體驗營",
+      "schoolName": "臺北市雙蓮國小",
+      "campName": "領航未來-品德及人權法治教育暑期體驗營",
+      "originalSchool": "臺北市雙蓮國小 - 領航未來-品德及人權法治教育暑期體驗營",
+      "address": "",
+      "category": "領航未來-品德及人權法治教育暑期體驗營",
+      "courseName": "領航未來-品德及人權法治教育暑期體驗營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-15",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 2500,
+        "isFree": false,
+        "description": "2500元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 30,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=41",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/15\n全天",
+        "fee": "2500元",
+        "eligibility": "四年級,五年級,六年級",
+        "quota": "一般生:25\n關懷生:3\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "49",
+        "courseId": "4"
+      },
+      "school": "臺北市忠孝國小 - 品味戲劇-品德及人權法治教育戲劇體驗學習營",
+      "schoolName": "臺北市忠孝國小",
+      "campName": "品味戲劇-品德及人權法治教育戲劇體驗學習營",
+      "originalSchool": "臺北市忠孝國小 - 品味戲劇-品德及人權法治教育戲劇體驗學習營",
+      "address": "",
+      "category": "品味戲劇-品德及人權法治教育戲劇體驗學習營",
+      "courseName": "品味戲劇-品德及人權法治教育戲劇體驗學習營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-08",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 1100,
+        "isFree": false,
+        "description": "1100元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 41,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=49",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/08\n全天",
+        "fee": "1100元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:35\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "1",
+        "courseId": "5"
+      },
+      "school": "臺北市關渡國小 - 海洋微旅行",
+      "schoolName": "臺北市關渡國小",
+      "campName": "海洋微旅行",
+      "originalSchool": "臺北市關渡國小 - 海洋微旅行",
+      "address": "",
+      "category": "海洋微旅行",
+      "courseName": "海洋微旅行 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-02",
+        "endDate": "2026-07-03",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4825,
+        "isFree": false,
+        "description": "4825元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 99,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/02~07/03\n全天",
+        "fee": "4825元",
+        "eligibility": "四年級,五年級,六年級",
+        "quota": "一般生:90\n關懷生:3\n新北基:6",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "1",
+        "courseId": "6"
+      },
+      "school": "臺北市關渡國小 - 海洋微旅行",
+      "schoolName": "臺北市關渡國小",
+      "campName": "海洋微旅行",
+      "originalSchool": "臺北市關渡國小 - 海洋微旅行",
+      "address": "",
+      "category": "海洋微旅行",
+      "courseName": "海洋微旅行 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-07",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4825,
+        "isFree": false,
+        "description": "4825元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 99,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/07\n全天",
+        "fee": "4825元",
+        "eligibility": "四年級,五年級,六年級",
+        "quota": "一般生:90\n關懷生:3\n新北基:6",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "1",
+        "courseId": "7"
+      },
+      "school": "臺北市關渡國小 - 海洋微旅行",
+      "schoolName": "臺北市關渡國小",
+      "campName": "海洋微旅行",
+      "originalSchool": "臺北市關渡國小 - 海洋微旅行",
+      "address": "",
+      "category": "海洋微旅行",
+      "courseName": "海洋微旅行 第3梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-09",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4825,
+        "isFree": false,
+        "description": "4825元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 99,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/09~07/10\n全天",
+        "fee": "4825元",
+        "eligibility": "四年級,五年級,六年級",
+        "quota": "一般生:90\n關懷生:3\n新北基:6",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "2",
+        "courseId": "8"
+      },
+      "school": "臺北市關渡國小 - 溪流微旅行",
+      "schoolName": "臺北市關渡國小",
+      "campName": "溪流微旅行",
+      "originalSchool": "臺北市關渡國小 - 溪流微旅行",
+      "address": "",
+      "category": "溪流微旅行",
+      "courseName": "溪流微旅行 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-20",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 2115,
+        "isFree": false,
+        "description": "2115元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 100,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/20\n全天",
+        "fee": "2115元",
+        "eligibility": "四年級,五年級,六年級",
+        "quota": "一般生:88\n關懷生:4\n新北基:8",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "2",
+        "courseId": "9"
+      },
+      "school": "臺北市關渡國小 - 溪流微旅行",
+      "schoolName": "臺北市關渡國小",
+      "campName": "溪流微旅行",
+      "originalSchool": "臺北市關渡國小 - 溪流微旅行",
+      "address": "",
+      "category": "溪流微旅行",
+      "courseName": "溪流微旅行 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-21",
+        "endDate": "2026-07-21",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 2115,
+        "isFree": false,
+        "description": "2115元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 100,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/21~07/21\n全天",
+        "fee": "2115元",
+        "eligibility": "四年級,五年級,六年級",
+        "quota": "一般生:88\n關懷生:4\n新北基:8",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "2",
+        "courseId": "10"
+      },
+      "school": "臺北市關渡國小 - 溪流微旅行",
+      "schoolName": "臺北市關渡國小",
+      "campName": "溪流微旅行",
+      "originalSchool": "臺北市關渡國小 - 溪流微旅行",
+      "address": "",
+      "category": "溪流微旅行",
+      "courseName": "溪流微旅行 第3梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-23",
+        "endDate": "2026-07-23",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 2115,
+        "isFree": false,
+        "description": "2115元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 100,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/23~07/23\n全天",
+        "fee": "2115元",
+        "eligibility": "四年級,五年級,六年級",
+        "quota": "一般生:88\n關懷生:4\n新北基:8",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "2",
+        "courseId": "11"
+      },
+      "school": "臺北市關渡國小 - 溪流微旅行",
+      "schoolName": "臺北市關渡國小",
+      "campName": "溪流微旅行",
+      "originalSchool": "臺北市關渡國小 - 溪流微旅行",
+      "address": "",
+      "category": "溪流微旅行",
+      "courseName": "溪流微旅行 第4梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-24",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 2115,
+        "isFree": false,
+        "description": "2115元"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 100,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/24~07/24\n全天",
+        "fee": "2115元",
+        "eligibility": "四年級,五年級,六年級",
+        "quota": "一般生:88\n關懷生:4\n新北基:8",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "14",
+        "courseId": "12"
+      },
+      "school": "臺北市雙溪國小 - 創意學習3D繪圖與3D列印",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "創意學習3D繪圖與3D列印",
+      "originalSchool": "臺北市雙溪國小 - 創意學習3D繪圖與3D列印",
+      "address": "",
+      "category": "創意學習3D繪圖與3D列印",
+      "courseName": "創意學習3D繪圖與3D列印 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4950,
+        "isFree": false,
+        "description": "4950元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=14",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/17\n全天",
+        "fee": "4950元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:18\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "3",
+        "courseId": "13"
+      },
+      "school": "臺北市雙溪國小 - 靜態攝影（拍照）&戶外營",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "靜態攝影（拍照）&戶外營",
+      "originalSchool": "臺北市雙溪國小 - 靜態攝影（拍照）&戶外營",
+      "address": "",
+      "category": "靜態攝影（拍照）&戶外營",
+      "courseName": "靜態攝影（拍照）&戶外營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-08",
+        "endDate": "2026-07-12",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 9700,
+        "isFree": false,
+        "description": "9700元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=3",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/08~07/12\n全天",
+        "fee": "9700元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:23\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "42",
+        "courseId": "14"
+      },
+      "school": "臺北市雙溪國小 - 微縮模型之仿真迷你莊園五日營",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "微縮模型之仿真迷你莊園五日營",
+      "originalSchool": "臺北市雙溪國小 - 微縮模型之仿真迷你莊園五日營",
+      "address": "",
+      "category": "微縮模型之仿真迷你莊園五日營",
+      "courseName": "微縮模型之仿真迷你莊園五日營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 6500,
+        "isFree": false,
+        "description": "6500元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=42",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/24\n全天",
+        "fee": "6500元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:18\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "56",
+        "courseId": "15"
+      },
+      "school": "臺北市雙溪國小 - 戶外生活家",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "戶外生活家",
+      "originalSchool": "臺北市雙溪國小 - 戶外生活家",
+      "address": "",
+      "category": "戶外生活家",
+      "courseName": "戶外生活家 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-15",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 5950,
+        "isFree": false,
+        "description": "5950元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=56",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/15\n全天",
+        "fee": "5950元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:23\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "12",
+        "courseId": "16"
+      },
+      "school": "臺北市雙溪國小 - 雷雕藝術體驗三日營",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "雷雕藝術體驗三日營",
+      "originalSchool": "臺北市雙溪國小 - 雷雕藝術體驗三日營",
+      "address": "",
+      "category": "雷雕藝術體驗三日營",
+      "courseName": "雷雕藝術體驗三日營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-08",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 3000,
+        "isFree": false,
+        "description": "3000元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=12",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/08\n全天",
+        "fee": "3000元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:18\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "50",
+        "courseId": "17"
+      },
+      "school": "臺北市雙溪國小 - 野外旅行家",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "野外旅行家",
+      "originalSchool": "臺北市雙溪國小 - 野外旅行家",
+      "address": "",
+      "category": "野外旅行家",
+      "courseName": "野外旅行家 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-17",
+        "endDate": "2026-07-19",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 6000,
+        "isFree": false,
+        "description": "6000元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=50",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/17~07/19\n全天",
+        "fee": "6000元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:23\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "51",
+        "courseId": "99"
+      },
+      "school": "臺北市雙溪國小 - 竹編&動態攝影（錄影）&戶外營",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "竹編&動態攝影（錄影）&戶外營",
+      "originalSchool": "臺北市雙溪國小 - 竹編&動態攝影（錄影）&戶外營",
+      "address": "",
+      "category": "竹編&動態攝影（錄影）&戶外營",
+      "courseName": "竹編&動態攝影（錄影）&戶外營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-05",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 9650,
+        "isFree": false,
+        "description": "9650元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=51",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/01~07/05\n全天",
+        "fee": "9650元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:23\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "5",
+        "courseId": "19"
+      },
+      "school": "臺北市雙溪國小 - 雙溪野外挑戰五日營",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "雙溪野外挑戰五日營",
+      "originalSchool": "臺北市雙溪國小 - 雙溪野外挑戰五日營",
+      "address": "",
+      "category": "雙溪野外挑戰五日營",
+      "courseName": "雙溪野外挑戰五日營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 9950,
+        "isFree": false,
+        "description": "9950元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=5",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/24\n全天",
+        "fee": "9950元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:23\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "52",
+        "courseId": "20"
+      },
+      "school": "臺北市雙溪國小 - 生態冒險三日營",
+      "schoolName": "臺北市雙溪國小",
+      "campName": "生態冒險三日營",
+      "originalSchool": "臺北市雙溪國小 - 生態冒險三日營",
+      "address": "",
+      "category": "生態冒險三日營",
+      "courseName": "生態冒險三日營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-08-25",
+        "endDate": "2026-08-27",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 5000,
+        "isFree": false,
+        "description": "5000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=52",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "08/25~08/27\n全天",
+        "fee": "5000元",
+        "eligibility": "一年級,二年級,三年級",
+        "quota": "一般生:23\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "19",
+        "courseId": "21"
+      },
+      "school": "臺北市東門國小 - 小廚師烘焙體驗營(3全日)",
+      "schoolName": "臺北市東門國小",
+      "campName": "小廚師烘焙體驗營(3全日)",
+      "originalSchool": "臺北市東門國小 - 小廚師烘焙體驗營(3全日)",
+      "address": "",
+      "category": "小廚師烘焙體驗營(3全日)",
+      "courseName": "小廚師烘焙體驗營(3全日) 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-22",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 5700,
+        "isFree": false,
+        "description": "5700元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 48,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=19",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/19/att/21_eee242241f1ea681a16a66964b81ae3c.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/22\n全天",
+        "fee": "5700元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級",
+        "quota": "一般生:44\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "19",
+        "courseId": "22"
+      },
+      "school": "臺北市東門國小 - 小廚師烘焙體驗營(3全日)",
+      "schoolName": "臺北市東門國小",
+      "campName": "小廚師烘焙體驗營(3全日)",
+      "originalSchool": "臺北市東門國小 - 小廚師烘焙體驗營(3全日)",
+      "address": "",
+      "category": "小廚師烘焙體驗營(3全日)",
+      "courseName": "小廚師烘焙體驗營(3全日) 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-27",
+        "endDate": "2026-07-29",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 5700,
+        "isFree": false,
+        "description": "5700元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 48,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=19",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/19/att/22_abd40ed2b92d8c717e904e4345d98b8c.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/27~07/29\n全天",
+        "fee": "5700元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級",
+        "quota": "一般生:44\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "20",
+        "courseId": "23"
+      },
+      "school": "臺北市東門國小 - 小廚師烘焙體驗營(2全日)",
+      "schoolName": "臺北市東門國小",
+      "campName": "小廚師烘焙體驗營(2全日)",
+      "originalSchool": "臺北市東門國小 - 小廚師烘焙體驗營(2全日)",
+      "address": "",
+      "category": "小廚師烘焙體驗營(2全日)",
+      "courseName": "小廚師烘焙體驗營(2全日) 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-23",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4020,
+        "isFree": false,
+        "description": "4020元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 48,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=20",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/20/att/23_a76ba335a39437f1249768af28db0a83.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/23~07/24\n全天",
+        "fee": "4020元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級",
+        "quota": "一般生:44\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "20",
+        "courseId": "24"
+      },
+      "school": "臺北市東門國小 - 小廚師烘焙體驗營(2全日)",
+      "schoolName": "臺北市東門國小",
+      "campName": "小廚師烘焙體驗營(2全日)",
+      "originalSchool": "臺北市東門國小 - 小廚師烘焙體驗營(2全日)",
+      "address": "",
+      "category": "小廚師烘焙體驗營(2全日)",
+      "courseName": "小廚師烘焙體驗營(2全日) 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-30",
+        "endDate": "2026-07-31",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4020,
+        "isFree": false,
+        "description": "4020元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 48,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=20",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/20/att/24_c5d31fb63b98e05b215795c6e0a90fe4.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/30~07/31\n全天",
+        "fee": "4020元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級",
+        "quota": "一般生:44\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "22",
+        "courseId": "25"
+      },
+      "school": "臺北市東門國小 - 體驗文字之美-書法雷雕體驗營",
+      "schoolName": "臺北市東門國小",
+      "campName": "體驗文字之美-書法雷雕體驗營",
+      "originalSchool": "臺北市東門國小 - 體驗文字之美-書法雷雕體驗營",
+      "address": "",
+      "category": "體驗文字之美-書法雷雕體驗營",
+      "courseName": "體驗文字之美-書法雷雕體驗營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 2200,
+        "isFree": false,
+        "description": "2200元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 30,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=22",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/22/att/25_513d01b326069ebdc3084acbe8e86fa0.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/01~07/03\n全天",
+        "fee": "2200元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:28\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "23",
+        "courseId": "26"
+      },
+      "school": "臺北市長安國小 - 長安好棒，活力一夏",
+      "schoolName": "臺北市長安國小",
+      "campName": "長安好棒，活力一夏",
+      "originalSchool": "臺北市長安國小 - 長安好棒，活力一夏",
+      "address": "",
+      "category": "長安好棒，活力一夏",
+      "courseName": "長安好棒，活力一夏 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1100,
+        "isFree": false,
+        "description": "1100元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 60,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=23",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/10\n上午",
+        "fee": "1100元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:54\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "7",
+        "courseId": "27"
+      },
+      "school": "臺北市三興國小 - 陸海空漆彈挑戰營",
+      "schoolName": "臺北市三興國小",
+      "campName": "陸海空漆彈挑戰營",
+      "originalSchool": "臺北市三興國小 - 陸海空漆彈挑戰營",
+      "address": "",
+      "category": "陸海空漆彈挑戰營",
+      "courseName": "陸海空漆彈挑戰營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-08",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 5800,
+        "isFree": false,
+        "description": "5800元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 184,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=7",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/7/att/27_1e994143b5e4eac8e643dfac32a7dc9e.pdf"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/08\n全天",
+        "fee": "5800元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:170\n關懷生:4\n新北基:10",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "7",
+        "courseId": "28"
+      },
+      "school": "臺北市三興國小 - 陸海空漆彈挑戰營",
+      "schoolName": "臺北市三興國小",
+      "campName": "陸海空漆彈挑戰營",
+      "originalSchool": "臺北市三興國小 - 陸海空漆彈挑戰營",
+      "address": "",
+      "category": "陸海空漆彈挑戰營",
+      "courseName": "陸海空漆彈挑戰營 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-08",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 5800,
+        "isFree": false,
+        "description": "5800元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 184,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=7",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/7/att/28_e714b6ddea5f6897cf27c3564435873c.pdf"
+      },
+      "tags": [
+        "台北市",
+        "住宿"
+      ],
+      "_raw": {
+        "schedule": "07/08~07/10\n全天",
+        "fee": "5800元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:170\n關懷生:4\n新北基:10",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "24",
+        "courseId": "29"
+      },
+      "school": "臺北市三興國小 - 三興飛鈴樂",
+      "schoolName": "臺北市三興國小",
+      "campName": "三興飛鈴樂",
+      "originalSchool": "臺北市三興國小 - 三興飛鈴樂",
+      "address": "",
+      "category": "三興飛鈴樂",
+      "courseName": "三興飛鈴樂 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1400,
+        "isFree": false,
+        "description": "1400元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 40,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=24",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/24\n上午",
+        "fee": "1400元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:36\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "24",
+        "courseId": "30"
+      },
+      "school": "臺北市三興國小 - 三興飛鈴樂",
+      "schoolName": "臺北市三興國小",
+      "campName": "三興飛鈴樂",
+      "originalSchool": "臺北市三興國小 - 三興飛鈴樂",
+      "address": "",
+      "category": "三興飛鈴樂",
+      "courseName": "三興飛鈴樂 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-27",
+        "endDate": "2026-07-31",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1400,
+        "isFree": false,
+        "description": "1400元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 40,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=24",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/27~07/31\n上午",
+        "fee": "1400元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:36\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "53",
+        "courseId": "31"
+      },
+      "school": "臺北市三興國小 - 三興鬥陣籃球營",
+      "schoolName": "臺北市三興國小",
+      "campName": "三興鬥陣籃球營",
+      "originalSchool": "臺北市三興國小 - 三興鬥陣籃球營",
+      "address": "",
+      "category": "三興鬥陣籃球營",
+      "courseName": "三興鬥陣籃球營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1400,
+        "isFree": false,
+        "description": "1400元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 40,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=53",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/17\n上午",
+        "fee": "1400元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:36\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "53",
+        "courseId": "32"
+      },
+      "school": "臺北市三興國小 - 三興鬥陣籃球營",
+      "schoolName": "臺北市三興國小",
+      "campName": "三興鬥陣籃球營",
+      "originalSchool": "臺北市三興國小 - 三興鬥陣籃球營",
+      "address": "",
+      "category": "三興鬥陣籃球營",
+      "courseName": "三興鬥陣籃球營 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-08-17",
+        "endDate": "2026-08-21",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1400,
+        "isFree": false,
+        "description": "1400元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 40,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=53",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "08/17~08/21\n上午",
+        "fee": "1400元",
+        "eligibility": "三年級,四年級,五年級,六年級",
+        "quota": "一般生:36\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "54",
+        "courseId": "33"
+      },
+      "school": "臺北市博嘉實小 - 博嘉實小魔法故事戲劇體驗營",
+      "schoolName": "臺北市博嘉實小",
+      "campName": "博嘉實小魔法故事戲劇體驗營",
+      "originalSchool": "臺北市博嘉實小 - 博嘉實小魔法故事戲劇體驗營",
+      "address": "",
+      "category": "博嘉實小魔法故事戲劇體驗營",
+      "courseName": "博嘉實小魔法故事戲劇體驗營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 3750,
+        "isFree": false,
+        "description": "3750元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 48,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=54",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/17\n全天",
+        "fee": "3750元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:44\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "54",
+        "courseId": "34"
+      },
+      "school": "臺北市博嘉實小 - 博嘉實小魔法故事戲劇體驗營",
+      "schoolName": "臺北市博嘉實小",
+      "campName": "博嘉實小魔法故事戲劇體驗營",
+      "originalSchool": "臺北市博嘉實小 - 博嘉實小魔法故事戲劇體驗營",
+      "address": "",
+      "category": "博嘉實小魔法故事戲劇體驗營",
+      "courseName": "博嘉實小魔法故事戲劇體驗營 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 3750,
+        "isFree": false,
+        "description": "3750元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 48,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=54",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/24\n全天",
+        "fee": "3750元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:44\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "25",
+        "courseId": "35"
+      },
+      "school": "臺北市木柵國小 - 木柵國小雙語網球科學全日營",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小雙語網球科學全日營",
+      "originalSchool": "臺北市木柵國小 - 木柵國小雙語網球科學全日營",
+      "address": "",
+      "category": "木柵國小雙語網球科學全日營",
+      "courseName": "木柵國小雙語網球科學全日營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4744,
+        "isFree": false,
+        "description": "4744元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 30,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=25",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/10\n全天",
+        "fee": "4744元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:28\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "26",
+        "courseId": "36"
+      },
+      "school": "臺北市木柵國小 - 木柵國小山野營",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小山野營",
+      "originalSchool": "臺北市木柵國小 - 木柵國小山野營",
+      "address": "",
+      "category": "木柵國小山野營",
+      "courseName": "木柵國小山野營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4692,
+        "isFree": false,
+        "description": "4692元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 54,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=26",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/10\n全天",
+        "fee": "4692元",
+        "eligibility": "二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:48\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "26",
+        "courseId": "37"
+      },
+      "school": "臺北市木柵國小 - 木柵國小山野營",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小山野營",
+      "originalSchool": "臺北市木柵國小 - 木柵國小山野營",
+      "address": "",
+      "category": "木柵國小山野營",
+      "courseName": "木柵國小山野營 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4692,
+        "isFree": false,
+        "description": "4692元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 54,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=26",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/17\n全天",
+        "fee": "4692元",
+        "eligibility": "二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:48\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "26",
+        "courseId": "38"
+      },
+      "school": "臺北市木柵國小 - 木柵國小山野營",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小山野營",
+      "originalSchool": "臺北市木柵國小 - 木柵國小山野營",
+      "address": "",
+      "category": "木柵國小山野營",
+      "courseName": "木柵國小山野營 第3梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4692,
+        "isFree": false,
+        "description": "4692元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 54,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=26",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/24\n全天",
+        "fee": "4692元",
+        "eligibility": "二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:48\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "55",
+        "courseId": "39"
+      },
+      "school": "臺北市木柵國小 - 木柵國小綜合運動全日營三梯次",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小綜合運動全日營三梯次",
+      "originalSchool": "臺北市木柵國小 - 木柵國小綜合運動全日營三梯次",
+      "address": "",
+      "category": "木柵國小綜合運動全日營三梯次",
+      "courseName": "木柵國小綜合運動全日營三梯次 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 3644,
+        "isFree": false,
+        "description": "3644元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 120,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=55",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/10\n全天",
+        "fee": "3644元",
+        "eligibility": "二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:114\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "55",
+        "courseId": "40"
+      },
+      "school": "臺北市木柵國小 - 木柵國小綜合運動全日營三梯次",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小綜合運動全日營三梯次",
+      "originalSchool": "臺北市木柵國小 - 木柵國小綜合運動全日營三梯次",
+      "address": "",
+      "category": "木柵國小綜合運動全日營三梯次",
+      "courseName": "木柵國小綜合運動全日營三梯次 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 3644,
+        "isFree": false,
+        "description": "3644元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 120,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=55",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/17\n全天",
+        "fee": "3644元",
+        "eligibility": "二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:114\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "55",
+        "courseId": "41"
+      },
+      "school": "臺北市木柵國小 - 木柵國小綜合運動全日營三梯次",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小綜合運動全日營三梯次",
+      "originalSchool": "臺北市木柵國小 - 木柵國小綜合運動全日營三梯次",
+      "address": "",
+      "category": "木柵國小綜合運動全日營三梯次",
+      "courseName": "木柵國小綜合運動全日營三梯次 第3梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 3644,
+        "isFree": false,
+        "description": "3644元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 120,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=55",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/24\n全天",
+        "fee": "3644元",
+        "eligibility": "二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:114\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "46",
+        "courseId": "42"
+      },
+      "school": "臺北市木柵國小 - 木柵國小雙語創藝小廚師全日營",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小雙語創藝小廚師全日營",
+      "originalSchool": "臺北市木柵國小 - 木柵國小雙語創藝小廚師全日營",
+      "address": "",
+      "category": "木柵國小雙語創藝小廚師全日營",
+      "courseName": "木柵國小雙語創藝小廚師全日營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4979,
+        "isFree": false,
+        "description": "4979元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 64,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=46",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/17\n全天",
+        "fee": "4979元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:60\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "46",
+        "courseId": "43"
+      },
+      "school": "臺北市木柵國小 - 木柵國小雙語創藝小廚師全日營",
+      "schoolName": "臺北市木柵國小",
+      "campName": "木柵國小雙語創藝小廚師全日營",
+      "originalSchool": "臺北市木柵國小 - 木柵國小雙語創藝小廚師全日營",
+      "address": "",
+      "category": "木柵國小雙語創藝小廚師全日營",
+      "courseName": "木柵國小雙語創藝小廚師全日營 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-20",
+        "endDate": "2026-07-24",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 4979,
+        "isFree": false,
+        "description": "4979元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 64,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=46",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/20~07/24\n全天",
+        "fee": "4979元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級,六年級",
+        "quota": "一般生:60\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "36",
+        "courseId": "44"
+      },
+      "school": "臺北市永樂國小 - 小小舞蹈家",
+      "schoolName": "臺北市永樂國小",
+      "campName": "小小舞蹈家",
+      "originalSchool": "臺北市永樂國小 - 小小舞蹈家",
+      "address": "",
+      "category": "小小舞蹈家",
+      "courseName": "小小舞蹈家 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-08-04",
+        "endDate": "2026-08-08",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1200,
+        "isFree": false,
+        "description": "1200元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 30,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=36",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/36/att/44_808dab5f1ea990e0659c88604b3b5c4f.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "08/04~08/08\n上午",
+        "fee": "1200元",
+        "eligibility": "一年級,二年級",
+        "quota": "一般生:27\n關懷生:1\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "37",
+        "courseId": "45"
+      },
+      "school": "臺北市永樂國小 - 歡喜來扮戲",
+      "schoolName": "臺北市永樂國小",
+      "campName": "歡喜來扮戲",
+      "originalSchool": "臺北市永樂國小 - 歡喜來扮戲",
+      "address": "",
+      "category": "歡喜來扮戲",
+      "courseName": "歡喜來扮戲 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-17",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1238,
+        "isFree": false,
+        "description": "1238元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 30,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=37",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/37/att/45_37e451c142c755114fd3ab107b966efb.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/13~07/17\n上午",
+        "fee": "1238元",
+        "eligibility": "一年級,二年級,三年級,四年級,五年級",
+        "quota": "一般生:27\n關懷生:1\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "33",
+        "courseId": "46"
+      },
+      "school": "臺北市北投國小 - 北投藍染手作營",
+      "schoolName": "臺北市北投國小",
+      "campName": "北投藍染手作營",
+      "originalSchool": "臺北市北投國小 - 北投藍染手作營",
+      "address": "",
+      "category": "北投藍染手作營",
+      "courseName": "北投藍染手作營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1500,
+        "isFree": false,
+        "description": "1500元"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=33",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/33/att/46_1db7ff43e5cc56d42a46b0ae56cae291.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/10\n上午",
+        "fee": "1500元",
+        "eligibility": "五年級,六年級",
+        "quota": "一般生:18\n關懷生:1\n新北基:1",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "34",
+        "courseId": "47"
+      },
+      "school": "臺北市北投國小 - 北投太鼓達人體驗學習營",
+      "schoolName": "臺北市北投國小",
+      "campName": "北投太鼓達人體驗學習營",
+      "originalSchool": "臺北市北投國小 - 北投太鼓達人體驗學習營",
+      "address": "",
+      "category": "北投太鼓達人體驗學習營",
+      "courseName": "北投太鼓達人體驗學習營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-06",
+        "endDate": "2026-07-10",
+        "weekday": "",
+        "startTime": "",
+        "endTime": ""
+      },
+      "fee": {
+        "amount": 1250,
+        "isFree": false,
+        "description": "1250元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 44,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=34",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/34/att/47_520b87e7e2f070015d65a59db11e7616.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/06~07/10\n上午",
+        "fee": "1250元",
+        "eligibility": "三年級,四年級,五年級",
+        "quota": "一般生:40\n關懷生:2\n新北基:2",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "48",
+        "courseId": "48"
+      },
+      "school": "臺北市東園國小 - 東園美力棒~暑期棒球體驗學習營",
+      "schoolName": "臺北市東園國小",
+      "campName": "東園美力棒~暑期棒球體驗學習營",
+      "originalSchool": "臺北市東園國小 - 東園美力棒~暑期棒球體驗學習營",
+      "address": "",
+      "category": "東園美力棒~暑期棒球體驗學習營",
+      "courseName": "東園美力棒~暑期棒球體驗學習營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 2000,
+        "isFree": false,
+        "description": "2000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 60,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=48",
+        "registration": "https://holiday.tp.edu.tw/camps_all"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/01~07/03\n全天",
+        "fee": "2000元",
+        "eligibility": "一年級,二年級,三年級,四年級",
+        "quota": "一般生:54\n關懷生:3\n新北基:3",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "39",
+        "courseId": "49"
+      },
+      "school": "臺北市南湖國小 - 天文體驗營",
+      "schoolName": "臺北市南湖國小",
+      "campName": "天文體驗營",
+      "originalSchool": "臺北市南湖國小 - 天文體驗營",
+      "address": "",
+      "category": "天文體驗營",
+      "courseName": "天文體驗營 第1梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 800,
+        "isFree": false,
+        "description": "800元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 60,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=39",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/39/att/49_cabd382c79a0f9797fc5c93a64f8a9d2.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/01~07/03\n全天",
+        "fee": "800元",
+        "eligibility": "三年級,四年級",
+        "quota": "一般生:52\n關懷生:4\n新北基:4",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    },
+    {
+      "source": {
+        "type": "taipei_holiday",
+        "name": "臺北市國民小學暑期體驗營",
+        "url": "https://holiday.tp.edu.tw/camps_all",
+        "schoolId": null,
+        "actId": "39",
+        "courseId": "50"
+      },
+      "school": "臺北市南湖國小 - 天文體驗營",
+      "schoolName": "臺北市南湖國小",
+      "campName": "天文體驗營",
+      "originalSchool": "臺北市南湖國小 - 天文體驗營",
+      "address": "",
+      "category": "天文體驗營",
+      "courseName": "天文體驗營 第2梯次",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-01",
+        "endDate": "2026-07-03",
+        "weekday": "",
+        "startTime": "08:30",
+        "endTime": "16:30"
+      },
+      "fee": {
+        "amount": 800,
+        "isFree": false,
+        "description": "800元"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 60,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "臺北市暑期體驗營網站",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-05-01T00:00:00+08:00",
+        "endTime": "2026-05-18T00:00:00+08:00",
+        "lotteryTime": "2026-05-18T00:00:00+08:00",
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://holiday.tp.edu.tw/camp?NBR=39",
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/39/att/50_120a4576a86d6a8d70c5d50774e35dd8.pdf"
+      },
+      "tags": [
+        "台北市",
+        "不住宿"
+      ],
+      "_raw": {
+        "schedule": "07/01~07/03\n全天",
+        "fee": "800元",
+        "eligibility": "五年級,六年級",
+        "quota": "一般生:52\n關懷生:4\n新北基:4",
+        "status": "目前為第一階段報名區間，將於5/18進行抽籤，不以報名順序為錄取依據。 各營隊招收對象所就讀的年級為目前就讀年級，請家長報名時多加注意！"
+      }
+    }
+  ]
+}

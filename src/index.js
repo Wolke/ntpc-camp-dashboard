@@ -6,13 +6,13 @@
 import { chromium } from 'playwright';
 import { writeFileSync, mkdirSync } from 'fs';
 import {
-    rocToISODate,
     parseEligibility,
     parseFee,
     parseSchedule,
     parseQuota,
     parseRegistrationStatus
 } from './utils.js';
+import { crawlTaipeiCamps } from './taipei-crawler.js';
 
 const BASE_URL = 'https://camp.ntpc.edu.tw';
 const ACTION_URL = `${BASE_URL}/jsp/act_register/ACTMangAction.do`;
@@ -289,7 +289,7 @@ async function crawlNTPCCamp() {
                     fee: parseFee(course.feeRaw),
                     eligibility: parseEligibility(course.eligibilityRaw),
                     quota: parseQuota(course.quotaRaw),
-                    registration: parseRegistrationStatus(course.statusRaw, 114),
+                    registration: parseRegistrationStatus(course.statusRaw, currentROCYear),
                     // 連結 (新增)
                     urls: Object.keys(urls).length > 0 ? urls : null,
                     // 標籤 (可擴展)
@@ -327,7 +327,13 @@ async function crawlNTPCCamp() {
             }
         }
 
-        console.log(`\n   📊 總共找到 ${allCourses.length} 筆課程`);
+        console.log(`\n   📊 新北市總共找到 ${allCourses.length} 筆課程`);
+
+        // Step 5b: 台北市暑期體驗營
+        console.log('\n5️⃣ 補抓台北市暑期體驗營...');
+        const taipeiOutput = await crawlTaipeiCamps({ year: currentYear });
+        allCourses.push(...taipeiOutput.courses);
+        console.log(`   ✅ 台北市找到 ${taipeiOutput.courses.length} 筆梯次課程`);
 
         // Step 5: 統計與篩選
         console.log('\n5️⃣ 資料統計...');
@@ -337,10 +343,10 @@ async function crawlNTPCCamp() {
             allowExternalStudents: allCourses.filter(c => c.eligibility?.allowExternalStudents).length,
             free: allCourses.filter(c => c.fee?.isFree).length,
             canRegister: allCourses.filter(c => c.registration?.status === '可報名').length,
-            schools: [...new Set(allCourses.map(c => c.school))].length
+            schools: [...new Set(allCourses.map(c => c.schoolName))].length
         };
 
-        console.log(`   🏫 學校數量: ${stats.schools}`);
+        console.log(`   🏫 學校/單位數量: ${stats.schools}`);
         console.log(`   📚 課程總數: ${stats.total}`);
         console.log(`   🌐 開放外校: ${stats.allowExternalStudents}`);
         console.log(`   💰 免費課程: ${stats.free}`);
@@ -358,6 +364,9 @@ async function crawlNTPCCamp() {
         mkdirSync('data', { recursive: true });
         writeFileSync('data/courses.json', JSON.stringify(output, null, 2));
         console.log('   ✅ 已保存至 data/courses.json');
+
+        writeFileSync('data/taipei-courses.json', JSON.stringify(taipeiOutput, null, 2));
+        console.log('   ✅ 已保存台北市課程至 data/taipei-courses.json');
 
         // 另外輸出一份「開放外校學生」的課程
         const externalCourses = {

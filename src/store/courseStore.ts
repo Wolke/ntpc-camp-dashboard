@@ -32,9 +32,9 @@ const defaultFilters: FilterOptions = {
     allowExternalStudents: null, // 預設不篩選
     dateRange: { start: null, end: null },
     grades: [],
-    registrationStatus: ['available', 'closing_soon'], // 預設只顯示可報名
+    registrationStatus: ['available', 'closing_soon', 'not_started'], // 預設顯示尚未截止的課程
     courseTimeStatus: ['upcoming', 'ongoing'], // 預設只顯示未結束
-    quotaStatus: ['available', 'almost_full'], // 預設只顯示有名額
+    quotaStatus: ['available', 'almost_full', 'may_not_open'], // 預設不隱藏剛公布、尚未累積報名人數的課程
 };
 
 // 計算課程狀態
@@ -80,7 +80,7 @@ export function getCourseStatus(course: Course, now: Date): {
         quota = 'full';
     } else if (planned > 0 && planned - actual <= 3) {
         quota = 'almost_full';
-    } else if (enrolled < 5 && planned > 0) { // 報名人數太少可能不開班
+    } else if (registration === 'closed' && enrolled < 5 && planned > 0) { // 報名截止後人數太少可能不開班
         quota = 'may_not_open';
     } else {
         quota = 'available';
@@ -98,6 +98,10 @@ export function getSchoolType(schoolName: string | undefined): 'high_school' | '
         return 'junior_high';
     }
     return 'high_school';
+}
+
+function normalizeSearchText(value: string): string {
+    return value.toLowerCase().split('臺').join('台');
 }
 
 export const useCourseStore = create<CourseStore>((set, get) => ({
@@ -138,8 +142,10 @@ export const useCourseStore = create<CourseStore>((set, get) => ({
         const filtered = courses.filter((course) => {
             // 搜尋文字
             if (filters.searchQuery) {
-                const query = filters.searchQuery.toLowerCase();
+                const query = normalizeSearchText(filters.searchQuery);
                 const searchFields = [
+                    course.source?.name,
+                    course.source?.type,
                     course.school,
                     course.schoolName,
                     course.campName,
@@ -147,9 +153,13 @@ export const useCourseStore = create<CourseStore>((set, get) => ({
                     course.courseName,
                     course.teacher,
                     course.address,
-                ].join(' ').toLowerCase();
+                    course.fee.description,
+                    course.eligibility.allowExternalStudents ? '開放外校 外校學生' : '',
+                    course.eligibility.gradeNames.join(' '),
+                    course.tags?.join(' '),
+                ].join(' ');
 
-                if (!searchFields.includes(query)) {
+                if (!normalizeSearchText(searchFields).includes(query)) {
                     return false;
                 }
             }

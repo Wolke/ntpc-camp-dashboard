@@ -1,84 +1,103 @@
-import { useCourses } from '../hooks/useCourses';
+import CourseList from '../components/courses/CourseList';
+import DateRangeFilter from '../components/courses/DateRangeFilter';
+import SchoolMap from '../components/courses/SchoolMap';
 import SearchBar from '../components/courses/SearchBar';
 import StatusFilter from '../components/courses/StatusFilter';
-import DateRangeSlider from '../components/courses/DateRangeSlider';
-import SchoolMap from '../components/courses/SchoolMap';
-import CourseList from '../components/courses/CourseList';
+import SubscribePanel from '../components/SubscribePanel';
+import { useCourses } from '../hooks/useCourses';
 import { useCourseStore } from '../store/courseStore';
 
 export default function CourseDashboard() {
-    const { courses, stats, lastUpdated, isLoading, error } = useCourses();
+    const { courses, allCourses, stats, lastUpdated, isLoading, error } = useCourses();
     const { selectedSchool, setSelectedSchool } = useCourseStore();
 
+    const updatedDate = lastUpdated
+        ? new Date(lastUpdated).toLocaleDateString('zh-TW', { year: 'numeric', month: 'numeric', day: 'numeric' })
+        : null;
+
     return (
-        <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-            <div className="max-w-4xl mx-auto px-4 py-6">
-                {/* 標題區 */}
-                <header className="mb-6">
-                    <h1 className="text-2xl font-bold text-gray-900 mb-1">
-                        🎓 新北市育樂營課程
-                    </h1>
-                    <p className="text-sm text-gray-500">
-                        {stats && `共 ${stats.total} 門課程，${stats.schools} 所學校`}
-                        {lastUpdated && ` · 更新於 ${new Date(lastUpdated).toLocaleDateString('zh-TW')}`}
-                    </p>
-                </header>
+        <div className="min-h-screen bg-slate-50">
+            <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
+                <section className="mb-5 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+                    <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+                        <div>
+                            <p className="text-sm font-medium text-indigo-600">新北市寒暑假育樂營</p>
+                            <h1 className="mt-1 text-2xl font-semibold tracking-normal text-slate-950">
+                                課程查詢
+                            </h1>
+                            <p className="mt-2 text-sm text-slate-500">
+                                {stats && `共 ${stats.total} 門課程，${stats.schools} 個學校/單位`}
+                                {updatedDate && `，資料更新於 ${updatedDate}`}
+                            </p>
+                        </div>
 
-                {/* 搜尋區 */}
-                <section className="mb-4">
-                    <SearchBar />
-                </section>
-
-                {/* 篩選區 */}
-                <section className="mb-4">
-                    <StatusFilter />
-                </section>
-
-                {/* 日期範圍選擇 */}
-                <section className="mb-4">
-                    <DateRangeSlider courses={courses} />
-                </section>
-
-                {/* 地圖區 */}
-                <section className="mb-6">
-                    <h2 className="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2">
-                        🗺️ 學校地圖
-                        <span className="text-sm font-normal text-gray-500">
-                            點擊標記篩選該校課程
-                        </span>
-                    </h2>
-                    <SchoolMap courses={courses} height="280px" />
-                </section>
-
-                {/* 選中學校提示 */}
-                {selectedSchool && (
-                    <div className="mb-4 bg-indigo-50 border border-indigo-200 rounded-lg px-4 py-3 flex items-center justify-between">
-                        <span className="text-indigo-700">
-                            📍 篩選中：<strong>{selectedSchool}</strong>
-                        </span>
-                        <button
-                            onClick={() => setSelectedSchool(null)}
-                            className="text-sm text-indigo-600 hover:underline"
-                        >
-                            顯示全部
-                        </button>
+                        <div className="grid grid-cols-3 gap-2 text-center">
+                            <div className="rounded-md bg-slate-50 px-3 py-2">
+                                <p className="text-lg font-semibold text-slate-950">{courses.length}</p>
+                                <p className="text-xs text-slate-500">目前符合</p>
+                            </div>
+                            <div className="rounded-md bg-slate-50 px-3 py-2">
+                                <p className="text-lg font-semibold text-slate-950">{stats?.allowExternalStudents ?? 0}</p>
+                                <p className="text-xs text-slate-500">開放外校</p>
+                            </div>
+                            <div className="rounded-md bg-slate-50 px-3 py-2">
+                                <p className="text-lg font-semibold text-slate-950">{stats?.free ?? 0}</p>
+                                <p className="text-xs text-slate-500">免費</p>
+                            </div>
+                        </div>
                     </div>
-                )}
-
-                {/* 錯誤提示 */}
-                {error && (
-                    <div className="mb-4 bg-red-50 border border-red-200 rounded-lg px-4 py-3 text-red-700">
-                        ❌ 載入錯誤：{error}
-                    </div>
-                )}
-
-                {/* 課程列表 */}
-                <section>
-                    <h2 className="text-lg font-semibold text-gray-800 mb-3">
-                        📚 課程列表
-                    </h2>
-                    <CourseList courses={courses} isLoading={isLoading} />
                 </section>
+
+                <div className="grid gap-5 lg:grid-cols-[360px_minmax(0,1fr)] lg:items-start">
+                    <aside className="space-y-4 lg:sticky lg:top-20">
+                        <SearchBar />
+                        <SubscribePanel />
+                        <StatusFilter />
+                        <DateRangeFilter courses={allCourses.length > 0 ? allCourses : courses} />
+
+                        {selectedSchool && (
+                            <div className="rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-3">
+                                <p className="text-sm font-medium text-indigo-900">正在篩選</p>
+                                <div className="mt-2 flex items-center justify-between gap-3">
+                                    <span className="text-sm text-indigo-700">{selectedSchool}</span>
+                                    <button
+                                        type="button"
+                                        onClick={() => setSelectedSchool(null)}
+                                        className="shrink-0 rounded-md px-2 py-1 text-sm font-medium text-indigo-700 hover:bg-indigo-100"
+                                    >
+                                        顯示全部
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+                    </aside>
+
+                    <main className="space-y-5">
+                        {error && (
+                            <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                                載入錯誤：{error}
+                            </div>
+                        )}
+
+                        <section>
+                            <div className="mb-3 flex items-center justify-between">
+                                <div>
+                                    <h2 className="text-base font-semibold text-slate-900">學校地圖</h2>
+                                    <p className="text-sm text-slate-500">點擊標記或未定位清單可篩選課程</p>
+                                </div>
+                            </div>
+                            <SchoolMap courses={courses} height="300px" />
+                        </section>
+
+                        <section>
+                            <div className="mb-3 flex items-center justify-between">
+                                <h2 className="text-base font-semibold text-slate-900">課程列表</h2>
+                                <span className="text-sm text-slate-500">{courses.length} 門</span>
+                            </div>
+                            <CourseList courses={courses} isLoading={isLoading} />
+                        </section>
+                    </main>
+                </div>
             </div>
         </div>
     );

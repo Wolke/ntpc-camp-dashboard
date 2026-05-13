@@ -41,7 +41,7 @@ export interface CourseRegistration {
 
 // 來源資訊
 export interface CourseSource {
-    type: 'ntpc_camp' | 'beclass' | 'museum' | 'other';
+    type: 'ntpc_camp' | 'taipei_holiday' | 'beclass' | 'museum' | 'other';
     name: string;
     url: string;
     schoolId?: string;
