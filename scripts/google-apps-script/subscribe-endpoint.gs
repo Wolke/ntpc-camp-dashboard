@@ -56,6 +56,24 @@ function doGet(e) {
   });
 }
 
+function configureSubscriptionProperties(token, spreadsheetId) {
+  const properties = PropertiesService.getScriptProperties();
+
+  if (token) {
+    properties.setProperty(API_TOKEN_PROPERTY, String(token));
+  }
+
+  if (spreadsheetId) {
+    properties.setProperty(SPREADSHEET_ID_PROPERTY, String(spreadsheetId));
+  }
+
+  return {
+    ok: true,
+    hasToken: Boolean(properties.getProperty(API_TOKEN_PROPERTY)),
+    hasSpreadsheetId: Boolean(properties.getProperty(SPREADSHEET_ID_PROPERTY)),
+  };
+}
+
 function parsePayload_(e) {
   const contents = e.postData && e.postData.contents
     ? e.postData.contents
