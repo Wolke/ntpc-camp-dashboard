@@ -1,4 +1,5 @@
 import type { Course } from '../types/course';
+import { formatCourseWeekSummary } from './courseSchedule';
 
 export interface CourseTheme {
     id: string;
@@ -116,6 +117,7 @@ export function getCourseSearchText(course: Course): string {
         course.teacher,
         course.address,
         course.fee.description,
+        formatCourseWeekSummary(course),
         course.eligibility.allowExternalStudents ? '開放外校 外校學生' : '',
         course.eligibility.gradeNames.join(' '),
         course.tags?.join(' '),

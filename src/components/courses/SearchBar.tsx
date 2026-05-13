@@ -1,10 +1,31 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import { useCourseStore } from '../../store/courseStore';
+import { formatCourseWeekSummary } from '../../utils/courseSchedule';
 
 export default function SearchBar() {
-    const { filters, setFilters } = useCourseStore();
+    const { courses, filters, setFilters } = useCourseStore();
     const [inputValue, setInputValue] = useState(filters.searchQuery);
+
+    const quickSearchTags = useMemo(() => {
+        const weekByDate = new Map<string, string>();
+        courses.forEach((course) => {
+            const weekSummary = formatCourseWeekSummary(course);
+            if (!weekSummary) return;
+
+            const currentDate = weekByDate.get(weekSummary);
+            if (!currentDate || course.schedule.startDate < currentDate) {
+                weekByDate.set(weekSummary, course.schedule.startDate);
+            }
+        });
+
+        const weekTags = Array.from(weekByDate.entries())
+            .sort((a, b) => a[1].localeCompare(b[1]))
+            .map(([weekSummary]) => weekSummary)
+            .slice(0, 6);
+
+        return [...weekTags, '開放外校', '免費', '美術'];
+    }, [courses]);
 
     useEffect(() => {
         setInputValue(filters.searchQuery);
@@ -46,7 +67,7 @@ export default function SearchBar() {
             </div>
 
             <div className="flex flex-wrap gap-2 mt-2">
-                {['開放外校', '免費', '暑假', '美術'].map((tag) => (
+                {quickSearchTags.map((tag) => (
                     <button
                         key={tag}
                         type="button"
