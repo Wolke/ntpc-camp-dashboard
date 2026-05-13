@@ -177,8 +177,8 @@ export const useCourseStore = create<CourseStore>((set, get) => ({
 
             // 年級
             if (filters.grades.length > 0) {
-                const hasMatchingGrade = filters.grades.some(g => course.eligibility.grades.includes(g));
-                if (!hasMatchingGrade) {
+                const matchesAllSelectedGrades = filters.grades.every(g => course.eligibility.grades.includes(g));
+                if (!matchesAllSelectedGrades) {
                     return false;
                 }
             }

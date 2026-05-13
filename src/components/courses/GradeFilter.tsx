@@ -45,6 +45,8 @@ export default function GradeFilter() {
                 )}
             </div>
 
+            <p className="mt-2 text-xs text-slate-500">多選時只顯示同時開放所有選取年級的課程</p>
+
             <div className="mt-3 grid grid-cols-3 gap-2">
                 {grades.map((grade) => {
                     const selected = filters.grades.includes(grade.value);
