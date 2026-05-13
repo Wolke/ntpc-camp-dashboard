@@ -21,9 +21,28 @@ function getMonday(date: Date): Date {
     return monday;
 }
 
-export function formatCourseWeekSummary(course: Course): string {
-    const startDate = parseDate(course.schedule.startDate);
-    if (!startDate) return '';
+function addDays(date: Date, days: number): Date {
+    const next = new Date(date);
+    next.setDate(next.getDate() + days);
+    return next;
+}
+
+function toDateKey(date: Date): string {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+export interface CourseWeekInfo {
+    label: string;
+    startDate: string;
+    endDate: string;
+}
+
+export function getCourseWeekInfo(dateStr: string): CourseWeekInfo | null {
+    const startDate = parseDate(dateStr);
+    if (!startDate) return null;
 
     const monthStart = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
     const firstWeekMonday = getMonday(monthStart);
@@ -32,5 +51,34 @@ export function formatCourseWeekSummary(course: Course): string {
     const monthLabel = monthLabels[startDate.getMonth()];
     const weekLabel = weekLabels[weekIndex] ?? `第${weekIndex + 1}週`;
 
-    return `${monthLabel}${weekLabel}`;
+    return {
+        label: `${monthLabel}${weekLabel}`,
+        startDate: toDateKey(courseWeekMonday),
+        endDate: toDateKey(addDays(courseWeekMonday, 6)),
+    };
+}
+
+export function formatCourseWeekSummary(course: Course): string {
+    return getCourseWeekInfo(course.schedule.startDate)?.label ?? '';
+}
+
+export function getWeekInfosInRange(startDate: string, endDate: string): CourseWeekInfo[] {
+    const start = parseDate(startDate);
+    const end = parseDate(endDate);
+    if (!start || !end || start > end) return [];
+
+    const rows: CourseWeekInfo[] = [];
+    const seen = new Set<string>();
+    let current = new Date(start);
+
+    while (current <= end) {
+        const info = getCourseWeekInfo(toDateKey(current));
+        if (info && !seen.has(info.label)) {
+            seen.add(info.label);
+            rows.push(info);
+        }
+        current = addDays(current, 1);
+    }
+
+    return rows;
 }

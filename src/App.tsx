@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import CourseDashboard from './pages/CourseDashboard'
 import CampAnalysisPage from './pages/CampAnalysisPage'
 import AiAdvisorPage from './pages/AiAdvisorPage'
+import SummerWeeksPage from './pages/SummerWeeksPage'
 import Header from './components/Header'
 import './index.css'
 
@@ -25,6 +26,7 @@ function App() {
             <Routes>
               <Route path="/" element={<CourseDashboard />} />
               <Route path="/courses" element={<CourseDashboard />} />
+              <Route path="/summer-weeks" element={<SummerWeeksPage />} />
               <Route path="/analysis" element={<CampAnalysisPage />} />
               <Route path="/advisor" element={<AiAdvisorPage />} />
             </Routes>
