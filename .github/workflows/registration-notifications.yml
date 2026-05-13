@@ -1,0 +1,41 @@
+name: Registration Notifications
+
+on:
+  schedule:
+    # 台灣時間每天 08:05
+    - cron: '5 0 * * *'
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Target date in Asia/Taipei (YYYY-MM-DD). Empty means today.'
+        required: false
+        type: string
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Send registration notifications
+        run: node scripts/send-registration-notifications.js
+        env:
+          TARGET_DATE: ${{ inputs.target_date }}
+          SUBSCRIBERS_JSON: ${{ secrets.SUBSCRIBERS_JSON }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURE: ${{ secrets.SMTP_SECURE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
