@@ -1,7 +1,8 @@
 import { CalendarPlus, Clock, ExternalLink, GraduationCap, School, Users } from 'lucide-react';
 import type { Course } from '../../types/course';
+import { buildCourseCalendarUrl } from '../../utils/googleCalendar';
 import { formatTimeRange, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
-import GoogleTaskButton from './GoogleTaskButton';
+import RegistrationCalendarButton from './RegistrationCalendarButton';
 
 interface CourseCardProps {
     course: Course;
@@ -19,21 +20,6 @@ function formatRegistrationRange(course: Course) {
     };
 
     return `${new Date(course.registration.startTime).toLocaleString('zh-TW', options)} - ${new Date(course.registration.endTime).toLocaleString('zh-TW', options)}`;
-}
-
-function calendarUrl(course: Course) {
-    const title = course.category || course.courseName || '育樂營課程';
-    const start = course.schedule.startDate?.replace(/-/g, '') || '';
-    const end = course.schedule.endDate?.replace(/-/g, '') || start;
-    const details = [
-        `學校/單位：${course.schoolName}`,
-        course.campName ? `營隊：${course.campName}` : '',
-        `報名期間：${formatRegistrationRange(course)}`,
-        `費用：${course.fee.description || (course.fee.isFree ? '免費' : '未提供')}`,
-        course.urls?.registration ? `報名入口：${course.urls.registration}` : '',
-    ].filter(Boolean).join('\n');
-
-    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${start}/${end}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(course.schoolName || '')}`;
 }
 
 export default function CourseCard({ course, onClick }: CourseCardProps) {
@@ -116,7 +102,7 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                 )}
 
                 <a
-                    href={calendarUrl(course)}
+                    href={buildCourseCalendarUrl(course)}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(event) => event.stopPropagation()}
@@ -126,7 +112,7 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                     加入日曆
                 </a>
 
-                <GoogleTaskButton course={course} />
+                <RegistrationCalendarButton course={course} />
             </div>
         </article>
     );

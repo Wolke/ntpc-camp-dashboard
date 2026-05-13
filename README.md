@@ -13,7 +13,7 @@
 - **報名日期**：顯示報名期間，不錯過報名時機
 - **活動簡章**：直接查看課程簡章 PDF
 - **加入行事曆**：一鍵加入 Google 日曆
-- **報名通知**：訂閱當天開放報名的活動通知，也可將單一課程加入 Google Tasks
+- **報名通知**：訂閱當天開放報名的活動通知，也可將單一課程加入 Google 日曆提醒
 
 ## 資料來源
 
@@ -38,21 +38,9 @@ npm run crawl:taipei
 npm run build
 ```
 
-### Google Tasks 報名通知
+### Google 日曆報名提醒
 
-若要讓「新增報名通知」直接寫入 Google Tasks，請在 Google Cloud 建立 OAuth Client ID、啟用 Google Tasks API，並在本機或部署環境設定：
-
-```bash
-VITE_GOOGLE_CLIENT_ID=你的_OAuth_Client_ID
-```
-
-GitHub Pages 部署時請在 repository variables 設定 `VITE_GOOGLE_CLIENT_ID`，並在 OAuth Client ID 的 Authorized JavaScript origins 加入：
-
-```bash
-https://wolke.github.io
-```
-
-未設定時，按鈕只能複製待辦內容並開啟 Google Tasks，方便手動貼上；不會真的建立 Task。
+「新增報名通知」會開啟 Google 日曆新增事件頁，並自動帶入課程名稱、報名時間、費用、報名入口與簡章連結。這個做法不需要 Google OAuth 審核；使用者在 Google 日曆確認後即可儲存提醒。
 
 ### Email 訂閱與每日通知
 
