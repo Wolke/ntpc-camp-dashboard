@@ -50,6 +50,17 @@ const Header = () => {
               >
                 營隊分析
               </NavLink>
+              <NavLink
+                to="/advisor"
+                className={({ isActive }) =>
+                  `rounded-md px-3 py-2 text-sm font-medium transition-colors ${isActive
+                    ? 'bg-indigo-50 text-indigo-700'
+                    : 'text-slate-600 hover:bg-slate-50 hover:text-slate-950'
+                  }`
+                }
+              >
+                AI 顧問
+              </NavLink>
             </nav>
           </div>
 

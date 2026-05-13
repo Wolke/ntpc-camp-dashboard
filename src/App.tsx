@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import CourseDashboard from './pages/CourseDashboard'
 import CampAnalysisPage from './pages/CampAnalysisPage'
+import AiAdvisorPage from './pages/AiAdvisorPage'
 import Header from './components/Header'
 import './index.css'
 
@@ -25,6 +26,7 @@ function App() {
               <Route path="/" element={<CourseDashboard />} />
               <Route path="/courses" element={<CourseDashboard />} />
               <Route path="/analysis" element={<CampAnalysisPage />} />
+              <Route path="/advisor" element={<AiAdvisorPage />} />
             </Routes>
           </main>
         </div>
