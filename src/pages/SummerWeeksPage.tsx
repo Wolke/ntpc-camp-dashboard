@@ -107,7 +107,11 @@ export default function SummerWeeksPage() {
 
                     <div className="divide-y divide-slate-100">
                         {weeks.map((week) => (
-                            <article key={week.label} className="grid gap-4 px-4 py-4 lg:grid-cols-[180px_minmax(0,1fr)_220px] lg:items-center">
+                            <Link
+                                key={week.label}
+                                to={`/courses?week=${encodeURIComponent(week.label)}`}
+                                className="grid gap-4 px-4 py-4 transition-colors hover:bg-slate-50 lg:grid-cols-[180px_minmax(0,1fr)_220px] lg:items-center"
+                            >
                                 <div>
                                     <p className="text-base font-semibold text-slate-950">{week.label}</p>
                                     <p className="mt-1 text-sm text-slate-500">
@@ -141,7 +145,7 @@ export default function SummerWeeksPage() {
                                         免費 {week.freeCount}
                                     </span>
                                 </div>
-                            </article>
+                            </Link>
                         ))}
                     </div>
                 </section>

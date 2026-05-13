@@ -110,6 +110,7 @@ export interface FilterOptions {
     grades: number[];
     themeIds: string[];
     durationDays: number[];
+    weekSummaries: string[];
     registrationStatus: RegistrationStatus[];
     courseTimeStatus: CourseTimeStatus[];
     quotaStatus: QuotaStatus[];

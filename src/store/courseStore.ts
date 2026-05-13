@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import type { Course, FilterOptions, CourseFeature, RegistrationStatus, CourseTimeStatus, QuotaStatus } from '../types/course';
-import { getCourseDayCount } from '../utils/courseSchedule';
+import { formatCourseWeekSummary, getCourseDayCount } from '../utils/courseSchedule';
 import { classifyTheme, getCourseSearchText, normalizeText } from '../utils/courseTaxonomy';
 
 interface CourseStore {
@@ -36,6 +36,7 @@ const defaultFilters: FilterOptions = {
     grades: [],
     themeIds: [],
     durationDays: [],
+    weekSummaries: [],
     registrationStatus: ['available', 'closing_soon', 'not_started'], // 預設顯示尚未截止的課程
     courseTimeStatus: ['upcoming', 'ongoing'], // 預設只顯示未結束
     quotaStatus: ['available', 'almost_full', 'may_not_open'], // 預設不隱藏剛公布、尚未累積報名人數的課程
@@ -161,6 +162,14 @@ export const useCourseStore = create<CourseStore>((set, get) => ({
             if (filters.durationDays.length > 0) {
                 const dayCount = getCourseDayCount(course);
                 if (dayCount === null || !filters.durationDays.includes(dayCount)) {
+                    return false;
+                }
+            }
+
+            // 週次篩選
+            if (filters.weekSummaries.length > 0) {
+                const weekSummary = formatCourseWeekSummary(course);
+                if (!filters.weekSummaries.includes(weekSummary)) {
                     return false;
                 }
             }
