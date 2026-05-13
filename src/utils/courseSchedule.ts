@@ -62,6 +62,20 @@ export function formatCourseWeekSummary(course: Course): string {
     return getCourseWeekInfo(course.schedule.startDate)?.label ?? '';
 }
 
+export function getCourseDayCount(course: Course): number | null {
+    const start = parseDate(course.schedule.startDate);
+    const end = parseDate(course.schedule.endDate);
+    if (!start || !end || end < start) return null;
+
+    return Math.floor((end.getTime() - start.getTime()) / (24 * 60 * 60 * 1000)) + 1;
+}
+
+export function getCourseDurationLabel(dayCount: number): string {
+    if (dayCount === 1) return '一天營隊';
+    if (dayCount === 2) return '兩天營隊';
+    return `${dayCount} 天營隊`;
+}
+
 export function getWeekInfosInRange(startDate: string, endDate: string): CourseWeekInfo[] {
     const start = parseDate(startDate);
     const end = parseDate(endDate);

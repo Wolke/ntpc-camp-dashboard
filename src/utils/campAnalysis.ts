@@ -1,4 +1,5 @@
 import type { Course } from '../types/course';
+import { getCourseDayCount, getCourseDurationLabel } from './courseSchedule';
 import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, matchesCourseKeyword } from './courseTaxonomy';
 
 export interface ThemeInsight {
@@ -83,14 +84,6 @@ const HIGH_FEATURE_KEYWORDS = ['扮戲', '戲劇', '劇場', '戲曲'];
 
 function uniqueCount(values: string[]): number {
     return new Set(values.filter(Boolean)).size;
-}
-
-function getCourseDayCount(course: Course): number | null {
-    const start = new Date(course.schedule.startDate);
-    const end = new Date(course.schedule.endDate);
-    if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime()) || end < start) return null;
-
-    return Math.floor((end.getTime() - start.getTime()) / (24 * 60 * 60 * 1000)) + 1;
 }
 
 function getRepresentativeCourses(courses: Course[]): Course[] {
@@ -258,7 +251,7 @@ export function analyzeCamps(courses: Course[]): CampAnalysis {
 
         return {
             dayCount,
-            label: dayCount === 1 ? '一天營隊' : '兩天營隊',
+            label: getCourseDurationLabel(dayCount),
             courses: shortCourses,
             courseCount: shortCourses.length,
             schoolCount: uniqueCount(shortCourses.map((course) => course.schoolName)),

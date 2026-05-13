@@ -246,10 +246,10 @@ export default function CampAnalysisPage() {
                                                 </div>
                                             </div>
                                             <Link
-                                                to="/courses"
+                                                to={`/courses?duration=${group.dayCount}`}
                                                 className="inline-flex items-center gap-1 text-sm font-medium text-indigo-600 hover:text-indigo-700"
                                             >
-                                                到課程查詢
+                                                查看全部
                                                 <ArrowRight className="h-4 w-4" />
                                             </Link>
                                         </div>
@@ -259,7 +259,7 @@ export default function CampAnalysisPage() {
                                                 group.representativeCourses.map((course) => (
                                                     <Link
                                                         key={`${group.dayCount}-${course.schoolName}-${course.category}-${course.schedule.startDate}`}
-                                                        to="/courses"
+                                                        to={`/courses?duration=${group.dayCount}`}
                                                         className="rounded-md border border-slate-100 bg-slate-50 p-3 hover:bg-slate-100"
                                                     >
                                                         <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">

@@ -12,6 +12,7 @@ import SubscribePanel from '../components/SubscribePanel';
 import { useCourses } from '../hooks/useCourses';
 import { useCourseStore } from '../store/courseStore';
 import type { Course } from '../types/course';
+import { getCourseDurationLabel } from '../utils/courseSchedule';
 import { getThemeById } from '../utils/courseTaxonomy';
 import { SCHOOL_COORDINATES } from '../utils/schoolCoordinates';
 
@@ -54,7 +55,10 @@ export default function CourseDashboard() {
     const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
     const [locationStatus, setLocationStatus] = useState<LocationStatus>('idle');
     const themeId = searchParams.get('theme');
+    const durationParam = searchParams.get('duration');
     const selectedTheme = getThemeById(themeId);
+    const selectedDurationDay = durationParam === '1' || durationParam === '2' ? Number(durationParam) : null;
+    const selectedDurationLabel = selectedDurationDay ? getCourseDurationLabel(selectedDurationDay) : null;
 
     useEffect(() => {
         if (themeId && !selectedTheme) {
@@ -104,9 +108,63 @@ export default function CourseDashboard() {
         themeId,
     ]);
 
+    useEffect(() => {
+        if (durationParam && !selectedDurationDay) {
+            const nextParams = new URLSearchParams(searchParams);
+            nextParams.delete('duration');
+            setSearchParams(nextParams, { replace: true });
+            if (filters.durationDays.length > 0) {
+                setFilters({ durationDays: [] });
+            }
+            return;
+        }
+
+        if (!selectedDurationDay) {
+            if (filters.durationDays.length > 0) {
+                setFilters({ durationDays: [] });
+            }
+            return;
+        }
+
+        const durationAlreadyApplied =
+            filters.durationDays.length === 1 &&
+            filters.durationDays[0] === selectedDurationDay;
+        const statusFiltersCleared =
+            filters.registrationStatus.length === 0 &&
+            filters.courseTimeStatus.length === 0 &&
+            filters.quotaStatus.length === 0;
+
+        if (!durationAlreadyApplied || !statusFiltersCleared) {
+            setFilters({
+                durationDays: [selectedDurationDay],
+                allowExternalStudents: null,
+                registrationStatus: [],
+                courseTimeStatus: [],
+                quotaStatus: [],
+            });
+        }
+    }, [
+        durationParam,
+        filters.courseTimeStatus.length,
+        filters.durationDays,
+        filters.quotaStatus.length,
+        filters.registrationStatus.length,
+        searchParams,
+        selectedDurationDay,
+        setFilters,
+        setSearchParams,
+    ]);
+
     const clearThemeFilter = () => {
         const nextParams = new URLSearchParams(searchParams);
         nextParams.delete('theme');
+        setSearchParams(nextParams, { replace: true });
+        resetFilters();
+    };
+
+    const clearDurationFilter = () => {
+        const nextParams = new URLSearchParams(searchParams);
+        nextParams.delete('duration');
         setSearchParams(nextParams, { replace: true });
         resetFilters();
     };
@@ -263,6 +321,22 @@ export default function CourseDashboard() {
                                         type="button"
                                         onClick={clearThemeFilter}
                                         className="shrink-0 rounded-md px-2 py-1 text-sm font-medium text-orange-700 hover:bg-orange-100"
+                                    >
+                                        顯示全部
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+
+                        {selectedDurationLabel && (
+                            <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3">
+                                <p className="text-sm font-medium text-emerald-950">正在篩選天數</p>
+                                <div className="mt-2 flex items-center justify-between gap-3">
+                                    <span className="text-sm text-emerald-700">{selectedDurationLabel}</span>
+                                    <button
+                                        type="button"
+                                        onClick={clearDurationFilter}
+                                        className="shrink-0 rounded-md px-2 py-1 text-sm font-medium text-emerald-700 hover:bg-emerald-100"
                                     >
                                         顯示全部
                                     </button>
