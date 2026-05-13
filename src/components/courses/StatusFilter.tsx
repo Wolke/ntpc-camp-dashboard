@@ -154,22 +154,6 @@ export default function StatusFilter() {
                         </div>
                     </div>
 
-                    {/* 其他篩選 */}
-                    <div>
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">其他</h4>
-                        <div className="flex gap-2">
-                            <button
-                                onClick={() => setFilters({ allowExternalStudents: filters.allowExternalStudents === true ? null : true })}
-                                className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.allowExternalStudents === true
-                                    ? 'bg-blue-100 border-blue-300 text-blue-700'
-                                    : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                    }`}
-                            >
-                                🌍 開放外校生
-                            </button>
-                        </div>
-                    </div>
-
                     {/* 身份選擇（學校類型） */}
                     <div>
                         <h4 className="text-sm font-medium text-gray-700 mb-2">身份</h4>

@@ -104,6 +104,7 @@ function scoreCourse(course: Course, profile: AdvisorProfile): AdvisorRecommenda
     const theme = classifyTheme(course);
 
     if (title.includes('[不開班]')) return null;
+    if (!course.eligibility.allowExternalStudents) return null;
     if (!course.eligibility.grades.includes(profile.grade)) return null;
     if (area && !normalizedText.includes(area)) return null;
     if (profile.budgetMode === 'free_only' && !course.fee.isFree) return null;
@@ -139,6 +140,8 @@ function scoreCourse(course: Course, profile: AdvisorProfile): AdvisorRecommenda
     } else if (course.fee.description) {
         reasons.push(`費用 ${course.fee.description}`);
     }
+
+    reasons.push('開放外校學生');
 
     profile.traits.forEach((trait) => {
         const matchedThemes = getTraitMatchedThemes(trait, theme);

@@ -46,6 +46,12 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                         <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${status.quotaColor}`}>
                             {status.quotaLabel}
                         </span>
+                        <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${course.eligibility.allowExternalStudents
+                            ? 'border-sky-200 bg-sky-50 text-sky-700'
+                            : 'border-amber-200 bg-amber-50 text-amber-700'
+                            }`}>
+                            {course.eligibility.allowExternalStudents ? '開放外校' : '限本校'}
+                        </span>
                     </div>
 
                     <h3 className="text-base font-semibold leading-6 text-slate-950">

@@ -30,7 +30,7 @@ const defaultFilters: FilterOptions = {
     searchQuery: '',
     schoolTypes: [],
     isFree: null,
-    allowExternalStudents: null, // 預設不篩選
+    allowExternalStudents: true, // 預設只看外校可報名的課程
     dateRange: { start: null, end: null },
     grades: [],
     themeIds: [],
@@ -186,6 +186,12 @@ export const useCourseStore = create<CourseStore>((set, get) => ({
             // 外校生篩選
             if (filters.allowExternalStudents === true) {
                 if (!course.eligibility.allowExternalStudents) {
+                    return false;
+                }
+            }
+
+            if (filters.allowExternalStudents === false) {
+                if (course.eligibility.allowExternalStudents) {
                     return false;
                 }
             }
