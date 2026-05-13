@@ -209,7 +209,7 @@ function formatClockSummary(course: Course, entries: ScheduleEntry[]): string {
 }
 
 // 格式化時間範圍
-export function formatTimeRange(course: Course): string {
+export function formatScheduleParts(course: Course) {
     const { startDate, endDate } = course.schedule;
     const entries = getScheduleEntries(course);
     const weekdaySummary = formatWeekdays(Array.from(new Set(entries.map((entry) => entry.weekday))));
@@ -217,6 +217,17 @@ export function formatTimeRange(course: Course): string {
     const clockSummary = formatClockSummary(course, entries);
     const dateRange = startDate === endDate ? formatDate(startDate) : `${formatDate(startDate)} - ${formatDate(endDate)}`;
 
+    return {
+        dateRange,
+        weekdaySummary,
+        periodSummary,
+        clockSummary,
+    };
+}
+
+// 格式化時間範圍
+export function formatTimeRange(course: Course): string {
+    const { dateRange, weekdaySummary, periodSummary, clockSummary } = formatScheduleParts(course);
     return [dateRange, weekdaySummary, periodSummary, clockSummary].filter(Boolean).join(' ');
 }
 

@@ -1,7 +1,8 @@
-import { CalendarPlus, Clock, ExternalLink, GraduationCap, School, Users } from 'lucide-react';
+import { CalendarDays, CalendarPlus, Clock, ExternalLink, GraduationCap, School, Timer, Users } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import type { Course } from '../../types/course';
 import { buildCourseCalendarUrl } from '../../utils/googleCalendar';
-import { formatTimeRange, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
+import { formatScheduleParts, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
 import RegistrationCalendarButton from './RegistrationCalendarButton';
 
 interface CourseCardProps {
@@ -9,7 +10,7 @@ interface CourseCardProps {
     onClick?: () => void;
 }
 
-function formatRegistrationRange(course: Course) {
+function formatCourseRegistrationRange(course: Course) {
     if (!course.registration?.startTime || !course.registration?.endTime) return '未提供報名期間';
 
     const options: Intl.DateTimeFormatOptions = {
@@ -22,8 +23,31 @@ function formatRegistrationRange(course: Course) {
     return `${new Date(course.registration.startTime).toLocaleString('zh-TW', options)} - ${new Date(course.registration.endTime).toLocaleString('zh-TW', options)}`;
 }
 
+interface MetaTagProps {
+    icon: LucideIcon;
+    label: string;
+    tone?: 'slate' | 'indigo' | 'emerald' | 'amber';
+}
+
+const metaTagToneClasses = {
+    slate: 'border-slate-200 bg-slate-50 text-slate-700',
+    indigo: 'border-indigo-200 bg-indigo-50 text-indigo-700',
+    emerald: 'border-emerald-200 bg-emerald-50 text-emerald-700',
+    amber: 'border-amber-200 bg-amber-50 text-amber-700',
+};
+
+function MetaTag({ icon: Icon, label, tone = 'slate' }: MetaTagProps) {
+    return (
+        <span className={`inline-flex min-h-[2rem] items-center gap-1.5 rounded-md border px-2.5 py-1 text-xs font-medium ${metaTagToneClasses[tone]}`}>
+            <Icon className="h-3.5 w-3.5 shrink-0" />
+            <span>{label}</span>
+        </span>
+    );
+}
+
 export default function CourseCard({ course, onClick }: CourseCardProps) {
     const status = getCourseStatusInfo(course);
+    const scheduleParts = formatScheduleParts(course);
 
     return (
         <article
@@ -70,28 +94,25 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                 </div>
             </div>
 
-            <dl className="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-                <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4 shrink-0 text-slate-400" />
-                    <span>{formatTimeRange(course)}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <CalendarPlus className="h-4 w-4 shrink-0 text-slate-400" />
-                    <span>報名 {formatRegistrationRange(course)}</span>
-                </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+                <MetaTag icon={CalendarDays} label={scheduleParts.dateRange} tone="indigo" />
+                {scheduleParts.weekdaySummary && (
+                    <MetaTag icon={CalendarDays} label={scheduleParts.weekdaySummary} tone="indigo" />
+                )}
+                {scheduleParts.periodSummary && (
+                    <MetaTag icon={Clock} label={scheduleParts.periodSummary} tone="emerald" />
+                )}
+                {scheduleParts.clockSummary && (
+                    <MetaTag icon={Timer} label={scheduleParts.clockSummary} tone="emerald" />
+                )}
+                <MetaTag icon={CalendarPlus} label={`報名 ${formatCourseRegistrationRange(course)}`} />
                 {course.courseName && (
-                    <div className="flex items-center gap-2">
-                        <GraduationCap className="h-4 w-4 shrink-0 text-slate-400" />
-                        <span>{course.courseName}</span>
-                    </div>
+                    <MetaTag icon={GraduationCap} label={course.courseName} />
                 )}
-                {course.eligibility.gradeNames.length > 0 && (
-                    <div className="flex items-center gap-2">
-                        <Users className="h-4 w-4 shrink-0 text-slate-400" />
-                        <span>{course.eligibility.gradeNames.join('、')}</span>
-                    </div>
-                )}
-            </dl>
+                {course.eligibility.gradeNames.map((gradeName) => (
+                    <MetaTag key={gradeName} icon={Users} label={gradeName} tone="amber" />
+                ))}
+            </div>
 
             <div className="mt-4 flex flex-wrap gap-2 border-t border-slate-100 pt-3">
                 {course.urls?.prospectus && (

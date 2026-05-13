@@ -1,11 +1,9 @@
-import { useState } from 'react';
-import { Filter, ChevronDown, ChevronUp } from 'lucide-react';
+import { CheckCircle, CircleDollarSign, Clock3, Filter, GraduationCap, RotateCcw } from 'lucide-react';
 import { useCourseStore } from '../../store/courseStore';
 import type { RegistrationStatus, CourseTimeStatus, QuotaStatus } from '../../types/course';
 
 export default function StatusFilter() {
     const { filters, setFilters, resetFilters } = useCourseStore();
-    const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleStatus = <T extends string>(
         current: T[],
@@ -40,175 +38,181 @@ export default function StatusFilter() {
     ];
 
     return (
-        <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-            {/* 標題列 */}
-            <button
-                onClick={() => setIsExpanded(!isExpanded)}
-                className="w-full flex items-center justify-between px-4 py-3 hover:bg-gray-50"
-            >
+        <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+            <div className="mb-4 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2">
                     <Filter className="h-4 w-4 text-indigo-600" />
-                    <span className="font-medium text-gray-700">篩選條件</span>
+                    <h2 className="text-sm font-semibold text-slate-800">篩選條件</h2>
                 </div>
-                {isExpanded ? (
-                    <ChevronUp className="h-4 w-4 text-gray-400" />
-                ) : (
-                    <ChevronDown className="h-4 w-4 text-gray-400" />
-                )}
-            </button>
+                <button
+                    type="button"
+                    onClick={resetFilters}
+                    className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-700"
+                >
+                    <RotateCcw className="h-3.5 w-3.5" />
+                    重置
+                </button>
+            </div>
 
-            {/* 展開的篩選面板 */}
-            {isExpanded && (
-                <div className="px-4 pb-4 space-y-4 border-t border-gray-100">
-                    {/* 報名狀態 */}
-                    <div className="pt-3">
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">報名狀態</h4>
-                        <div className="flex flex-wrap gap-2">
-                            {registrationOptions.map((opt) => (
-                                <button
-                                    key={opt.value}
-                                    onClick={() => toggleStatus(
-                                        filters.registrationStatus,
-                                        opt.value,
-                                        (v) => setFilters({ registrationStatus: v })
-                                    )}
-                                    className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.registrationStatus.includes(opt.value)
-                                        ? 'bg-indigo-100 border-indigo-300 text-indigo-700'
-                                        : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                        }`}
-                                >
-                                    {opt.icon} {opt.label}
-                                </button>
-                            ))}
-                        </div>
+            <div className="space-y-4">
+                <div>
+                    <div className="mb-2 flex items-center gap-2">
+                        <CheckCircle className="h-3.5 w-3.5 text-slate-500" />
+                        <h3 className="text-xs font-semibold text-slate-500">報名狀態</h3>
                     </div>
-
-                    {/* 課程時間 */}
-                    <div>
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">課程時間</h4>
-                        <div className="flex flex-wrap gap-2">
-                            {courseTimeOptions.map((opt) => (
-                                <button
-                                    key={opt.value}
-                                    onClick={() => toggleStatus(
-                                        filters.courseTimeStatus,
-                                        opt.value,
-                                        (v) => setFilters({ courseTimeStatus: v })
-                                    )}
-                                    className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.courseTimeStatus.includes(opt.value)
-                                        ? 'bg-indigo-100 border-indigo-300 text-indigo-700'
-                                        : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                        }`}
-                                >
-                                    {opt.icon} {opt.label}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* 名額狀態 */}
-                    <div>
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">名額狀態</h4>
-                        <div className="flex flex-wrap gap-2">
-                            {quotaOptions.map((opt) => (
-                                <button
-                                    key={opt.value}
-                                    onClick={() => toggleStatus(
-                                        filters.quotaStatus,
-                                        opt.value,
-                                        (v) => setFilters({ quotaStatus: v })
-                                    )}
-                                    className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.quotaStatus.includes(opt.value)
-                                        ? 'bg-indigo-100 border-indigo-300 text-indigo-700'
-                                        : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                        }`}
-                                >
-                                    {opt.icon} {opt.label}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* 費用篩選 */}
-                    <div>
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">費用</h4>
-                        <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2">
+                        {registrationOptions.map((opt) => (
                             <button
-                                onClick={() => setFilters({ isFree: filters.isFree === true ? null : true })}
-                                className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.isFree === true
-                                    ? 'bg-green-100 border-green-300 text-green-700'
-                                    : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                    }`}
-                            >
-                                🎉 免費
-                            </button>
-                            <button
-                                onClick={() => setFilters({ isFree: filters.isFree === false ? null : false })}
-                                className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.isFree === false
-                                    ? 'bg-yellow-100 border-yellow-300 text-yellow-700'
-                                    : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                    }`}
-                            >
-                                💰 付費
-                            </button>
-                        </div>
-                    </div>
-
-                    {/* 身份選擇（學校類型） */}
-                    <div>
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">身份</h4>
-                        <div className="flex flex-wrap gap-2">
-                            <button
+                                key={opt.value}
+                                type="button"
                                 onClick={() => toggleStatus(
-                                    filters.schoolTypes,
-                                    'elementary',
-                                    (v) => setFilters({ schoolTypes: v })
+                                    filters.registrationStatus,
+                                    opt.value,
+                                    (v) => setFilters({ registrationStatus: v })
                                 )}
-                                className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.schoolTypes.includes('elementary')
-                                    ? 'bg-amber-100 border-amber-300 text-amber-700'
-                                    : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
+                                className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.registrationStatus.includes(opt.value)
+                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
+                                    : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                     }`}
                             >
-                                🏫 國小生
+                                {opt.icon} {opt.label}
                             </button>
-                            <button
-                                onClick={() => toggleStatus(
-                                    filters.schoolTypes,
-                                    'junior_high',
-                                    (v) => setFilters({ schoolTypes: v })
-                                )}
-                                className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.schoolTypes.includes('junior_high')
-                                    ? 'bg-emerald-100 border-emerald-300 text-emerald-700'
-                                    : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                    }`}
-                            >
-                                🎒 國中生
-                            </button>
-                            <button
-                                onClick={() => toggleStatus(
-                                    filters.schoolTypes,
-                                    'high_school',
-                                    (v) => setFilters({ schoolTypes: v })
-                                )}
-                                className={`px-3 py-1.5 text-sm rounded-full border transition-colors ${filters.schoolTypes.includes('high_school')
-                                    ? 'bg-indigo-100 border-indigo-300 text-indigo-700'
-                                    : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                    }`}
-                            >
-                                📚 高中職生
-                            </button>
-                        </div>
+                        ))}
                     </div>
-
-                    {/* 重置按鈕 */}
-                    <button
-                        onClick={resetFilters}
-                        className="w-full py-2 text-sm text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                    >
-                        重置所有篩選
-                    </button>
                 </div>
-            )}
-        </div>
+
+                <div>
+                    <div className="mb-2 flex items-center gap-2">
+                        <Clock3 className="h-3.5 w-3.5 text-slate-500" />
+                        <h3 className="text-xs font-semibold text-slate-500">課程時間</h3>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                        {courseTimeOptions.map((opt) => (
+                            <button
+                                key={opt.value}
+                                type="button"
+                                onClick={() => toggleStatus(
+                                    filters.courseTimeStatus,
+                                    opt.value,
+                                    (v) => setFilters({ courseTimeStatus: v })
+                                )}
+                                className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.courseTimeStatus.includes(opt.value)
+                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
+                                    : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+                                    }`}
+                            >
+                                {opt.icon} {opt.label}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
+                <div>
+                    <div className="mb-2 flex items-center gap-2">
+                        <CheckCircle className="h-3.5 w-3.5 text-slate-500" />
+                        <h3 className="text-xs font-semibold text-slate-500">名額狀態</h3>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                        {quotaOptions.map((opt) => (
+                            <button
+                                key={opt.value}
+                                type="button"
+                                onClick={() => toggleStatus(
+                                    filters.quotaStatus,
+                                    opt.value,
+                                    (v) => setFilters({ quotaStatus: v })
+                                )}
+                                className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.quotaStatus.includes(opt.value)
+                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
+                                    : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+                                    }`}
+                            >
+                                {opt.icon} {opt.label}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
+                <div>
+                    <div className="mb-2 flex items-center gap-2">
+                        <CircleDollarSign className="h-3.5 w-3.5 text-slate-500" />
+                        <h3 className="text-xs font-semibold text-slate-500">費用</h3>
+                    </div>
+                    <div className="flex gap-2">
+                        <button
+                            type="button"
+                            onClick={() => setFilters({ isFree: filters.isFree === true ? null : true })}
+                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.isFree === true
+                                ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
+                                : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+                                }`}
+                        >
+                            免費
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => setFilters({ isFree: filters.isFree === false ? null : false })}
+                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.isFree === false
+                                ? 'border-amber-300 bg-amber-50 text-amber-700'
+                                : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+                                }`}
+                        >
+                            付費
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <div className="mb-2 flex items-center gap-2">
+                        <GraduationCap className="h-3.5 w-3.5 text-slate-500" />
+                        <h3 className="text-xs font-semibold text-slate-500">學制</h3>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                        <button
+                            type="button"
+                            onClick={() => toggleStatus(
+                                filters.schoolTypes,
+                                'elementary',
+                                (v) => setFilters({ schoolTypes: v })
+                            )}
+                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('elementary')
+                                ? 'border-amber-300 bg-amber-50 text-amber-700'
+                                : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+                                }`}
+                        >
+                            國小
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => toggleStatus(
+                                filters.schoolTypes,
+                                'junior_high',
+                                (v) => setFilters({ schoolTypes: v })
+                            )}
+                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('junior_high')
+                                ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
+                                : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+                                }`}
+                        >
+                            國中
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => toggleStatus(
+                                filters.schoolTypes,
+                                'high_school',
+                                (v) => setFilters({ schoolTypes: v })
+                            )}
+                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('high_school')
+                                ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
+                                : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
+                                }`}
+                        >
+                            高中職
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 }
