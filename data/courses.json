@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-06-14T00:51:04.188Z",
+  "lastUpdated": "2026-06-21T00:52:23.116Z",
   "stats": {
     "total": 60,
     "allowExternalStudents": 60,
     "free": 10,
-    "canRegister": 10,
+    "canRegister": 0,
     "schools": 17
   },
   "courses": [
@@ -54,7 +54,7 @@
         ]
       },
       "quota": {
-        "enrolled": 5,
+        "enrolled": 8,
         "planned": 10,
         "actual": 0,
         "isLottery": true
@@ -65,9 +65,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T15:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011312&act_no=00031&cls_no=001",
@@ -79,8 +79,8 @@
         "schedule": "115/07/02 至 115/07/02\n週四 08:30~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:5人\n預計錄取:10人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 15:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:8人\n預計錄取:10人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 15:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -129,7 +129,7 @@
         ]
       },
       "quota": {
-        "enrolled": 6,
+        "enrolled": 14,
         "planned": 17,
         "actual": 0,
         "isLottery": true
@@ -140,9 +140,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011315&act_no=00045&cls_no=001",
@@ -154,8 +154,8 @@
         "schedule": "115/07/16 至 115/07/16\n週四 08:30~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:6人\n預計錄取:17人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:14人\n預計錄取:17人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -204,7 +204,7 @@
         ]
       },
       "quota": {
-        "enrolled": 21,
+        "enrolled": 2,
         "planned": 0,
         "actual": 0,
         "isLottery": true
@@ -215,9 +215,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011315&act_no=00045&cls_no=003",
@@ -229,8 +229,8 @@
         "schedule": "115/07/16 至 115/07/16\n週四 08:30~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:21人\n預計錄取:0人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:2人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -279,7 +279,7 @@
         ]
       },
       "quota": {
-        "enrolled": 41,
+        "enrolled": 0,
         "planned": 1,
         "actual": 0,
         "isLottery": true
@@ -290,9 +290,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011315&act_no=00045&cls_no=005",
@@ -304,8 +304,8 @@
         "schedule": "115/07/16 至 115/07/16\n週四 08:30~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:41人\n預計錄取:1人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:1人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -354,7 +354,7 @@
         ]
       },
       "quota": {
-        "enrolled": 8,
+        "enrolled": 3,
         "planned": 0,
         "actual": 0,
         "isLottery": true
@@ -365,9 +365,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011315&act_no=00045&cls_no=007",
@@ -379,8 +379,8 @@
         "schedule": "115/07/16 至 115/07/16\n週四 08:30~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:8人\n預計錄取:0人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:3人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -429,7 +429,7 @@
         ]
       },
       "quota": {
-        "enrolled": 15,
+        "enrolled": 3,
         "planned": 1,
         "actual": 0,
         "isLottery": true
@@ -440,9 +440,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011315&act_no=00045&cls_no=002",
@@ -454,8 +454,8 @@
         "schedule": "115/07/17 至 115/07/17\n週五 08:30~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:15人\n預計錄取:1人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:3人\n預計錄取:1人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -504,7 +504,7 @@
         ]
       },
       "quota": {
-        "enrolled": 20,
+        "enrolled": 0,
         "planned": 2,
         "actual": 0,
         "isLottery": true
@@ -515,9 +515,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011315&act_no=00045&cls_no=004",
@@ -529,8 +529,8 @@
         "schedule": "115/07/17 至 115/07/17\n週五 08:30~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:20人\n預計錄取:2人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:2人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -579,7 +579,7 @@
         ]
       },
       "quota": {
-        "enrolled": 44,
+        "enrolled": 0,
         "planned": 1,
         "actual": 0,
         "isLottery": true
@@ -590,9 +590,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011315&act_no=00045&cls_no=006",
@@ -604,8 +604,8 @@
         "schedule": "115/07/17 至 115/07/17\n週五 08:30~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:44人\n預計錄取:1人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:1人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -654,7 +654,7 @@
         ]
       },
       "quota": {
-        "enrolled": 4,
+        "enrolled": 6,
         "planned": 6,
         "actual": 0,
         "isLottery": true
@@ -665,9 +665,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011317&act_no=00044&cls_no=002",
@@ -679,8 +679,8 @@
         "schedule": "115/07/15 至 115/07/15\n週三 08:10~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:4人\n預計錄取:6人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:6人\n預計錄取:6人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
@@ -729,7 +729,7 @@
         ]
       },
       "quota": {
-        "enrolled": 4,
+        "enrolled": 6,
         "planned": 12,
         "actual": 0,
         "isLottery": true
@@ -740,9 +740,9 @@
         "canWithdraw": true,
         "startTime": "2026-06-10T12:00:00+08:00",
         "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011317&act_no=00044&cls_no=011",
@@ -754,8 +754,8 @@
         "schedule": "115/07/15 至 115/07/15\n週三 08:10~16:00",
         "fee": "免費參加",
         "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:4人\n預計錄取:12人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:6人\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
     {
