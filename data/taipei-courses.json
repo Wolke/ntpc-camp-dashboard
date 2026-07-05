@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T00:46:46.420Z",
+  "lastUpdated": "2026-07-05T00:39:42.728Z",
   "stats": {
     "total": 50,
     "allowExternalStudents": 50,
@@ -379,7 +379,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/1/att/5_ca30791ac20504f9bbe12cfd0e7ec0fd.pdf"
       },
       "tags": [
         "台北市",
@@ -454,7 +455,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/1/att/6_396ed2b9f712a390a975bd61695f8493.pdf"
       },
       "tags": [
         "台北市",
@@ -529,7 +531,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/1/att/7_40e2f2cd9cae70be7b7bb299c91108d0.pdf"
       },
       "tags": [
         "台北市",
@@ -604,7 +607,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/2/att/8_e9697ef62ac2173e851f2abbff746d8a.pdf"
       },
       "tags": [
         "台北市",
@@ -679,7 +683,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/2/att/9_b7f6f28a92e2bbba218a49f5436c23e5.pdf"
       },
       "tags": [
         "台北市",
@@ -754,7 +759,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/2/att/10_6e7e9518a01bc93b4506b7146ceb1680.pdf"
       },
       "tags": [
         "台北市",
@@ -983,7 +989,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=3",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/3/att/13_2c7a1fabd57ff875e3b5b3ab59f3fcb1.pdf"
       },
       "tags": [
         "台北市",

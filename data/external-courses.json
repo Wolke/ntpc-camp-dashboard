@@ -1,83 +1,8 @@
 {
-  "lastUpdated": "2026-06-28T00:46:46.425Z",
+  "lastUpdated": "2026-07-05T00:39:42.732Z",
   "description": "開放外校學生報名的課程",
   "total": 60,
   "courses": [
-    {
-      "source": {
-        "type": "ntpc_camp",
-        "name": "新北市寒暑假育樂營",
-        "url": "https://camp.ntpc.edu.tw/",
-        "schoolId": "011312",
-        "actId": "00031",
-        "courseId": "001"
-      },
-      "school": "新北市私立崇義高級中學 - 115年度國中適性教育職業試探暑假育樂營  活動簡章",
-      "schoolName": "新北市私立崇義高級中學",
-      "campName": "115年度國中適性教育職業試探暑假育樂營  活動簡章",
-      "originalSchool": "新北市私立崇義高級中學 - 115年度國中適性教育職業試探暑假育樂營  活動簡章",
-      "address": "",
-      "category": "國中 - 職業試探營隊",
-      "courseName": "(教師：鎖震岳)",
-      "teacher": "",
-      "schedule": {
-        "startDate": "2026-07-02",
-        "endDate": "2026-07-02",
-        "weekday": "週四",
-        "startTime": "08:30",
-        "endTime": "16:00"
-      },
-      "fee": {
-        "amount": 0,
-        "isFree": true,
-        "description": "免費參加"
-      },
-      "eligibility": {
-        "grades": [
-          6,
-          7,
-          8
-        ],
-        "gradeNames": [
-          "六年級",
-          "七年級",
-          "八年級"
-        ],
-        "allowExternalStudents": true,
-        "restrictions": [
-          "限制本縣市學生"
-        ]
-      },
-      "quota": {
-        "enrolled": 8,
-        "planned": 10,
-        "actual": 8,
-        "isLottery": true
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": true,
-        "startTime": "2026-06-10T12:00:00+08:00",
-        "endTime": "2026-06-17T15:00:00+08:00",
-        "lotteryTime": "2026-06-22T12:00:00+08:00",
-        "isLottery": true,
-        "status": "已截止"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011312&act_no=00031&cls_no=001",
-        "prospectus": "https://camp.ntpc.edu.tw/central/011312/uploadfile/act_register/public/file/00031-001-clsfile.PDF",
-        "registration": "https://camp.ntpc.edu.tw/"
-      },
-      "tags": [],
-      "_raw": {
-        "schedule": "115/07/02 至 115/07/02\n週四 08:30~16:00",
-        "fee": "免費參加",
-        "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:8人\n預計錄取:10人\n實際錄取:8人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 15:00\n截止報名 06/22 12:00公布抽籤結果"
-      }
-    },
     {
       "source": {
         "type": "ntpc_camp",
@@ -755,6 +680,81 @@
     },
     {
       "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "011317",
+        "actId": "00044",
+        "courseId": "012"
+      },
+      "school": "新北市私立醒吾高級中學 - 115年度國中適性教育職業試探暑假育樂營",
+      "schoolName": "新北市私立醒吾高級中學",
+      "campName": "115年度國中適性教育職業試探暑假育樂營",
+      "originalSchool": "新北市私立醒吾高級中學 - 115年度國中適性教育職業試探暑假育樂營",
+      "address": "",
+      "category": "國中 - 職業試探營隊",
+      "courseName": "(教師：譚孝聖)",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-07-15",
+        "endDate": "2026-07-15",
+        "weekday": "週三",
+        "startTime": "08:10",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": "免費參加"
+      },
+      "eligibility": {
+        "grades": [
+          6,
+          7,
+          8
+        ],
+        "gradeNames": [
+          "六年級",
+          "七年級",
+          "八年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 9,
+        "planned": 20,
+        "actual": 9,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-06-10T12:00:00+08:00",
+        "endTime": "2026-06-17T17:00:00+08:00",
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=011317&act_no=00044&cls_no=012",
+        "prospectus": "https://camp.ntpc.edu.tw/central/011317/uploadfile/act_register/public/file/00044-012-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/07/15 至 115/07/15\n週三 08:10~16:00",
+        "fee": "免費參加",
+        "eligibility": "6,7,8,外校學生- 限制本縣市學生",
+        "quota": "依課程抽籤\n報名人數:9人\n預計錄取:20人\n實際錄取:9人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
+      }
+    },
+    {
+      "source": {
         "type": "taipei_holiday",
         "name": "臺北市國民小學暑期體驗營",
         "url": "https://holiday.tp.edu.tw/camps_all",
@@ -1124,7 +1124,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/1/att/5_ca30791ac20504f9bbe12cfd0e7ec0fd.pdf"
       },
       "tags": [
         "台北市",
@@ -1199,7 +1200,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/1/att/6_396ed2b9f712a390a975bd61695f8493.pdf"
       },
       "tags": [
         "台北市",
@@ -1274,7 +1276,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=1",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/1/att/7_40e2f2cd9cae70be7b7bb299c91108d0.pdf"
       },
       "tags": [
         "台北市",
@@ -1349,7 +1352,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/2/att/8_e9697ef62ac2173e851f2abbff746d8a.pdf"
       },
       "tags": [
         "台北市",
@@ -1424,7 +1428,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/2/att/9_b7f6f28a92e2bbba218a49f5436c23e5.pdf"
       },
       "tags": [
         "台北市",
@@ -1499,7 +1504,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=2",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/2/att/10_6e7e9518a01bc93b4506b7146ceb1680.pdf"
       },
       "tags": [
         "台北市",
@@ -1728,7 +1734,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=3",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/3/att/13_2c7a1fabd57ff875e3b5b3ab59f3fcb1.pdf"
       },
       "tags": [
         "台北市",
