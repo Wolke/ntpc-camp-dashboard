@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-12T02:26:03.365Z",
+  "lastUpdated": "2026-07-19T02:23:16.468Z",
   "stats": {
     "total": 50,
     "allowExternalStudents": 50,
@@ -1296,7 +1296,7 @@
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=50",
         "registration": "https://holiday.tp.edu.tw/camps_all",
-        "prospectus": "https://holiday.tp.edu.tw/programs/50/att/17_b817744ce755f1df0c19eb3014b9caa8.pdf"
+        "prospectus": "https://holiday.tp.edu.tw/programs/50/att/17_872008f91d1469cc2a677efa0bb3d7f4.pdf"
       },
       "tags": [
         "台北市",
@@ -1448,7 +1448,8 @@
       },
       "urls": {
         "detail": "https://holiday.tp.edu.tw/camp?NBR=5",
-        "registration": "https://holiday.tp.edu.tw/camps_all"
+        "registration": "https://holiday.tp.edu.tw/camps_all",
+        "prospectus": "https://holiday.tp.edu.tw/programs/5/att/19_065c5aa460a8827da79713946e8d6d77.pdf"
       },
       "tags": [
         "台北市",
