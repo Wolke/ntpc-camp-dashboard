@@ -40,6 +40,17 @@ const Header = () => {
                 課程查詢
               </NavLink>
               <NavLink
+                to="/summer-weeks"
+                className={({ isActive }) =>
+                  `rounded-md px-3 py-2 text-sm font-medium transition-colors ${isActive
+                    ? 'bg-indigo-50 text-indigo-700'
+                    : 'text-slate-600 hover:bg-slate-50 hover:text-slate-950'
+                  }`
+                }
+              >
+                暑假周次
+              </NavLink>
+              <NavLink
                 to="/analysis"
                 className={({ isActive }) =>
                   `rounded-md px-3 py-2 text-sm font-medium transition-colors ${isActive

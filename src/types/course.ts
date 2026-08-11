@@ -109,6 +109,8 @@ export interface FilterOptions {
     dateRange: { start: string | null; end: string | null };
     grades: number[];
     themeIds: string[];
+    durationDays: number[];
+    weekSummaries: string[];
     registrationStatus: RegistrationStatus[];
     courseTimeStatus: CourseTimeStatus[];
     quotaStatus: QuotaStatus[];

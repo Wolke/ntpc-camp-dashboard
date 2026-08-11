@@ -1,5 +1,5 @@
 import type { Course } from '../types/course';
-import { formatCourseWeekSummary } from './courseSchedule';
+import { formatCourseWeekSummary, getCourseDayCount, getCourseDurationLabel } from './courseSchedule';
 
 export interface CourseTheme {
     id: string;
@@ -105,6 +105,8 @@ export function getCourseDisplayTitle(course: Course): string {
 }
 
 export function getCourseSearchText(course: Course): string {
+    const dayCount = getCourseDayCount(course);
+
     return [
         getCourseDisplayTitle(course),
         course.source?.name,
@@ -118,6 +120,7 @@ export function getCourseSearchText(course: Course): string {
         course.address,
         course.fee.description,
         formatCourseWeekSummary(course),
+        dayCount ? getCourseDurationLabel(dayCount) : '',
         course.eligibility.allowExternalStudents ? '開放外校 外校學生' : '',
         course.eligibility.gradeNames.join(' '),
         course.tags?.join(' '),

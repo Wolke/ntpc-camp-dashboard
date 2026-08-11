@@ -1,4 +1,5 @@
 import type { Course } from '../types/course';
+import { getCourseDayCount, getCourseDurationLabel } from './courseSchedule';
 import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, matchesCourseKeyword } from './courseTaxonomy';
 
 export interface ThemeInsight {
@@ -24,6 +25,17 @@ export interface FeaturedCamp {
     reasons: string[];
 }
 
+export interface ShortCampInsight {
+    dayCount: 1 | 2;
+    label: string;
+    courses: Course[];
+    courseCount: number;
+    schoolCount: number;
+    freeCount: number;
+    externalCount: number;
+    representativeCourses: Course[];
+}
+
 export interface CampAnalysis {
     totalCourses: number;
     totalSchools: number;
@@ -32,6 +44,7 @@ export interface CampAnalysis {
     averagePlannedSeats: number;
     popularThemes: ThemeInsight[];
     featuredCamps: FeaturedCamp[];
+    shortCamps: ShortCampInsight[];
     registrationSignals: {
         coursesWithEnrollment: number;
         coursesWithPlannedSeats: number;
@@ -227,6 +240,27 @@ export function analyzeCamps(courses: Course[]): CampAnalysis {
         })
         .slice(0, 12);
 
+    const shortCamps = ([1, 2] as const).map((dayCount) => {
+        const shortCourses = courses
+            .filter((course) => getCourseDayCount(course) === dayCount)
+            .sort((a, b) =>
+                a.schedule.startDate.localeCompare(b.schedule.startDate) ||
+                a.schoolName.localeCompare(b.schoolName, 'zh-TW') ||
+                getCourseDisplayTitle(a).localeCompare(getCourseDisplayTitle(b), 'zh-TW')
+            );
+
+        return {
+            dayCount,
+            label: getCourseDurationLabel(dayCount),
+            courses: shortCourses,
+            courseCount: shortCourses.length,
+            schoolCount: uniqueCount(shortCourses.map((course) => course.schoolName)),
+            freeCount: shortCourses.filter((course) => course.fee.isFree).length,
+            externalCount: shortCourses.filter((course) => course.eligibility.allowExternalStudents).length,
+            representativeCourses: getRepresentativeCourses(shortCourses).slice(0, 6),
+        };
+    });
+
     const totalPlanned = courses.reduce((sum, course) => sum + Math.max(course.quota.planned, 0), 0);
     const totalEnrolled = courses.reduce((sum, course) => sum + Math.max(course.quota.enrolled, 0), 0);
     const coursesWithPlannedSeats = courses.filter((course) => course.quota.planned > 0).length;
@@ -239,6 +273,7 @@ export function analyzeCamps(courses: Course[]): CampAnalysis {
         averagePlannedSeats: coursesWithPlannedSeats > 0 ? totalPlanned / coursesWithPlannedSeats : 0,
         popularThemes,
         featuredCamps: featuredCamps.map(({ course, title, score, reasons }) => ({ course, title, score, reasons })),
+        shortCamps,
         registrationSignals: {
             coursesWithEnrollment: courses.filter((course) => course.quota.enrolled > 0).length,
             coursesWithPlannedSeats,
