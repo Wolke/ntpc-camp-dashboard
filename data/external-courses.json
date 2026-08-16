@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-09T01:22:36.858Z",
+  "lastUpdated": "2026-08-16T01:04:57.598Z",
   "description": "開放外校學生報名的課程",
-  "total": 58,
+  "total": 59,
   "courses": [
     {
       "source": {
@@ -460,81 +460,6 @@
         "url": "https://camp.ntpc.edu.tw/",
         "schoolId": "014501",
         "actId": "00043",
-        "courseId": "015"
-      },
-      "school": "新北市立板橋國民中學 - 115年度國小多元職業試探營隊",
-      "schoolName": "新北市立板橋國民中學",
-      "campName": "115年度國小多元職業試探營隊",
-      "originalSchool": "新北市立板橋國民中學 - 115年度國小多元職業試探營隊",
-      "address": "",
-      "category": "國小-多元職業試探營隊",
-      "courseName": "(教師：專業講師)",
-      "teacher": "",
-      "schedule": {
-        "startDate": "2026-08-11",
-        "endDate": "2026-08-11",
-        "weekday": "週二",
-        "startTime": "10:00",
-        "endTime": "12:00"
-      },
-      "fee": {
-        "amount": 0,
-        "isFree": true,
-        "description": "免費參加"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          5,
-          6
-        ],
-        "gradeNames": [
-          "四年級",
-          "五年級",
-          "六年級"
-        ],
-        "allowExternalStudents": true,
-        "restrictions": [
-          "限制本縣市學生"
-        ]
-      },
-      "quota": {
-        "enrolled": 1,
-        "planned": 1,
-        "actual": 0,
-        "isLottery": true
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": true,
-        "startTime": "2026-06-10T12:00:00+08:00",
-        "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": "2026-06-22T12:00:00+08:00",
-        "isLottery": true,
-        "status": "已截止"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014501&act_no=00043&cls_no=015",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014501/uploadfile/act_register/public/file/00043-015-clsfile.PDF",
-        "registration": "https://camp.ntpc.edu.tw/"
-      },
-      "tags": [],
-      "_raw": {
-        "schedule": "115/08/11 至 115/08/11\n週二 10:00~12:00",
-        "fee": "免費參加",
-        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:1人\n預計錄取:1人\n實際錄取:已額滿",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_camp",
-        "name": "新北市寒暑假育樂營",
-        "url": "https://camp.ntpc.edu.tw/",
-        "schoolId": "014501",
-        "actId": "00043",
         "courseId": "016"
       },
       "school": "新北市立板橋國民中學 - 115年度國小多元職業試探營隊",
@@ -600,6 +525,156 @@
         "fee": "免費參加",
         "eligibility": "4,5,6,外校學生- 限制本縣市學生",
         "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014508",
+        "actId": "00056",
+        "courseId": "018"
+      },
+      "school": "新北市立新泰國民中學 - 115年度國小生適性職業試探暨體驗教育暑假育樂營  活動簡章",
+      "schoolName": "新北市立新泰國民中學",
+      "campName": "115年度國小生適性職業試探暨體驗教育暑假育樂營  活動簡章",
+      "originalSchool": "新北市立新泰國民中學 - 115年度國小生適性職業試探暨體驗教育暑假育樂營  活動簡章",
+      "address": "",
+      "category": "國小 - 職業試探營隊",
+      "courseName": "(教師：羅俊驛老師)",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-08-20",
+        "endDate": "2026-08-20",
+        "weekday": "週四",
+        "startTime": "08:20",
+        "endTime": "11:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": "免費參加"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-06-10T12:00:00+08:00",
+        "endTime": "2026-06-17T17:00:00+08:00",
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014508&act_no=00056&cls_no=018",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014508/uploadfile/act_register/public/file/00056-018-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/08/20 至 115/08/20\n週四 08:20~11:00",
+        "fee": "免費參加",
+        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
+        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014508",
+        "actId": "00056",
+        "courseId": "016"
+      },
+      "school": "新北市立新泰國民中學 - 115年度國小生適性職業試探暨體驗教育暑假育樂營  活動簡章",
+      "schoolName": "新北市立新泰國民中學",
+      "campName": "115年度國小生適性職業試探暨體驗教育暑假育樂營  活動簡章",
+      "originalSchool": "新北市立新泰國民中學 - 115年度國小生適性職業試探暨體驗教育暑假育樂營  活動簡章",
+      "address": "",
+      "category": "國小 - 職業試探營隊",
+      "courseName": "(教師：羅俊驛老師)",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-08-20",
+        "endDate": "2026-08-20",
+        "weekday": "週四",
+        "startTime": "13:20",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 0,
+        "isFree": true,
+        "description": "免費參加"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 1,
+        "planned": 1,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-06-10T12:00:00+08:00",
+        "endTime": "2026-06-17T17:00:00+08:00",
+        "lotteryTime": "2026-06-22T12:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014508&act_no=00056&cls_no=016",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014508/uploadfile/act_register/public/file/00056-016-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/08/20 至 115/08/20\n週四 13:20~16:00",
+        "fee": "免費參加",
+        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
+        "quota": "依課程抽籤\n報名人數:1人\n預計錄取:1人\n實際錄取:已額滿",
         "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
       }
     },
