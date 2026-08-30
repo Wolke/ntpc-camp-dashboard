@@ -234,6 +234,15 @@ export function formatTimeRange(course: Course): string {
     return [dateRange, weekSummary, weekdaySummary, periodSummary, clockSummary].filter(Boolean).join(' ');
 }
 
+export function formatCourseFee(course: Course): string {
+    if (course.fee.isFree) return '免費';
+    return course.fee.description || '費用未標示';
+}
+
+export function getCourseOfficialUrl(course: Course): string | undefined {
+    return course.urls?.detail || course.urls?.registration || course.source?.url;
+}
+
 // 計算報名截止剩餘天數
 export function getDaysUntilDeadline(course: Course): number | null {
     const now = new Date();

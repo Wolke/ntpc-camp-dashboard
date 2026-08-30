@@ -74,12 +74,20 @@ function uniqueCount(values: string[]): number {
 }
 
 function getRepresentativeCourses(courses: Course[]): Course[] {
+    const seen = new Set<string>();
+
     return [...courses]
         .filter((course) => !getCourseDisplayTitle(course).includes('午餐班'))
         .sort((a, b) => {
             const aSeats = Math.max(a.quota.planned, a.quota.actual, a.quota.enrolled);
             const bSeats = Math.max(b.quota.planned, b.quota.actual, b.quota.enrolled);
             return bSeats - aSeats || getCourseDisplayTitle(a).localeCompare(getCourseDisplayTitle(b), 'zh-TW');
+        })
+        .filter((course) => {
+            const key = `${course.schoolName}|${getCourseDisplayTitle(course)}`;
+            if (seen.has(key)) return false;
+            seen.add(key);
+            return true;
         })
         .slice(0, 3);
 }
@@ -101,9 +109,6 @@ function getFeaturedReasons(course: Course, titleCounts: Map<string, number>, th
     }
     if ((themeCounts.get(theme.id) || 0) <= 8) {
         reasons.push('所屬主題供給少');
-    }
-    if (course.fee.isFree) {
-        reasons.push('免費參加');
     }
     if (course.eligibility.allowExternalStudents) {
         reasons.push('開放外校學生');

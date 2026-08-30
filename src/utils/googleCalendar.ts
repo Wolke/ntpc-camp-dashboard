@@ -55,7 +55,12 @@ function buildGoogleCalendarUrl(params: {
 export function buildCourseCalendarUrl(course: Course) {
     const title = course.category || course.courseName || '育樂營課程';
     const start = course.schedule.startDate?.replace(/-/g, '') || '';
-    const end = course.schedule.endDate?.replace(/-/g, '') || start;
+    const inclusiveEnd = course.schedule.endDate || course.schedule.startDate;
+    const endDate = inclusiveEnd ? new Date(`${inclusiveEnd}T00:00:00Z`) : null;
+    if (endDate) endDate.setUTCDate(endDate.getUTCDate() + 1);
+    const end = endDate && !Number.isNaN(endDate.getTime())
+        ? endDate.toISOString().slice(0, 10).replace(/-/g, '')
+        : start;
 
     return buildGoogleCalendarUrl({
         title,

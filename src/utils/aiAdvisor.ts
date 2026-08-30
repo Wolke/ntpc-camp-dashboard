@@ -4,7 +4,7 @@ import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, getTraitMatc
 
 export interface AdvisorProfile {
     area: string;
-    grade: number;
+    grade: number | null;
     traits: string[];
     timePreference: 'all' | 'morning' | 'afternoon' | 'full_day';
     budgetMode: 'flexible' | 'free_only' | 'max' | 'range';
@@ -81,6 +81,9 @@ function getBudgetFit(course: Course, profile: AdvisorProfile): AdvisorRecommend
 }
 
 function buildSummary(profile: AdvisorProfile, candidateCount: number): string {
+    if (profile.grade === null) {
+        return '請先選擇孩子目前的年級，再由智慧顧問整理符合資格的課程。';
+    }
     const traitText = profile.traits.length > 0
         ? profile.traits.map(getTraitLabel).join('、')
         : '還沒有明確偏好';
@@ -96,6 +99,8 @@ function buildSummary(profile: AdvisorProfile, candidateCount: number): string {
 }
 
 function scoreCourse(course: Course, profile: AdvisorProfile): AdvisorRecommendation | null {
+    if (profile.grade === null) return null;
+
     const title = getCourseDisplayTitle(course);
     const normalizedText = normalizeText(getCourseSearchText(course));
     const area = normalizeText(profile.area.trim());
@@ -196,6 +201,14 @@ function scoreCourse(course: Course, profile: AdvisorProfile): AdvisorRecommenda
 }
 
 export function getAdvisorRecommendations(courses: Course[], profile: AdvisorProfile): AdvisorResult {
+    if (profile.grade === null) {
+        return {
+            summary: buildSummary(profile, 0),
+            recommendations: [],
+            rejectedCount: 0,
+        };
+    }
+
     const recommendations = courses
         .map((course) => scoreCourse(course, profile))
         .filter((item): item is AdvisorRecommendation => Boolean(item))

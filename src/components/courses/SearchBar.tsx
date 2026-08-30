@@ -45,12 +45,14 @@ export default function SearchBar({ courses }: SearchBarProps) {
     }, [filters.searchQuery]);
 
     useEffect(() => {
+        if (inputValue === filters.searchQuery) return;
+
         const timeoutId = setTimeout(() => {
             setFilters({ searchQuery: inputValue });
         }, 300);
 
         return () => window.clearTimeout(timeoutId);
-    }, [inputValue, setFilters]);
+    }, [filters.searchQuery, inputValue, setFilters]);
 
     const handleClear = () => {
         setInputValue('');
@@ -67,14 +69,14 @@ export default function SearchBar({ courses }: SearchBarProps) {
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="搜尋學校、課程、老師、地址..."
-                    className="w-full rounded-md border border-slate-200 bg-white py-2.5 pl-9 pr-9 text-sm text-slate-900 placeholder-slate-400 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
+                    className="min-h-11 w-full rounded-md border border-slate-200 bg-white py-2.5 pl-9 pr-12 text-sm text-slate-900 placeholder-slate-400 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
                 />
                 {inputValue && (
                     <button
                         type="button"
                         onClick={handleClear}
                         aria-label="清除搜尋"
-                        className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md p-1 hover:bg-slate-100"
+                        className="absolute right-0 top-1/2 inline-flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center rounded-md hover:bg-slate-100"
                     >
                         <X className="h-4 w-4 text-slate-400" />
                     </button>
@@ -87,7 +89,8 @@ export default function SearchBar({ courses }: SearchBarProps) {
                         key={tag}
                         type="button"
                         onClick={() => setInputValue(tag)}
-                        className="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 transition-colors hover:bg-slate-200"
+                        aria-pressed={filters.searchQuery === tag}
+                        className="min-h-11 rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 transition-colors hover:bg-slate-200"
                     >
                         {tag}
                     </button>

@@ -3,7 +3,8 @@ import { ArrowRight, BarChart3, Compass, ExternalLink, Flame, Gauge, Sparkles, U
 import { useMemo } from 'react';
 import { useCourses } from '../hooks/useCourses';
 import { analyzeCamps } from '../utils/campAnalysis';
-import { formatTimeRange } from '../utils/courseUtils';
+import { getCourseKey } from '../utils/courseFilters';
+import { formatCourseFee, formatTimeRange, getCourseOfficialUrl } from '../utils/courseUtils';
 
 function formatPercent(value: number): string {
     return `${Math.round(value * 100)}%`;
@@ -47,7 +48,7 @@ export default function CampAnalysisPage() {
 
                         <Link
                             to="/courses"
-                            className="inline-flex items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+                            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
                         >
                             回課程查詢
                             <ExternalLink className="h-4 w-4" />
@@ -147,7 +148,7 @@ export default function CampAnalysisPage() {
                                                     <p className="text-lg font-semibold text-slate-950">{Math.round(theme.score)}</p>
                                                     <Link
                                                         to={`/courses?theme=${theme.id}`}
-                                                        className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-orange-600 hover:text-orange-700"
+                                                        className="mt-2 inline-flex min-h-11 items-center gap-1 text-xs font-medium text-orange-600 hover:text-orange-700"
                                                     >
                                                         查看全部 {theme.courseCount} 門
                                                         <ArrowRight className="h-3 w-3" />
@@ -163,16 +164,34 @@ export default function CampAnalysisPage() {
                                             </div>
 
                                             <div className="mt-3 grid gap-2 sm:grid-cols-3">
-                                                {theme.representativeCourses.map((course) => (
-                                                    <Link
-                                                        key={`${course.schoolName}-${course.category}-${course.schedule.startDate}`}
-                                                        to="/courses"
-                                                        className="rounded-md border border-slate-100 bg-slate-50 p-3 text-sm hover:bg-slate-100"
-                                                    >
-                                                        <p className="line-clamp-2 font-medium text-slate-800">{course.category || course.campName}</p>
-                                                        <p className="mt-1 text-xs text-slate-500">{shortSchoolName(course.schoolName)}</p>
-                                                    </Link>
-                                                ))}
+                                                {theme.representativeCourses.map((course) => {
+                                                    const officialUrl = getCourseOfficialUrl(course);
+                                                    const courseTitle = course.category || course.campName;
+                                                    const className = 'min-h-11 rounded-md border border-slate-100 bg-slate-50 p-3 text-sm hover:bg-slate-100';
+                                                    const content = (
+                                                        <>
+                                                            <p className="line-clamp-2 font-medium text-slate-800">{courseTitle}</p>
+                                                            <p className="mt-1 text-xs text-slate-500">{shortSchoolName(course.schoolName)}</p>
+                                                        </>
+                                                    );
+
+                                                    return officialUrl ? (
+                                                        <a
+                                                            key={getCourseKey(course)}
+                                                            href={officialUrl}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            aria-label={`${courseTitle} 官方詳情（另開新分頁）`}
+                                                            className={className}
+                                                        >
+                                                            {content}
+                                                        </a>
+                                                    ) : (
+                                                        <Link key={getCourseKey(course)} to={`/courses?theme=${theme.id}`} className={className}>
+                                                            {content}
+                                                        </Link>
+                                                    );
+                                                })}
                                             </div>
                                         </div>
                                     ))}
@@ -252,15 +271,16 @@ export default function CampAnalysisPage() {
                                         </div>
 
                                         <div className="mt-4 flex items-center justify-between text-xs text-slate-500">
-                                            <span>{camp.course.fee.description || '費用未標示'}</span>
-                                            {camp.course.urls?.detail && (
+                                            <span>{formatCourseFee(camp.course)}</span>
+                                            {getCourseOfficialUrl(camp.course) && (
                                                 <a
-                                                    href={camp.course.urls.detail}
+                                                    href={getCourseOfficialUrl(camp.course)}
                                                     target="_blank"
-                                                    rel="noreferrer"
-                                                    className="inline-flex items-center gap-1 font-medium text-indigo-600 hover:text-indigo-700"
+                                                    rel="noopener noreferrer"
+                                                    aria-label={`${camp.title} 官方詳情（另開新分頁）`}
+                                                    className="inline-flex min-h-11 items-center gap-1 font-medium text-indigo-600 hover:text-indigo-700"
                                                 >
-                                                    詳細
+                                                    官方詳情
                                                     <ExternalLink className="h-3 w-3" />
                                                 </a>
                                             )}

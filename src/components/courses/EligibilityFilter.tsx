@@ -32,7 +32,7 @@ export default function EligibilityFilter({ filters: controlledFilters, onChange
                             type="button"
                             onClick={() => setFilters({ allowExternalStudents: option.value })}
                             aria-pressed={selected}
-                            className={`inline-flex items-center justify-center gap-1.5 rounded-md border px-2 py-2 text-sm font-medium transition-colors ${selected
+                            className={`inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md border px-2 py-2 text-sm font-medium transition-colors ${selected
                                 ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                 }`}

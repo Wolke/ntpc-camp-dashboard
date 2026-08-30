@@ -45,7 +45,7 @@ export default function GradeFilter({ filters: controlledFilters, onChange }: Gr
                     <button
                         type="button"
                         onClick={() => setFilters({ grades: [] })}
-                        className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-700"
+                        className="inline-flex min-h-11 items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-700"
                     >
                         <RotateCcw className="h-3.5 w-3.5" />
                         清除
@@ -65,7 +65,7 @@ export default function GradeFilter({ filters: controlledFilters, onChange }: Gr
                             type="button"
                             onClick={() => toggleGrade(grade.value)}
                             aria-pressed={selected}
-                            className={`rounded-md border px-2 py-2 text-sm font-medium transition-colors ${selected
+                            className={`min-h-11 rounded-md border px-2 py-2 text-sm font-medium transition-colors ${selected
                                 ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                 }`}

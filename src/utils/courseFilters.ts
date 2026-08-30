@@ -40,6 +40,13 @@ export function createDefaultFilters(): FilterOptions {
     };
 }
 
+function parseCourseDate(value: string, endOfDay = false): Date {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+        return new Date(`${value}T${endOfDay ? '23:59:59.999' : '00:00:00'}`);
+    }
+    return new Date(value);
+}
+
 export function getCourseStatus(course: Course, now: Date): {
     registration: RegistrationStatus;
     courseTime: CourseTimeStatus;
@@ -55,8 +62,8 @@ export function getCourseStatus(course: Course, now: Date): {
     else if (regEnd < threeDaysLater) registration = 'closing_soon';
     else registration = 'available';
 
-    const courseStart = new Date(course.schedule.startDate);
-    const courseEnd = new Date(course.schedule.endDate);
+    const courseStart = parseCourseDate(course.schedule.startDate);
+    const courseEnd = parseCourseDate(course.schedule.endDate, true);
     let courseTime: CourseTimeStatus = 'ended';
     if (now < courseStart) courseTime = 'upcoming';
     else if (now <= courseEnd) courseTime = 'ongoing';

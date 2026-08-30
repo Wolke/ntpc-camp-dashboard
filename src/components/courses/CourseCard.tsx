@@ -2,7 +2,7 @@ import { CalendarDays, CalendarPlus, Clock, ExternalLink, GraduationCap, School,
 import type { LucideIcon } from 'lucide-react';
 import type { Course } from '../../types/course';
 import { buildCourseCalendarUrl } from '../../utils/googleCalendar';
-import { formatScheduleParts, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
+import { formatCourseFee, formatScheduleParts, getCourseOfficialUrl, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
 import RegistrationCalendarButton from './RegistrationCalendarButton';
 
 interface CourseCardProps {
@@ -48,7 +48,7 @@ function MetaTag({ icon: Icon, label, tone = 'slate' }: MetaTagProps) {
 export default function CourseCard({ course, onClick }: CourseCardProps) {
     const status = getCourseStatusInfo(course);
     const scheduleParts = formatScheduleParts(course);
-    const officialUrl = course.urls?.detail || course.urls?.registration || course.source?.url;
+    const officialUrl = getCourseOfficialUrl(course);
 
     return (
         <article
@@ -87,7 +87,7 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
 
                 <div className="text-left sm:text-right">
                     <p className={`text-sm font-semibold ${course.fee.isFree ? 'text-emerald-700' : 'text-slate-700'}`}>
-                        {course.fee.isFree ? '免費' : course.fee.description}
+                        {formatCourseFee(course)}
                     </p>
                     <p className="mt-1 text-xs text-slate-500">
                         報名 {course.quota.enrolled} / 預計 {course.quota.planned}
@@ -137,7 +137,7 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(event) => event.stopPropagation()}
-                        className="inline-flex items-center justify-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300 hover:bg-slate-50"
+                        className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300 hover:bg-slate-50"
                     >
                         <ExternalLink className="h-4 w-4" />
                         活動簡章
@@ -149,7 +149,7 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(event) => event.stopPropagation()}
-                    className="inline-flex items-center justify-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700"
+                    className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700"
                 >
                     <CalendarPlus className="h-4 w-4" />
                     加入日曆

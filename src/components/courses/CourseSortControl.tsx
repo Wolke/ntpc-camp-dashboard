@@ -56,7 +56,8 @@ export default function CourseSortControl({
                             key={option.mode}
                             type="button"
                             onClick={() => handleClick(option.mode)}
-                            className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs font-medium transition-colors ${selected
+                            aria-pressed={selected}
+                            className={`inline-flex min-h-11 items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs font-medium transition-colors ${selected
                                 ? 'bg-indigo-50 text-indigo-700'
                                 : 'text-slate-600 hover:bg-slate-50 hover:text-slate-950'
                                 }`}
@@ -69,7 +70,7 @@ export default function CourseSortControl({
             </div>
 
             {(sortMode === 'distance' || locationStatus === 'requesting' || locationStatus === 'error') && (
-                <p className={`text-xs ${locationStatus === 'error' || locationStatus === 'unsupported'
+                <p aria-live="polite" className={`text-xs ${locationStatus === 'error' || locationStatus === 'unsupported'
                     ? 'text-amber-600'
                     : 'text-slate-500'
                     }`}

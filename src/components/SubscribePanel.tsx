@@ -35,7 +35,6 @@ export default function SubscribePanel() {
                     email: normalizedEmail,
                     source: 'ntpc-camp-dashboard',
                     createdAt: new Date().toISOString(),
-                    userAgent: window.navigator.userAgent,
                 };
 
                 if (isGoogleAppsScriptEndpoint(SUBSCRIBE_ENDPOINT)) {
@@ -48,9 +47,8 @@ export default function SubscribePanel() {
                         body: JSON.stringify(payload),
                     });
 
-                    setStatus('success');
-                    setMessage('已送出訂閱申請。');
-                    setEmail('');
+                    setStatus('fallback');
+                    setMessage('訂閱申請已送出，但瀏覽器無法確認伺服器是否成功接收。');
                     return;
                 }
 
@@ -64,6 +62,11 @@ export default function SubscribePanel() {
 
                 if (!response.ok) {
                     throw new Error('訂閱 API 回應失敗');
+                }
+
+                const responseData = await response.json() as { ok?: boolean };
+                if (responseData.ok !== true) {
+                    throw new Error('訂閱 API 未確認成功');
                 }
 
                 setStatus('success');
@@ -102,7 +105,7 @@ export default function SubscribePanel() {
                 </div>
                 <div>
                     <h2 className="text-sm font-semibold text-slate-900">報名開放通知</h2>
-                    <p className="mt-1 text-xs leading-5 text-slate-500">{message}</p>
+                    <p aria-live="polite" className="mt-1 text-xs leading-5 text-slate-500">{message}</p>
                 </div>
             </div>
 
@@ -117,13 +120,13 @@ export default function SubscribePanel() {
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
                         placeholder="輸入 email"
-                        className="w-full rounded-md border border-slate-200 bg-white py-2.5 pl-9 pr-3 text-sm text-slate-900 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
+                        className="min-h-11 w-full rounded-md border border-slate-200 bg-white py-2.5 pl-9 pr-3 text-sm text-slate-900 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
                     />
                 </div>
                 <button
                     type="submit"
                     disabled={status === 'submitting'}
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 disabled:cursor-wait disabled:bg-indigo-400"
+                    className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md bg-indigo-600 px-3 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-700 disabled:cursor-wait disabled:bg-indigo-400"
                 >
                     <Send className="h-4 w-4" />
                     {status === 'submitting' ? '送出中' : '訂閱通知'}

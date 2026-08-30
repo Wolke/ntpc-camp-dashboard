@@ -126,6 +126,9 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
                         key={school.name}
                         position={school.coords}
                         icon={createColoredIcon(school.color)}
+                        title={`${school.name}，${school.count} 門課程`}
+                        alt={`${school.name}，${school.count} 門課程`}
+                        keyboard
                         eventHandlers={{
                             click: () => {
                                 if (selectedSchool === school.name) {
@@ -143,7 +146,7 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
                                 {selectedSchool === school.name && (
                                     <button
                                         onClick={() => setSelectedSchool(null)}
-                                        className="mt-1 text-indigo-600 hover:underline"
+                                        className="mt-1 min-h-11 text-indigo-600 hover:underline"
                                     >
                                         顯示全部
                                     </button>
@@ -184,6 +187,8 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
                         {unmappedSchools.map((school) => (
                             <button
                                 key={school.name}
+                                type="button"
+                                aria-pressed={selectedSchool === school.name}
                                 onClick={() => {
                                     if (selectedSchool === school.name) {
                                         setSelectedSchool(null);
@@ -191,7 +196,7 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
                                         setSelectedSchool(school.name);
                                     }
                                 }}
-                                className={`px-2 py-1 text-xs rounded-full border transition-colors ${selectedSchool === school.name
+                                className={`min-h-11 rounded-full border px-3 py-1 text-xs transition-colors ${selectedSchool === school.name
                                     ? 'bg-indigo-100 border-indigo-300 text-indigo-700'
                                     : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
                                     }`}

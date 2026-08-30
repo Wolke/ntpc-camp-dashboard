@@ -2,12 +2,23 @@ import { useMemo, useState } from 'react';
 import { ExternalLink, SlidersHorizontal, Sparkles, UserCheck } from 'lucide-react';
 import { useCourses } from '../hooks/useCourses';
 import { type AdvisorProfile, TRAIT_OPTIONS, getAdvisorRecommendations } from '../utils/aiAdvisor';
-import { formatTimeRange } from '../utils/courseUtils';
+import { formatTimeRange, getCourseOfficialUrl } from '../utils/courseUtils';
 
-const DEFAULT_PROFILE: AdvisorProfile = {
-    area: '三重',
+const EMPTY_PROFILE: AdvisorProfile = {
+    area: '',
+    grade: null,
+    traits: [],
+    timePreference: 'all',
+    budgetMode: 'flexible',
+    minBudget: null,
+    maxBudget: null,
+    notes: '',
+};
+
+const EXAMPLE_PROFILE: AdvisorProfile = {
+    area: '',
     grade: 4,
-    traits: ['active', 'tech', 'confidence'],
+    traits: ['active', 'tech'],
     timePreference: 'all',
     budgetMode: 'flexible',
     minBudget: null,
@@ -57,7 +68,7 @@ function formatDateLabel(date: string): string {
 
 export default function AiAdvisorPage() {
     const { allCourses, isLoading, error } = useCourses();
-    const [profile, setProfile] = useState<AdvisorProfile>(DEFAULT_PROFILE);
+    const [profile, setProfile] = useState<AdvisorProfile>(EMPTY_PROFILE);
     const result = useMemo(() => getAdvisorRecommendations(allCourses, profile), [allCourses, profile]);
     const groupedRecommendations = useMemo(() => groupByDate(result.recommendations), [result.recommendations]);
 
@@ -67,7 +78,7 @@ export default function AiAdvisorPage() {
                 <section className="mb-5 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
                     <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
                         <div>
-                            <p className="text-sm font-medium text-indigo-600">AI 營隊顧問</p>
+                            <p className="text-sm font-medium text-indigo-600">智慧顧問</p>
                             <h1 className="mt-1 text-2xl font-semibold tracking-normal text-slate-950">
                                 先理解孩子，再依時間推薦營隊
                             </h1>
@@ -78,11 +89,11 @@ export default function AiAdvisorPage() {
 
                         <button
                             type="button"
-                            onClick={() => setProfile(DEFAULT_PROFILE)}
-                            className="inline-flex items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+                            onClick={() => setProfile(EXAMPLE_PROFILE)}
+                            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
                         >
                             <SlidersHorizontal className="h-4 w-4" />
-                            套用三重四年級範例
+                            套用四年級科技／活動範例
                         </button>
                     </div>
                 </section>
@@ -107,7 +118,7 @@ export default function AiAdvisorPage() {
                                     <input
                                         value={profile.area}
                                         onChange={(event) => setProfile({ ...profile, area: event.target.value })}
-                                        className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
+                                        className="mt-1 min-h-11 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
                                         placeholder="例如：三重、林口、臺北"
                                     />
                                 </label>
@@ -115,10 +126,14 @@ export default function AiAdvisorPage() {
                                 <label className="text-sm font-medium text-slate-700">
                                     年級
                                     <select
-                                        value={profile.grade}
-                                        onChange={(event) => setProfile({ ...profile, grade: Number(event.target.value) })}
-                                        className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
+                                        value={profile.grade ?? ''}
+                                        onChange={(event) => setProfile({
+                                            ...profile,
+                                            grade: event.target.value ? Number(event.target.value) : null,
+                                        })}
+                                        className="mt-1 min-h-11 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
                                     >
+                                        <option value="">請選擇年級</option>
                                         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((grade) => (
                                             <option key={grade} value={grade}>{grade} 年級</option>
                                         ))}
@@ -130,7 +145,7 @@ export default function AiAdvisorPage() {
                                     <select
                                         value={profile.timePreference}
                                         onChange={(event) => setProfile({ ...profile, timePreference: event.target.value as AdvisorProfile['timePreference'] })}
-                                        className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
+                                        className="mt-1 min-h-11 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
                                     >
                                         <option value="all">都可以</option>
                                         <option value="morning">上午</option>
@@ -152,7 +167,7 @@ export default function AiAdvisorPage() {
                                                 maxBudget: budgetMode === 'flexible' || budgetMode === 'free_only' ? null : 2500,
                                             });
                                         }}
-                                        className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
+                                        className="mt-1 min-h-11 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
                                     >
                                         <option value="flexible">預算彈性，先看適合度</option>
                                         <option value="free_only">只看免費</option>
@@ -170,7 +185,7 @@ export default function AiAdvisorPage() {
                                             step="100"
                                             value={profile.maxBudget ?? 2500}
                                             onChange={(event) => setProfile({ ...profile, maxBudget: Number(event.target.value) })}
-                                            className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
+                                            className="mt-1 min-h-11 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
                                         />
                                     </label>
                                 )}
@@ -185,7 +200,7 @@ export default function AiAdvisorPage() {
                                                 step="100"
                                                 value={profile.minBudget ?? 500}
                                                 onChange={(event) => setProfile({ ...profile, minBudget: Number(event.target.value) })}
-                                                className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
+                                                className="mt-1 min-h-11 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
                                             />
                                         </label>
                                         <label className="text-sm font-medium text-slate-700">
@@ -196,7 +211,7 @@ export default function AiAdvisorPage() {
                                                 step="100"
                                                 value={profile.maxBudget ?? 2500}
                                                 onChange={(event) => setProfile({ ...profile, maxBudget: Number(event.target.value) })}
-                                                className="mt-1 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
+                                                className="mt-1 min-h-11 w-full rounded-md border border-slate-200 px-3 py-2 text-sm outline-none focus:border-indigo-300 focus:ring-2 focus:ring-indigo-100"
                                             />
                                         </label>
                                     </div>
@@ -221,7 +236,8 @@ export default function AiAdvisorPage() {
                                             key={option.id}
                                             type="button"
                                             onClick={() => setProfile({ ...profile, traits: updateTrait(profile.traits, option.id) })}
-                                            className={`rounded-full border px-3 py-1.5 text-sm transition-colors ${active
+                                            aria-pressed={active}
+                                            className={`min-h-11 rounded-full border px-3 py-1.5 text-sm transition-colors ${active
                                                 ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
                                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                                 }`}
@@ -249,7 +265,9 @@ export default function AiAdvisorPage() {
                             <div className="flex items-start gap-3">
                                 <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-indigo-600" />
                                 <div>
-                                    <h2 className="text-base font-semibold text-indigo-950">AI 先整理出的判斷</h2>
+                                    <h2 className="text-base font-semibold text-indigo-950">
+                                        {profile.grade === null ? '開始使用智慧顧問' : '智慧顧問整理出的判斷'}
+                                    </h2>
                                     <p className="mt-2 text-sm leading-6 text-indigo-900">{result.summary}</p>
                                     {profile.notes && (
                                         <p className="mt-2 text-sm leading-6 text-indigo-800">家長補充：{profile.notes}</p>
@@ -261,6 +279,10 @@ export default function AiAdvisorPage() {
                         {isLoading && allCourses.length === 0 ? (
                             <div className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm text-slate-500 shadow-sm">
                                 正在讀取課程資料...
+                            </div>
+                        ) : profile.grade === null ? (
+                            <div className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm text-slate-500 shadow-sm">
+                                選擇孩子目前的年級後，才會產生符合資格的課程建議。
                             </div>
                         ) : result.recommendations.length === 0 ? (
                             <div className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm text-slate-500 shadow-sm">
@@ -318,14 +340,15 @@ export default function AiAdvisorPage() {
                                                     <span className="text-slate-500">
                                                         {recommendation.course.eligibility.gradeNames.join('、')}
                                                     </span>
-                                                    {recommendation.course.urls?.detail && (
+                                                    {getCourseOfficialUrl(recommendation.course) && (
                                                         <a
-                                                            href={recommendation.course.urls.detail}
+                                                            href={getCourseOfficialUrl(recommendation.course)}
                                                             target="_blank"
-                                                            rel="noreferrer"
-                                                            className="inline-flex items-center gap-1 font-medium text-indigo-600 hover:text-indigo-700"
+                                                            rel="noopener noreferrer"
+                                                            aria-label={`${recommendation.title} 官方詳情（另開新分頁）`}
+                                                            className="inline-flex min-h-11 items-center gap-1 font-medium text-indigo-600 hover:text-indigo-700"
                                                         >
-                                                            詳細
+                                                            官方詳情
                                                             <ExternalLink className="h-4 w-4" />
                                                         </a>
                                                     )}

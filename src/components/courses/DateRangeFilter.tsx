@@ -81,7 +81,7 @@ export default function DateRangeFilter({ filters: controlledFilters, onChange }
                     <button
                         type="button"
                         onClick={resetRange}
-                        className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-700"
+                        className="inline-flex min-h-11 items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-700"
                     >
                         <RotateCcw className="h-3.5 w-3.5" />
                         重置
@@ -96,7 +96,7 @@ export default function DateRangeFilter({ filters: controlledFilters, onChange }
                         type="date"
                         value={start || ''}
                         onChange={(event) => updateStart(event.target.value)}
-                        className="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
+                        className="min-h-11 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
                     />
                 </label>
 
@@ -108,7 +108,7 @@ export default function DateRangeFilter({ filters: controlledFilters, onChange }
                         type="date"
                         value={end || ''}
                         onChange={(event) => updateEnd(event.target.value)}
-                        className="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
+                        className="min-h-11 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
                     />
                 </label>
             </div>
@@ -122,7 +122,7 @@ export default function DateRangeFilter({ filters: controlledFilters, onChange }
                             type="button"
                             onClick={() => setFilters({ dateRange: { start: preset.start, end: preset.end } })}
                             aria-pressed={selected}
-                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${selected
+                            className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${selected
                                 ? 'border-indigo-500 bg-indigo-50 text-indigo-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50'
                                 }`}

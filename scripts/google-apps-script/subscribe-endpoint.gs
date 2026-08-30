@@ -21,7 +21,6 @@ function doPost(e) {
       email,
       String(payload.source || ''),
       new Date(),
-      String(payload.userAgent || ''),
     ]);
   }
 
@@ -84,7 +83,7 @@ function getSubscribersSheet_() {
 
   if (!sheet) {
     sheet = spreadsheet.insertSheet(SHEET_NAME);
-    sheet.appendRow(['email', 'source', 'createdAt', 'userAgent']);
+    sheet.appendRow(['email', 'source', 'createdAt']);
   }
 
   return sheet;

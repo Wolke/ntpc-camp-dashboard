@@ -10,6 +10,8 @@ lerna-debug.log*
 # 建置結果
 dist/
 dist-ssr/
+playwright-report/
+test-results/
 *.local
 data/subscribers.json
 

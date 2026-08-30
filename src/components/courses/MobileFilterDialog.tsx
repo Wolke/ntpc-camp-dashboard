@@ -38,13 +38,21 @@ export default function MobileFilterDialog({
     onClose,
 }: MobileFilterDialogProps) {
     const dialogRef = useRef<HTMLDialogElement>(null);
+    const triggerRef = useRef<HTMLElement | null>(null);
     const [draftFilters, setDraftFilters] = useState(() => cloneFilters(filters));
 
     useEffect(() => {
         const dialog = dialogRef.current;
-        if (!dialog || !open) return;
-        setDraftFilters(cloneFilters(filters));
-        if (!dialog.open) dialog.showModal();
+        if (!dialog) return;
+
+        if (open && !dialog.open) {
+            triggerRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+            setDraftFilters(cloneFilters(filters));
+            dialog.showModal();
+        } else if (!open && dialog.open) {
+            dialog.close();
+            window.requestAnimationFrame(() => triggerRef.current?.focus());
+        }
     }, [filters, open]);
 
     const previewCount = useMemo(
@@ -64,8 +72,6 @@ export default function MobileFilterDialog({
             themeIds: [...filters.themeIds],
         });
     };
-
-    if (!open) return null;
 
     return (
         <dialog

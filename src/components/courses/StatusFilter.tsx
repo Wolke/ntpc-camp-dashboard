@@ -1,7 +1,6 @@
 import { CheckCircle, CircleDollarSign, Clock3, Filter, GraduationCap, RotateCcw } from 'lucide-react';
 import { useCourseStore } from '../../store/courseStore';
-import type { RegistrationStatus, CourseTimeStatus, QuotaStatus } from '../../types/course';
-import type { FilterOptions } from '../../types/course';
+import type { CourseTimeStatus, FilterOptions, QuotaStatus, RegistrationStatus } from '../../types/course';
 
 interface StatusFilterProps {
     filters?: FilterOptions;
@@ -57,7 +56,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                 <button
                     type="button"
                     onClick={resetFilters}
-                    className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-700"
+                    className="inline-flex min-h-11 items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-700"
                 >
                     <RotateCcw className="h-3.5 w-3.5" />
                     重置
@@ -81,7 +80,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                                     opt.value,
                                     (v) => setFilters({ registrationStatus: v })
                                 )}
-                                className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.registrationStatus.includes(opt.value)
+                                className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.registrationStatus.includes(opt.value)
                                     ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
                                     : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                     }`}
@@ -108,7 +107,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                                     opt.value,
                                     (v) => setFilters({ courseTimeStatus: v })
                                 )}
-                                className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.courseTimeStatus.includes(opt.value)
+                                className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.courseTimeStatus.includes(opt.value)
                                     ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
                                     : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                     }`}
@@ -135,7 +134,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                                     opt.value,
                                     (v) => setFilters({ quotaStatus: v })
                                 )}
-                                className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.quotaStatus.includes(opt.value)
+                                className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.quotaStatus.includes(opt.value)
                                     ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
                                     : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                     }`}
@@ -156,7 +155,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                             type="button"
                             aria-pressed={filters.isFree === true}
                             onClick={() => setFilters({ isFree: filters.isFree === true ? null : true })}
-                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.isFree === true
+                            className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.isFree === true
                                 ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                 }`}
@@ -167,7 +166,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                             type="button"
                             aria-pressed={filters.isFree === false}
                             onClick={() => setFilters({ isFree: filters.isFree === false ? null : false })}
-                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.isFree === false
+                            className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.isFree === false
                                 ? 'border-amber-300 bg-amber-50 text-amber-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                 }`}
@@ -191,7 +190,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                                 'elementary',
                                 (v) => setFilters({ schoolTypes: v })
                             )}
-                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('elementary')
+                            className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('elementary')
                                 ? 'border-amber-300 bg-amber-50 text-amber-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                 }`}
@@ -206,7 +205,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                                 'junior_high',
                                 (v) => setFilters({ schoolTypes: v })
                             )}
-                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('junior_high')
+                            className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('junior_high')
                                 ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                 }`}
@@ -221,7 +220,7 @@ export default function StatusFilter({ filters: controlledFilters, onChange, onR
                                 'high_school',
                                 (v) => setFilters({ schoolTypes: v })
                             )}
-                            className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('high_school')
+                            className={`min-h-11 rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.schoolTypes.includes('high_school')
                                 ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'
                                 }`}
