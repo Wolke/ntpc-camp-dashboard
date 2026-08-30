@@ -1,313 +1,13 @@
 {
-  "lastUpdated": "2026-08-23T01:06:17.989Z",
+  "lastUpdated": "2026-08-30T02:26:07.257Z",
   "stats": {
     "total": 60,
-    "allowExternalStudents": 60,
-    "free": 4,
-    "canRegister": 6,
-    "schools": 18
+    "allowExternalStudents": 59,
+    "free": 0,
+    "canRegister": 1,
+    "schools": 16
   },
   "courses": [
-    {
-      "source": {
-        "type": "ntpc_camp",
-        "name": "新北市寒暑假育樂營",
-        "url": "https://camp.ntpc.edu.tw/",
-        "schoolId": "013430",
-        "actId": "00068",
-        "courseId": "010"
-      },
-      "school": "新北市立三重高級商工職業學校 - 115年度國中適性教育職業試探暑假育樂營",
-      "schoolName": "新北市立三重高級商工職業學校",
-      "campName": "115年度國中適性教育職業試探暑假育樂營",
-      "originalSchool": "新北市立三重高級商工職業學校 - 115年度國中適性教育職業試探暑假育樂營",
-      "address": "",
-      "category": "國中 - 職業試探營隊",
-      "courseName": "(教師：陳佳樂，呂祖懿)",
-      "teacher": "",
-      "schedule": {
-        "startDate": "2026-08-27",
-        "endDate": "2026-08-27",
-        "weekday": "週四",
-        "startTime": "08:50",
-        "endTime": "16:10"
-      },
-      "fee": {
-        "amount": 0,
-        "isFree": true,
-        "description": "免費參加"
-      },
-      "eligibility": {
-        "grades": [
-          6,
-          7,
-          8
-        ],
-        "gradeNames": [
-          "六年級",
-          "七年級",
-          "八年級"
-        ],
-        "allowExternalStudents": true,
-        "restrictions": [
-          "限制本縣市學生"
-        ]
-      },
-      "quota": {
-        "enrolled": 0,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": true
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": true,
-        "startTime": "2026-06-10T12:00:00+08:00",
-        "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": "2026-06-22T12:00:00+08:00",
-        "isLottery": true,
-        "status": "已截止"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=013430&act_no=00068&cls_no=010",
-        "prospectus": "https://camp.ntpc.edu.tw/central/013430/uploadfile/act_register/public/file/00068-010-clsfile.PDF",
-        "registration": "https://camp.ntpc.edu.tw/"
-      },
-      "tags": [],
-      "_raw": {
-        "schedule": "115/08/27 至 115/08/27\n週四 08:50~16:10",
-        "fee": "免費參加",
-        "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_camp",
-        "name": "新北市寒暑假育樂營",
-        "url": "https://camp.ntpc.edu.tw/",
-        "schoolId": "014439",
-        "actId": "00054",
-        "courseId": "015"
-      },
-      "school": "新北市立鶯歌高級工商職業學校 - 115年度國中適性教育職業試探暑假育樂營活動",
-      "schoolName": "新北市立鶯歌高級工商職業學校",
-      "campName": "115年度國中適性教育職業試探暑假育樂營活動",
-      "originalSchool": "新北市立鶯歌高級工商職業學校 - 115年度國中適性教育職業試探暑假育樂營活動",
-      "address": "",
-      "category": "國中 - 職業試探營隊",
-      "courseName": "(教師：翁林威)",
-      "teacher": "",
-      "schedule": {
-        "startDate": "2026-08-24",
-        "endDate": "2026-08-24",
-        "weekday": "週一",
-        "startTime": "08:30",
-        "endTime": "15:30"
-      },
-      "fee": {
-        "amount": 0,
-        "isFree": true,
-        "description": "免費參加"
-      },
-      "eligibility": {
-        "grades": [
-          6,
-          7,
-          8
-        ],
-        "gradeNames": [
-          "六年級",
-          "七年級",
-          "八年級"
-        ],
-        "allowExternalStudents": true,
-        "restrictions": [
-          "限制本縣市學生"
-        ]
-      },
-      "quota": {
-        "enrolled": 4,
-        "planned": 6,
-        "actual": 4,
-        "isLottery": true
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": true,
-        "startTime": "2026-06-10T12:00:00+08:00",
-        "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": "2026-06-22T12:00:00+08:00",
-        "isLottery": true,
-        "status": "已截止"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014439&act_no=00054&cls_no=015",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014439/uploadfile/act_register/public/file/00054-015-clsfile.PDF",
-        "registration": "https://camp.ntpc.edu.tw/"
-      },
-      "tags": [],
-      "_raw": {
-        "schedule": "115/08/24 至 115/08/24\n週一 08:30~15:30",
-        "fee": "免費參加",
-        "eligibility": "6,7,8,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:4人\n預計錄取:6人\n實際錄取:4人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_camp",
-        "name": "新北市寒暑假育樂營",
-        "url": "https://camp.ntpc.edu.tw/",
-        "schoolId": "014501",
-        "actId": "00043",
-        "courseId": "008"
-      },
-      "school": "新北市立板橋國民中學 - 115年度國小多元職業試探營隊",
-      "schoolName": "新北市立板橋國民中學",
-      "campName": "115年度國小多元職業試探營隊",
-      "originalSchool": "新北市立板橋國民中學 - 115年度國小多元職業試探營隊",
-      "address": "",
-      "category": "國小-多元職業試探營隊",
-      "courseName": "(教師：魏信仁)",
-      "teacher": "",
-      "schedule": {
-        "startDate": "2026-08-28",
-        "endDate": "2026-08-28",
-        "weekday": "週五",
-        "startTime": "09:30",
-        "endTime": "11:30"
-      },
-      "fee": {
-        "amount": 0,
-        "isFree": true,
-        "description": "免費參加"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          5,
-          6
-        ],
-        "gradeNames": [
-          "四年級",
-          "五年級",
-          "六年級"
-        ],
-        "allowExternalStudents": true,
-        "restrictions": [
-          "限制本縣市學生"
-        ]
-      },
-      "quota": {
-        "enrolled": 0,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": true
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": true,
-        "startTime": "2026-06-10T12:00:00+08:00",
-        "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": "2026-06-22T12:00:00+08:00",
-        "isLottery": true,
-        "status": "已截止"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014501&act_no=00043&cls_no=008",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014501/uploadfile/act_register/public/file/00043-008-clsfile.PDF",
-        "registration": "https://camp.ntpc.edu.tw/"
-      },
-      "tags": [],
-      "_raw": {
-        "schedule": "115/08/28 至 115/08/28\n週五 09:30~11:30",
-        "fee": "免費參加",
-        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_camp",
-        "name": "新北市寒暑假育樂營",
-        "url": "https://camp.ntpc.edu.tw/",
-        "schoolId": "014501",
-        "actId": "00043",
-        "courseId": "014"
-      },
-      "school": "新北市立板橋國民中學 - 115年度國小多元職業試探營隊",
-      "schoolName": "新北市立板橋國民中學",
-      "campName": "115年度國小多元職業試探營隊",
-      "originalSchool": "新北市立板橋國民中學 - 115年度國小多元職業試探營隊",
-      "address": "",
-      "category": "國小-多元職業試探營隊",
-      "courseName": "(教師：馬華青)",
-      "teacher": "",
-      "schedule": {
-        "startDate": "2026-08-24",
-        "endDate": "2026-08-24",
-        "weekday": "週一",
-        "startTime": "13:00",
-        "endTime": "15:00"
-      },
-      "fee": {
-        "amount": 0,
-        "isFree": true,
-        "description": "免費參加"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          5,
-          6
-        ],
-        "gradeNames": [
-          "四年級",
-          "五年級",
-          "六年級"
-        ],
-        "allowExternalStudents": true,
-        "restrictions": [
-          "限制本縣市學生"
-        ]
-      },
-      "quota": {
-        "enrolled": 0,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": true
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": true,
-        "startTime": "2026-06-10T12:00:00+08:00",
-        "endTime": "2026-06-17T17:00:00+08:00",
-        "lotteryTime": "2026-06-22T12:00:00+08:00",
-        "isLottery": true,
-        "status": "已截止"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014501&act_no=00043&cls_no=014",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014501/uploadfile/act_register/public/file/00043-014-clsfile.PDF",
-        "registration": "https://camp.ntpc.edu.tw/"
-      },
-      "tags": [],
-      "_raw": {
-        "schedule": "115/08/24 至 115/08/24\n週一 13:00~15:00",
-        "fee": "免費參加",
-        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
-        "quota": "依課程抽籤\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n06/10 12:00 至 06/17 17:00\n截止報名 06/22 12:00公布抽籤結果"
-      }
-    },
     {
       "source": {
         "type": "ntpc_camp",
@@ -350,7 +50,7 @@
         ]
       },
       "quota": {
-        "enrolled": 9,
+        "enrolled": 15,
         "planned": 22,
         "actual": 0,
         "isLottery": true
@@ -361,9 +61,9 @@
         "canWithdraw": true,
         "startTime": "2026-08-19T09:00:00+08:00",
         "endTime": "2026-08-28T20:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=001",
@@ -375,8 +75,8 @@
         "schedule": "115/09/14 至 115/12/31\n週一 16:20~17:30",
         "fee": "$1250元",
         "eligibility": "7,外校學生- 限制報名學校 (清單)",
-        "quota": "依課程抽籤\n報名人數:9人\n預計錄取:22人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:15人\n預計錄取:22人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
       }
     },
     {
@@ -421,7 +121,7 @@
         ]
       },
       "quota": {
-        "enrolled": 49,
+        "enrolled": 22,
         "planned": 22,
         "actual": 0,
         "isLottery": true
@@ -432,9 +132,9 @@
         "canWithdraw": true,
         "startTime": "2026-08-19T09:00:00+08:00",
         "endTime": "2026-08-28T20:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=006",
@@ -446,8 +146,8 @@
         "schedule": "115/09/14 至 115/12/31\n週一 16:20~17:30",
         "fee": "$1250元",
         "eligibility": "7,外校學生- 限制報名學校 (清單)",
-        "quota": "依課程抽籤\n報名人數:49人\n預計錄取:22人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:22人\n預計錄取:22人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
       }
     },
     {
@@ -503,9 +203,9 @@
         "canWithdraw": true,
         "startTime": "2026-08-19T09:00:00+08:00",
         "endTime": "2026-08-28T20:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=011",
@@ -518,7 +218,7 @@
         "fee": "$1250元",
         "eligibility": "7,外校學生- 限制報名學校 (清單)",
         "quota": "依課程抽籤\n報名人數:5人\n預計錄取:22人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n報名中"
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
       }
     },
     {
@@ -563,7 +263,7 @@
         ]
       },
       "quota": {
-        "enrolled": 43,
+        "enrolled": 25,
         "planned": 25,
         "actual": 0,
         "isLottery": true
@@ -574,9 +274,9 @@
         "canWithdraw": true,
         "startTime": "2026-08-19T09:00:00+08:00",
         "endTime": "2026-08-28T20:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=007",
@@ -588,8 +288,8 @@
         "schedule": "115/09/14 至 115/12/31\n週二 16:20~17:30",
         "fee": "$1800元",
         "eligibility": "7,外校學生- 限制報名學校 (清單)",
-        "quota": "依課程抽籤\n報名人數:43人\n預計錄取:25人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:25人\n預計錄取:25人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
       }
     },
     {
@@ -634,7 +334,7 @@
         ]
       },
       "quota": {
-        "enrolled": 36,
+        "enrolled": 22,
         "planned": 22,
         "actual": 0,
         "isLottery": true
@@ -645,9 +345,9 @@
         "canWithdraw": true,
         "startTime": "2026-08-19T09:00:00+08:00",
         "endTime": "2026-08-28T20:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=009",
@@ -659,8 +359,8 @@
         "schedule": "115/09/14 至 115/12/31\n週二 16:20~17:30",
         "fee": "$1250元",
         "eligibility": "7,外校學生- 限制報名學校 (清單)",
-        "quota": "依課程抽籤\n報名人數:36人\n預計錄取:22人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:22人\n預計錄取:22人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
       }
     },
     {
@@ -705,7 +405,7 @@
         ]
       },
       "quota": {
-        "enrolled": 8,
+        "enrolled": 15,
         "planned": 22,
         "actual": 0,
         "isLottery": true
@@ -716,9 +416,9 @@
         "canWithdraw": true,
         "startTime": "2026-08-19T09:00:00+08:00",
         "endTime": "2026-08-28T20:00:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=003",
@@ -730,8 +430,296 @@
         "schedule": "115/09/14 至 115/12/31\n週三 16:20~17:30",
         "fee": "$1250元",
         "eligibility": "7,外校學生- 限制報名學校 (清單)",
-        "quota": "依課程抽籤\n報名人數:8人\n預計錄取:22人\n實際錄取:0人",
-        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n報名中"
+        "quota": "依課程抽籤\n報名人數:15人\n預計錄取:22人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014517",
+        "actId": "00048",
+        "courseId": "008"
+      },
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "schoolName": "新北市立福和國民中學",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "address": "",
+      "category": "",
+      "courseName": "(教師：葉俊良)",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-31",
+        "weekday": "週三",
+        "startTime": "16:20",
+        "endTime": "17:30"
+      },
+      "fee": {
+        "amount": 1250,
+        "isFree": false,
+        "description": "$1250元"
+      },
+      "eligibility": {
+        "grades": [
+          7
+        ],
+        "gradeNames": [
+          "七年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制報名學校 (清單)"
+        ]
+      },
+      "quota": {
+        "enrolled": 22,
+        "planned": 22,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-19T09:00:00+08:00",
+        "endTime": "2026-08-28T20:00:00+08:00",
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=008",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-008-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/31\n週三 16:20~17:30",
+        "fee": "$1250元",
+        "eligibility": "7,外校學生- 限制報名學校 (清單)",
+        "quota": "依課程抽籤\n報名人數:22人\n預計錄取:22人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014517",
+        "actId": "00048",
+        "courseId": "004"
+      },
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "schoolName": "新北市立福和國民中學",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "address": "",
+      "category": "",
+      "courseName": "(教師：徐紫庭)",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-31",
+        "weekday": "週四",
+        "startTime": "16:20",
+        "endTime": "17:30"
+      },
+      "fee": {
+        "amount": 1250,
+        "isFree": false,
+        "description": "$1250元"
+      },
+      "eligibility": {
+        "grades": [
+          7
+        ],
+        "gradeNames": [
+          "七年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制報名學校 (清單)"
+        ]
+      },
+      "quota": {
+        "enrolled": 22,
+        "planned": 22,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-19T09:00:00+08:00",
+        "endTime": "2026-08-28T20:00:00+08:00",
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=004",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-004-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/31\n週四 16:20~17:30",
+        "fee": "$1250元",
+        "eligibility": "7,外校學生- 限制報名學校 (清單)",
+        "quota": "依課程抽籤\n報名人數:22人\n預計錄取:22人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014517",
+        "actId": "00048",
+        "courseId": "010"
+      },
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "schoolName": "新北市立福和國民中學",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "address": "",
+      "category": "",
+      "courseName": "(教師：外師Sara)",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-31",
+        "weekday": "週五",
+        "startTime": "16:20",
+        "endTime": "17:30"
+      },
+      "fee": {
+        "amount": 1400,
+        "isFree": false,
+        "description": "$1400元"
+      },
+      "eligibility": {
+        "grades": [
+          7
+        ],
+        "gradeNames": [
+          "七年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制報名學校 (清單)"
+        ]
+      },
+      "quota": {
+        "enrolled": 25,
+        "planned": 25,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-19T09:00:00+08:00",
+        "endTime": "2026-08-28T20:00:00+08:00",
+        "lotteryTime": "2026-08-31T09:00:00+08:00",
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=010",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-010-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/31\n週五 16:20~17:30",
+        "fee": "$1400元",
+        "eligibility": "7,外校學生- 限制報名學校 (清單)",
+        "quota": "依課程抽籤\n報名人數:25人\n預計錄取:25人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/19 09:00 至 08/28 20:00\n截止報名 08/31 09:00公布抽籤結果"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "001"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "",
+      "courseName": "(教師：蕭郁蓁)",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 1953,
+        "isFree": false,
+        "description": "$1953元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014604&act_no=00098&cls_no=001",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014604/uploadfile/act_register/public/file/00098-001-clsfile.PDF",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週一 16:10~17:50",
+        "fee": "$1953元",
+        "eligibility": "3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
       }
     },
     {
