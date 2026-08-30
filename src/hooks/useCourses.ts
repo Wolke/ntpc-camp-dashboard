@@ -1,7 +1,10 @@
-import { useEffect } from 'react';
+import { useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useCourseStore } from '../store/courseStore';
-import type { CourseData } from '../types/course';
+import type { Course, CourseData } from '../types/course';
+import { applyCourseFilters } from '../utils/courseFilters';
+
+const EMPTY_COURSES: Course[] = [];
 
 // 載入課程資料
 async function fetchCourses(): Promise<CourseData> {
@@ -15,7 +18,7 @@ async function fetchCourses(): Promise<CourseData> {
 }
 
 export function useCourses() {
-    const { setCourses, filteredCourses, isLoading, error, filters, setFilters, resetFilters } = useCourseStore();
+    const { filters, selectedSchool, setFilters, resetFilters } = useCourseStore();
 
     const query = useQuery({
         queryKey: ['courses'],
@@ -24,19 +27,19 @@ export function useCourses() {
         refetchOnWindowFocus: true,
     });
 
-    useEffect(() => {
-        if (query.data?.courses) {
-            setCourses(query.data.courses);
-        }
-    }, [query.data, setCourses]);
+    const allCourses = query.data?.courses ?? EMPTY_COURSES;
+    const courses = useMemo(
+        () => applyCourseFilters(allCourses, filters, selectedSchool),
+        [allCourses, filters, selectedSchool],
+    );
 
     return {
-        courses: filteredCourses,
-        allCourses: query.data?.courses || [],
+        courses,
+        allCourses,
         stats: query.data?.stats,
         lastUpdated: query.data?.lastUpdated,
-        isLoading: query.isLoading || isLoading,
-        error: (query.error as Error)?.message || error,
+        isLoading: query.isLoading,
+        error: (query.error as Error)?.message,
         filters,
         setFilters,
         resetFilters,

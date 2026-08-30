@@ -1,5 +1,6 @@
 import { GraduationCap, RotateCcw } from 'lucide-react';
 import { useCourseStore } from '../../store/courseStore';
+import type { FilterOptions } from '../../types/course';
 
 const grades = [
     { value: 1, label: '小一' },
@@ -13,8 +14,15 @@ const grades = [
     { value: 9, label: '國三' },
 ];
 
-export default function GradeFilter() {
-    const { filters, setFilters } = useCourseStore();
+interface GradeFilterProps {
+    filters?: FilterOptions;
+    onChange?: (filters: Partial<FilterOptions>) => void;
+}
+
+export default function GradeFilter({ filters: controlledFilters, onChange }: GradeFilterProps = {}) {
+    const store = useCourseStore();
+    const filters = controlledFilters || store.filters;
+    const setFilters = onChange || store.setFilters;
 
     const toggleGrade = (grade: number) => {
         const current = filters.grades;
@@ -56,6 +64,7 @@ export default function GradeFilter() {
                             key={grade.value}
                             type="button"
                             onClick={() => toggleGrade(grade.value)}
+                            aria-pressed={selected}
                             className={`rounded-md border px-2 py-2 text-sm font-medium transition-colors ${selected
                                 ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:bg-slate-50'

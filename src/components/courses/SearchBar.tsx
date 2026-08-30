@@ -2,14 +2,27 @@ import { useEffect, useMemo, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import { useCourseStore } from '../../store/courseStore';
 import { formatCourseWeekSummary } from '../../utils/courseSchedule';
+import type { Course } from '../../types/course';
 
-export default function SearchBar() {
-    const { courses, filters, setFilters } = useCourseStore();
+interface SearchBarProps {
+    courses: Course[];
+}
+
+function formatDateInputValue(date: Date): string {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+export default function SearchBar({ courses }: SearchBarProps) {
+    const { filters, setFilters } = useCourseStore();
     const [inputValue, setInputValue] = useState(filters.searchQuery);
 
     const quickSearchTags = useMemo(() => {
         const weekByDate = new Map<string, string>();
-        courses.forEach((course) => {
+        const today = formatDateInputValue(new Date());
+        courses.filter((course) => course.schedule.endDate >= today).forEach((course) => {
             const weekSummary = formatCourseWeekSummary(course);
             if (!weekSummary) return;
 
@@ -45,11 +58,12 @@ export default function SearchBar() {
 
     return (
         <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-            <label className="mb-2 block text-sm font-semibold text-slate-800">搜尋課程</label>
+            <label htmlFor="course-search" className="mb-2 block text-sm font-semibold text-slate-800">搜尋課程</label>
             <div className="relative">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
                 <input
                     type="text"
+                    id="course-search"
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="搜尋學校、課程、老師、地址..."
@@ -59,6 +73,7 @@ export default function SearchBar() {
                     <button
                         type="button"
                         onClick={handleClear}
+                        aria-label="清除搜尋"
                         className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md p-1 hover:bg-slate-100"
                     >
                         <X className="h-4 w-4 text-slate-400" />

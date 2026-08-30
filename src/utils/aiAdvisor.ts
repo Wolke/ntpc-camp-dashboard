@@ -1,5 +1,5 @@
 import type { Course } from '../types/course';
-import { getCourseStatus } from '../store/courseStore';
+import { getCourseStatus } from './courseFilters';
 import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, getTraitMatchedThemes, normalizeText } from './courseTaxonomy';
 
 export interface AdvisorProfile {

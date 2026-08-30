@@ -1,213 +1,118 @@
 import { useEffect, useMemo, useState } from 'react';
+import { ChevronDown, ChevronUp, MapPin, SlidersHorizontal } from 'lucide-react';
 import { useSearchParams } from 'react-router-dom';
 import CourseList from '../components/courses/CourseList';
-import CourseSortControl, { type CourseSortMode } from '../components/courses/CourseSortControl';
+import CourseSortControl from '../components/courses/CourseSortControl';
 import DateRangeFilter from '../components/courses/DateRangeFilter';
 import EligibilityFilter from '../components/courses/EligibilityFilter';
 import GradeFilter from '../components/courses/GradeFilter';
+import MobileFilterDialog from '../components/courses/MobileFilterDialog';
 import SchoolMap from '../components/courses/SchoolMap';
 import SearchBar from '../components/courses/SearchBar';
 import StatusFilter from '../components/courses/StatusFilter';
 import SubscribePanel from '../components/SubscribePanel';
 import { useCourses } from '../hooks/useCourses';
-import { getCourseStatus, useCourseStore } from '../store/courseStore';
-import type { Course } from '../types/course';
+import { useMediaQuery } from '../hooks/useMediaQuery';
+import { useCourseStore } from '../store/courseStore';
+import {
+    countActiveFilterGroups,
+    sortCourses,
+    type CourseSortMode,
+    type UserLocation,
+} from '../utils/courseFilters';
 import { getThemeById } from '../utils/courseTaxonomy';
-import { SCHOOL_COORDINATES } from '../utils/schoolCoordinates';
+import { isCourseDataStale } from '../utils/dataFreshness';
 
-type UserLocation = { latitude: number; longitude: number };
+const PAGE_SIZE = 24;
 type LocationStatus = 'idle' | 'requesting' | 'ready' | 'error' | 'unsupported';
 
-function getSortableFee(course: Course, direction: 'asc' | 'desc'): number {
-    if (course.fee.isFree) return 0;
-    if (Number.isFinite(course.fee.amount) && course.fee.amount > 0) return course.fee.amount;
-    return direction === 'asc' ? Number.MAX_SAFE_INTEGER : -1;
-}
-
-function getSortableDate(dateValue: string | undefined, direction: 'asc' | 'desc'): number {
-    if (!dateValue) return direction === 'asc' ? Number.MAX_SAFE_INTEGER : -1;
-
-    const time = new Date(dateValue).getTime();
-    if (Number.isNaN(time)) return direction === 'asc' ? Number.MAX_SAFE_INTEGER : -1;
-    return time;
-}
-
-function getDistanceKm(from: UserLocation, to: [number, number]): number {
-    const earthRadiusKm = 6371;
-    const toRadians = (value: number) => value * Math.PI / 180;
-    const latDelta = toRadians(to[0] - from.latitude);
-    const lngDelta = toRadians(to[1] - from.longitude);
-    const fromLat = toRadians(from.latitude);
-    const toLat = toRadians(to[0]);
-    const a =
-        Math.sin(latDelta / 2) ** 2 +
-        Math.cos(fromLat) * Math.cos(toLat) * Math.sin(lngDelta / 2) ** 2;
-
-    return 2 * earthRadiusKm * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
-
-function getDefaultSortRank(course: Course): number {
-    const status = getCourseStatus(course, new Date());
-    if (status.registration === 'closing_soon') return 0;
-    if (status.registration === 'available') return 1;
-    if (status.registration === 'not_started') return 2;
-    if (status.courseTime !== 'ended') return 3;
-    return 4;
-}
-
 export default function CourseDashboard() {
-    const { courses, stats, lastUpdated, isLoading, error } = useCourses();
-    const { filters, selectedSchool, setSelectedSchool, setFilters, resetFilters } = useCourseStore();
+    const { courses, allCourses, stats, lastUpdated, isLoading, error } = useCourses();
+    const {
+        filters,
+        selectedSchool,
+        setSelectedSchool,
+        setFilters,
+        replaceFilters,
+        resetFilters,
+    } = useCourseStore();
     const [searchParams, setSearchParams] = useSearchParams();
     const [sortMode, setSortMode] = useState<CourseSortMode>('default');
     const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
     const [locationStatus, setLocationStatus] = useState<LocationStatus>('idle');
+    const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+    const [filterDialogOpen, setFilterDialogOpen] = useState(false);
+    const [mobileMapOpen, setMobileMapOpen] = useState(false);
+    const isDesktop = useMediaQuery('(min-width: 1024px)');
     const themeId = searchParams.get('theme');
     const selectedTheme = getThemeById(themeId);
+    const themeFilterKey = filters.themeIds.join(',');
 
     useEffect(() => {
         if (themeId && !selectedTheme) {
             const nextParams = new URLSearchParams(searchParams);
             nextParams.delete('theme');
             setSearchParams(nextParams, { replace: true });
-            resetFilters();
+            if (filters.themeIds.length > 0) setFilters({ themeIds: [] });
             return;
         }
 
-        if (!selectedTheme) {
-            if (filters.themeIds.length > 0) {
-                setFilters({
-                    themeIds: [],
-                    registrationStatus: ['available', 'closing_soon', 'not_started'],
-                    courseTimeStatus: ['upcoming', 'ongoing'],
-                    quotaStatus: ['available', 'almost_full', 'may_not_open'],
-                });
-            }
-            return;
+        if (selectedTheme && themeFilterKey !== selectedTheme.id) {
+            setFilters({ themeIds: [selectedTheme.id] });
+        } else if (!themeId && filters.themeIds.length > 0) {
+            setFilters({ themeIds: [] });
         }
+    }, [filters.themeIds.length, searchParams, selectedTheme, setFilters, setSearchParams, themeFilterKey, themeId]);
 
-        const themeAlreadyApplied = filters.themeIds.length === 1 && filters.themeIds[0] === selectedTheme.id;
-        const statusFiltersCleared =
-            filters.registrationStatus.length === 0 &&
-            filters.courseTimeStatus.length === 0 &&
-            filters.quotaStatus.length === 0;
+    useEffect(() => {
+        setVisibleCount(PAGE_SIZE);
+    }, [filters, selectedSchool, sortMode]);
 
-        if (!themeAlreadyApplied || !statusFiltersCleared) {
-            setFilters({
-                themeIds: [selectedTheme.id],
-                registrationStatus: [],
-                courseTimeStatus: [],
-                quotaStatus: [],
-            });
-        }
-    }, [
-        filters.courseTimeStatus.length,
-        filters.quotaStatus.length,
-        filters.registrationStatus.length,
-        filters.themeIds,
-        resetFilters,
-        searchParams,
-        selectedTheme,
-        setFilters,
-        setSearchParams,
-        themeId,
-    ]);
+    const sortedCourses = useMemo(
+        () => sortCourses(courses, sortMode, userLocation),
+        [courses, sortMode, userLocation],
+    );
+    const visibleCourses = sortedCourses.slice(0, visibleCount);
+    const resultStats = useMemo(() => ({
+        external: courses.filter((course) => course.eligibility.allowExternalStudents).length,
+        free: courses.filter((course) => course.fee.isFree).length,
+    }), [courses]);
+    const activeFilterCount = countActiveFilterGroups(filters) + (selectedSchool ? 1 : 0);
+
+    const updatedDate = lastUpdated
+        ? new Date(lastUpdated).toLocaleDateString('zh-TW', { year: 'numeric', month: 'numeric', day: 'numeric' })
+        : null;
+    const dataIsStale = isCourseDataStale(lastUpdated);
 
     const clearThemeFilter = () => {
+        const nextParams = new URLSearchParams(searchParams);
+        nextParams.delete('theme');
+        setSearchParams(nextParams, { replace: true });
+        setFilters({ themeIds: [] });
+    };
+
+    const resetAll = () => {
         const nextParams = new URLSearchParams(searchParams);
         nextParams.delete('theme');
         setSearchParams(nextParams, { replace: true });
         resetFilters();
     };
 
-    const updatedDate = lastUpdated
-        ? new Date(lastUpdated).toLocaleDateString('zh-TW', { year: 'numeric', month: 'numeric', day: 'numeric' })
-        : null;
-
     const requestLocation = () => {
         if (!navigator.geolocation) {
             setLocationStatus('unsupported');
             return;
         }
-
         setLocationStatus('requesting');
         navigator.geolocation.getCurrentPosition(
             (position) => {
-                setUserLocation({
-                    latitude: position.coords.latitude,
-                    longitude: position.coords.longitude,
-                });
+                setUserLocation({ latitude: position.coords.latitude, longitude: position.coords.longitude });
                 setLocationStatus('ready');
             },
-            () => {
-                setLocationStatus('error');
-            },
+            () => setLocationStatus('error'),
             { enableHighAccuracy: false, timeout: 10000, maximumAge: 1000 * 60 * 10 },
         );
     };
-
-    const sortedCourses = useMemo(() => {
-        const nextCourses = [...courses];
-
-        if (sortMode === 'fee-asc') {
-            return nextCourses.sort((a, b) =>
-                getSortableFee(a, 'asc') - getSortableFee(b, 'asc') ||
-                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
-            );
-        }
-
-        if (sortMode === 'fee-desc') {
-            return nextCourses.sort((a, b) =>
-                getSortableFee(b, 'desc') - getSortableFee(a, 'desc') ||
-                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
-            );
-        }
-
-        if (sortMode === 'distance' && userLocation) {
-            return nextCourses.sort((a, b) => {
-                const aCoords = SCHOOL_COORDINATES[a.schoolName];
-                const bCoords = SCHOOL_COORDINATES[b.schoolName];
-                const aDistance = aCoords ? getDistanceKm(userLocation, aCoords) : Number.MAX_SAFE_INTEGER;
-                const bDistance = bCoords ? getDistanceKm(userLocation, bCoords) : Number.MAX_SAFE_INTEGER;
-
-                return aDistance - bDistance || a.schoolName.localeCompare(b.schoolName, 'zh-TW');
-            });
-        }
-
-        if (sortMode === 'course-date-asc') {
-            return nextCourses.sort((a, b) =>
-                getSortableDate(a.schedule.startDate, 'asc') - getSortableDate(b.schedule.startDate, 'asc') ||
-                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
-            );
-        }
-
-        if (sortMode === 'course-date-desc') {
-            return nextCourses.sort((a, b) =>
-                getSortableDate(b.schedule.startDate, 'desc') - getSortableDate(a.schedule.startDate, 'desc') ||
-                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
-            );
-        }
-
-        if (sortMode === 'registration-date-asc') {
-            return nextCourses.sort((a, b) =>
-                getSortableDate(a.registration.startTime, 'asc') - getSortableDate(b.registration.startTime, 'asc') ||
-                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
-            );
-        }
-
-        if (sortMode === 'registration-date-desc') {
-            return nextCourses.sort((a, b) =>
-                getSortableDate(b.registration.startTime, 'desc') - getSortableDate(a.registration.startTime, 'desc') ||
-                a.schoolName.localeCompare(b.schoolName, 'zh-TW')
-            );
-        }
-
-        return nextCourses.sort((a, b) =>
-            getDefaultSortRank(a) - getDefaultSortRank(b) ||
-            getSortableDate(a.schedule.startDate, 'asc') - getSortableDate(b.schedule.startDate, 'asc') ||
-            a.schoolName.localeCompare(b.schoolName, 'zh-TW')
-        );
-    }, [courses, sortMode, userLocation]);
 
     return (
         <div className="min-h-screen bg-slate-50">
@@ -216,13 +121,16 @@ export default function CourseDashboard() {
                     <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                         <div>
                             <p className="text-sm font-medium text-indigo-600">新北市寒暑假育樂營</p>
-                            <h1 className="mt-1 text-2xl font-semibold tracking-normal text-slate-950">
-                                課程查詢
-                            </h1>
+                            <h1 className="mt-1 text-2xl font-semibold text-slate-950">課程查詢</h1>
                             <p className="mt-2 text-sm text-slate-500">
                                 {stats && `共 ${stats.total} 門課程，${stats.schools} 個學校/單位`}
                                 {updatedDate && `，資料更新於 ${updatedDate}`}
                             </p>
+                            {dataIsStale && (
+                                <p role="status" className="mt-2 text-sm font-medium text-amber-700">
+                                    資料已超過 8 天未更新，內容可能不是最新狀態。
+                                </p>
+                            )}
                         </div>
 
                         <div className="grid grid-cols-3 gap-2 text-center">
@@ -231,95 +139,134 @@ export default function CourseDashboard() {
                                 <p className="text-xs text-slate-500">目前符合</p>
                             </div>
                             <div className="rounded-md bg-slate-50 px-3 py-2">
-                                <p className="text-lg font-semibold text-slate-950">{stats?.allowExternalStudents ?? 0}</p>
-                                <p className="text-xs text-slate-500">開放外校</p>
+                                <p className="text-lg font-semibold text-slate-950">{resultStats.external}</p>
+                                <p className="text-xs text-slate-500">其中外校</p>
                             </div>
                             <div className="rounded-md bg-slate-50 px-3 py-2">
-                                <p className="text-lg font-semibold text-slate-950">{stats?.free ?? 0}</p>
-                                <p className="text-xs text-slate-500">免費</p>
+                                <p className="text-lg font-semibold text-slate-950">{resultStats.free}</p>
+                                <p className="text-xs text-slate-500">其中免費</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <div className="grid gap-5 lg:grid-cols-[360px_minmax(0,1fr)] lg:items-start">
-                    <aside className="space-y-4 lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:overscroll-contain lg:pr-2">
-                        <SearchBar />
-                        <EligibilityFilter />
-                        <GradeFilter />
-                        <SubscribePanel />
-                        <StatusFilter />
-                        <DateRangeFilter />
+                    <aside className="space-y-4">
+                        <SearchBar courses={allCourses} />
+
+                        <button
+                            type="button"
+                            onClick={() => setFilterDialogOpen(true)}
+                            className="flex min-h-12 w-full items-center justify-between rounded-lg border border-indigo-200 bg-white px-4 font-medium text-indigo-700 shadow-sm lg:hidden"
+                        >
+                            <span className="inline-flex items-center gap-2">
+                                <SlidersHorizontal className="h-5 w-5" />
+                                篩選課程
+                            </span>
+                            <span>{activeFilterCount > 0 ? `${activeFilterCount} 組條件` : '全部'}</span>
+                        </button>
+
+                        <div className="hidden space-y-4 lg:block">
+                            <EligibilityFilter />
+                            <GradeFilter />
+                            <StatusFilter />
+                            <DateRangeFilter />
+                        </div>
 
                         {selectedSchool && (
                             <div className="rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-3">
-                                <p className="text-sm font-medium text-indigo-900">正在篩選</p>
-                                <div className="mt-2 flex items-center justify-between gap-3">
-                                    <span className="text-sm text-indigo-700">{selectedSchool}</span>
-                                    <button
-                                        type="button"
-                                        onClick={() => setSelectedSchool(null)}
-                                        className="shrink-0 rounded-md px-2 py-1 text-sm font-medium text-indigo-700 hover:bg-indigo-100"
-                                    >
-                                        顯示全部
-                                    </button>
-                                </div>
+                                <p className="text-sm font-medium text-indigo-900">學校篩選：{selectedSchool}</p>
+                                <button type="button" onClick={() => setSelectedSchool(null)} className="mt-2 min-h-11 text-sm font-medium text-indigo-700">
+                                    清除學校篩選
+                                </button>
                             </div>
                         )}
 
                         {selectedTheme && (
                             <div className="rounded-lg border border-orange-200 bg-orange-50 px-4 py-3">
-                                <p className="text-sm font-medium text-orange-950">正在篩選主題</p>
-                                <div className="mt-2 flex items-center justify-between gap-3">
-                                    <span className="text-sm text-orange-700">{selectedTheme.label}</span>
-                                    <button
-                                        type="button"
-                                        onClick={clearThemeFilter}
-                                        className="shrink-0 rounded-md px-2 py-1 text-sm font-medium text-orange-700 hover:bg-orange-100"
-                                    >
-                                        顯示全部
-                                    </button>
-                                </div>
+                                <p className="text-sm font-medium text-orange-950">主題：{selectedTheme.label}</p>
+                                <button type="button" onClick={clearThemeFilter} className="mt-2 min-h-11 text-sm font-medium text-orange-700">
+                                    清除主題篩選
+                                </button>
                             </div>
                         )}
                     </aside>
 
-                    <main className="space-y-5">
+                    <main className="flex min-w-0 flex-col gap-5">
                         {error && (
-                            <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                            <div role="alert" className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
                                 載入錯誤：{error}
                             </div>
                         )}
 
-                        <section>
-                            <div className="mb-3 flex items-center justify-between">
+                        <section className="order-1 lg:order-2">
+                            <div className="mb-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                                 <div>
-                                    <h2 className="text-base font-semibold text-slate-900">學校地圖</h2>
-                                    <p className="text-sm text-slate-500">點擊標記或未定位清單可篩選課程</p>
+                                    <h2 className="text-base font-semibold text-slate-900">課程列表</h2>
+                                    <p aria-live="polite" className="text-sm text-slate-500">
+                                        顯示 {Math.min(visibleCourses.length, sortedCourses.length)} / {sortedCourses.length} 門
+                                    </p>
                                 </div>
+                                <CourseSortControl
+                                    sortMode={sortMode}
+                                    hasLocation={Boolean(userLocation)}
+                                    locationStatus={locationStatus}
+                                    onSortModeChange={setSortMode}
+                                    onRequestLocation={requestLocation}
+                                />
                             </div>
-                            <SchoolMap courses={courses} height="300px" />
+                            <CourseList courses={visibleCourses} isLoading={isLoading} onReset={resetAll} />
+                            {visibleCourses.length < sortedCourses.length && (
+                                <button
+                                    type="button"
+                                    onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+                                    className="mt-4 min-h-12 w-full rounded-lg border border-indigo-200 bg-white px-4 text-sm font-medium text-indigo-700 hover:bg-indigo-50"
+                                >
+                                    載入更多（尚有 {sortedCourses.length - visibleCourses.length} 門）
+                                </button>
+                            )}
                         </section>
 
-                        <section>
-                            <div className="mb-3 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                                <h2 className="text-base font-semibold text-slate-900">課程列表</h2>
-                                <div className="flex flex-col gap-2 sm:items-end">
-                                    <span className="text-sm text-slate-500">{sortedCourses.length} 門</span>
-                                    <CourseSortControl
-                                        sortMode={sortMode}
-                                        hasLocation={Boolean(userLocation)}
-                                        locationStatus={locationStatus}
-                                        onSortModeChange={setSortMode}
-                                        onRequestLocation={requestLocation}
-                                    />
+                        <section className="order-2 lg:order-1">
+                            <button
+                                type="button"
+                                onClick={() => setMobileMapOpen((open) => !open)}
+                                aria-expanded={mobileMapOpen}
+                                aria-controls="school-map-panel"
+                                className="flex min-h-12 w-full items-center justify-between rounded-lg border border-slate-200 bg-white px-4 text-sm font-medium text-slate-800 shadow-sm lg:hidden"
+                            >
+                                <span className="inline-flex items-center gap-2"><MapPin className="h-5 w-5" />學校地圖</span>
+                                {mobileMapOpen ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                            </button>
+                            {(isDesktop || mobileMapOpen) && (
+                                <div id="school-map-panel" className="mt-3 lg:mt-0">
+                                    <div className="mb-3 hidden lg:block">
+                                        <h2 className="text-base font-semibold text-slate-900">學校地圖</h2>
+                                        <p className="text-sm text-slate-500">點擊標記或未定位清單可篩選課程</p>
+                                    </div>
+                                    <SchoolMap courses={courses} height="300px" />
                                 </div>
-                            </div>
-                            <CourseList courses={sortedCourses} isLoading={isLoading} onReset={resetFilters} />
+                            )}
                         </section>
                     </main>
                 </div>
+
+                <div className="mt-5 lg:ml-[380px]">
+                    <SubscribePanel />
+                </div>
             </div>
+
+            <MobileFilterDialog
+                open={filterDialogOpen}
+                courses={allCourses}
+                filters={filters}
+                selectedSchool={selectedSchool}
+                onApply={(nextFilters) => {
+                    replaceFilters(nextFilters);
+                    setFilterDialogOpen(false);
+                }}
+                onClose={() => setFilterDialogOpen(false)}
+            />
         </div>
     );
 }

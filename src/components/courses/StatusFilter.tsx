@@ -1,9 +1,19 @@
 import { CheckCircle, CircleDollarSign, Clock3, Filter, GraduationCap, RotateCcw } from 'lucide-react';
 import { useCourseStore } from '../../store/courseStore';
 import type { RegistrationStatus, CourseTimeStatus, QuotaStatus } from '../../types/course';
+import type { FilterOptions } from '../../types/course';
 
-export default function StatusFilter() {
-    const { filters, setFilters, resetFilters } = useCourseStore();
+interface StatusFilterProps {
+    filters?: FilterOptions;
+    onChange?: (filters: Partial<FilterOptions>) => void;
+    onReset?: () => void;
+}
+
+export default function StatusFilter({ filters: controlledFilters, onChange, onReset }: StatusFilterProps = {}) {
+    const store = useCourseStore();
+    const filters = controlledFilters || store.filters;
+    const setFilters = onChange || store.setFilters;
+    const resetFilters = onReset || store.resetFilters;
 
     const toggleStatus = <T extends string>(
         current: T[],
@@ -65,6 +75,7 @@ export default function StatusFilter() {
                             <button
                                 key={opt.value}
                                 type="button"
+                                aria-pressed={filters.registrationStatus.includes(opt.value)}
                                 onClick={() => toggleStatus(
                                     filters.registrationStatus,
                                     opt.value,
@@ -91,6 +102,7 @@ export default function StatusFilter() {
                             <button
                                 key={opt.value}
                                 type="button"
+                                aria-pressed={filters.courseTimeStatus.includes(opt.value)}
                                 onClick={() => toggleStatus(
                                     filters.courseTimeStatus,
                                     opt.value,
@@ -117,6 +129,7 @@ export default function StatusFilter() {
                             <button
                                 key={opt.value}
                                 type="button"
+                                aria-pressed={filters.quotaStatus.includes(opt.value)}
                                 onClick={() => toggleStatus(
                                     filters.quotaStatus,
                                     opt.value,
@@ -141,6 +154,7 @@ export default function StatusFilter() {
                     <div className="flex gap-2">
                         <button
                             type="button"
+                            aria-pressed={filters.isFree === true}
                             onClick={() => setFilters({ isFree: filters.isFree === true ? null : true })}
                             className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.isFree === true
                                 ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
@@ -151,6 +165,7 @@ export default function StatusFilter() {
                         </button>
                         <button
                             type="button"
+                            aria-pressed={filters.isFree === false}
                             onClick={() => setFilters({ isFree: filters.isFree === false ? null : false })}
                             className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${filters.isFree === false
                                 ? 'border-amber-300 bg-amber-50 text-amber-700'
@@ -170,6 +185,7 @@ export default function StatusFilter() {
                     <div className="flex flex-wrap gap-2">
                         <button
                             type="button"
+                            aria-pressed={filters.schoolTypes.includes('elementary')}
                             onClick={() => toggleStatus(
                                 filters.schoolTypes,
                                 'elementary',
@@ -184,6 +200,7 @@ export default function StatusFilter() {
                         </button>
                         <button
                             type="button"
+                            aria-pressed={filters.schoolTypes.includes('junior_high')}
                             onClick={() => toggleStatus(
                                 filters.schoolTypes,
                                 'junior_high',
@@ -198,6 +215,7 @@ export default function StatusFilter() {
                         </button>
                         <button
                             type="button"
+                            aria-pressed={filters.schoolTypes.includes('high_school')}
                             onClick={() => toggleStatus(
                                 filters.schoolTypes,
                                 'high_school',

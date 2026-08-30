@@ -1,5 +1,6 @@
 import { CalendarDays, RotateCcw } from 'lucide-react';
 import { useCourseStore } from '../../store/courseStore';
+import type { FilterOptions } from '../../types/course';
 
 function formatDisplayDate(dateStr: string | null): string {
     if (!dateStr) return '';
@@ -12,11 +13,25 @@ function formatDisplayDate(dateStr: string | null): string {
 function addDays(date: Date, days: number): string {
     const next = new Date(date);
     next.setDate(next.getDate() + days);
-    return next.toISOString().split('T')[0];
+    return formatDateInputValue(next);
 }
 
-export default function DateRangeFilter() {
-    const { filters, setFilters } = useCourseStore();
+function formatDateInputValue(date: Date): string {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+interface DateRangeFilterProps {
+    filters?: FilterOptions;
+    onChange?: (filters: Partial<FilterOptions>) => void;
+}
+
+export default function DateRangeFilter({ filters: controlledFilters, onChange }: DateRangeFilterProps = {}) {
+    const store = useCourseStore();
+    const filters = controlledFilters || store.filters;
+    const setFilters = onChange || store.setFilters;
     const start = filters.dateRange.start;
     const end = filters.dateRange.end;
     const isFiltering = Boolean(filters.dateRange.start || filters.dateRange.end);
@@ -43,7 +58,7 @@ export default function DateRangeFilter() {
     };
 
     const today = new Date();
-    const todayString = today.toISOString().split('T')[0];
+    const todayString = formatDateInputValue(today);
     const presets = [
         { label: '全部', start: null, end: null },
         { label: '未來 7 天', start: todayString, end: addDays(today, 7) },

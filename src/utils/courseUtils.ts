@@ -1,5 +1,5 @@
 import type { Course } from '../types/course';
-import { getCourseStatus, getSchoolType } from '../store/courseStore';
+import { getCourseStatus, getSchoolType } from './courseFilters';
 import { formatCourseWeekSummary } from './courseSchedule';
 
 // 狀態標籤顏色

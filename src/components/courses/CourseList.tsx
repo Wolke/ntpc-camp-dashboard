@@ -1,4 +1,5 @@
 import type { Course } from '../../types/course';
+import { getCourseKey } from '../../utils/courseFilters';
 import CourseCard from './CourseCard';
 
 interface CourseListProps {
@@ -43,8 +44,8 @@ export default function CourseList({ courses, isLoading, onReset }: CourseListPr
 
     return (
         <div className="space-y-4">
-            {courses.map((course, index) => (
-                <CourseCard key={`${course.schoolName}-${course.category}-${index}`} course={course} />
+            {courses.map((course) => (
+                <CourseCard key={getCourseKey(course)} course={course} />
             ))}
         </div>
     );

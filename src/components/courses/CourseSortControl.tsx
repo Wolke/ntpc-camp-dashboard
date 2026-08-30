@@ -1,14 +1,7 @@
 import { ArrowDownUp, CalendarDays, CircleDollarSign, LocateFixed } from 'lucide-react';
+import type { CourseSortMode } from '../../utils/courseFilters';
 
-export type CourseSortMode =
-    | 'default'
-    | 'distance'
-    | 'fee-asc'
-    | 'fee-desc'
-    | 'course-date-asc'
-    | 'course-date-desc'
-    | 'registration-date-asc'
-    | 'registration-date-desc';
+export type { CourseSortMode } from '../../utils/courseFilters';
 
 interface CourseSortControlProps {
     sortMode: CourseSortMode;

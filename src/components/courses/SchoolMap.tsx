@@ -3,7 +3,8 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { Course } from '../../types/course';
-import { useCourseStore, getSchoolType } from '../../store/courseStore';
+import { useCourseStore } from '../../store/courseStore';
+import { getSchoolType } from '../../utils/courseFilters';
 import { SCHOOL_COORDINATES } from '../../utils/schoolCoordinates';
 
 // 修復 Leaflet 預設圖標問題
@@ -112,7 +113,7 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
                 center={center}
                 zoom={11}
                 style={{ height, width: '100%' }}
-                scrollWheelZoom={true}
+                scrollWheelZoom={false}
             >
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
