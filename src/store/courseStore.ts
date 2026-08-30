@@ -30,13 +30,13 @@ const defaultFilters: FilterOptions = {
     searchQuery: '',
     schoolTypes: [],
     isFree: null,
-    allowExternalStudents: true, // 預設只看外校可報名的課程
+    allowExternalStudents: null,
     dateRange: { start: null, end: null },
     grades: [],
     themeIds: [],
-    registrationStatus: ['available', 'closing_soon', 'not_started'], // 預設顯示尚未截止的課程
-    courseTimeStatus: ['upcoming', 'ongoing'], // 預設只顯示未結束
-    quotaStatus: ['available', 'almost_full', 'may_not_open'], // 預設不隱藏剛公布、尚未累積報名人數的課程
+    registrationStatus: [],
+    courseTimeStatus: [],
+    quotaStatus: [],
 };
 
 // 計算課程狀態
@@ -201,13 +201,13 @@ export const useCourseStore = create<CourseStore>((set, get) => ({
                 const courseStart = course.schedule.startDate;
                 const courseEnd = course.schedule.endDate;
 
-                if (filters.dateRange.start && courseStart) {
-                    if (courseStart < filters.dateRange.start) {
+                if (filters.dateRange.start && courseEnd) {
+                    if (courseEnd < filters.dateRange.start) {
                         return false;
                     }
                 }
-                if (filters.dateRange.end && courseEnd) {
-                    if (courseEnd > filters.dateRange.end) {
+                if (filters.dateRange.end && courseStart) {
+                    if (courseStart > filters.dateRange.end) {
                         return false;
                     }
                 }

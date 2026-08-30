@@ -1,10 +1,12 @@
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { GraduationCap, RefreshCw } from 'lucide-react'
+import { AlertTriangle, GraduationCap, RefreshCw } from 'lucide-react'
 import { useCourses } from '../hooks/useCourses'
+import { isCourseDataStale } from '../utils/dataFreshness'
 
 const Header = () => {
   const { lastUpdated, isLoading } = useCourses()
   const location = useLocation()
+  const dataIsStale = isCourseDataStale(lastUpdated)
 
   const formatLastUpdated = (dateStr: string | undefined) => {
     if (!dateStr) return ''
@@ -66,8 +68,9 @@ const Header = () => {
 
           <div className="flex items-center space-x-3">
             {lastUpdated && (
-              <span className="hidden text-xs text-slate-500 sm:inline">
-                資料更新：{formatLastUpdated(lastUpdated)}
+              <span className={`hidden items-center gap-1 text-xs sm:inline-flex ${dataIsStale ? 'text-amber-700' : 'text-slate-500'}`}>
+                {dataIsStale && <AlertTriangle className="h-3.5 w-3.5" />}
+                {dataIsStale ? '資料可能已過期：' : '資料更新：'}{formatLastUpdated(lastUpdated)}
               </span>
             )}
 

@@ -5,7 +5,9 @@ import type { CourseData } from '../types/course';
 
 // 載入課程資料
 async function fetchCourses(): Promise<CourseData> {
-    const response = await fetch('/ntpc-camp-dashboard/data/courses.json');
+    const response = await fetch(`${import.meta.env.BASE_URL}data/courses.json`, {
+        cache: 'no-cache',
+    });
     if (!response.ok) {
         throw new Error('Failed to fetch courses');
     }
@@ -18,7 +20,8 @@ export function useCourses() {
     const query = useQuery({
         queryKey: ['courses'],
         queryFn: fetchCourses,
-        staleTime: 1000 * 60 * 30, // 30 分鐘
+        staleTime: 1000 * 60 * 5,
+        refetchOnWindowFocus: true,
     });
 
     useEffect(() => {

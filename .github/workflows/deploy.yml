@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ["Weekly Crawl"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -16,10 +19,16 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    outputs:
+      expected_last_updated: ${{ steps.expected.outputs.last_updated }}
+      expected_course_count: ${{ steps.expected.outputs.course_count }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -39,6 +48,12 @@ jobs:
       - name: Copy data to dist
         run: cp -r data dist/
 
+      - name: Read expected data metadata
+        id: expected
+        run: |
+          echo "last_updated=$(jq -r '.lastUpdated' data/courses.json)" >> "$GITHUB_OUTPUT"
+          echo "course_count=$(jq -r '.courses | length' data/courses.json)" >> "$GITHUB_OUTPUT"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
@@ -57,3 +72,26 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify published course data
+        env:
+          DATA_URL: ${{ steps.deployment.outputs.page_url }}data/courses.json
+          EXPECTED_LAST_UPDATED: ${{ needs.build.outputs.expected_last_updated }}
+          EXPECTED_COURSE_COUNT: ${{ needs.build.outputs.expected_course_count }}
+        run: |
+          for attempt in 1 2 3 4 5 6; do
+            published="$(curl --fail --silent --show-error --location "$DATA_URL" || true)"
+            actual_last_updated="$(jq -r '.lastUpdated // empty' <<< "$published")"
+            actual_course_count="$(jq -r '.courses | length' <<< "$published" 2>/dev/null || true)"
+
+            if [[ "$actual_last_updated" == "$EXPECTED_LAST_UPDATED" && "$actual_course_count" == "$EXPECTED_COURSE_COUNT" ]]; then
+              echo "Published data verified: $actual_course_count courses updated at $actual_last_updated"
+              exit 0
+            fi
+
+            echo "Attempt $attempt: Pages has not published the expected data yet."
+            sleep 10
+          done
+
+          echo "Published data does not match main."
+          exit 1

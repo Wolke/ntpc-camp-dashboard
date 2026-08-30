@@ -1,11 +1,5 @@
 import { CalendarDays, RotateCcw } from 'lucide-react';
-import { useMemo } from 'react';
 import { useCourseStore } from '../../store/courseStore';
-import type { Course } from '../../types/course';
-
-interface DateRangeFilterProps {
-    courses: Course[];
-}
 
 function formatDisplayDate(dateStr: string | null): string {
     if (!dateStr) return '';
@@ -21,28 +15,15 @@ function addDays(date: Date, days: number): string {
     return next.toISOString().split('T')[0];
 }
 
-export default function DateRangeFilter({ courses }: DateRangeFilterProps) {
+export default function DateRangeFilter() {
     const { filters, setFilters } = useCourseStore();
-
-    const bounds = useMemo(() => {
-        const dates = courses
-            .flatMap((course) => [course.schedule.startDate, course.schedule.endDate])
-            .filter((date): date is string => Boolean(date))
-            .sort();
-
-        const today = new Date().toISOString().split('T')[0];
-
-        return {
-            min: dates[0] || today,
-            max: dates[dates.length - 1] || addDays(new Date(), 90),
-        };
-    }, [courses]);
-
-    const start = filters.dateRange.start || bounds.min;
-    const end = filters.dateRange.end || bounds.max;
+    const start = filters.dateRange.start;
+    const end = filters.dateRange.end;
     const isFiltering = Boolean(filters.dateRange.start || filters.dateRange.end);
 
-    const updateRange = (nextStart: string, nextEnd: string) => {
+    const updateStart = (value: string) => {
+        const nextStart = value || null;
+        const nextEnd = nextStart && end && nextStart > end ? nextStart : end;
         setFilters({
             dateRange: {
                 start: nextStart,
@@ -51,20 +32,23 @@ export default function DateRangeFilter({ courses }: DateRangeFilterProps) {
         });
     };
 
+    const updateEnd = (value: string) => {
+        const nextEnd = value || null;
+        const nextStart = nextEnd && start && nextEnd < start ? nextEnd : start;
+        setFilters({ dateRange: { start: nextStart, end: nextEnd } });
+    };
+
     const resetRange = () => {
         setFilters({ dateRange: { start: null, end: null } });
     };
 
+    const today = new Date();
+    const todayString = today.toISOString().split('T')[0];
     const presets = [
-        { label: '全部', start: bounds.min, end: bounds.max },
-        { label: '本週', start: new Date().toISOString().split('T')[0], end: addDays(new Date(), 7) },
-        { label: '本月', start: new Date().toISOString().split('T')[0], end: addDays(new Date(), 30) },
-        { label: '暑假', start: '2026-07-01', end: '2026-08-31' },
-    ].map((preset) => ({
-        ...preset,
-        start: preset.start < bounds.min ? bounds.min : preset.start,
-        end: preset.end > bounds.max ? bounds.max : preset.end,
-    }));
+        { label: '全部', start: null, end: null },
+        { label: '未來 7 天', start: todayString, end: addDays(today, 7) },
+        { label: '未來 30 天', start: todayString, end: addDays(today, 30) },
+    ];
 
     return (
         <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
@@ -73,7 +57,9 @@ export default function DateRangeFilter({ courses }: DateRangeFilterProps) {
                     <CalendarDays className="h-4 w-4 text-slate-500" />
                     <h2 className="text-sm font-semibold text-slate-800">課程日期</h2>
                     <span className="text-xs text-slate-500">
-                        {formatDisplayDate(start)} - {formatDisplayDate(end)}
+                        {isFiltering
+                            ? `${formatDisplayDate(start) || '不限'} - ${formatDisplayDate(end) || '不限'}`
+                            : '全部日期'}
                     </span>
                 </div>
                 {isFiltering && (
@@ -93,10 +79,8 @@ export default function DateRangeFilter({ courses }: DateRangeFilterProps) {
                     <span className="mb-1 block text-xs font-medium text-slate-500">開始日期</span>
                     <input
                         type="date"
-                        value={start}
-                        min={bounds.min}
-                        max={end}
-                        onChange={(event) => updateRange(event.target.value, end)}
+                        value={start || ''}
+                        onChange={(event) => updateStart(event.target.value)}
                         className="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
                     />
                 </label>
@@ -107,10 +91,8 @@ export default function DateRangeFilter({ courses }: DateRangeFilterProps) {
                     <span className="mb-1 block text-xs font-medium text-slate-500">結束日期</span>
                     <input
                         type="date"
-                        value={end}
-                        min={start}
-                        max={bounds.max}
-                        onChange={(event) => updateRange(start, event.target.value)}
+                        value={end || ''}
+                        onChange={(event) => updateEnd(event.target.value)}
                         className="w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-800 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
                     />
                 </label>
@@ -123,7 +105,8 @@ export default function DateRangeFilter({ courses }: DateRangeFilterProps) {
                         <button
                             key={preset.label}
                             type="button"
-                            onClick={() => updateRange(preset.start, preset.end)}
+                            onClick={() => setFilters({ dateRange: { start: preset.start, end: preset.end } })}
+                            aria-pressed={selected}
                             className={`rounded-md border px-3 py-1.5 text-sm font-medium transition-colors ${selected
                                 ? 'border-indigo-500 bg-indigo-50 text-indigo-700'
                                 : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50'

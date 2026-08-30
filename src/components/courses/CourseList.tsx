@@ -4,9 +4,10 @@ import CourseCard from './CourseCard';
 interface CourseListProps {
     courses: Course[];
     isLoading?: boolean;
+    onReset?: () => void;
 }
 
-export default function CourseList({ courses, isLoading }: CourseListProps) {
+export default function CourseList({ courses, isLoading, onReset }: CourseListProps) {
     if (isLoading) {
         return (
             <div className="space-y-4">
@@ -27,6 +28,15 @@ export default function CourseList({ courses, isLoading }: CourseListProps) {
             <div className="rounded-lg border border-slate-200 bg-white p-8 text-center">
                 <p className="mb-2 text-lg font-medium text-slate-700">沒有符合條件的課程</p>
                 <p className="text-sm text-slate-400">請調整篩選條件或搜尋關鍵字</p>
+                {onReset && (
+                    <button
+                        type="button"
+                        onClick={onReset}
+                        className="mt-4 min-h-11 rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700"
+                    >
+                        清除所有條件
+                    </button>
+                )}
             </div>
         );
     }

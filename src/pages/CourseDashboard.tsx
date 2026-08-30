@@ -10,7 +10,7 @@ import SearchBar from '../components/courses/SearchBar';
 import StatusFilter from '../components/courses/StatusFilter';
 import SubscribePanel from '../components/SubscribePanel';
 import { useCourses } from '../hooks/useCourses';
-import { useCourseStore } from '../store/courseStore';
+import { getCourseStatus, useCourseStore } from '../store/courseStore';
 import type { Course } from '../types/course';
 import { getThemeById } from '../utils/courseTaxonomy';
 import { SCHOOL_COORDINATES } from '../utils/schoolCoordinates';
@@ -46,8 +46,17 @@ function getDistanceKm(from: UserLocation, to: [number, number]): number {
     return 2 * earthRadiusKm * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
+function getDefaultSortRank(course: Course): number {
+    const status = getCourseStatus(course, new Date());
+    if (status.registration === 'closing_soon') return 0;
+    if (status.registration === 'available') return 1;
+    if (status.registration === 'not_started') return 2;
+    if (status.courseTime !== 'ended') return 3;
+    return 4;
+}
+
 export default function CourseDashboard() {
-    const { courses, allCourses, stats, lastUpdated, isLoading, error } = useCourses();
+    const { courses, stats, lastUpdated, isLoading, error } = useCourses();
     const { filters, selectedSchool, setSelectedSchool, setFilters, resetFilters } = useCourseStore();
     const [searchParams, setSearchParams] = useSearchParams();
     const [sortMode, setSortMode] = useState<CourseSortMode>('default');
@@ -193,7 +202,11 @@ export default function CourseDashboard() {
             );
         }
 
-        return nextCourses;
+        return nextCourses.sort((a, b) =>
+            getDefaultSortRank(a) - getDefaultSortRank(b) ||
+            getSortableDate(a.schedule.startDate, 'asc') - getSortableDate(b.schedule.startDate, 'asc') ||
+            a.schoolName.localeCompare(b.schoolName, 'zh-TW')
+        );
     }, [courses, sortMode, userLocation]);
 
     return (
@@ -236,7 +249,7 @@ export default function CourseDashboard() {
                         <GradeFilter />
                         <SubscribePanel />
                         <StatusFilter />
-                        <DateRangeFilter courses={allCourses.length > 0 ? allCourses : courses} />
+                        <DateRangeFilter />
 
                         {selectedSchool && (
                             <div className="rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-3">
@@ -302,7 +315,7 @@ export default function CourseDashboard() {
                                     />
                                 </div>
                             </div>
-                            <CourseList courses={sortedCourses} isLoading={isLoading} />
+                            <CourseList courses={sortedCourses} isLoading={isLoading} onReset={resetFilters} />
                         </section>
                     </main>
                 </div>

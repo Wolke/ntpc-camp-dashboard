@@ -8,7 +8,21 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,json}']
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.endsWith('/data/courses.json'),
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'course-data',
+              networkTimeoutSeconds: 4,
+              expiration: {
+                maxEntries: 1,
+                maxAgeSeconds: 60 * 60 * 24 * 7,
+              },
+            },
+          },
+        ],
       },
       manifest: {
         name: '新北育樂營查詢系統',

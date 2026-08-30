@@ -48,6 +48,7 @@ function MetaTag({ icon: Icon, label, tone = 'slate' }: MetaTagProps) {
 export default function CourseCard({ course, onClick }: CourseCardProps) {
     const status = getCourseStatusInfo(course);
     const scheduleParts = formatScheduleParts(course);
+    const officialUrl = course.urls?.detail || course.urls?.registration || course.source?.url;
 
     return (
         <article
@@ -118,6 +119,18 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2 border-t border-slate-100 pt-3">
+                {officialUrl && (
+                    <a
+                        href={officialUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(event) => event.stopPropagation()}
+                        className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700"
+                    >
+                        <ExternalLink className="h-4 w-4" />
+                        查看官方詳情
+                    </a>
+                )}
                 {course.urls?.prospectus && (
                     <a
                         href={course.urls.prospectus}
