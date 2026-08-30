@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-08-30T23:03:02.821Z",
+  "lastUpdated": "2026-08-30T23:13:48.481Z",
   "stats": {
-    "total": 60,
+    "total": 135,
     "allowExternalStudents": 59,
     "free": 0,
-    "canRegister": 1,
-    "schools": 16
+    "canRegister": 76,
+    "schools": 18
   },
   "courses": [
     {
@@ -719,6 +719,5778 @@
         "eligibility": "3,4,5,6",
         "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
         "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "003"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "阿皮耶藝術「酷炫3D鋼彈模型捏塑+模型2D繪畫創作」",
+      "courseName": "",
+      "teacher": "許仲俊",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 1953,
+        "isFree": false,
+        "description": "$1953元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=003&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週一 16:10~17:50",
+        "fee": "$1953元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "009"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "炫風足球",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 1933,
+        "isFree": false,
+        "description": "$1933元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=009&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週一 16:10~17:50",
+        "fee": "$1933元",
+        "eligibility": "3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "015"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "躲避飛盤",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2210,
+        "isFree": false,
+        "description": "$2210元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=015&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週二 16:10~17:50",
+        "fee": "$2210元",
+        "eligibility": "3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "002"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "ESL美語  基礎字彙班",
+      "courseName": "",
+      "teacher": "常巧婷",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2230,
+        "isFree": false,
+        "description": "$2230元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=002&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週二 16:10~17:50",
+        "fee": "$2230元",
+        "eligibility": "1,2,3",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "004"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "寶可夢卡牌對戰-策略分析社",
+      "courseName": "",
+      "teacher": "吳宗祐",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2230,
+        "isFree": false,
+        "description": "$2230元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=004&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週二 16:10~17:50",
+        "fee": "$2230元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "005"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "歡樂直排輪   【初級班】",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2210,
+        "isFree": false,
+        "description": "$2210元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=005&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週二 16:10~17:50",
+        "fee": "$2210元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "006"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "創世貓-玩麥塊學程式",
+      "courseName": "",
+      "teacher": "劉欣佩",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2235,
+        "isFree": false,
+        "description": "$2235元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=006&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週三 16:10~17:50",
+        "fee": "$2235元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "014"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "奇幻魔術＆造型氣球社",
+      "courseName": "",
+      "teacher": "吳宗祐",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2235,
+        "isFree": false,
+        "description": "$2235元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=014&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週三 16:10~17:50",
+        "fee": "$2235元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "013"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "阿皮耶藝術「綜合藝術大集合-插畫+卡片+浮雕畫」",
+      "courseName": "",
+      "teacher": "許仲俊",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2235,
+        "isFree": false,
+        "description": "$2235元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=013&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週三 16:10~17:50",
+        "fee": "$2235元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "007"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "歡樂直排輪 【進階班】",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2210,
+        "isFree": false,
+        "description": "$2210元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=007&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週四 16:10~17:50",
+        "fee": "$2210元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "012"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "阿皮耶藝術「泡泡瑪特+星之卡比+麵包超人」",
+      "courseName": "",
+      "teacher": "許仲俊",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 2235,
+        "isFree": false,
+        "description": "$2235元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=012&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週四 16:10~17:50",
+        "fee": "$2235元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "010"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "繪畫-藝術大師",
+      "courseName": "",
+      "teacher": "方雅慧",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 1677,
+        "isFree": false,
+        "description": "$1677元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=010&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週五 16:10~17:50",
+        "fee": "$1677元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "011"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "ESL美語  自然發音班",
+      "courseName": "",
+      "teacher": "常巧婷",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 1677,
+        "isFree": false,
+        "description": "$1677元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=011&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週五 16:10~17:50",
+        "fee": "$1677元",
+        "eligibility": "2,3,4",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014604",
+        "actId": "00098",
+        "courseId": "008"
+      },
+      "school": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "schoolName": "新北市板橋區埔墘國民小學",
+      "campName": "埔墘國小115學年度第一學期課後社團",
+      "originalSchool": "新北市板橋區埔墘國民小學 - 埔墘國小115學年度第一學期課後社團",
+      "address": "",
+      "category": "科學FUN 手作社",
+      "courseName": "",
+      "teacher": "王傑勳",
+      "schedule": {
+        "startDate": "2026-09-21",
+        "endDate": "2027-01-08",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:50"
+      },
+      "fee": {
+        "amount": 1677,
+        "isFree": false,
+        "description": "$1677元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-09-01T09:30:00+08:00",
+        "endTime": "2026-09-03T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014604&actmang_no=00098&actcls_no=008&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/21 至 116/01/08\n週五 16:10~17:50",
+        "fee": "$1677元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n09/01 09:30 至 09/03 16:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "029"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "黏土拼豆手作營",
+      "courseName": "",
+      "teacher": "曾惠鳳",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "08:00",
+        "endTime": "10:00"
+      },
+      "fee": {
+        "amount": 4000,
+        "isFree": false,
+        "description": "$4000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=029&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 08:00~10:00",
+        "fee": "$4000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "030"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "縫逢布布手作營",
+      "courseName": "",
+      "teacher": "曾惠鳳",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 4000,
+        "isFree": false,
+        "description": "$4000元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=030&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:00~12:00",
+        "fee": "$4000元",
+        "eligibility": "3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "031"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "美食派對創意黏土課",
+      "courseName": "",
+      "teacher": "許家梅",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "08:00",
+        "endTime": "10:00"
+      },
+      "fee": {
+        "amount": 4000,
+        "isFree": false,
+        "description": "$4000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=031&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 08:00~10:00",
+        "fee": "$4000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "032"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "跟著藝術家一起畫畫",
+      "courseName": "",
+      "teacher": "許家梅",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 4000,
+        "isFree": false,
+        "description": "$4000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=032&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:00~12:00",
+        "fee": "$4000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "033"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "色鉛筆與水彩創作-基礎技法與應用",
+      "courseName": "",
+      "teacher": "張若竹",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      "fee": {
+        "amount": 3800,
+        "isFree": false,
+        "description": "$3800元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=033&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 09:00~10:30",
+        "fee": "$3800元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "034"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "漫畫人物創作：人物進階創作",
+      "courseName": "",
+      "teacher": "張若竹",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 3800,
+        "isFree": false,
+        "description": "$3800元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=034&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:30~12:00",
+        "fee": "$3800元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "035"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "Scratch小小遊戲設計師",
+      "courseName": "",
+      "teacher": "謝丞翔",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      "fee": {
+        "amount": 3400,
+        "isFree": false,
+        "description": "$3400元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=035&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 09:00~10:30",
+        "fee": "$3400元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "044"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "加點魔法科學社",
+      "courseName": "",
+      "teacher": "陳蕙茹",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 3400,
+        "isFree": false,
+        "description": "$3400元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=044&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:30~12:00",
+        "fee": "$3400元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "042"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "Roblox-從零開始打造你的Roblox麥塊世界",
+      "courseName": "",
+      "teacher": "張雲茹",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "08:00",
+        "endTime": "10:00"
+      },
+      "fee": {
+        "amount": 6000,
+        "isFree": false,
+        "description": "$6000元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=042&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 08:00~10:00",
+        "fee": "$6000元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "043"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "麥塊AI程式ChatGPT+Farmcraft育樂營",
+      "courseName": "",
+      "teacher": "張雲茹",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 6100,
+        "isFree": false,
+        "description": "$6100元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=043&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:00~12:00",
+        "fee": "$6100元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "036"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "兒童街舞",
+      "courseName": "",
+      "teacher": "陳畇霏",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      "fee": {
+        "amount": 2500,
+        "isFree": false,
+        "description": "$2500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=036&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 09:00~10:30",
+        "fee": "$2500元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "037"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "流行律動",
+      "courseName": "",
+      "teacher": "黃郁菁",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 2500,
+        "isFree": false,
+        "description": "$2500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=037&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:30~12:00",
+        "fee": "$2500元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "038"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "蛇板初階班",
+      "courseName": "",
+      "teacher": "蔣宗呈",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      "fee": {
+        "amount": 2500,
+        "isFree": false,
+        "description": "$2500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=038&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 09:00~10:30",
+        "fee": "$2500元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "039"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "初階直排輪",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      "fee": {
+        "amount": 2500,
+        "isFree": false,
+        "description": "$2500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=039&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 09:00~10:30",
+        "fee": "$2500元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "040"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "進階直排輪",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:30",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 2500,
+        "isFree": false,
+        "description": "$2500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=040&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:30~12:00",
+        "fee": "$2500元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "041"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "跆拳道",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "09:00",
+        "endTime": "10:30"
+      },
+      "fee": {
+        "amount": 2500,
+        "isFree": false,
+        "description": "$2500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=041&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 09:00~10:30",
+        "fee": "$2500元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "025"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "羽球甲班",
+      "courseName": "",
+      "teacher": "劉志堯",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "08:00",
+        "endTime": "10:00"
+      },
+      "fee": {
+        "amount": 2000,
+        "isFree": false,
+        "description": "$2000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=025&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 08:00~10:00",
+        "fee": "$2000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "026"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "羽球乙班",
+      "courseName": "",
+      "teacher": "游士勇",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "08:00",
+        "endTime": "10:00"
+      },
+      "fee": {
+        "amount": 2000,
+        "isFree": false,
+        "description": "$2000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=026&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 08:00~10:00",
+        "fee": "$2000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "027"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "羽球丙班",
+      "courseName": "",
+      "teacher": "李沁汶",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 2000,
+        "isFree": false,
+        "description": "$2000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=027&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:00~12:00",
+        "fee": "$2000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "023"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "羽球丁班",
+      "courseName": "",
+      "teacher": "劉志堯",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 2000,
+        "isFree": false,
+        "description": "$2000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=023&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:00~12:00",
+        "fee": "$2000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "022"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "籃球甲班",
+      "courseName": "",
+      "teacher": "李沁汶",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "08:00",
+        "endTime": "10:00"
+      },
+      "fee": {
+        "amount": 2000,
+        "isFree": false,
+        "description": "$2000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=022&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 08:00~10:00",
+        "fee": "$2000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "024"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "籃球乙班",
+      "courseName": "",
+      "teacher": "游士勇",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 2000,
+        "isFree": false,
+        "description": "$2000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=024&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:00~12:00",
+        "fee": "$2000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014646",
+        "actId": "00057",
+        "courseId": "028"
+      },
+      "school": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "schoolName": "新北市土城區土城國民小學",
+      "campName": "115年度第一學期周末育樂營",
+      "originalSchool": "新北市土城區土城國民小學 - 115年度第一學期周末育樂營",
+      "address": "",
+      "category": "假日美術班",
+      "courseName": "",
+      "teacher": "黃桂華",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-16",
+        "weekday": "週六",
+        "startTime": "10:00",
+        "endTime": "12:00"
+      },
+      "fee": {
+        "amount": 2000,
+        "isFree": false,
+        "description": "$2000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 0,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T18:00:00+08:00",
+        "endTime": "2026-09-03T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014646&actmang_no=00057&actcls_no=028&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/16\n週六 10:00~12:00",
+        "fee": "$2000元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "教師審核錄取\n報名人數:0人\n預計錄取:0人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 18:00 至 09/03 12:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "037"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "A1羽球進階班",
+      "courseName": "",
+      "teacher": "林思瑜 教師：蔡沛宜",
+      "schedule": {
+        "startDate": "2026-09-07",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3120,
+        "isFree": false,
+        "description": "$3120元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 18,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=037&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/07 至 116/01/19\n週一 16:10~17:40",
+        "fee": "$3120元",
+        "eligibility": "3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:18人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "044"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "A2創意拼豆",
+      "courseName": "",
+      "teacher": "曾淑慧",
+      "schedule": {
+        "startDate": "2026-09-07",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3120,
+        "isFree": false,
+        "description": "$3120元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=044&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/07 至 116/01/19\n週一 16:10~17:40",
+        "fee": "$3120元",
+        "eligibility": "1,2,3",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "039"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "A3-流行街舞",
+      "courseName": "",
+      "teacher": "林龔婕婷",
+      "schedule": {
+        "startDate": "2026-09-07",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2720,
+        "isFree": false,
+        "description": "$2720元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 18,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=039&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/07 至 116/01/19\n週一 16:10~17:40",
+        "fee": "$2720元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:18人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "040"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "A4周一圍棋班",
+      "courseName": "",
+      "teacher": "許芳瑞",
+      "schedule": {
+        "startDate": "2026-09-07",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2810,
+        "isFree": false,
+        "description": "$2810元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=040&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/07 至 116/01/19\n週一 16:10~17:40",
+        "fee": "$2810元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "041"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "A5扯鈴",
+      "courseName": "",
+      "teacher": "周書儀",
+      "schedule": {
+        "startDate": "2026-09-07",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2720,
+        "isFree": false,
+        "description": "$2720元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=041&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/07 至 116/01/19\n週一 16:10~17:40",
+        "fee": "$2720元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "046"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "A6小小魔法師",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-07",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3620,
+        "isFree": false,
+        "description": "$3620元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=046&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/07 至 116/01/19\n週一 16:10~17:40",
+        "fee": "$3620元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "047"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B1專注力A班",
+      "courseName": "",
+      "teacher": "卓佳穎",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 5050,
+        "isFree": false,
+        "description": "$5050元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 15,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=047&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$5050元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:15人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "086"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B2樂學烘焙點心",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 5250,
+        "isFree": false,
+        "description": "$5250元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 18,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=086&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$5250元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:18人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "053"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B3手作娃娃",
+      "courseName": "",
+      "teacher": "張靜敏",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4990,
+        "isFree": false,
+        "description": "$4990元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=053&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$4990元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "054"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B4跆拳道",
+      "courseName": "",
+      "teacher": "吳宇澄 教師：羅新明",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3200,
+        "isFree": false,
+        "description": "$3200元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=054&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$3200元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "055"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B5minecraft程式設計",
+      "courseName": "",
+      "teacher": "周書儀",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 5750,
+        "isFree": false,
+        "description": "$5750元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=055&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$5750元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "056"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B6珠心算",
+      "courseName": "",
+      "teacher": "施家鈺",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3370,
+        "isFree": false,
+        "description": "$3370元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=056&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$3370元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "049"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B7雙語歡樂健身營A班",
+      "courseName": "",
+      "teacher": "陳惠貞",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3250,
+        "isFree": false,
+        "description": "$3250元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=049&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$3250元",
+        "eligibility": "1,2,3,4",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "051"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B8象棋",
+      "courseName": "",
+      "teacher": "林淵學",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3250,
+        "isFree": false,
+        "description": "$3250元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=051&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$3250元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "050"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B9攝影手作",
+      "courseName": "",
+      "teacher": "張紘瑄 教師：吳思彥",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3450,
+        "isFree": false,
+        "description": "$3450元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=050&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$3450元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "038"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B10樂高遙控機器人",
+      "courseName": "",
+      "teacher": "楊奇 教師：黃詠溱",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4750,
+        "isFree": false,
+        "description": "$4750元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=038&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$4750元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "080"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "B11周二圍棋班",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-08",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3290,
+        "isFree": false,
+        "description": "$3290元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=080&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/08 至 116/01/19\n週二 16:10~17:40",
+        "fee": "$3290元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "060"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "C1舞動拉丁",
+      "courseName": "",
+      "teacher": "謝宜紋",
+      "schedule": {
+        "startDate": "2026-09-09",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3290,
+        "isFree": false,
+        "description": "$3290元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 15,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=060&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/09 至 116/01/19\n週三 16:10~17:40",
+        "fee": "$3290元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:15人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "057"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "C2太鼓",
+      "courseName": "",
+      "teacher": "廖呈章",
+      "schedule": {
+        "startDate": "2026-09-09",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3490,
+        "isFree": false,
+        "description": "$3490元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 15,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=057&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/09 至 116/01/19\n週三 16:10~17:40",
+        "fee": "$3490元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:15人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "061"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "C3珠心算",
+      "courseName": "",
+      "teacher": "施家鈺",
+      "schedule": {
+        "startDate": "2026-09-09",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3210,
+        "isFree": false,
+        "description": "$3210元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=061&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/09 至 116/01/19\n週三 16:10~17:40",
+        "fee": "$3210元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "066"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "C4創意拼豆",
+      "courseName": "",
+      "teacher": "曾淑慧",
+      "schedule": {
+        "startDate": "2026-09-09",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3440,
+        "isFree": false,
+        "description": "$3440元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=066&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/09 至 116/01/19\n週三 16:10~17:40",
+        "fee": "$3440元",
+        "eligibility": "1,2,3",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "067"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "C5情緒表達桌遊課",
+      "courseName": "",
+      "teacher": "李珈芳",
+      "schedule": {
+        "startDate": "2026-09-09",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3890,
+        "isFree": false,
+        "description": "$3890元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=067&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/09 至 116/01/19\n週三 16:10~17:40",
+        "fee": "$3890元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "068"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "C6雙語歡樂健身營B班",
+      "courseName": "",
+      "teacher": "陳惠貞",
+      "schedule": {
+        "startDate": "2026-09-09",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3090,
+        "isFree": false,
+        "description": "$3090元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=068&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/09 至 116/01/19\n週三 16:10~17:40",
+        "fee": "$3090元",
+        "eligibility": "1,2,3,4",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "070"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "C7加點魔法科學",
+      "courseName": "",
+      "teacher": "陳韋榮",
+      "schedule": {
+        "startDate": "2026-09-09",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 5040,
+        "isFree": false,
+        "description": "$5040元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=070&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/09 至 116/01/19\n週三 16:10~17:40",
+        "fee": "$5040元",
+        "eligibility": "1,2,3,4",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "071"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "D1羽球進階班",
+      "courseName": "",
+      "teacher": "顏良育 教師：蔡沛宜",
+      "schedule": {
+        "startDate": "2026-09-10",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3440,
+        "isFree": false,
+        "description": "$3440元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 18,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=071&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/10 至 116/01/19\n週四 16:10~17:40",
+        "fee": "$3440元",
+        "eligibility": "3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:18人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "087"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "D2樂學烘焙點心",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-10",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4990,
+        "isFree": false,
+        "description": "$4990元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 18,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=087&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/10 至 116/01/19\n週四 16:10~17:40",
+        "fee": "$4990元",
+        "eligibility": "2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:18人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "076"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "D3-機器人科學王",
+      "courseName": "",
+      "teacher": "楊奇 教師：黃詠溱",
+      "schedule": {
+        "startDate": "2026-09-10",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4490,
+        "isFree": false,
+        "description": "$4490元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=076&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/10 至 116/01/19\n週四 16:10~17:40",
+        "fee": "$4490元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "073"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "D4跆拳道",
+      "courseName": "",
+      "teacher": "吳宇澄 教師：羅新明",
+      "schedule": {
+        "startDate": "2026-09-10",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3040,
+        "isFree": false,
+        "description": "$3040元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=073&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/10 至 116/01/19\n週四 16:10~17:40",
+        "fee": "$3040元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "062"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "D5圍棋",
+      "courseName": "",
+      "teacher": "於保興",
+      "schedule": {
+        "startDate": "2026-09-10",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3390,
+        "isFree": false,
+        "description": "$3390元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=062&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/10 至 116/01/19\n週四 16:10~17:40",
+        "fee": "$3390元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "074"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "D6啟發式桌遊課",
+      "courseName": "",
+      "teacher": "李珈芳",
+      "schedule": {
+        "startDate": "2026-09-10",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3890,
+        "isFree": false,
+        "description": "$3890元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=074&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/10 至 116/01/19\n週四 16:10~17:40",
+        "fee": "$3890元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "065"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "D7智慧創客-多項運動車",
+      "courseName": "",
+      "teacher": "胡建國",
+      "schedule": {
+        "startDate": "2026-09-10",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4590,
+        "isFree": false,
+        "description": "$4590元"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 12,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=065&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/10 至 116/01/19\n週四 16:10~17:40",
+        "fee": "$4590元",
+        "eligibility": "3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:12人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "028"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "E1流行街舞",
+      "courseName": "",
+      "teacher": "林龔婕婷",
+      "schedule": {
+        "startDate": "2026-09-11",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2400,
+        "isFree": false,
+        "description": "$2400元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 18,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=028&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/11 至 116/01/19\n週五 16:10~17:40",
+        "fee": "$2400元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:18人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "064"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "E2象棋班",
+      "courseName": "",
+      "teacher": "陳冠宏",
+      "schedule": {
+        "startDate": "2026-09-11",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2550,
+        "isFree": false,
+        "description": "$2550元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=064&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/11 至 116/01/19\n週五 16:10~17:40",
+        "fee": "$2550元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "077"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "E3珠心算",
+      "courseName": "",
+      "teacher": "施家鈺",
+      "schedule": {
+        "startDate": "2026-09-11",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2570,
+        "isFree": false,
+        "description": "$2570元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=077&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/11 至 116/01/19\n週五 16:10~17:40",
+        "fee": "$2570元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "078"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "E4專注力工坊",
+      "courseName": "",
+      "teacher": "劉怡君 教師：卓佳穎",
+      "schedule": {
+        "startDate": "2026-09-11",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4250,
+        "isFree": false,
+        "description": "$4250元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 15,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=078&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/11 至 116/01/19\n週五 16:10~17:40",
+        "fee": "$4250元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:15人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "082"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "E5創思互動遊藝課",
+      "courseName": "",
+      "teacher": "黃思潔",
+      "schedule": {
+        "startDate": "2026-09-11",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3050,
+        "isFree": false,
+        "description": "$3050元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=082&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/11 至 116/01/19\n週五 16:10~17:40",
+        "fee": "$3050元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:20人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "084"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "E6麥塊程式設計",
+      "courseName": "",
+      "teacher": "周書儀",
+      "schedule": {
+        "startDate": "2026-09-11",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4950,
+        "isFree": false,
+        "description": "$4950元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 16,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=084&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/11 至 116/01/19\n週五 16:10~17:40",
+        "fee": "$4950元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:16人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_camp",
+        "name": "新北市寒暑假育樂營",
+        "url": "https://camp.ntpc.edu.tw/",
+        "schoolId": "014729",
+        "actId": "00075",
+        "courseId": "085"
+      },
+      "school": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "schoolName": "新北市新莊區新莊國民小學",
+      "campName": "115學年度第1學期課後育樂營",
+      "originalSchool": "新北市新莊區新莊國民小學 - 115學年度第1學期課後育樂營",
+      "address": "",
+      "category": "E7藤球社",
+      "courseName": "",
+      "teacher": "",
+      "schedule": {
+        "startDate": "2026-09-11",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2500,
+        "isFree": false,
+        "description": "$2500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 15,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": true,
+        "startTime": "2026-08-31T12:00:00+08:00",
+        "endTime": "2026-09-02T17:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014729&actmang_no=00075&actcls_no=085&clstea=",
+        "registration": "https://camp.ntpc.edu.tw/"
+      },
+      "tags": [],
+      "_raw": {
+        "schedule": "115/09/11 至 116/01/19\n週五 16:10~17:40",
+        "fee": "$2500元",
+        "eligibility": "1,2,3,4,5,6",
+        "quota": "依報名順序錄取\n預計錄取:15人\n實際錄取:0人",
+        "status": "網路線上報名 (可報名/退選)\n08/31 12:00 至 09/02 17:00\n尚未開放報名\n尚未確認報名員額，請通知活動管理者！"
       }
     },
     {

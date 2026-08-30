@@ -12,6 +12,7 @@ import {
     parseQuota,
     parseRegistrationStatus
 } from './utils.js';
+import { markNextPageControl } from './ntpc-pagination.js';
 import { crawlTaipeiCamps } from './taipei-crawler.js';
 
 const BASE_URL = 'https://camp.ntpc.edu.tw';
@@ -234,36 +235,11 @@ async function crawlNTPCCamp() {
                     }
                 }
 
-                // 檢查是否有下一頁
-                // 邏輯：
-                // 1. 找到當前頁碼 (class="pg_act")
-                // 2. 尋找下一頁頁碼按鈕
-                // 3. 如果找不到，尋找 "下十頁" 按鈕
-
-                let nextBtnSelector = null;
-                const currentPageSpan = document.querySelector('span.pg_act');
-                const currentPage = currentPageSpan ? parseInt(currentPageSpan.innerText) : 1;
-                const nextPage = currentPage + 1;
-
-                // 找下一頁按鈕 (span 且文字為下一頁頁碼)
-                const pageBtns = Array.from(document.querySelectorAll('span[onclick*="subPage"]'));
-                const nextPageBtn = pageBtns.find(el => el.innerText.trim() === nextPage.toString());
-
-                if (nextPageBtn) {
-                    // 標記一下，方便後面 click
-                    nextPageBtn.setAttribute('data-next-page', 'true');
-                    nextBtnSelector = 'span[data-next-page="true"]';
-                } else {
-                    // 找不到下一頁號碼，可能是 "下十頁" 或 "下一頁"
-                    const jumpBtn = pageBtns.find(el => el.innerText.includes('下一頁') || el.innerText.includes('下十頁'));
-                    if (jumpBtn) {
-                        jumpBtn.setAttribute('data-jump-page', 'true');
-                        nextBtnSelector = 'span[data-jump-page="true"]';
-                    }
-                }
-
-                return { courses, hasNextPage: !!nextBtnSelector, nextBtnSelector };
+                return { courses };
             });
+
+            const pagination = await page.evaluate(markNextPageControl);
+            Object.assign(pageData, pagination);
 
             console.log(`      找到 ${pageData.courses.length} 筆課程`);
 
@@ -331,7 +307,10 @@ async function crawlNTPCCamp() {
                 console.log(`      📊 累計課程: ${allCourses.length} 筆`);
 
                 await page.click(pageData.nextBtnSelector);
-                await page.waitForTimeout(5000);
+                await page.waitForFunction((previousPage) => {
+                    const activePage = document.querySelector('.pagination .pg_act');
+                    return Number.parseInt(activePage?.textContent?.trim() || '', 10) !== previousPage;
+                }, pageData.currentPage, { timeout: 30000 });
                 pageNum++;
             } else {
                 console.log('      🏁 已無下一頁');
