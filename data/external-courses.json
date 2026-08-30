@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T02:26:07.260Z",
+  "lastUpdated": "2026-08-30T23:03:02.825Z",
   "description": "開放外校學生報名的課程",
   "total": 59,
   "courses": [
@@ -12,14 +12,14 @@
         "actId": "00048",
         "courseId": "001"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：馬嘉均)",
-      "teacher": "",
+      "category": "作文A班(週一)",
+      "courseName": "",
+      "teacher": "馬嘉均",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -61,8 +61,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=001",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-001-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=001&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],
@@ -83,14 +83,14 @@
         "actId": "00048",
         "courseId": "006"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：陳效哲)",
-      "teacher": "",
+      "category": "羽球課(週一)",
+      "courseName": "",
+      "teacher": "陳效哲",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -132,8 +132,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=006",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-006-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=006&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],
@@ -154,14 +154,14 @@
         "actId": "00048",
         "courseId": "011"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：徐紫庭)",
-      "teacher": "",
+      "category": "作文B班(週二)",
+      "courseName": "",
+      "teacher": "徐紫庭",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -203,8 +203,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=011",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-011-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=011&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],
@@ -225,14 +225,14 @@
         "actId": "00048",
         "courseId": "007"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：外師Sara)",
-      "teacher": "",
+      "category": "外師英語課A班(週二)",
+      "courseName": "",
+      "teacher": "外師Sara",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -274,8 +274,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=007",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-007-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=007&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],
@@ -296,14 +296,14 @@
         "actId": "00048",
         "courseId": "009"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：楊承勲)",
-      "teacher": "",
+      "category": "日文班(週二)",
+      "courseName": "",
+      "teacher": "楊承勲",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -345,8 +345,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=009",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-009-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=009&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],
@@ -367,14 +367,14 @@
         "actId": "00048",
         "courseId": "003"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：林雯淑)",
-      "teacher": "",
+      "category": "作文C班(週三)",
+      "courseName": "",
+      "teacher": "林雯淑",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -416,8 +416,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=003",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-003-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=003&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],
@@ -438,14 +438,14 @@
         "actId": "00048",
         "courseId": "008"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：葉俊良)",
-      "teacher": "",
+      "category": "App Inventor 2(週三)",
+      "courseName": "",
+      "teacher": "葉俊良",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -487,8 +487,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=008",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-008-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=008&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],
@@ -509,14 +509,14 @@
         "actId": "00048",
         "courseId": "004"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：徐紫庭)",
-      "teacher": "",
+      "category": "作文D班(週四)",
+      "courseName": "",
+      "teacher": "徐紫庭",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -558,8 +558,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=004",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-004-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=004&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],
@@ -580,14 +580,14 @@
         "actId": "00048",
         "courseId": "010"
       },
-      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "school": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "schoolName": "新北市立福和國民中學",
-      "campName": "福和國中115學年第一學期雙語外交班系列課程  活動簡章",
-      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程  活動簡章",
+      "campName": "福和國中115學年第一學期雙語外交班系列課程",
+      "originalSchool": "新北市立福和國民中學 - 福和國中115學年第一學期雙語外交班系列課程",
       "address": "",
-      "category": "",
-      "courseName": "(教師：外師Sara)",
-      "teacher": "",
+      "category": "外師英語課B班(週五)",
+      "courseName": "",
+      "teacher": "外師Sara",
       "schedule": {
         "startDate": "2026-09-14",
         "endDate": "2026-12-31",
@@ -629,8 +629,8 @@
         "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=014517&act_no=00048&cls_no=010",
-        "prospectus": "https://camp.ntpc.edu.tw/central/014517/uploadfile/act_register/public/file/00048-010-clsfile.PDF",
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?method=ActCls_Ctn&status=index_detail_outquery&req_schno=014517&actmang_no=00048&actcls_no=010&clstea=",
+        "prospectus": "https://camp.ntpc.edu.tw/central/db2admin/uploadfile/ntpc_actregister/public/014517_202608192137.PDF",
         "registration": "https://camp.ntpc.edu.tw/"
       },
       "tags": [],

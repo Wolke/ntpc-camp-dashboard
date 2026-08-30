@@ -14,12 +14,18 @@ test('desktop sidebar, pagination, sorting and official link work', async ({ pag
 
     const cards = page.locator('main article');
     await expect(cards).toHaveCount(24);
-    await expect(cards.first().getByRole('link', { name: '查看官方詳情' })).toHaveAttribute('target', '_blank');
+    const officialLink = cards.first().getByRole('link', { name: '查看官方詳情' });
+    await expect(officialLink).toHaveAttribute('target', '_blank');
+    await expect(officialLink).toHaveAttribute('href', /ACTClsAction\.do\?.*status=index_detail_outquery/);
 
     await page.getByRole('button', { name: /載入更多/ }).click();
     await expect(cards).toHaveCount(48);
     await page.getByRole('button', { name: '課程近' }).click();
     await expect(cards).toHaveCount(24);
+
+    await page.getByRole('textbox', { name: '搜尋課程' }).fill('福和國中');
+    const prospectusLink = cards.first().getByRole('link', { name: '活動簡章' });
+    await expect(prospectusLink).toHaveAttribute('href', /\/central\/db2admin\/uploadfile\/ntpc_actregister\/public\//);
 });
 
 test('390px drawer applies only on confirmation, supports Escape and resets empty results', async ({ page }) => {

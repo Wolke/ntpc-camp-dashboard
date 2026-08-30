@@ -2,7 +2,7 @@ import { CalendarDays, CalendarPlus, Clock, ExternalLink, GraduationCap, School,
 import type { LucideIcon } from 'lucide-react';
 import type { Course } from '../../types/course';
 import { buildCourseCalendarUrl } from '../../utils/googleCalendar';
-import { formatCourseFee, formatScheduleParts, getCourseOfficialUrl, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
+import { formatCourseFee, formatScheduleParts, getCourseOfficialUrl, getCourseProspectusUrl, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
 import RegistrationCalendarButton from './RegistrationCalendarButton';
 
 interface CourseCardProps {
@@ -49,6 +49,7 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
     const status = getCourseStatusInfo(course);
     const scheduleParts = formatScheduleParts(course);
     const officialUrl = getCourseOfficialUrl(course);
+    const prospectusUrl = getCourseProspectusUrl(course);
 
     return (
         <article
@@ -131,9 +132,9 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                         查看官方詳情
                     </a>
                 )}
-                {course.urls?.prospectus && (
+                {prospectusUrl && (
                     <a
-                        href={course.urls.prospectus}
+                        href={prospectusUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(event) => event.stopPropagation()}

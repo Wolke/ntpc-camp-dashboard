@@ -159,6 +159,7 @@ async function crawlNTPCCamp() {
                 const rows = tbody ? Array.from(tbody.querySelectorAll('tr')) : [];
 
                 let currentSchool = '';
+                let currentProspectusUrl = '';
                 const courses = [];
 
                 for (const row of rows) {
@@ -170,7 +171,14 @@ async function crawlNTPCCamp() {
 
                     // 學校標題行 (colspan=7)
                     if (cells.length === 1 && text.includes('新北市')) {
-                        currentSchool = text;
+                        const titleCell = cells[0];
+                        const prospectusLink = titleCell.querySelector('a[href]');
+                        const titleClone = titleCell.cloneNode(true);
+                        titleClone.querySelectorAll('a').forEach((link) => link.remove());
+                        currentSchool = titleClone.textContent.replace(/\s+/g, ' ').trim();
+                        currentProspectusUrl = prospectusLink
+                            ? new URL(prospectusLink.getAttribute('href'), window.location.origin).href
+                            : '';
                         continue;
                     }
 
@@ -179,14 +187,16 @@ async function crawlNTPCCamp() {
                         const courseInfo = cells[1];
 
                         // 解析課程名稱和分類
-                        const fonts = courseInfo.querySelectorAll('font');
-                        let category = '';
+                        const fonts = Array.from(courseInfo.querySelectorAll('font'));
+                        const titleButton = courseInfo.querySelector('[onclick*="ActCls_Detail_Outquery"]');
+                        let category = titleButton?.textContent?.trim() || '';
                         let courseName = '';
                         let teacher = '';
 
-                        if (fonts.length >= 1) category = fonts[0]?.innerText?.trim() || '';
-                        if (fonts.length >= 2) courseName = fonts[1]?.innerText?.trim() || '';
-                        if (fonts.length >= 3) teacher = fonts[2]?.innerText?.replace(/[()（）]/g, '').replace('教師：', '').trim() || '';
+                        const subcategory = fonts.find((font) => !(font.textContent || '').includes('教師：'))?.textContent?.trim() || '';
+                        const teacherText = fonts.find((font) => (font.textContent || '').includes('教師：'))?.textContent || '';
+                        if (subcategory && subcategory !== category) courseName = subcategory;
+                        teacher = teacherText.replace(/[()（）]/g, '').replace('教師：', '').trim();
 
                         // 從 onclick 屬性提取 IDs 用於生成 URLs
                         // 格式: ActCls_Detail_Outquery('schoolId', 'actId', 'courseId', '')
@@ -215,6 +225,7 @@ async function crawlNTPCCamp() {
                             eligibilityRaw: cells[4]?.innerText?.trim() || '',
                             quotaRaw: cells[5]?.innerText?.trim() || '',
                             statusRaw: cells[6]?.innerText?.trim() || '',
+                            prospectusUrl: currentProspectusUrl,
                             // 新增欄位
                             schoolId,
                             actId,
@@ -261,8 +272,16 @@ async function crawlNTPCCamp() {
                 // 生成 URLs
                 const urls = {};
                 if (course.schoolId && course.actId && course.courseId) {
-                    urls.detail = `https://camp.ntpc.edu.tw/jsp/act_register/ACTMangAction.do?method=ActCls_Detail_Outquery&schno=${course.schoolId}&act_no=${course.actId}&cls_no=${course.courseId}`;
-                    urls.prospectus = `https://camp.ntpc.edu.tw/central/${course.schoolId}/uploadfile/act_register/public/file/${course.actId}-${course.courseId}-clsfile.PDF`;
+                    const detailParams = new URLSearchParams({
+                        method: 'ActCls_Ctn',
+                        status: 'index_detail_outquery',
+                        req_schno: course.schoolId,
+                        actmang_no: course.actId,
+                        actcls_no: course.courseId,
+                        clstea: ''
+                    });
+                    urls.detail = `https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?${detailParams.toString()}`;
+                    if (course.prospectusUrl) urls.prospectus = course.prospectusUrl;
                     urls.registration = 'https://camp.ntpc.edu.tw/';
                 }
 

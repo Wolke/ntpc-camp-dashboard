@@ -240,7 +240,30 @@ export function formatCourseFee(course: Course): string {
 }
 
 export function getCourseOfficialUrl(course: Course): string | undefined {
+    const { source } = course;
+    if (source?.type === 'ntpc_camp' && source.schoolId && source.actId && source.courseId) {
+        const params = new URLSearchParams({
+            method: 'ActCls_Ctn',
+            status: 'index_detail_outquery',
+            req_schno: source.schoolId,
+            actmang_no: source.actId,
+            actcls_no: source.courseId,
+            clstea: '',
+        });
+        return `https://camp.ntpc.edu.tw/jsp/act_register/ACTClsAction.do?${params.toString()}`;
+    }
+
     return course.urls?.detail || course.urls?.registration || course.source?.url;
+}
+
+export function getCourseProspectusUrl(course: Course): string | undefined {
+    const prospectusUrl = course.urls?.prospectus;
+    if (!prospectusUrl) return undefined;
+
+    const isLegacyGuessedUrl = course.source?.type === 'ntpc_camp'
+        && /\/uploadfile\/act_register\/public\/file\/\d+-\d+-clsfile\.pdf$/i.test(prospectusUrl);
+
+    return isLegacyGuessedUrl ? undefined : prospectusUrl;
 }
 
 // 計算報名截止剩餘天數

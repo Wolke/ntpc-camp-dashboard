@@ -1,4 +1,5 @@
 import type { Course } from '../types/course';
+import { getCourseProspectusUrl } from './courseUtils';
 
 function formatGoogleDate(date: Date) {
     return date.toISOString().replace(/[-:]|\.\d{3}/g, '');
@@ -22,6 +23,8 @@ function formatRegistrationRange(course: Course) {
 }
 
 function buildDetails(course: Course, extraLines: string[] = []) {
+    const prospectusUrl = getCourseProspectusUrl(course);
+
     return [
         ...extraLines,
         `學校/單位：${course.schoolName}`,
@@ -31,7 +34,7 @@ function buildDetails(course: Course, extraLines: string[] = []) {
         `報名期間：${formatRegistrationRange(course)}`,
         `費用：${course.fee.description || (course.fee.isFree ? '免費' : '未提供')}`,
         course.urls?.registration ? `報名入口：${course.urls.registration}` : '',
-        course.urls?.prospectus ? `活動簡章：${course.urls.prospectus}` : '',
+        prospectusUrl ? `活動簡章：${prospectusUrl}` : '',
     ].filter(Boolean).join('\n');
 }
 
