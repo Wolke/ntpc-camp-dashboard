@@ -24,19 +24,29 @@ describe('course filters', () => {
         expect(applyCourseFilters([overlapping, outside], filters)).toEqual([overlapping]);
     });
 
-    it('sorts actionable registration states before ended courses', () => {
+    it('sorts upcoming courses by their nearest start date before ongoing and ended courses', () => {
         const now = new Date('2026-08-30T12:00:00+08:00');
-        const closing = makeCourse({ category: '即將截止', registration: { endTime: '2026-09-01T12:00:00+08:00' } as Course['registration'] });
-        const available = makeCourse({ category: '可報名' });
-        const notStarted = makeCourse({ category: '尚未開放', registration: { startTime: '2026-09-05T09:00:00+08:00' } as Course['registration'] });
-        const closed = makeCourse({ category: '已截止', registration: { endTime: '2026-08-20T09:00:00+08:00' } as Course['registration'] });
+        const upcomingSoon = makeCourse({
+            category: '即將開課',
+            schedule: { startDate: '2026-09-05', endDate: '2026-09-06' } as Course['schedule'],
+            registration: { endTime: '2026-08-20T09:00:00+08:00' } as Course['registration'],
+        });
+        const upcomingLater = makeCourse({
+            category: '稍後開課',
+            schedule: { startDate: '2026-09-10', endDate: '2026-09-12' } as Course['schedule'],
+            registration: { endTime: '2026-09-01T12:00:00+08:00' } as Course['registration'],
+        });
+        const ongoing = makeCourse({
+            category: '進行中',
+            schedule: { startDate: '2026-08-20', endDate: '2026-09-02' } as Course['schedule'],
+        });
         const ended = makeCourse({
             category: '已結束',
             schedule: { startDate: '2026-07-01', endDate: '2026-07-02' } as Course['schedule'],
             registration: { endTime: '2026-06-20T09:00:00+08:00' } as Course['registration'],
         });
 
-        expect(sortCourses([ended, closed, notStarted, available, closing], 'default', null, now).map((course) => course.category))
-            .toEqual(['即將截止', '可報名', '尚未開放', '已截止', '已結束']);
+        expect(sortCourses([ended, ongoing, upcomingLater, upcomingSoon], 'default', null, now).map((course) => course.category))
+            .toEqual(['即將開課', '稍後開課', '進行中', '已結束']);
     });
 });

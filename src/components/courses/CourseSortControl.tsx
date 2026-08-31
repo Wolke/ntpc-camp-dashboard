@@ -12,7 +12,7 @@ interface CourseSortControlProps {
 }
 
 const sortOptions = [
-    { mode: 'default', label: '預設', icon: ArrowDownUp },
+    { mode: 'default', label: '即將開課', icon: ArrowDownUp },
     { mode: 'distance', label: '距離', icon: LocateFixed },
     { mode: 'fee-asc', label: '費用低', icon: CircleDollarSign },
     { mode: 'fee-desc', label: '費用高', icon: CircleDollarSign },

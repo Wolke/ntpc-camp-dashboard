@@ -137,13 +137,19 @@ function distanceKm(from: UserLocation, to: [number, number]): number {
     return 2 * 6371 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-function defaultRank(course: Course, now: Date): number {
+function registrationRank(course: Course, now: Date): number {
     const status = getCourseStatus(course, now);
     if (status.registration === 'closing_soon') return 0;
     if (status.registration === 'available') return 1;
     if (status.registration === 'not_started') return 2;
-    if (status.courseTime !== 'ended') return 3;
-    return 4;
+    return 3;
+}
+
+function courseTimeRank(course: Course, now: Date): number {
+    const status = getCourseStatus(course, now);
+    if (status.courseTime === 'upcoming') return 0;
+    if (status.courseTime === 'ongoing') return 1;
+    return 2;
 }
 
 function stableCourseCompare(a: Course, b: Course): number {
@@ -173,7 +179,11 @@ export function sortCourses(
     if (mode === 'course-date-desc') return next.sort((a, b) => sortableDate(b.schedule.startDate, 'desc') - sortableDate(a.schedule.startDate, 'desc') || stableCourseCompare(a, b));
     if (mode === 'registration-date-asc') return next.sort((a, b) => sortableDate(a.registration.startTime, 'asc') - sortableDate(b.registration.startTime, 'asc') || stableCourseCompare(a, b));
     if (mode === 'registration-date-desc') return next.sort((a, b) => sortableDate(b.registration.startTime, 'desc') - sortableDate(a.registration.startTime, 'desc') || stableCourseCompare(a, b));
-    return next.sort((a, b) => defaultRank(a, now) - defaultRank(b, now) || sortableDate(a.schedule.startDate, 'asc') - sortableDate(b.schedule.startDate, 'asc') || stableCourseCompare(a, b));
+    return next.sort((a, b) =>
+        courseTimeRank(a, now) - courseTimeRank(b, now)
+        || sortableDate(a.schedule.startDate, 'asc') - sortableDate(b.schedule.startDate, 'asc')
+        || registrationRank(a, now) - registrationRank(b, now)
+        || stableCourseCompare(a, b));
 }
 
 export function countActiveFilterGroups(filters: FilterOptions): number {
