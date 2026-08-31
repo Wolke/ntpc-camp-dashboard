@@ -15,6 +15,7 @@ test('desktop sidebar, pagination, sorting and official link work', async ({ pag
     const cards = page.locator('main article');
     await expect(cards).toHaveCount(24);
     await expect(page.getByRole('button', { name: '即將開課', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.getByRole('button', { name: '📅 即將開課' })).toHaveAttribute('aria-pressed', 'true');
     await expect(page.getByTitle('新北市土城區土城國民小學，23 門課程')).toBeVisible();
     const officialLink = cards.first().getByRole('link', { name: '查看官方詳情' });
     await expect(officialLink).toHaveAttribute('target', '_blank');

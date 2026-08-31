@@ -23,7 +23,7 @@ export const DEFAULT_FILTERS: FilterOptions = {
     grades: [],
     themeIds: [],
     registrationStatus: [],
-    courseTimeStatus: [],
+    courseTimeStatus: ['upcoming'],
     quotaStatus: [],
 };
 
@@ -35,7 +35,7 @@ export function createDefaultFilters(): FilterOptions {
         grades: [],
         themeIds: [],
         registrationStatus: [],
-        courseTimeStatus: [],
+        courseTimeStatus: [...DEFAULT_FILTERS.courseTimeStatus],
         quotaStatus: [],
     };
 }

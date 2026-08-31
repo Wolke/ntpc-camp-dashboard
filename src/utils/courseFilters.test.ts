@@ -9,16 +9,37 @@ import {
 } from './courseFilters';
 
 describe('course filters', () => {
-    it('shows every course when filters are neutral', () => {
+    it('selects upcoming courses by default', () => {
+        const now = new Date('2026-08-30T12:00:00+08:00');
+        const upcoming = makeCourse({
+            category: '即將開課',
+            schedule: { startDate: '2026-09-05', endDate: '2026-09-06' } as Course['schedule'],
+        });
+        const ended = makeCourse({
+            category: '已結束',
+            schedule: { startDate: '2026-07-01', endDate: '2026-07-02' } as Course['schedule'],
+        });
+        const filters = createDefaultFilters();
+
+        expect(filters.courseTimeStatus).toEqual(['upcoming']);
+        expect(applyCourseFilters([upcoming, ended], filters, null, now)).toEqual([upcoming]);
+        expect(countActiveFilterGroups(filters)).toBe(1);
+    });
+
+    it('shows every course when the upcoming default is deselected', () => {
         const courses = [makeCourse(), makeCourse({ schoolName: '另一所國民小學' })];
-        expect(applyCourseFilters(courses, createDefaultFilters())).toEqual(courses);
-        expect(countActiveFilterGroups(createDefaultFilters())).toBe(0);
+        const filters = createDefaultFilters();
+        filters.courseTimeStatus = [];
+
+        expect(applyCourseFilters(courses, filters)).toEqual(courses);
+        expect(countActiveFilterGroups(filters)).toBe(0);
     });
 
     it('matches courses whose date range overlaps the selected range', () => {
         const overlapping = makeCourse({ schedule: { startDate: '2026-07-10', endDate: '2026-07-15' } as Course['schedule'] });
         const outside = makeCourse({ schedule: { startDate: '2026-08-01', endDate: '2026-08-05' } as Course['schedule'] });
         const filters = createDefaultFilters();
+        filters.courseTimeStatus = [];
         filters.dateRange = { start: '2026-07-12', end: '2026-07-20' };
 
         expect(applyCourseFilters([overlapping, outside], filters)).toEqual([overlapping]);
