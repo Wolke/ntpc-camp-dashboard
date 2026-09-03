@@ -14,6 +14,7 @@ import {
 } from './utils.js';
 import { markNextPageControl } from './ntpc-pagination.js';
 import { crawlTaipeiCamps } from './taipei-crawler.js';
+import { crawlUnindexedSchoolCourses } from './ntpc-school-activity-crawler.js';
 
 const BASE_URL = 'https://camp.ntpc.edu.tw';
 const ACTION_URL = `${BASE_URL}/jsp/act_register/ACTMangAction.do`;
@@ -327,7 +328,13 @@ async function crawlNTPCCamp() {
 
         console.log(`\n   📊 新北市總共找到 ${allCourses.length} 筆課程`);
 
-        // Step 5b: 台北市暑期體驗營
+        // Step 5b: 逐校公開、但未被 Camp 全站索引的所有課程
+        console.log('\n5️⃣ 補抓未被 Camp 全站索引的所有逐校公開課程...');
+        const schoolActivityOutput = await crawlUnindexedSchoolCourses(allCourses, { now });
+        allCourses.push(...schoolActivityOutput.courses);
+        console.log(`   ✅ 補入 ${schoolActivityOutput.courses.length} 筆逐校公開課程`);
+
+        // Step 5c: 台北市暑期體驗營
         console.log('\n5️⃣ 補抓台北市暑期體驗營...');
         const taipeiOutput = await crawlTaipeiCamps({ year: currentYear });
         allCourses.push(...taipeiOutput.courses);
@@ -365,6 +372,10 @@ async function crawlNTPCCamp() {
 
         writeFileSync('data/taipei-courses.json', JSON.stringify(taipeiOutput, null, 2));
         console.log('   ✅ 已保存台北市課程至 data/taipei-courses.json');
+
+        schoolActivityOutput.report.sourceDataUpdatedAt = output.lastUpdated;
+        writeFileSync('data/unindexed-activities.json', JSON.stringify(schoolActivityOutput.report, null, 2));
+        console.log('   ✅ 已保存未索引活動稽核至 data/unindexed-activities.json');
 
         // 另外輸出一份「開放外校學生」的課程
         const externalCourses = {

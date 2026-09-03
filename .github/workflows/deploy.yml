@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   workflow_run:
-    workflows: ["Weekly Crawl"]
+    workflows: ["Daily Crawl"]
     types: [completed]
   workflow_dispatch:
 

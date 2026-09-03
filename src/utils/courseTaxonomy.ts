@@ -120,6 +120,7 @@ export function getCourseSearchText(course: Course): string {
         formatCourseWeekSummary(course),
         course.eligibility.allowExternalStudents ? '開放外校 外校學生' : '',
         course.eligibility.gradeNames.join(' '),
+        course.eligibility.restrictions.join(' '),
         course.tags?.join(' '),
     ].filter(Boolean).join(' ');
 }

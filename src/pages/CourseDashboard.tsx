@@ -76,6 +76,7 @@ export default function CourseDashboard() {
     const resultStats = useMemo(() => ({
         external: courses.filter((course) => course.eligibility.allowExternalStudents).length,
         free: courses.filter((course) => course.fee.isFree).length,
+        supplemental: courses.filter((course) => course.source?.type === 'ntpc_school_activity').length,
     }), [courses]);
     const activeFilterCount = countActiveFilterGroups(filters) + (selectedSchool ? 1 : 0);
 
@@ -120,7 +121,7 @@ export default function CourseDashboard() {
                 <section className="mb-5 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
                     <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                         <div>
-                            <p className="text-sm font-medium text-indigo-600">新北市寒暑假育樂營</p>
+                            <p className="text-sm font-medium text-indigo-600">新北市寒暑假育樂營＋逐校公開活動</p>
                             <h1 className="mt-1 text-2xl font-semibold text-slate-950">課程查詢</h1>
                             <p className="mt-2 text-sm text-slate-500">
                                 {stats && `共 ${stats.total} 門課程，${stats.schools} 個學校/單位`}
@@ -131,9 +132,14 @@ export default function CourseDashboard() {
                                     資料已超過 8 天未更新，內容可能不是最新狀態。
                                 </p>
                             )}
+                            {resultStats.supplemental > 0 && (
+                                <p className="mt-2 text-sm text-violet-700">
+                                    已補入 {resultStats.supplemental} 門未被 Camp 全站搜尋收錄的逐校公開課程，並保留外校報名資格標示。
+                                </p>
+                            )}
                         </div>
 
-                        <div className="grid grid-cols-3 gap-2 text-center">
+                        <div className="grid grid-cols-2 gap-2 text-center sm:grid-cols-4">
                             <div className="rounded-md bg-slate-50 px-3 py-2">
                                 <p className="text-lg font-semibold text-slate-950">{courses.length}</p>
                                 <p className="text-xs text-slate-500">目前符合</p>
@@ -145,6 +151,10 @@ export default function CourseDashboard() {
                             <div className="rounded-md bg-slate-50 px-3 py-2">
                                 <p className="text-lg font-semibold text-slate-950">{resultStats.free}</p>
                                 <p className="text-xs text-slate-500">其中免費</p>
+                            </div>
+                            <div className="rounded-md bg-violet-50 px-3 py-2">
+                                <p className="text-lg font-semibold text-violet-900">{resultStats.supplemental}</p>
+                                <p className="text-xs text-violet-600">逐校補入</p>
                             </div>
                         </div>
                     </div>

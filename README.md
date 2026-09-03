@@ -19,7 +19,9 @@
 
 ## 資料來源
 
-爬蟲自動從 [新北市寒暑假育樂營網站](https://camp.ntpc.edu.tw/) 與 [臺北市國民小學暑期體驗營](https://holiday.tp.edu.tw/camps_all) 擷取最新課程資料。
+爬蟲自動從 [新北市寒暑假育樂營網站](https://camp.ntpc.edu.tw/)、新北市各校免登入公開活動頁與 [臺北市國民小學暑期體驗營](https://holiday.tp.edu.tw/camps_all) 擷取最新課程資料。逐校來源會補入所有未被 Camp 全站索引的公開課程，並以學校、活動、課程三級 ID 去重；「開放外校」或「限本校」則保留為資格標示與篩選條件。
+
+同一次爬取會將完整索引差異寫入 `data/unindexed-activities.json`，逐校補入的課程則直接合併至 `data/courses.json`，並標示 `ntpc_school_activity` 來源。由於部分報名期不到一週，GitHub Actions 會在台灣時間每天 08:00 更新資料。
 
 ## 本地開發
 
@@ -35,6 +37,9 @@ npm run crawl
 
 # 只更新台北市暑期體驗營資料
 npm run crawl:taipei
+
+# 比對各校公開活動頁與 Camp 全站索引
+npm run audit:index -- --output data/unindexed-activities.json --summary
 
 # 建置專案
 npm run build
@@ -108,10 +113,12 @@ Action 讀取訂閱名單的優先順序是 `SUBSCRIBERS_JSON`、`SUBSCRIBERS_JS
 │   ├── types/          # TypeScript 類型
 │   ├── utils/          # 工具函數
 │   ├── index.js        # 爬蟲主程式
+│   ├── ntpc-school-activity-crawler.js # 逐校公開活動、報名資格、正規化與去重
 │   └── taipei-crawler.js # 台北市營隊爬蟲
 ├── data/
 │   ├── courses.json           # 所有課程資料
 │   ├── external-courses.json  # 開放外校生課程
+│   ├── unindexed-activities.json # 各校已公開但未進入 Camp 全站索引的活動
 │   └── taipei-courses.json    # 台北市營隊資料
 └── .github/workflows/
     └── deploy.yml      # GitHub Pages 自動部署

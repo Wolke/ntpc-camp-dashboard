@@ -1,9 +1,9 @@
-name: Weekly Crawl
+name: Daily Crawl
 
 on:
   schedule:
-    # 每週日 UTC 00:00（台灣時間週日早上 08:00）
-    - cron: '0 0 * * 0'
+    # 每天 UTC 00:00（台灣時間早上 08:00）；短期報名活動可能不到一週
+    - cron: '0 0 * * *'
   workflow_dispatch: # 手動觸發
 
 permissions:
@@ -57,4 +57,4 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             /repos/${{ github.repository }}/commits/$COMMIT_SHA/comments \
-            -f body="@${{ github.actor }} 🎉 爬蟲每週排程已成功執行，並更新了最新的課程資料！"
+            -f body="@${{ github.actor }} 🎉 爬蟲每日排程已成功執行，並更新了最新的課程資料！"

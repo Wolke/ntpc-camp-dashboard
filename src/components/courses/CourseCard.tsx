@@ -78,6 +78,11 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                             }`}>
                             {course.eligibility.allowExternalStudents ? '開放外校' : '限本校'}
                         </span>
+                        {course.source?.type === 'ntpc_school_activity' && (
+                            <span className="inline-flex items-center rounded-md border border-violet-200 bg-violet-50 px-2 py-1 text-xs font-medium text-violet-700">
+                                逐校公開・全站未索引
+                            </span>
+                        )}
                     </div>
 
                     <h3 className="text-base font-semibold leading-6 text-slate-950">
@@ -116,6 +121,9 @@ export default function CourseCard({ course, onClick }: CourseCardProps) {
                 )}
                 {course.eligibility.gradeNames.map((gradeName) => (
                     <MetaTag key={gradeName} icon={Users} label={gradeName} tone="amber" />
+                ))}
+                {course.eligibility.restrictions.map((restriction) => (
+                    <MetaTag key={restriction} icon={Users} label={restriction} tone="amber" />
                 ))}
             </div>
 

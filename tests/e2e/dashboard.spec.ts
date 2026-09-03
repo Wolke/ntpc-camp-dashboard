@@ -19,7 +19,10 @@ test('desktop sidebar, pagination, sorting and official link work', async ({ pag
     await expect(page.getByTitle('新北市土城區土城國民小學，23 門課程')).toBeVisible();
     const officialLink = cards.first().getByRole('link', { name: '查看官方詳情' });
     await expect(officialLink).toHaveAttribute('target', '_blank');
-    await expect(officialLink).toHaveAttribute('href', /ACTClsAction\.do\?.*status=index_detail_outquery/);
+    await expect(officialLink).toHaveAttribute(
+        'href',
+        /(?:ACTClsAction\.do\?.*status=index_detail_outquery|ACTOutIndexAction\.do\?.*method=ACTOutIndex_ClsList)/,
+    );
 
     await page.getByRole('button', { name: /載入更多/ }).click();
     await expect(cards).toHaveCount(48);
@@ -48,10 +51,12 @@ test('390px drawer applies only on confirmation, supports Escape and resets empt
     await expect(page.getByRole('dialog', { name: '篩選課程' })).not.toBeVisible();
     await expect(filterButton).toBeFocused();
 
+    await page.getByRole('textbox', { name: '搜尋課程' }).fill('福和國中');
+    await expect(page.locator('main article')).toHaveCount(9);
     await filterButton.click();
     const dialog = page.getByRole('dialog', { name: '篩選課程' });
-    await dialog.getByRole('button', { name: '免費', exact: true }).click();
-    await expect(page.locator('main article')).toHaveCount(24);
+    await dialog.getByRole('button', { name: '限本校', exact: true }).click();
+    await expect(page.locator('main article')).toHaveCount(9);
     await dialog.getByRole('button', { name: /查看 0 門課程/ }).click();
     await expect(page.getByText('沒有符合條件的課程')).toBeVisible();
     await page.getByRole('button', { name: '清除所有條件' }).click();
@@ -82,4 +87,33 @@ test('analysis links representatives to official details and advisor starts blan
     await expect(page.getByRole('combobox', { name: '年級' })).toHaveValue('');
     await expect(page.getByText('選擇孩子目前的年級後，才會產生符合資格的課程建議。')).toBeVisible();
     await expect(page.getByText(/目前條件沒有找到合適課程/)).not.toBeVisible();
+});
+
+test('school-page-only courses are searchable with provenance and eligibility', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto('./');
+
+    const search = page.getByRole('textbox', { name: '搜尋課程' });
+    await search.fill('樂利國小');
+    let firstCard = page.locator('main article').first();
+
+    await expect(firstCard).toContainText('新北市土城區樂利國民小學');
+    await expect(firstCard).toContainText('限本校');
+    await expect(firstCard).toContainText('逐校公開・全站未索引');
+    await expect(firstCard.getByRole('link', { name: '查看官方詳情' })).toHaveAttribute(
+        'href',
+        /schno=014773&actmang_no=00038/,
+    );
+
+    await search.fill('光復國小');
+    firstCard = page.locator('main article').first();
+
+    await expect(firstCard).toContainText('新北市中和區光復國民小學');
+    await expect(firstCard).toContainText('開放外校');
+    await expect(firstCard).toContainText('逐校公開・全站未索引');
+    await expect(firstCard).toContainText('限制本縣市學生');
+    await expect(firstCard.getByRole('link', { name: '查看官方詳情' })).toHaveAttribute(
+        'href',
+        /schno=014796&actmang_no=00056/,
+    );
 });
