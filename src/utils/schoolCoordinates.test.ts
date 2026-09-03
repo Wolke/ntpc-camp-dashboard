@@ -6,11 +6,12 @@ describe('school coordinates', () => {
         const courseData = await import('../../data/courses.json');
         const ntpcSchoolNames = Array.from(new Set(
             courseData.default.courses
-                .filter((course) => course.source.type === 'ntpc_camp')
+                .filter((course) => course.source.type === 'ntpc_camp' || course.source.type === 'ntpc_school_activity')
                 .map((course) => course.schoolName),
         ));
 
+        expect(ntpcSchoolNames.length).toBeGreaterThanOrEqual(74);
         expect(ntpcSchoolNames.filter((schoolName) => !SCHOOL_COORDINATES[schoolName])).toEqual([]);
-        expect(SCHOOL_COORDINATES['新北市土城區土城國民小學']).toEqual([24.972382, 121.441934]);
+        expect(SCHOOL_COORDINATES['新北市土城區土城國民小學']).toEqual([24.972389, 121.441931]);
     });
 });

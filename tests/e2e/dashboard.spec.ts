@@ -34,6 +34,20 @@ test('desktop sidebar, pagination, sorting and official link work', async ({ pag
     await expect(prospectusLink).toHaveAttribute('href', /\/central\/db2admin\/uploadfile\/ntpc_actregister\/public\//);
 });
 
+test('map covers every current school and the school list filters courses', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto('./');
+
+    await expect(page.getByText('共 74 所，74 所已定位')).toBeVisible();
+    await page.getByRole('searchbox', { name: '搜尋學校' }).fill('光復國小');
+    const schoolList = page.getByRole('region', { name: '學校清單' });
+    const schoolButton = schoolList.getByRole('button', { name: /新北市中和區光復國民小學/ });
+    await expect(schoolButton).toBeVisible();
+    await schoolButton.click();
+    await expect(page.locator('main article').first()).toContainText('新北市中和區光復國民小學');
+    await expect(page.getByText('學校篩選：新北市中和區光復國民小學')).toBeVisible();
+});
+
 test('390px drawer applies only on confirmation, supports Escape and resets empty results', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('./');

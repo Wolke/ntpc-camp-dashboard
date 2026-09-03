@@ -252,9 +252,9 @@ export default function CourseDashboard() {
                                 <div id="school-map-panel" className="mt-3 lg:mt-0">
                                     <div className="mb-3 hidden lg:block">
                                         <h2 className="text-base font-semibold text-slate-900">學校地圖</h2>
-                                        <p className="text-sm text-slate-500">點擊標記或未定位清單可篩選課程</p>
+                                        <p className="text-sm text-slate-500">點擊地圖標記或下方學校清單可篩選課程</p>
                                     </div>
-                                    <SchoolMap courses={courses} height="300px" />
+                                    <SchoolMap courses={allCourses} height="300px" />
                                 </div>
                             )}
                         </section>

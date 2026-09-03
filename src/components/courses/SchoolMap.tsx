@@ -1,6 +1,7 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
+import { Search, X } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import type { Course } from '../../types/course';
 import { useCourseStore } from '../../store/courseStore';
@@ -27,19 +28,19 @@ const schoolTypeColors = {
 };
 
 // 自定義圖標
-function createColoredIcon(color: string) {
+function createColoredIcon(color: string, selected = false) {
     return L.divIcon({
         className: 'custom-marker',
         html: `<div style="
-      background-color: ${color};
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      border: 3px solid white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    "></div>`,
-        iconSize: [24, 24],
-        iconAnchor: [12, 12],
+            background-color: ${color};
+            width: ${selected ? 24 : 18}px;
+            height: ${selected ? 24 : 18}px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 0 0 ${selected ? 3 : 0}px ${selected ? '#312e81' : 'transparent'}, 0 2px 4px rgba(0,0,0,0.3);
+        "></div>`,
+        iconSize: selected ? [24, 24] : [18, 18],
+        iconAnchor: selected ? [12, 12] : [9, 9],
     });
 }
 
@@ -62,15 +63,40 @@ interface SchoolMapProps {
     height?: string;
 }
 
+interface SchoolMapEntry {
+    name: string;
+    coords?: [number, number];
+    count: number;
+    type: 'high_school' | 'junior_high' | 'elementary';
+    color: string;
+}
+
+type MappedSchool = SchoolMapEntry & { coords: [number, number] };
+
+function hasCoordinates(school: SchoolMapEntry): school is MappedSchool {
+    return Boolean(school.coords);
+}
+
+function normalizeSchoolSearchText(value: string) {
+    return value
+        .toLocaleLowerCase('zh-TW')
+        .replace(/國民中小學/g, '國中小')
+        .replace(/國民小學/g, '國小')
+        .replace(/國民中學/g, '國中')
+        .replace(/高級中學/g, '高中')
+        .replace(/\s+/g, '');
+}
+
 export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps) {
     const { selectedSchool, setSelectedSchool } = useCourseStore();
+    const [schoolQuery, setSchoolQuery] = useState('');
 
-    // 計算每個學校的課程數量
-    const schoolData = useMemo(() => {
+    const allSchoolData = useMemo(() => {
         const schoolMap = new Map<string, { count: number; type: 'high_school' | 'junior_high' | 'elementary' }>();
 
         courses.forEach((course) => {
             const name = course.schoolName;
+            if (!name) return;
             if (!schoolMap.has(name)) {
                 schoolMap.set(name, { count: 1, type: getSchoolType(name) });
             } else {
@@ -79,36 +105,36 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
         });
 
         return Array.from(schoolMap.entries())
-            .filter(([name]) => SCHOOL_COORDINATES[name])
             .map(([name, data]) => ({
                 name,
                 coords: SCHOOL_COORDINATES[name],
                 count: data.count,
                 type: data.type,
                 color: schoolTypeColors[data.type],
-            }));
+            }))
+            .sort((a, b) => a.name.localeCompare(b.name, 'zh-TW')) as SchoolMapEntry[];
     }, [courses]);
 
-    const unmappedSchools = useMemo(() => {
-        const schoolMap = new Map<string, number>();
+    const mappedSchools = useMemo(
+        () => allSchoolData.filter(hasCoordinates),
+        [allSchoolData],
+    );
+    const unmappedCount = allSchoolData.length - mappedSchools.length;
+    const filteredSchools = useMemo(() => {
+        const query = normalizeSchoolSearchText(schoolQuery.trim());
+        if (!query) return allSchoolData;
+        return allSchoolData.filter((school) => normalizeSchoolSearchText(school.name).includes(query));
+    }, [allSchoolData, schoolQuery]);
 
-        courses.forEach((course) => {
-            const name = course.schoolName;
-            if (!SCHOOL_COORDINATES[name]) {
-                schoolMap.set(name, (schoolMap.get(name) || 0) + 1);
-            }
-        });
-
-        return Array.from(schoolMap.entries())
-            .map(([name, count]) => ({ name, count }))
-            .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'zh-TW'));
-    }, [courses]);
+    const toggleSchool = (schoolName: string) => {
+        setSelectedSchool(selectedSchool === schoolName ? null : schoolName);
+    };
 
     // 新北市中心座標
     const center: [number, number] = [25.0169, 121.4628];
 
     return (
-        <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100">
+        <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
             <MapContainer
                 center={center}
                 zoom={11}
@@ -119,24 +145,18 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <MapBounds schools={schoolData} />
+                <MapBounds schools={mappedSchools} />
 
-                {schoolData.map((school) => (
+                {mappedSchools.map((school) => (
                     <Marker
                         key={school.name}
                         position={school.coords}
-                        icon={createColoredIcon(school.color)}
+                        icon={createColoredIcon(school.color, selectedSchool === school.name)}
                         title={`${school.name}，${school.count} 門課程`}
                         alt={`${school.name}，${school.count} 門課程`}
                         keyboard
                         eventHandlers={{
-                            click: () => {
-                                if (selectedSchool === school.name) {
-                                    setSelectedSchool(null);
-                                } else {
-                                    setSelectedSchool(school.name);
-                                }
-                            },
+                            click: () => toggleSchool(school.name),
                         }}
                     >
                         <Popup>
@@ -145,6 +165,7 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
                                 <p className="text-gray-600">{school.count} 門課程</p>
                                 {selectedSchool === school.name && (
                                     <button
+                                        type="button"
                                         onClick={() => setSelectedSchool(null)}
                                         className="mt-1 min-h-11 text-indigo-600 hover:underline"
                                     >
@@ -157,56 +178,81 @@ export default function SchoolMap({ courses, height = '300px' }: SchoolMapProps)
                 ))}
             </MapContainer>
 
-            {/* 圖例 */}
-            <div className="bg-white px-3 py-2 flex items-center gap-4 text-xs">
-                <span className="flex items-center gap-1">
-                    <span className="w-3 h-3 rounded-full" style={{ backgroundColor: schoolTypeColors.high_school }}></span>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-slate-100 px-4 py-3 text-xs text-slate-600">
+                <span className="flex items-center gap-1.5">
+                    <span className="h-3 w-3 rounded-full" style={{ backgroundColor: schoolTypeColors.high_school }} />
                     高中職
                 </span>
-                <span className="flex items-center gap-1">
-                    <span className="w-3 h-3 rounded-full" style={{ backgroundColor: schoolTypeColors.junior_high }}></span>
-                    國中
+                <span className="flex items-center gap-1.5">
+                    <span className="h-3 w-3 rounded-full" style={{ backgroundColor: schoolTypeColors.junior_high }} />
+                    國中／國中小
                 </span>
-                <span className="flex items-center gap-1">
-                    <span className="w-3 h-3 rounded-full" style={{ backgroundColor: schoolTypeColors.elementary }}></span>
+                <span className="flex items-center gap-1.5">
+                    <span className="h-3 w-3 rounded-full" style={{ backgroundColor: schoolTypeColors.elementary }} />
                     國小
                 </span>
                 {selectedSchool && (
-                    <span className="ml-auto text-indigo-600">
-                        已選：{selectedSchool}
-                    </span>
+                    <button
+                        type="button"
+                        onClick={() => setSelectedSchool(null)}
+                        className="ml-auto inline-flex min-h-9 items-center gap-1 rounded-md bg-indigo-50 px-2.5 font-medium text-indigo-700 hover:bg-indigo-100"
+                    >
+                        <X className="h-3.5 w-3.5" />
+                        清除學校篩選
+                    </button>
                 )}
             </div>
 
-            {unmappedSchools.length > 0 && (
-                <div className="bg-white border-t border-gray-100 px-3 py-3">
-                    <p className="text-xs font-medium text-gray-500 mb-2">
-                        尚未定位的學校/單位也有課程，可直接點選篩選
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                        {unmappedSchools.map((school) => (
-                            <button
-                                key={school.name}
-                                type="button"
-                                aria-pressed={selectedSchool === school.name}
-                                onClick={() => {
-                                    if (selectedSchool === school.name) {
-                                        setSelectedSchool(null);
-                                    } else {
-                                        setSelectedSchool(school.name);
-                                    }
-                                }}
-                                className={`min-h-11 rounded-full border px-3 py-1 text-xs transition-colors ${selectedSchool === school.name
-                                    ? 'bg-indigo-100 border-indigo-300 text-indigo-700'
-                                    : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
-                                    }`}
-                            >
-                                {school.name} ({school.count})
-                            </button>
-                        ))}
+            <section className="border-t border-slate-200 px-4 py-4" aria-labelledby="school-list-title">
+                <div>
+                    <div>
+                        <h3 id="school-list-title" className="text-sm font-semibold text-slate-900">學校清單</h3>
+                        <p className="mt-0.5 text-xs text-slate-500">
+                            共 {allSchoolData.length} 所，{mappedSchools.length} 所已定位
+                            {unmappedCount > 0 && `，${unmappedCount} 所待補`}
+                        </p>
                     </div>
                 </div>
-            )}
+
+                <label className="relative mt-3 block" htmlFor="school-list-search">
+                    <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                    <input
+                        id="school-list-search"
+                        type="search"
+                        aria-label="搜尋學校"
+                        value={schoolQuery}
+                        onChange={(event) => setSchoolQuery(event.target.value)}
+                        placeholder="搜尋學校"
+                        className="min-h-11 w-full rounded-md border border-slate-200 bg-slate-50 pl-9 pr-3 text-sm text-slate-900 outline-none transition focus:border-indigo-400 focus:bg-white focus:ring-2 focus:ring-indigo-100"
+                    />
+                </label>
+
+                <div className="mt-3 max-h-56 overflow-y-auto pr-1">
+                    {filteredSchools.length > 0 ? (
+                        <div className="grid gap-2 sm:grid-cols-2">
+                            {filteredSchools.map((school) => (
+                                <button
+                                    key={school.name}
+                                    type="button"
+                                    aria-pressed={selectedSchool === school.name}
+                                    onClick={() => toggleSchool(school.name)}
+                                    className={`flex min-h-11 items-center justify-between gap-3 rounded-md border px-3 py-2 text-left text-xs transition-colors ${selectedSchool === school.name
+                                        ? 'border-indigo-300 bg-indigo-50 font-medium text-indigo-800'
+                                        : 'border-slate-200 bg-white text-slate-700 hover:border-indigo-200 hover:bg-slate-50'
+                                    }`}
+                                >
+                                    <span className="min-w-0 leading-5">{school.name}</span>
+                                    <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 tabular-nums text-slate-600">
+                                        {school.count}
+                                    </span>
+                                </button>
+                            ))}
+                        </div>
+                    ) : (
+                        <p className="rounded-md bg-slate-50 px-3 py-4 text-center text-sm text-slate-500">找不到符合的學校</p>
+                    )}
+                </div>
+            </section>
         </div>
     );
 }

@@ -79,6 +79,7 @@ export function getCourseStatus(course: Course, now: Date): {
 
 export function getSchoolType(schoolName: string | undefined): 'high_school' | 'junior_high' | 'elementary' {
     if (!schoolName) return 'high_school';
+    if (schoolName.includes('國民中小學') || schoolName.includes('國中小')) return 'junior_high';
     if (schoolName.includes('國民小學') || schoolName.includes('國小')) return 'elementary';
     if (schoolName.includes('國民中學') || schoolName.includes('國中')) return 'junior_high';
     return 'high_school';
