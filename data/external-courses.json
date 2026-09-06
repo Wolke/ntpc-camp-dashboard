@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T02:11:03.745Z",
+  "lastUpdated": "2026-09-06T02:05:24.505Z",
   "description": "開放外校學生報名的課程",
   "total": 94,
   "courses": [
@@ -1554,9 +1554,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 10,
+        "enrolled": 7,
         "planned": 20,
-        "actual": 10,
+        "actual": 13,
         "isLottery": false
       },
       "registration": {
@@ -1583,7 +1583,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 08:40~10:10",
         "fee": "$4350",
         "eligibility": "3,4,5,6,外校學生",
-        "quota": "報名人數: 10 預計錄取: 20 實際錄取: 10",
+        "quota": "報名人數: 7 預計錄取: 20 實際錄取: 13",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -1637,9 +1637,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 12,
+        "enrolled": 11,
         "planned": 20,
-        "actual": 8,
+        "actual": 9,
         "isLottery": false
       },
       "registration": {
@@ -1666,7 +1666,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 10:30~12:00",
         "fee": "$4450",
         "eligibility": "2,3,4,5,6,外校學生",
-        "quota": "報名人數: 12 預計錄取: 20 實際錄取: 8",
+        "quota": "報名人數: 11 預計錄取: 20 實際錄取: 9",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -1972,9 +1972,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 22,
+        "enrolled": 20,
         "planned": 30,
-        "actual": 8,
+        "actual": 10,
         "isLottery": false
       },
       "registration": {
@@ -2000,7 +2000,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 08:40~12:00",
         "fee": "$2900",
         "eligibility": "2,3,4,5,6,外校學生",
-        "quota": "報名人數: 22 預計錄取: 30 實際錄取: 8",
+        "quota": "報名人數: 20 預計錄取: 30 實際錄取: 10",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }

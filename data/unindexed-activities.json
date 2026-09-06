@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-09-05T02:09:26.903Z",
+  "auditedAt": "2026-09-06T02:03:48.683Z",
   "summary": {
     "schoolsChecked": 344,
     "publicActiveActivities": 76,
@@ -48,7 +48,7 @@
       "registrationSummary": "報名期間 08/31 12:00 至 09/05 23:00 公告期間 08/31 12:00 至 12/31 12:00",
       "registrationStart": "2026-08-31T12:00:00+08:00",
       "registrationEnd": "2026-09-05T23:00:00+08:00",
-      "registrationState": "open",
+      "registrationState": "closed",
       "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014773&actmang_no=00038&week_filter=all&filter_mycourse=false",
       "parsedCourseCount": 37,
       "externalCourseCount": 0,
@@ -1422,11 +1422,11 @@
       "activityId": "00093",
       "activityName": "115學年度上學期課後社團",
       "courseCount": 40,
-      "selectionSummary": "依課程抽籤",
-      "registrationSummary": "報名期間 09/01 09:00 至 09/03 23:55 公告及開放退選 09/04 16:00 至 09/05 12:00",
-      "registrationStart": "2026-09-01T09:00:00+08:00",
-      "registrationEnd": "2026-09-03T23:55:00+08:00",
-      "registrationState": "closed",
+      "selectionSummary": "依報名順序錄取",
+      "registrationSummary": "報名期間 09/05 13:00 至 09/06 23:55",
+      "registrationStart": "2026-09-05T13:00:00+08:00",
+      "registrationEnd": "2026-09-06T23:55:00+08:00",
+      "registrationState": "open",
       "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014608&actmang_no=00093&week_filter=all&filter_mycourse=false",
       "parsedCourseCount": 40,
       "externalCourseCount": 0,
@@ -2026,5 +2026,5 @@
     "activities": [],
     "courseDetails": []
   },
-  "sourceDataUpdatedAt": "2026-09-05T02:11:03.718Z"
+  "sourceDataUpdatedAt": "2026-09-06T02:05:24.484Z"
 }
