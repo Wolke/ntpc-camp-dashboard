@@ -1,5 +1,5 @@
 import type { Course } from '../types/course';
-import { classifyTheme, getCourseDisplayTitle, getCourseSearchText, matchesCourseKeyword } from './courseTaxonomy';
+import { classifyTheme, getCourseDisplayTitle, getCourseTopicText, matchesCourseKeyword } from './courseTaxonomy';
 
 export interface ThemeInsight {
     id: string;
@@ -62,12 +62,37 @@ const FEATURE_KEYWORDS = [
     { keyword: '拼豆', reason: '精細手作課程' },
 ];
 
+const FEATURE_SUPPLY_GROUPS = [
+    {
+        label: '戲劇表演',
+        keywords: ['扮戲', '戲劇', '劇場', '戲曲'],
+    },
+    {
+        label: '料理與烘焙',
+        keywords: ['料理', '烘焙', '點心', '甜點', '烹飪', '小廚師', '廚藝', '廚房', '蛋糕', '餅乾', '餐飲'],
+    },
+];
+
 const FEATURE_EXCLUDED_THEME_IDS = new Set([
     'tech-game',
     'strategy-science',
 ]);
 
 const HIGH_FEATURE_KEYWORDS = ['扮戲', '戲劇', '劇場', '戲曲'];
+export const FEATURE_SCHOOL_LIMIT = 4;
+
+interface FeatureSupply {
+    label: string;
+    courseCount: number;
+    schoolCount: number;
+}
+
+function getFeatureSupplyGroup(keyword: string): { label: string; keywords: string[] } {
+    return FEATURE_SUPPLY_GROUPS.find((group) => group.keywords.includes(keyword)) || {
+        label: keyword,
+        keywords: [keyword],
+    };
+}
 
 function uniqueCount(values: string[]): number {
     return new Set(values.filter(Boolean)).size;
@@ -92,23 +117,30 @@ function getRepresentativeCourses(courses: Course[]): Course[] {
         .slice(0, 3);
 }
 
-function getFeaturedReasons(course: Course, titleCounts: Map<string, number>, themeCounts: Map<string, number>): string[] {
-    const text = getCourseSearchText(course);
-    const title = getCourseDisplayTitle(course);
-    const theme = classifyTheme(course);
+function getFeaturedReasons(
+    course: Course,
+    featureSupplyByKeyword: Map<string, FeatureSupply>,
+): string[] {
+    const text = getCourseTopicText(course);
     const reasons: string[] = [];
+    const matchedFeatures = FEATURE_KEYWORDS.filter(({ keyword }) => matchesCourseKeyword(text, keyword));
 
-    FEATURE_KEYWORDS.forEach(({ keyword, reason }) => {
-        if (matchesCourseKeyword(text, keyword) && !reasons.includes(reason)) {
+    matchedFeatures.forEach(({ reason }) => {
+        if (!reasons.includes(reason)) {
             reasons.push(reason);
         }
     });
 
-    if ((titleCounts.get(title) || 0) === 1) {
-        reasons.push('課程名稱在資料中只出現一次');
-    }
-    if ((themeCounts.get(theme.id) || 0) <= 8) {
-        reasons.push('所屬主題供給少');
+    const rarestFeature = matchedFeatures
+        .map(({ keyword }) => featureSupplyByKeyword.get(keyword))
+        .filter((supply): supply is FeatureSupply => Boolean(supply))
+        .filter(({ schoolCount }) => schoolCount > 0 && schoolCount <= FEATURE_SCHOOL_LIMIT)
+        .sort((a, b) => a.schoolCount - b.schoolCount || a.courseCount - b.courseCount)[0];
+
+    if (rarestFeature) {
+        reasons.push(
+            `「${rarestFeature.label}」僅 ${rarestFeature.schoolCount} 校開設（${rarestFeature.courseCount} 門課）`
+        );
     }
     if (course.eligibility.allowExternalStudents) {
         reasons.push('開放外校學生');
@@ -177,40 +209,64 @@ export function analyzeCamps(courses: Course[]): CampAnalysis {
         })
         .sort((a, b) => b.score - a.score);
 
-    const titleCounts = new Map<string, number>();
-    courses.forEach((course) => {
-        const title = getCourseDisplayTitle(course);
-        titleCounts.set(title, (titleCounts.get(title) || 0) + 1);
-    });
+    const featureSupplyByKeyword = new Map(
+        FEATURE_KEYWORDS.map(({ keyword }): [string, FeatureSupply] => {
+            const group = getFeatureSupplyGroup(keyword);
+            const matchingCourses = courses.filter((course) => {
+                const text = getCourseTopicText(course);
+                return group.keywords.some((groupKeyword) => matchesCourseKeyword(text, groupKeyword));
+            });
 
-    const themeCounts = new Map<string, number>();
-    courses.forEach((course) => {
-        const theme = classifyTheme(course);
-        themeCounts.set(theme.id, (themeCounts.get(theme.id) || 0) + 1);
-    });
+            return [keyword, {
+                label: group.label,
+                courseCount: matchingCourses.length,
+                schoolCount: uniqueCount(matchingCourses.map((course) => course.schoolName)),
+            }];
+        }),
+    );
 
     const featuredCandidates = courses
         .map((course) => {
             const title = getCourseDisplayTitle(course);
-            const reasons = getFeaturedReasons(course, titleCounts, themeCounts);
+            const reasons = getFeaturedReasons(course, featureSupplyByKeyword);
             const theme = classifyTheme(course);
-            const specialMatches = FEATURE_KEYWORDS.filter(({ keyword }) =>
-                matchesCourseKeyword(getCourseSearchText(course), keyword)
-            ).length;
-            const highFeatureMatches = HIGH_FEATURE_KEYWORDS.filter((keyword) =>
-                matchesCourseKeyword(getCourseSearchText(course), keyword)
-            ).length;
+            const matchedFeatureKeywords = FEATURE_KEYWORDS.filter(({ keyword }) =>
+                matchesCourseKeyword(getCourseTopicText(course), keyword)
+            ).map(({ keyword }) => keyword);
+            const rareFeatureLabels = Array.from(new Set(
+                matchedFeatureKeywords
+                    .map((keyword) => featureSupplyByKeyword.get(keyword))
+                    .filter((supply): supply is FeatureSupply => Boolean(
+                        supply && supply.schoolCount > 0 && supply.schoolCount <= FEATURE_SCHOOL_LIMIT
+                    ))
+                    .map(({ label }) => label),
+            ));
+            const rareFeatureMatches = rareFeatureLabels.length;
+            const highFeatureMatches = HIGH_FEATURE_KEYWORDS.some((keyword) =>
+                matchesCourseKeyword(getCourseTopicText(course), keyword) &&
+                (featureSupplyByKeyword.get(keyword)?.schoolCount || 0) <= FEATURE_SCHOOL_LIMIT
+            ) ? 1 : 0;
             const score =
-                specialMatches * 25 +
+                rareFeatureMatches * 25 +
                 highFeatureMatches * 25 +
-                ((themeCounts.get(theme.id) || 0) <= 8 ? 12 : 0) +
-                ((titleCounts.get(title) || 0) === 1 ? 5 : 0) +
+                (rareFeatureMatches > 0 ? 5 : 0) +
                 (course.eligibility.allowExternalStudents ? 5 : 0) +
                 (course.fee.isFree ? 3 : 0) +
                 Math.min(course.eligibility.grades.length, 6) +
                 (course.quota.planned > 0 && course.quota.planned <= 20 ? 4 : 0);
 
-            return { course, title, score, reasons, specialMatches, themeCount: themeCounts.get(theme.id) || 0 };
+            const noveltyKeys = rareFeatureLabels.length > 0
+                ? rareFeatureLabels.map((label) => `feature:${label}`)
+                : [`theme:${theme.id}`];
+
+            return {
+                course,
+                title,
+                score,
+                reasons,
+                rareFeatureMatches,
+                noveltyKeys,
+            };
         })
         .filter((camp) => {
             const theme = classifyTheme(camp.course);
@@ -218,16 +274,19 @@ export function analyzeCamps(courses: Course[]): CampAnalysis {
                 return false;
             }
 
-            return camp.reasons.length >= 2 && (camp.specialMatches > 0 || camp.themeCount <= 8);
+            return camp.reasons.length >= 2 && camp.rareFeatureMatches > 0;
         })
         .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title, 'zh-TW'));
 
     const seenFeatured = new Set<string>();
+    const seenNoveltyKeys = new Set<string>();
     const featuredCamps = featuredCandidates
         .filter((camp) => {
             const key = `${camp.course.schoolName}-${camp.title}`;
             if (seenFeatured.has(key)) return false;
+            if (camp.noveltyKeys.every((noveltyKey) => seenNoveltyKeys.has(noveltyKey))) return false;
             seenFeatured.add(key);
+            camp.noveltyKeys.forEach((noveltyKey) => seenNoveltyKeys.add(noveltyKey));
             return true;
         })
         .slice(0, 12);

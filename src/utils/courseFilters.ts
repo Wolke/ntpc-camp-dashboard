@@ -3,7 +3,7 @@ import { classifyTheme, getCourseSearchText, normalizeText } from './courseTaxon
 import { SCHOOL_COORDINATES } from './schoolCoordinates';
 
 export type CourseSortMode =
-    | 'default'
+    | 'actionable'
     | 'distance'
     | 'fee-asc'
     | 'fee-desc'
@@ -16,6 +16,8 @@ export type UserLocation = { latitude: number; longitude: number };
 
 export const DEFAULT_FILTERS: FilterOptions = {
     searchQuery: '',
+    district: null,
+    schoolName: null,
     schoolTypes: [],
     isFree: null,
     allowExternalStudents: null,
@@ -23,7 +25,7 @@ export const DEFAULT_FILTERS: FilterOptions = {
     grades: [],
     themeIds: [],
     registrationStatus: [],
-    courseTimeStatus: ['upcoming'],
+    courseTimeStatus: ['upcoming', 'ongoing'],
     quotaStatus: [],
 };
 
@@ -38,6 +40,18 @@ export function createDefaultFilters(): FilterOptions {
         courseTimeStatus: [...DEFAULT_FILTERS.courseTimeStatus],
         quotaStatus: [],
     };
+}
+
+export const UNKNOWN_DISTRICT = 'unknown';
+
+export function getCourseDistrict(course: Course): string {
+    const text = [course.address, course.schoolName, course.originalSchool, course.school]
+        .filter(Boolean)
+        .join(' ');
+    const match = text.match(/(新北市|臺北市|台北市)([^市縣\s]{1,5}區)/);
+    if (!match) return UNKNOWN_DISTRICT;
+    const city = match[1] === '台北市' ? '臺北市' : match[1];
+    return `${city}${match[2]}`;
 }
 
 function parseCourseDate(value: string, endOfDay = false): Date {
@@ -88,7 +102,6 @@ export function getSchoolType(schoolName: string | undefined): 'high_school' | '
 export function applyCourseFilters(
     courses: Course[],
     filters: FilterOptions,
-    selectedSchool: string | null = null,
     now = new Date(),
 ): Course[] {
     return courses.filter((course) => {
@@ -97,7 +110,8 @@ export function applyCourseFilters(
             if (!normalizeText(getCourseSearchText(course)).includes(query)) return false;
         }
         if (filters.themeIds.length > 0 && !filters.themeIds.includes(classifyTheme(course).id)) return false;
-        if (selectedSchool && course.schoolName !== selectedSchool) return false;
+        if (filters.district && getCourseDistrict(course) !== filters.district) return false;
+        if (filters.schoolName && course.schoolName !== filters.schoolName) return false;
         if (filters.schoolTypes.length > 0 && !filters.schoolTypes.includes(getSchoolType(course.schoolName))) return false;
         if (filters.isFree !== null && filters.isFree !== course.fee.isFree) return false;
         if (filters.grades.length > 0 && !filters.grades.every((grade) => course.eligibility.grades.includes(grade))) return false;
@@ -114,6 +128,18 @@ export function applyCourseFilters(
         if (filters.quotaStatus.length > 0 && !filters.quotaStatus.includes(status.quota)) return false;
         return true;
     });
+}
+
+export function applySchoolMapFilters(
+    courses: Course[],
+    filters: FilterOptions,
+    now = new Date(),
+): Course[] {
+    return applyCourseFilters(courses, {
+        ...filters,
+        district: null,
+        schoolName: null,
+    }, now);
 }
 
 function sortableFee(course: Course, direction: 'asc' | 'desc'): number {
@@ -143,6 +169,14 @@ function registrationRank(course: Course, now: Date): number {
     if (status.registration === 'closing_soon') return 0;
     if (status.registration === 'available') return 1;
     if (status.registration === 'not_started') return 2;
+    return 3;
+}
+
+function quotaRank(course: Course, now: Date): number {
+    const status = getCourseStatus(course, now).quota;
+    if (status === 'almost_full') return 0;
+    if (status === 'available') return 1;
+    if (status === 'may_not_open') return 2;
     return 3;
 }
 
@@ -181,15 +215,20 @@ export function sortCourses(
     if (mode === 'registration-date-asc') return next.sort((a, b) => sortableDate(a.registration.startTime, 'asc') - sortableDate(b.registration.startTime, 'asc') || stableCourseCompare(a, b));
     if (mode === 'registration-date-desc') return next.sort((a, b) => sortableDate(b.registration.startTime, 'desc') - sortableDate(a.registration.startTime, 'desc') || stableCourseCompare(a, b));
     return next.sort((a, b) =>
-        courseTimeRank(a, now) - courseTimeRank(b, now)
+        registrationRank(a, now) - registrationRank(b, now)
+        || quotaRank(a, now) - quotaRank(b, now)
         || sortableDate(a.schedule.startDate, 'asc') - sortableDate(b.schedule.startDate, 'asc')
-        || registrationRank(a, now) - registrationRank(b, now)
+        || courseTimeRank(a, now) - courseTimeRank(b, now)
         || stableCourseCompare(a, b));
 }
 
 export function countActiveFilterGroups(filters: FilterOptions): number {
+    const matchesDefaultCourseTime = filters.courseTimeStatus.length === DEFAULT_FILTERS.courseTimeStatus.length
+        && DEFAULT_FILTERS.courseTimeStatus.every((status) => filters.courseTimeStatus.includes(status));
     return [
         Boolean(filters.searchQuery.trim()),
+        Boolean(filters.district),
+        Boolean(filters.schoolName),
         filters.schoolTypes.length > 0,
         filters.isFree !== null,
         filters.allowExternalStudents !== null,
@@ -197,7 +236,7 @@ export function countActiveFilterGroups(filters: FilterOptions): number {
         filters.grades.length > 0,
         filters.themeIds.length > 0,
         filters.registrationStatus.length > 0,
-        filters.courseTimeStatus.length > 0,
+        !matchesDefaultCourseTime,
         filters.quotaStatus.length > 0,
     ].filter(Boolean).length;
 }

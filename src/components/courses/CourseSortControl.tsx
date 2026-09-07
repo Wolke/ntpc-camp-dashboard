@@ -1,4 +1,4 @@
-import { ArrowDownUp, CalendarDays, CircleDollarSign, LocateFixed } from 'lucide-react';
+import { ArrowDownUp } from 'lucide-react';
 import type { CourseSortMode } from '../../utils/courseFilters';
 
 export type { CourseSortMode } from '../../utils/courseFilters';
@@ -12,14 +12,14 @@ interface CourseSortControlProps {
 }
 
 const sortOptions = [
-    { mode: 'default', label: '即將開課', icon: ArrowDownUp },
-    { mode: 'distance', label: '距離', icon: LocateFixed },
-    { mode: 'fee-asc', label: '費用低', icon: CircleDollarSign },
-    { mode: 'fee-desc', label: '費用高', icon: CircleDollarSign },
-    { mode: 'course-date-asc', label: '課程近', icon: CalendarDays },
-    { mode: 'course-date-desc', label: '課程遠', icon: CalendarDays },
-    { mode: 'registration-date-asc', label: '報名近', icon: CalendarDays },
-    { mode: 'registration-date-desc', label: '報名遠', icon: CalendarDays },
+    { mode: 'actionable', label: '適合報名（預設）' },
+    { mode: 'distance', label: '距離最近' },
+    { mode: 'fee-asc', label: '費用低至高' },
+    { mode: 'fee-desc', label: '費用高至低' },
+    { mode: 'course-date-asc', label: '開課日近至遠' },
+    { mode: 'course-date-desc', label: '開課日遠至近' },
+    { mode: 'registration-date-asc', label: '報名開始近至遠' },
+    { mode: 'registration-date-desc', label: '報名開始遠至近' },
 ] as const;
 
 export default function CourseSortControl({
@@ -29,52 +29,41 @@ export default function CourseSortControl({
     onSortModeChange,
     onRequestLocation,
 }: CourseSortControlProps) {
-    const handleClick = (mode: CourseSortMode) => {
+    const handleChange = (mode: CourseSortMode) => {
         if (mode === 'distance' && !hasLocation) {
             onRequestLocation();
+            return;
         }
         onSortModeChange(mode);
     };
 
     const statusText = {
         idle: '距離排序需允許定位',
-        requesting: '正在取得位置...',
-        ready: '依目前位置排序',
-        error: '無法取得位置',
-        unsupported: '瀏覽器不支援定位',
+        requesting: '正在取得位置…',
+        ready: '已依目前位置排序',
+        error: '無法取得位置，已保留原排序',
+        unsupported: '瀏覽器不支援定位，已保留原排序',
     }[locationStatus];
 
     return (
-        <div className="flex flex-col items-start gap-2 sm:items-end">
-            <div className="inline-flex flex-wrap gap-1 rounded-lg border border-slate-200 bg-white p-1 shadow-sm">
-                {sortOptions.map((option) => {
-                    const Icon = option.icon;
-                    const selected = sortMode === option.mode;
-
-                    return (
-                        <button
-                            key={option.mode}
-                            type="button"
-                            onClick={() => handleClick(option.mode)}
-                            aria-pressed={selected}
-                            className={`inline-flex min-h-11 items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs font-medium transition-colors ${selected
-                                ? 'bg-indigo-50 text-indigo-700'
-                                : 'text-slate-600 hover:bg-slate-50 hover:text-slate-950'
-                                }`}
-                        >
-                            <Icon className="h-3.5 w-3.5" />
-                            {option.label}
-                        </button>
-                    );
-                })}
-            </div>
-
-            {(sortMode === 'distance' || locationStatus === 'requesting' || locationStatus === 'error') && (
-                <p aria-live="polite" className={`text-xs ${locationStatus === 'error' || locationStatus === 'unsupported'
-                    ? 'text-amber-600'
-                    : 'text-slate-500'
-                    }`}
+        <div className="flex flex-col items-start gap-1">
+            <label className="relative inline-flex min-h-11 items-center gap-2 rounded-md border border-slate-200 bg-white px-3 shadow-sm">
+                <ArrowDownUp className="h-4 w-4 text-slate-500" />
+                <span className="sr-only">排序方式</span>
+                <select
+                    aria-label="排序方式"
+                    value={sortMode}
+                    onChange={(event) => handleChange(event.target.value as CourseSortMode)}
+                    className="min-h-11 bg-transparent pr-1 text-sm font-medium text-slate-700 outline-none"
                 >
+                    {sortOptions.map((option) => (
+                        <option key={option.mode} value={option.mode}>{option.label}</option>
+                    ))}
+                </select>
+            </label>
+
+            {locationStatus !== 'idle' && (
+                <p role="status" className={`text-xs ${locationStatus === 'error' || locationStatus === 'unsupported' ? 'text-amber-700' : 'text-slate-500'}`}>
                     {statusText}
                 </p>
             )}

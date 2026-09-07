@@ -104,6 +104,8 @@ export interface CourseStatus {
 // 篩選選項
 export interface FilterOptions {
     searchQuery: string;
+    district: string | null;
+    schoolName: string | null;
     schoolTypes: ('high_school' | 'junior_high' | 'elementary')[];
     isFree: boolean | null;
     allowExternalStudents: boolean | null; // 是否允許外校生

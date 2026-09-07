@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useCourseStore } from '../store/courseStore';
 import type { Course, CourseData } from '../types/course';
-import { applyCourseFilters } from '../utils/courseFilters';
+import { applyCourseFilters, applySchoolMapFilters } from '../utils/courseFilters';
 
 const EMPTY_COURSES: Course[] = [];
 
@@ -18,7 +18,7 @@ async function fetchCourses(): Promise<CourseData> {
 }
 
 export function useCourses() {
-    const { filters, selectedSchool, setFilters, resetFilters } = useCourseStore();
+    const { filters, setFilters, resetFilters } = useCourseStore();
 
     const query = useQuery({
         queryKey: ['courses'],
@@ -29,12 +29,17 @@ export function useCourses() {
 
     const allCourses = query.data?.courses ?? EMPTY_COURSES;
     const courses = useMemo(
-        () => applyCourseFilters(allCourses, filters, selectedSchool),
-        [allCourses, filters, selectedSchool],
+        () => applyCourseFilters(allCourses, filters),
+        [allCourses, filters],
+    );
+    const schoolMapCourses = useMemo(
+        () => applySchoolMapFilters(allCourses, filters),
+        [allCourses, filters],
     );
 
     return {
         courses,
+        schoolMapCourses,
         allCourses,
         stats: query.data?.stats,
         lastUpdated: query.data?.lastUpdated,

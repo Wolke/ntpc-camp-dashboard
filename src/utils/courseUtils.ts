@@ -217,7 +217,12 @@ export function formatScheduleParts(course: Course) {
     const periodSummary = formatPeriodSummary(course, entries);
     const clockSummary = formatClockSummary(course, entries);
     const dateRange = startDate === endDate ? formatDate(startDate) : `${formatDate(startDate)} - ${formatDate(endDate)}`;
-    const weekSummary = formatCourseWeekSummary(course);
+    const start = new Date(`${startDate}T00:00:00`);
+    const end = new Date(`${endDate}T00:00:00`);
+    const durationDays = isValidDate(start) && isValidDate(end)
+        ? Math.round((end.getTime() - start.getTime()) / (24 * 60 * 60 * 1000)) + 1
+        : Number.POSITIVE_INFINITY;
+    const weekSummary = durationDays <= 7 ? formatCourseWeekSummary(course) : '';
 
     return {
         dateRange,
@@ -226,6 +231,29 @@ export function formatScheduleParts(course: Course) {
         periodSummary,
         clockSummary,
     };
+}
+
+const gradeLabels: Record<number, string> = {
+    1: '小一', 2: '小二', 3: '小三', 4: '小四', 5: '小五', 6: '小六',
+    7: '國一', 8: '國二', 9: '國三',
+};
+
+export function formatGradeSummary(grades: number[]): string {
+    const sorted = Array.from(new Set(grades)).filter((grade) => gradeLabels[grade]).sort((a, b) => a - b);
+    if (sorted.length === 0) return '年級未標示';
+
+    const groups: number[][] = [];
+    sorted.forEach((grade) => {
+        const current = groups[groups.length - 1];
+        const sameLevel = current && (current[0] <= 6) === (grade <= 6);
+        if (current && sameLevel && grade === current[current.length - 1] + 1) current.push(grade);
+        else groups.push([grade]);
+    });
+
+    return groups.map((group) => {
+        if (group.length === 1) return gradeLabels[group[0]];
+        return `${gradeLabels[group[0]]}–${gradeLabels[group[group.length - 1]]}`;
+    }).join('、');
 }
 
 // 格式化時間範圍

@@ -1,44 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import { useCourseStore } from '../../store/courseStore';
-import { formatCourseWeekSummary } from '../../utils/courseSchedule';
-import type { Course } from '../../types/course';
+import { getQuickFilterPresets, type QuickFilterPreset } from '../../utils/courseQuickFilters';
 
-interface SearchBarProps {
-    courses: Course[];
-}
-
-function formatDateInputValue(date: Date): string {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
-}
-
-export default function SearchBar({ courses }: SearchBarProps) {
+export default function SearchBar() {
     const { filters, setFilters } = useCourseStore();
     const [inputValue, setInputValue] = useState(filters.searchQuery);
 
-    const quickSearchTags = useMemo(() => {
-        const weekByDate = new Map<string, string>();
-        const today = formatDateInputValue(new Date());
-        courses.filter((course) => course.schedule.endDate >= today).forEach((course) => {
-            const weekSummary = formatCourseWeekSummary(course);
-            if (!weekSummary) return;
-
-            const currentDate = weekByDate.get(weekSummary);
-            if (!currentDate || course.schedule.startDate < currentDate) {
-                weekByDate.set(weekSummary, course.schedule.startDate);
-            }
-        });
-
-        const weekTags = Array.from(weekByDate.entries())
-            .sort((a, b) => a[1].localeCompare(b[1]))
-            .map(([weekSummary]) => weekSummary)
-            .slice(0, 6);
-
-        return [...weekTags, '開放外校', '免費', '美術'];
-    }, [courses]);
+    const quickFilters = useMemo(() => getQuickFilterPresets(), []);
 
     useEffect(() => {
         setInputValue(filters.searchQuery);
@@ -58,8 +27,30 @@ export default function SearchBar({ courses }: SearchBarProps) {
         setInputValue('');
     };
 
+    const isPresetActive = (preset: QuickFilterPreset) => {
+        const patch = preset.patch;
+        if (patch.dateRange) {
+            return filters.dateRange.start === patch.dateRange.start && filters.dateRange.end === patch.dateRange.end;
+        }
+        if (patch.allowExternalStudents !== undefined) return filters.allowExternalStudents === patch.allowExternalStudents;
+        if (patch.isFree !== undefined) return filters.isFree === patch.isFree;
+        if (patch.themeIds) return patch.themeIds.every((id) => filters.themeIds.includes(id));
+        return false;
+    };
+
+    const togglePreset = (preset: QuickFilterPreset) => {
+        if (!isPresetActive(preset)) {
+            setFilters(preset.patch);
+            return;
+        }
+        if (preset.patch.dateRange) setFilters({ dateRange: { start: null, end: null } });
+        if (preset.patch.allowExternalStudents !== undefined) setFilters({ allowExternalStudents: null });
+        if (preset.patch.isFree !== undefined) setFilters({ isFree: null });
+        if (preset.patch.themeIds) setFilters({ themeIds: [] });
+    };
+
     return (
-        <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+        <section className="min-w-0 overflow-hidden rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
             <label htmlFor="course-search" className="mb-2 block text-sm font-semibold text-slate-800">搜尋課程</label>
             <div className="relative">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
@@ -83,18 +74,24 @@ export default function SearchBar({ courses }: SearchBarProps) {
                 )}
             </div>
 
-            <div className="flex flex-wrap gap-2 mt-2">
-                {quickSearchTags.map((tag) => (
+            <div className="mt-2 flex gap-2 overflow-x-auto pb-1 sm:flex-wrap sm:overflow-visible">
+                {quickFilters.map((preset) => {
+                    const active = isPresetActive(preset);
+                    return (
                     <button
-                        key={tag}
+                        key={preset.id}
                         type="button"
-                        onClick={() => setInputValue(tag)}
-                        aria-pressed={filters.searchQuery === tag}
-                        className="min-h-11 rounded-md bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 transition-colors hover:bg-slate-200"
+                        onClick={() => togglePreset(preset)}
+                        aria-pressed={active}
+                        className={`min-h-11 shrink-0 rounded-md border px-3 py-1 text-xs font-medium transition-colors ${active
+                            ? 'border-indigo-300 bg-indigo-50 text-indigo-700'
+                            : 'border-transparent bg-slate-100 text-slate-600 hover:bg-slate-200'
+                        }`}
                     >
-                        {tag}
+                        {preset.label}
                     </button>
-                ))}
+                    );
+                })}
             </div>
         </section>
     );

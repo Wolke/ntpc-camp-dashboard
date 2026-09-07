@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart3, Compass, ExternalLink, Flame, Gauge, Sparkles, Users } from 'lucide-react';
 import { useMemo } from 'react';
 import { useCourses } from '../hooks/useCourses';
-import { analyzeCamps } from '../utils/campAnalysis';
+import { analyzeCamps, FEATURE_SCHOOL_LIMIT } from '../utils/campAnalysis';
 import { getCourseKey } from '../utils/courseFilters';
 import { formatCourseFee, formatTimeRange, getCourseOfficialUrl } from '../utils/courseUtils';
 
@@ -243,7 +243,9 @@ export default function CampAnalysisPage() {
                                 <Sparkles className="h-5 w-5 text-emerald-500" />
                                 <div>
                                     <h2 className="text-base font-semibold text-slate-900">特色營隊</h2>
-                                    <p className="text-sm text-slate-500">依少見體驗、表演型課程、特殊媒材、免費、外校與跨年級條件挑選。</p>
+                                    <p className="text-sm text-slate-500">
+                                        同類特色最多由 {FEATURE_SCHOOL_LIMIT} 校開設才列入；同一主題只顯示一個代表課程，再依免費、外校、跨年級與小班等條件排序。
+                                    </p>
                                 </div>
                             </div>
 

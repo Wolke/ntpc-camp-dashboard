@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { makeCourse } from '../test/courseFactory';
-import { getCourseOfficialUrl, getCourseProspectusUrl } from './courseUtils';
+import { formatGradeSummary, formatScheduleParts, getCourseOfficialUrl, getCourseProspectusUrl } from './courseUtils';
 
 describe('official course links', () => {
     it('builds the NTPC detail URL used by the current official endpoint', () => {
@@ -32,5 +32,19 @@ describe('official course links', () => {
 
         expect(getCourseProspectusUrl(guessed)).toBeUndefined();
         expect(getCourseProspectusUrl(official)).toContain('/ntpc_actregister/public/');
+    });
+});
+
+describe('compact course card formatting', () => {
+    it('compresses contiguous grades without joining school levels', () => {
+        expect(formatGradeSummary([1, 2, 3, 4, 5, 6])).toBe('小一–小六');
+        expect(formatGradeSummary([5, 6, 7, 8])).toBe('小五–小六、國一–國二');
+    });
+
+    it('only shows week labels for courses lasting at most seven days', () => {
+        const shortCourse = makeCourse({ schedule: { startDate: '2026-09-01', endDate: '2026-09-07' } as ReturnType<typeof makeCourse>['schedule'] });
+        const longCourse = makeCourse({ schedule: { startDate: '2026-09-01', endDate: '2027-01-15' } as ReturnType<typeof makeCourse>['schedule'] });
+        expect(formatScheduleParts(shortCourse).weekSummary).not.toBe('');
+        expect(formatScheduleParts(longCourse).weekSummary).toBe('');
     });
 });

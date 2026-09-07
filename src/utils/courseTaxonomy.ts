@@ -104,6 +104,15 @@ export function getCourseDisplayTitle(course: Course): string {
     return course.campName || course.schoolName;
 }
 
+export function getCourseTopicText(course: Course): string {
+    return [
+        getCourseDisplayTitle(course),
+        course.campName,
+        GENERIC_COURSE_NAMES.has(course.category) ? '' : course.category,
+        GENERIC_COURSE_NAMES.has(course.courseName) ? '' : course.courseName,
+    ].filter(Boolean).join(' ');
+}
+
 export function getCourseSearchText(course: Course): string {
     return [
         getCourseDisplayTitle(course),
@@ -132,7 +141,7 @@ export function getThemeById(themeId: string | null | undefined): CourseTheme | 
 }
 
 export function classifyTheme(course: Course): CourseTheme {
-    const text = getCourseSearchText(course);
+    const text = getCourseTopicText(course);
     const rule = THEME_RULES.find(({ keywords }) =>
         keywords.some((keyword) => matchesCourseKeyword(text, keyword))
     );

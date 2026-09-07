@@ -73,7 +73,7 @@ export function buildCourseCalendarUrl(course: Course) {
     });
 }
 
-export function buildRegistrationReminderCalendarUrl(course: Course) {
+export function buildRegistrationReminderCalendarUrl(course: Course, now = new Date()) {
     const registrationStart = course.registration?.startTime
         ? new Date(course.registration.startTime)
         : null;
@@ -84,7 +84,7 @@ export function buildRegistrationReminderCalendarUrl(course: Course) {
         ? registrationStart
         : registrationEnd;
 
-    if (!reminderStart || Number.isNaN(reminderStart.getTime())) {
+    if (!reminderStart || Number.isNaN(reminderStart.getTime()) || reminderStart <= now) {
         return null;
     }
 

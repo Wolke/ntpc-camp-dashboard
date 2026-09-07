@@ -1,171 +1,154 @@
-import { CalendarDays, CalendarPlus, Clock, ExternalLink, GraduationCap, School, Timer, Users } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+import {
+    CalendarDays,
+    CalendarPlus,
+    ChevronDown,
+    Clock,
+    ExternalLink,
+    FileText,
+    GraduationCap,
+    Info,
+    School,
+    User,
+    Users,
+} from 'lucide-react';
 import type { Course } from '../../types/course';
 import { buildCourseCalendarUrl } from '../../utils/googleCalendar';
-import { formatCourseFee, formatScheduleParts, getCourseOfficialUrl, getCourseProspectusUrl, getCourseStatusInfo, getSchoolTypeLabel } from '../../utils/courseUtils';
+import {
+    formatCourseFee,
+    formatGradeSummary,
+    formatScheduleParts,
+    getCourseOfficialUrl,
+    getCourseProspectusUrl,
+    getCourseStatusInfo,
+} from '../../utils/courseUtils';
 import RegistrationCalendarButton from './RegistrationCalendarButton';
 
 interface CourseCardProps {
     course: Course;
-    onClick?: () => void;
 }
 
 function formatCourseRegistrationRange(course: Course) {
     if (!course.registration?.startTime || !course.registration?.endTime) return '未提供報名期間';
-
     const options: Intl.DateTimeFormatOptions = {
         month: 'numeric',
         day: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
     };
-
-    return `${new Date(course.registration.startTime).toLocaleString('zh-TW', options)} - ${new Date(course.registration.endTime).toLocaleString('zh-TW', options)}`;
+    return `${new Date(course.registration.startTime).toLocaleString('zh-TW', options)} – ${new Date(course.registration.endTime).toLocaleString('zh-TW', options)}`;
 }
 
-interface MetaTagProps {
-    icon: LucideIcon;
-    label: string;
-    tone?: 'slate' | 'indigo' | 'emerald' | 'amber';
-}
-
-const metaTagToneClasses = {
-    slate: 'border-slate-200 bg-slate-50 text-slate-700',
-    indigo: 'border-indigo-200 bg-indigo-50 text-indigo-700',
-    emerald: 'border-emerald-200 bg-emerald-50 text-emerald-700',
-    amber: 'border-amber-200 bg-amber-50 text-amber-700',
-};
-
-function MetaTag({ icon: Icon, label, tone = 'slate' }: MetaTagProps) {
-    return (
-        <span className={`inline-flex min-h-[2rem] items-center gap-1.5 rounded-md border px-2.5 py-1 text-xs font-medium ${metaTagToneClasses[tone]}`}>
-            <Icon className="h-3.5 w-3.5 shrink-0" />
-            <span>{label}</span>
-        </span>
-    );
-}
-
-export default function CourseCard({ course, onClick }: CourseCardProps) {
+export default function CourseCard({ course }: CourseCardProps) {
     const status = getCourseStatusInfo(course);
-    const scheduleParts = formatScheduleParts(course);
+    const schedule = formatScheduleParts(course);
     const officialUrl = getCourseOfficialUrl(course);
     const prospectusUrl = getCourseProspectusUrl(course);
+    const activeRegistration = status.registration === 'available' || status.registration === 'closing_soon';
+    const notStarted = status.registration === 'not_started';
+    const officialLabel = activeRegistration
+        ? '查看官方報名資訊'
+        : notStarted ? '查看官方活動資訊' : '查看官方活動紀錄';
+    const quotaText = course.quota.planned > 0
+        ? `報名 ${course.quota.enrolled}／名額 ${course.quota.planned}`
+        : '名額未標示';
 
     return (
-        <article
-            className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
-            onClick={onClick}
-        >
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <article className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md">
+            <div className="flex flex-wrap items-center gap-2">
+                <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${status.registrationColor}`}>
+                    {status.registrationLabel}
+                    {status.daysLeft !== null && status.daysLeft <= 7 && <span className="ml-1">剩 {status.daysLeft} 天</span>}
+                </span>
+                <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${course.eligibility.allowExternalStudents
+                    ? 'border-sky-200 bg-sky-50 text-sky-700'
+                    : 'border-amber-200 bg-amber-50 text-amber-700'
+                }`}>
+                    {course.eligibility.allowExternalStudents ? '開放外校' : '限本校'}
+                </span>
+                {(status.quota === 'almost_full' || status.quota === 'full' || status.quota === 'may_not_open') && (
+                    <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${status.quotaColor}`}>
+                        {status.quotaLabel}
+                    </span>
+                )}
+            </div>
+
+            <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                 <div className="min-w-0">
-                    <div className="mb-2 flex flex-wrap items-center gap-2">
-                        <span className="inline-flex items-center gap-1 rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-600">
-                            <School className="h-3.5 w-3.5" />
-                            {getSchoolTypeLabel(course.schoolName)}
-                        </span>
-                        <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${status.registrationColor}`}>
-                            {status.registrationLabel}
-                            {status.daysLeft !== null && status.daysLeft <= 7 && (
-                                <span className="ml-1">剩 {status.daysLeft} 天</span>
-                            )}
-                        </span>
-                        <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${status.quotaColor}`}>
-                            {status.quotaLabel}
-                        </span>
-                        <span className={`inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium ${course.eligibility.allowExternalStudents
-                            ? 'border-sky-200 bg-sky-50 text-sky-700'
-                            : 'border-amber-200 bg-amber-50 text-amber-700'
-                            }`}>
-                            {course.eligibility.allowExternalStudents ? '開放外校' : '限本校'}
-                        </span>
-                        {course.source?.type === 'ntpc_school_activity' && (
-                            <span className="inline-flex items-center rounded-md border border-violet-200 bg-violet-50 px-2 py-1 text-xs font-medium text-violet-700">
-                                逐校公開・全站未索引
-                            </span>
-                        )}
-                    </div>
-
-                    <h3 className="text-base font-semibold leading-6 text-slate-950">
-                        {course.category || course.courseName}
-                    </h3>
-                    <p className="mt-1 text-sm text-slate-500">{course.schoolName}</p>
+                    <h3 className="text-lg font-semibold leading-6 text-slate-950">{course.category || course.courseName}</h3>
+                    <p className="mt-1 inline-flex items-start gap-1.5 text-sm text-slate-500">
+                        <School className="mt-0.5 h-4 w-4 shrink-0" />{course.schoolName}
+                    </p>
                 </div>
-
-                <div className="text-left sm:text-right">
-                    <p className={`text-sm font-semibold ${course.fee.isFree ? 'text-emerald-700' : 'text-slate-700'}`}>
-                        {formatCourseFee(course)}
-                    </p>
-                    <p className="mt-1 text-xs text-slate-500">
-                        報名 {course.quota.enrolled} / 預計 {course.quota.planned}
-                    </p>
+                <div className="shrink-0 text-left sm:text-right">
+                    <p className={`text-base font-semibold ${course.fee.isFree ? 'text-emerald-700' : 'text-slate-800'}`}>{formatCourseFee(course)}</p>
+                    <p className="mt-1 text-xs text-slate-500">{quotaText}</p>
                 </div>
             </div>
 
-            <div className="mt-4 flex flex-wrap gap-2">
-                <MetaTag icon={CalendarDays} label={scheduleParts.dateRange} tone="indigo" />
-                {scheduleParts.weekSummary && (
-                    <MetaTag icon={CalendarDays} label={scheduleParts.weekSummary} tone="indigo" />
-                )}
-                {scheduleParts.weekdaySummary && (
-                    <MetaTag icon={CalendarDays} label={scheduleParts.weekdaySummary} tone="indigo" />
-                )}
-                {scheduleParts.periodSummary && (
-                    <MetaTag icon={Clock} label={scheduleParts.periodSummary} tone="emerald" />
-                )}
-                {scheduleParts.clockSummary && (
-                    <MetaTag icon={Timer} label={scheduleParts.clockSummary} tone="emerald" />
-                )}
-                <MetaTag icon={CalendarPlus} label={`報名 ${formatCourseRegistrationRange(course)}`} />
-                {course.courseName && (
-                    <MetaTag icon={GraduationCap} label={course.courseName} />
-                )}
-                {course.eligibility.gradeNames.map((gradeName) => (
-                    <MetaTag key={gradeName} icon={Users} label={gradeName} tone="amber" />
-                ))}
-                {course.eligibility.restrictions.map((restriction) => (
-                    <MetaTag key={restriction} icon={Users} label={restriction} tone="amber" />
-                ))}
+            <div className="mt-3 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+                <p className="inline-flex items-start gap-2">
+                    <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-indigo-500" />
+                    <span>{schedule.dateRange}{schedule.weekSummary ? ` · ${schedule.weekSummary}` : ''}{schedule.weekdaySummary ? ` · ${schedule.weekdaySummary}` : ''}</span>
+                </p>
+                <p className="inline-flex items-start gap-2">
+                    <Clock className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" />
+                    <span>{[schedule.periodSummary, schedule.clockSummary].filter(Boolean).join(' · ') || '時間未標示'}</span>
+                </p>
+                <p className="inline-flex items-start gap-2 sm:col-span-2">
+                    <GraduationCap className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" />
+                    <span>{formatGradeSummary(course.eligibility.grades)}</span>
+                </p>
             </div>
+
+            {course.eligibility.restrictions.length > 0 && (
+                <p className="mt-3 rounded-md bg-amber-50 px-3 py-2 text-xs leading-5 text-amber-800">
+                    報名限制：{course.eligibility.restrictions.join('、')}
+                </p>
+            )}
 
             <div className="mt-4 flex flex-wrap gap-2 border-t border-slate-100 pt-3">
-                {officialUrl && (
+                {officialUrl ? (
                     <a
                         href={officialUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={(event) => event.stopPropagation()}
-                        className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700"
+                        className={`inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium transition-colors ${status.registration === 'closed'
+                            ? 'border border-slate-200 bg-white text-slate-700 hover:bg-slate-50'
+                            : 'bg-indigo-600 text-white hover:bg-indigo-700'
+                        }`}
                     >
-                        <ExternalLink className="h-4 w-4" />
-                        查看官方詳情
+                        <ExternalLink className="h-4 w-4" />{officialLabel}
                     </a>
+                ) : (
+                    <span className="inline-flex min-h-11 items-center text-sm text-slate-500">官方連結未提供</span>
                 )}
-                {prospectusUrl && (
-                    <a
-                        href={prospectusUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(event) => event.stopPropagation()}
-                        className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300 hover:bg-slate-50"
-                    >
-                        <ExternalLink className="h-4 w-4" />
-                        活動簡章
-                    </a>
-                )}
-
-                <a
-                    href={buildCourseCalendarUrl(course)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={(event) => event.stopPropagation()}
-                    className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700"
-                >
-                    <CalendarPlus className="h-4 w-4" />
-                    加入日曆
-                </a>
-
-                <RegistrationCalendarButton course={course} />
+                {notStarted && <RegistrationCalendarButton course={course} />}
             </div>
+
+            <details className="group mt-3 border-t border-slate-100 pt-2">
+                <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-md px-2 text-sm font-medium text-slate-600 hover:bg-slate-50">
+                    <Info className="h-4 w-4" />更多資訊與工具
+                    <ChevronDown className="ml-auto h-4 w-4 transition-transform group-open:rotate-180" />
+                </summary>
+                <div className="grid gap-3 px-2 pb-2 pt-3 text-sm text-slate-600 sm:grid-cols-2">
+                    <p className="inline-flex items-start gap-2"><CalendarPlus className="mt-0.5 h-4 w-4 shrink-0" /><span>報名：{formatCourseRegistrationRange(course)}</span></p>
+                    {course.teacher && <p className="inline-flex items-start gap-2"><User className="mt-0.5 h-4 w-4 shrink-0" /><span>老師：{course.teacher}</span></p>}
+                    {course.campName && <p className="inline-flex items-start gap-2"><Users className="mt-0.5 h-4 w-4 shrink-0" /><span>活動：{course.campName}</span></p>}
+                    {course.source?.type === 'ntpc_school_activity' && (
+                        <p className="inline-flex items-start gap-2 text-violet-700"><Info className="mt-0.5 h-4 w-4 shrink-0" /><span>學校另行公開（Camp 全站未收錄）</span></p>
+                    )}
+                </div>
+                <div className="flex flex-wrap gap-2 px-2 pb-2">
+                    {prospectusUrl && (
+                        <a href={prospectusUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-1.5 rounded-md border border-slate-200 px-3 text-sm font-medium text-slate-700 hover:bg-slate-50">
+                            <FileText className="h-4 w-4" />活動簡章
+                        </a>
+                    )}
+                    <a href={buildCourseCalendarUrl(course)} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-1.5 rounded-md border border-slate-200 px-3 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700">
+                        <CalendarPlus className="h-4 w-4" />加入課程日曆
+                    </a>
+                </div>
+            </details>
         </article>
     );
 }

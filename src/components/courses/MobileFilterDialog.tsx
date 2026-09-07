@@ -11,7 +11,6 @@ interface MobileFilterDialogProps {
     open: boolean;
     courses: Course[];
     filters: FilterOptions;
-    selectedSchool: string | null;
     onApply: (filters: FilterOptions) => void;
     onClose: () => void;
 }
@@ -33,7 +32,6 @@ export default function MobileFilterDialog({
     open,
     courses,
     filters,
-    selectedSchool,
     onApply,
     onClose,
 }: MobileFilterDialogProps) {
@@ -56,8 +54,8 @@ export default function MobileFilterDialog({
     }, [filters, open]);
 
     const previewCount = useMemo(
-        () => applyCourseFilters(courses, draftFilters, selectedSchool).length,
-        [courses, draftFilters, selectedSchool],
+        () => applyCourseFilters(courses, draftFilters).length,
+        [courses, draftFilters],
     );
 
     const updateDraft = (next: Partial<FilterOptions>) => {
@@ -65,12 +63,7 @@ export default function MobileFilterDialog({
     };
 
     const resetDraft = () => {
-        const reset = createDefaultFilters();
-        setDraftFilters({
-            ...reset,
-            searchQuery: filters.searchQuery,
-            themeIds: [...filters.themeIds],
-        });
+        setDraftFilters(createDefaultFilters());
     };
 
     return (
