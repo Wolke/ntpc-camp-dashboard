@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-09-06T02:05:24.505Z",
+  "lastUpdated": "2026-09-07T02:03:08.168Z",
   "description": "開放外校學生報名的課程",
-  "total": 94,
+  "total": 121,
   "courses": [
     {
       "source": {
@@ -1637,9 +1637,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 11,
+        "enrolled": 10,
         "planned": 20,
-        "actual": 9,
+        "actual": 10,
         "isLottery": false
       },
       "registration": {
@@ -1666,7 +1666,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 10:30~12:00",
         "fee": "$4450",
         "eligibility": "2,3,4,5,6,外校學生",
-        "quota": "報名人數: 11 預計錄取: 20 實際錄取: 9",
+        "quota": "報名人數: 10 預計錄取: 20 實際錄取: 10",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -1722,9 +1722,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 6,
+        "enrolled": 2,
         "planned": 20,
-        "actual": 14,
+        "actual": 18,
         "isLottery": false
       },
       "registration": {
@@ -1750,7 +1750,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 08:40~10:10",
         "fee": "$1500",
         "eligibility": "1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 6 預計錄取: 20 實際錄取: 14",
+        "quota": "報名人數: 2 預計錄取: 20 實際錄取: 18",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -2903,7 +2903,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 8,
         "actual": 0,
         "isLottery": true
       },
@@ -2912,7 +2912,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -2930,9 +2930,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2910",
         "eligibility": "本校一年級新生,1,2,3,4,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 8 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -2987,7 +2987,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 7,
         "actual": 0,
         "isLottery": true
       },
@@ -2996,7 +2996,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3014,9 +3014,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1240",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 7 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3071,7 +3071,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 6,
         "actual": 0,
         "isLottery": true
       },
@@ -3080,7 +3080,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3098,9 +3098,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2060",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 6 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3155,7 +3155,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 10,
         "actual": 0,
         "isLottery": true
       },
@@ -3164,7 +3164,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3182,9 +3182,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1440",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3235,7 +3235,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 11,
         "actual": 0,
         "isLottery": true
       },
@@ -3244,7 +3244,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3262,9 +3262,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1030",
         "eligibility": "3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 11 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3319,7 +3319,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 9,
         "actual": 0,
         "isLottery": true
       },
@@ -3328,7 +3328,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3346,9 +3346,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2190",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3403,7 +3403,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 10,
         "actual": 0,
         "isLottery": true
       },
@@ -3412,7 +3412,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3430,9 +3430,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2680",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3487,7 +3487,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 8,
         "actual": 0,
         "isLottery": true
       },
@@ -3496,7 +3496,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3514,9 +3514,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1440",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 8 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3571,7 +3571,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -3580,7 +3580,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3598,9 +3598,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1330",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3655,7 +3655,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 19,
         "actual": 0,
         "isLottery": true
       },
@@ -3664,7 +3664,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3682,9 +3682,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1440",
         "eligibility": "大班,本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 19 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3739,7 +3739,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 11,
         "actual": 0,
         "isLottery": true
       },
@@ -3748,7 +3748,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3766,9 +3766,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 11 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3823,7 +3823,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -3832,7 +3832,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3850,9 +3850,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1530",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3907,7 +3907,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 9,
         "actual": 0,
         "isLottery": true
       },
@@ -3916,7 +3916,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -3934,9 +3934,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2180",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -3991,7 +3991,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -4000,7 +4000,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4018,9 +4018,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4075,7 +4075,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 9,
         "actual": 0,
         "isLottery": true
       },
@@ -4084,7 +4084,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4102,9 +4102,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4159,7 +4159,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 9,
         "actual": 0,
         "isLottery": true
       },
@@ -4168,7 +4168,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4186,9 +4186,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1240",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4237,7 +4237,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 10,
         "actual": 0,
         "isLottery": true
       },
@@ -4246,7 +4246,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4264,9 +4264,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~11:00",
         "fee": "$1550",
         "eligibility": "4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4321,7 +4321,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 20,
         "actual": 0,
         "isLottery": true
       },
@@ -4330,7 +4330,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4348,9 +4348,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~11:00",
         "fee": "$1860",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 20 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4401,7 +4401,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 8,
         "actual": 0,
         "isLottery": true
       },
@@ -4410,7 +4410,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4428,9 +4428,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2910",
         "eligibility": "本校一年級新生,1,2,3,4,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 8 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4485,7 +4485,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 10,
         "actual": 0,
         "isLottery": true
       },
@@ -4494,7 +4494,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4512,9 +4512,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1240",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4569,7 +4569,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 6,
         "actual": 0,
         "isLottery": true
       },
@@ -4578,7 +4578,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4596,9 +4596,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2060",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 6 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4653,7 +4653,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 9,
         "actual": 0,
         "isLottery": true
       },
@@ -4662,7 +4662,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4680,9 +4680,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1440",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4733,7 +4733,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 9,
         "actual": 0,
         "isLottery": true
       },
@@ -4742,7 +4742,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4760,9 +4760,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1030",
         "eligibility": "3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4817,7 +4817,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -4826,7 +4826,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4844,9 +4844,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$3730",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4901,7 +4901,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -4910,7 +4910,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -4928,9 +4928,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -4985,7 +4985,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 8,
         "actual": 0,
         "isLottery": true
       },
@@ -4994,7 +4994,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5012,9 +5012,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2190",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 8 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5069,7 +5069,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 11,
         "actual": 0,
         "isLottery": true
       },
@@ -5078,7 +5078,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5096,9 +5096,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2180",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 11 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5153,7 +5153,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -5162,7 +5162,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5180,9 +5180,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1330",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5237,7 +5237,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -5246,7 +5246,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5264,9 +5264,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5321,7 +5321,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -5330,7 +5330,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5348,9 +5348,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2560",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5405,7 +5405,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 10,
         "actual": 0,
         "isLottery": true
       },
@@ -5414,7 +5414,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5432,9 +5432,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2140",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5489,7 +5489,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -5498,7 +5498,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5516,9 +5516,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1830",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5573,7 +5573,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 9,
         "actual": 0,
         "isLottery": true
       },
@@ -5582,7 +5582,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5600,9 +5600,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2180",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5657,7 +5657,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 9,
         "actual": 0,
         "isLottery": true
       },
@@ -5666,7 +5666,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5684,9 +5684,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1830",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5739,7 +5739,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 12,
         "actual": 0,
         "isLottery": true
       },
@@ -5748,7 +5748,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5766,9 +5766,9 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$3680",
         "eligibility": "2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
@@ -5823,7 +5823,7 @@
       },
       "quota": {
         "enrolled": 0,
-        "planned": 0,
+        "planned": 10,
         "actual": 0,
         "isLottery": true
       },
@@ -5832,7 +5832,7 @@
         "canRegister": false,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
-        "endTime": "2027-08-08T20:00:00+08:00",
+        "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
         "status": "尚未開放"
@@ -5850,146 +5850,83 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1240",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 0 實際錄取: 0",
-        "status": "",
-        "activityRegistration": "報名期間 09/07 20:00 至 08/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
+        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
+        "status": "我要報名",
+        "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
     {
       "source": {
         "type": "ntpc_school_activity",
         "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "schoolId": "014602",
-        "actId": "00087",
-        "courseId": "002",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "001",
         "visibility": "school_page_only"
       },
-      "school": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "schoolName": "新北市板橋區國光國民小學",
-      "campName": "115學年度第一學期網球武術-第二次報名",
-      "originalSchool": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "address": "國光國小",
-      "category": "幼兒武術班",
-      "courseName": "115學年度第一學期網球武術-第二次報名",
-      "teacher": "教練：黃沛蕎",
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "圍棋社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "名人圍棋師資",
       "schedule": {
         "startDate": "2026-09-14",
-        "endDate": "2027-01-15",
+        "endDate": "2026-12-28",
         "weekday": "週一",
         "startTime": "16:10",
         "endTime": "17:40"
       },
       "fee": {
-        "amount": 1800,
+        "amount": 2600,
         "isFree": false,
-        "description": "$1800"
-      },
-      "eligibility": {
-        "grades": [],
-        "gradeNames": [],
-        "allowExternalStudents": true,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 14,
-        "planned": 12,
-        "actual": 0,
-        "isLottery": true
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-08-31T08:00:00+08:00",
-        "endTime": "2026-09-06T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": true,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "開放外校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/09/14 至 116/01/15\n週一 16:10~17:40",
-        "fee": "$1800",
-        "eligibility": "小班,中班,大班,本校一年級新生,外校學生",
-        "quota": "報名人數: 14 預計錄取: 12 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 08/31 08:00 至 09/06 23:55 公告期間 09/09 08:00 至 09/18 23:55"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "schoolId": "014602",
-        "actId": "00087",
-        "courseId": "003",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "schoolName": "新北市板橋區國光國民小學",
-      "campName": "115學年度第一學期網球武術-第二次報名",
-      "originalSchool": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "address": "國光國小",
-      "category": "武術推廣班",
-      "courseName": "115學年度第一學期網球武術-第二次報名",
-      "teacher": "教練：許濠鈞",
-      "schedule": {
-        "startDate": "2026-09-14",
-        "endDate": "2027-01-15",
-        "weekday": "週一",
-        "startTime": "16:10",
-        "endTime": "17:40"
-      },
-      "fee": {
-        "amount": 1800,
-        "isFree": false,
-        "description": "$1800"
+        "description": "2600元"
       },
       "eligibility": {
         "grades": [
           1,
           2,
           3,
-          4
+          4,
+          5,
+          6
         ],
         "gradeNames": [
           "一年級",
           "二年級",
           "三年級",
-          "四年級"
+          "四年級",
+          "五年級",
+          "六年級"
         ],
         "allowExternalStudents": true,
-        "restrictions": []
+        "restrictions": [
+          "限制本縣市學生"
+        ]
       },
       "quota": {
-        "enrolled": 17,
-        "planned": 0,
-        "actual": 0,
+        "enrolled": 12,
+        "planned": 18,
+        "actual": 12,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
-        "startTime": "2026-08-31T08:00:00+08:00",
-        "endTime": "2026-09-06T23:55:00+08:00",
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false"
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-001-clsfile.PDF"
       },
       "tags": [
         "開放外校",
@@ -5997,75 +5934,345 @@
         "逐校公開頁"
       ],
       "_raw": {
-        "schedule": "115/09/14 至 116/01/15\n週一 16:10~17:40",
-        "fee": "$1800",
-        "eligibility": "本校一年級新生,1,2,3,4,外校學生",
-        "quota": "報名人數: 17 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 08/31 08:00 至 09/06 23:55 公告期間 09/09 08:00 至 09/18 23:55"
+        "schedule": "115/09/14 至 115/12/28\n週一 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 12 預計錄取: 18 實際錄取: 12",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
       }
     },
     {
       "source": {
         "type": "ntpc_school_activity",
         "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "schoolId": "014602",
-        "actId": "00087",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "002",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "創意拼豆社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "教練：姚岱均",
+      "schedule": {
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-28",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3860,
+        "isFree": false,
+        "description": "3860元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 10,
+        "planned": 20,
+        "actual": 10,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-002-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/28\n週一 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 10 預計錄取: 20 實際錄取: 10",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "003",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "繽紛紙藝社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "林昀叡",
+      "schedule": {
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-28",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3860,
+        "isFree": false,
+        "description": "3860元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-003-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/28\n週一 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 0 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
         "courseId": "004",
         "visibility": "school_page_only"
       },
-      "school": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "schoolName": "新北市板橋區國光國民小學",
-      "campName": "115學年度第一學期網球武術-第二次報名",
-      "originalSchool": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "address": "國光國小",
-      "category": "武術培訓A班",
-      "courseName": "115學年度第一學期網球武術-第二次報名",
-      "teacher": "教練：林靖淳",
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "玩具公仔設計社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "關月秋",
       "schedule": {
         "startDate": "2026-09-14",
-        "endDate": "2027-01-15",
+        "endDate": "2026-12-28",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3860,
+        "isFree": false,
+        "description": "3860元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 3,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-004-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/28\n週一 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 3 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "005",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "瑪利歐賽車社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "葉政均",
+      "schedule": {
+        "startDate": "2026-09-15",
+        "endDate": "2026-12-29",
         "weekday": "週二",
         "startTime": "16:10",
         "endTime": "17:40"
       },
       "fee": {
-        "amount": 2000,
+        "amount": 4240,
         "isFree": false,
-        "description": "$2000"
+        "description": "4240元"
       },
       "eligibility": {
         "grades": [
-          3,
-          4
+          1,
+          2,
+          4,
+          5,
+          6
         ],
         "gradeNames": [
-          "三年級",
-          "四年級"
+          "一年級",
+          "二年級",
+          "四年級",
+          "五年級",
+          "六年級"
         ],
         "allowExternalStudents": true,
-        "restrictions": []
+        "restrictions": [
+          "限制本縣市學生"
+        ]
       },
       "quota": {
-        "enrolled": 14,
-        "planned": 0,
+        "enrolled": 1,
+        "planned": 20,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
-        "startTime": "2026-08-31T08:00:00+08:00",
-        "endTime": "2026-09-06T23:55:00+08:00",
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false"
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-005-clsfile.PDF"
       },
       "tags": [
         "開放外校",
@@ -6073,119 +6280,43 @@
         "逐校公開頁"
       ],
       "_raw": {
-        "schedule": "115/09/14 至 116/01/15\n週二 16:10~17:40",
-        "fee": "$2000",
-        "eligibility": "3,4,外校學生",
-        "quota": "報名人數: 14 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 08/31 08:00 至 09/06 23:55 公告期間 09/09 08:00 至 09/18 23:55"
+        "schedule": "115/09/15 至 115/12/29\n週二 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 1 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
       }
     },
     {
       "source": {
         "type": "ntpc_school_activity",
         "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "schoolId": "014602",
-        "actId": "00087",
-        "courseId": "005",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "schoolName": "新北市板橋區國光國民小學",
-      "campName": "115學年度第一學期網球武術-第二次報名",
-      "originalSchool": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "address": "國光國小",
-      "category": "武術培訓B班",
-      "courseName": "115學年度第一學期網球武術-第二次報名",
-      "teacher": "教練：林靖淳",
-      "schedule": {
-        "startDate": "2026-09-14",
-        "endDate": "2027-01-15",
-        "weekday": "週四",
-        "startTime": "16:10",
-        "endTime": "17:40"
-      },
-      "fee": {
-        "amount": 2000,
-        "isFree": false,
-        "description": "$2000"
-      },
-      "eligibility": {
-        "grades": [
-          3,
-          4
-        ],
-        "gradeNames": [
-          "三年級",
-          "四年級"
-        ],
-        "allowExternalStudents": true,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 12,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": true
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-08-31T08:00:00+08:00",
-        "endTime": "2026-09-06T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": true,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "開放外校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/09/14 至 116/01/15\n週四 16:10~17:40",
-        "fee": "$2000",
-        "eligibility": "3,4,外校學生",
-        "quota": "報名人數: 12 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 08/31 08:00 至 09/06 23:55 公告期間 09/09 08:00 至 09/18 23:55"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "schoolId": "014602",
-        "actId": "00087",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
         "courseId": "006",
         "visibility": "school_page_only"
       },
-      "school": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "schoolName": "新北市板橋區國光國民小學",
-      "campName": "115學年度第一學期網球武術-第二次報名",
-      "originalSchool": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "address": "國光國小",
-      "category": "網球培訓A班(第一期)",
-      "courseName": "115學年度第一學期網球武術-第二次報名",
-      "teacher": "教練：林素幸、林素茉",
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "書法暨硬筆社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "呂佳玲",
       "schedule": {
-        "startDate": "2026-09-14",
-        "endDate": "2027-01-15",
-        "weekday": "週一",
+        "startDate": "2026-09-15",
+        "endDate": "2026-12-22",
+        "weekday": "週二",
         "startTime": "16:10",
         "endTime": "17:40"
       },
       "fee": {
-        "amount": 9700,
+        "amount": 3900,
         "isFree": false,
-        "description": "$9700"
+        "description": "3900元"
       },
       "eligibility": {
         "grades": [
@@ -6205,27 +6336,30 @@
           "六年級"
         ],
         "allowExternalStudents": true,
-        "restrictions": []
+        "restrictions": [
+          "限制本縣市學生"
+        ]
       },
       "quota": {
-        "enrolled": 9,
-        "planned": 0,
-        "actual": 0,
+        "enrolled": 14,
+        "planned": 15,
+        "actual": 14,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
-        "startTime": "2026-08-31T08:00:00+08:00",
-        "endTime": "2026-09-06T23:55:00+08:00",
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false"
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-006-clsfile.PDF"
       },
       "tags": [
         "開放外校",
@@ -6233,43 +6367,304 @@
         "逐校公開頁"
       ],
       "_raw": {
-        "schedule": "115/09/14 至 116/01/15\n週一 16:10~17:40\n週二 16:10~17:40",
-        "fee": "$9700",
-        "eligibility": "大班,本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 9 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 08/31 08:00 至 09/06 23:55 公告期間 09/09 08:00 至 09/18 23:55"
+        "schedule": "115/09/15 至 115/12/22\n週二 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 14 預計錄取: 15 實際錄取: 14",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
       }
     },
     {
       "source": {
         "type": "ntpc_school_activity",
         "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "schoolId": "014602",
-        "actId": "00087",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
         "courseId": "007",
         "visibility": "school_page_only"
       },
-      "school": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "schoolName": "新北市板橋區國光國民小學",
-      "campName": "115學年度第一學期網球武術-第二次報名",
-      "originalSchool": "新北市板橋區國光國民小學 - 115學年度第一學期網球武術-第二次報名",
-      "address": "國光國小",
-      "category": "網球培訓B班(第二期)",
-      "courseName": "115學年度第一學期網球武術-第二次報名",
-      "teacher": "教練：林素幸、林素茉",
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "STEAM 科學家",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "林昀叡",
       "schedule": {
-        "startDate": "2026-09-14",
-        "endDate": "2027-01-15",
+        "startDate": "2026-09-15",
+        "endDate": "2026-12-29",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4540,
+        "isFree": false,
+        "description": "4540元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 6,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-007-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/15 至 115/12/29\n週二 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 6 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "008",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "玩編織玩創意",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "顏愷君",
+      "schedule": {
+        "startDate": "2026-09-15",
+        "endDate": "2026-12-22",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3500,
+        "isFree": false,
+        "description": "3500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 13,
+        "planned": 15,
+        "actual": 13,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-008-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/15 至 115/12/22\n週二 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 13 預計錄取: 15 實際錄取: 13",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "009",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "美術社團 週二班",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "童沛文",
+      "schedule": {
+        "startDate": "2026-09-15",
+        "endDate": "2026-12-29",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4500,
+        "isFree": false,
+        "description": "4500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 17,
+        "planned": 18,
+        "actual": 17,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-009-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/15 至 115/12/29\n週二 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 17 預計錄取: 18 實際錄取: 17",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "010",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "瘋狂積木社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "姚岱均",
+      "schedule": {
+        "startDate": "2026-09-16",
+        "endDate": "2026-12-30",
         "weekday": "週三",
         "startTime": "16:10",
         "endTime": "17:40"
       },
       "fee": {
-        "amount": 10200,
+        "amount": 4240,
         "isFree": false,
-        "description": "$10200"
+        "description": "4240元"
       },
       "eligibility": {
         "grades": [
@@ -6289,27 +6684,30 @@
           "六年級"
         ],
         "allowExternalStudents": true,
-        "restrictions": []
+        "restrictions": [
+          "限制本縣市學生"
+        ]
       },
       "quota": {
-        "enrolled": 10,
-        "planned": 0,
+        "enrolled": 0,
+        "planned": 20,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
-        "startTime": "2026-08-31T08:00:00+08:00",
-        "endTime": "2026-09-06T23:55:00+08:00",
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014602&actmang_no=00087&week_filter=all&filter_mycourse=false"
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-010-clsfile.PDF"
       },
       "tags": [
         "開放外校",
@@ -6317,12 +6715,1961 @@
         "逐校公開頁"
       ],
       "_raw": {
-        "schedule": "115/09/14 至 116/01/15\n週三 16:10~17:40\n週四 16:10~17:40",
-        "fee": "$10200",
-        "eligibility": "大班,本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 10 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 08/31 08:00 至 09/06 23:55 公告期間 09/09 08:00 至 09/18 23:55"
+        "schedule": "115/09/16 至 115/12/30\n週三 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 0 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "011",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "花栗鼠手作烘焙社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "范容綺",
+      "schedule": {
+        "startDate": "2026-09-16",
+        "endDate": "2026-12-30",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4050,
+        "isFree": false,
+        "description": "4050元"
+      },
+      "eligibility": {
+        "grades": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 25,
+        "planned": 20,
+        "actual": 5,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-011-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/16 至 115/12/30\n週三 16:10~17:40",
+        "fee": "無",
+        "eligibility": "2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 25 預計錄取: 20 實際錄取: 5",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "012",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "美術社團 週三班",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "童沛文",
+      "schedule": {
+        "startDate": "2026-09-16",
+        "endDate": "2026-12-30",
+        "weekday": "週三",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4500,
+        "isFree": false,
+        "description": "4500元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 13,
+        "planned": 18,
+        "actual": 13,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-012-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/16 至 115/12/30\n週三 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 13 預計錄取: 18 實際錄取: 13",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "013",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "競技疊杯社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "姚岱均",
+      "schedule": {
+        "startDate": "2026-09-17",
+        "endDate": "2026-12-31",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4050,
+        "isFree": false,
+        "description": "4050元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 3,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-013-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/17 至 115/12/31\n週四 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 3 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "014",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "熱門手帳拼貼社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "關月秋",
+      "schedule": {
+        "startDate": "2026-09-17",
+        "endDate": "2026-12-31",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4200,
+        "isFree": false,
+        "description": "4200元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-014-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/17 至 115/12/31\n週四 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 0 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "015",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "3D 列印筆社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "葉政均",
+      "schedule": {
+        "startDate": "2026-09-17",
+        "endDate": "2026-12-31",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4050,
+        "isFree": false,
+        "description": "4050元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 1,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-015-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/17 至 115/12/31\n週四 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 1 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "016",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "數學幾何摺紙社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "徐老師團隊師資",
+      "schedule": {
+        "startDate": "2026-09-17",
+        "endDate": "2026-12-31",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2800,
+        "isFree": false,
+        "description": "2800元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-016-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/17 至 115/12/31\n週四 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 0 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "017",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "創意勞作社團",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "童沛文",
+      "schedule": {
+        "startDate": "2026-09-17",
+        "endDate": "2026-12-31",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4200,
+        "isFree": false,
+        "description": "4200元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 7,
+        "planned": 18,
+        "actual": 7,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-017-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/17 至 115/12/31\n週四 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 7 預計錄取: 18 實際錄取: 7",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "018",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "花植美感手作社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "關月秋",
+      "schedule": {
+        "startDate": "2026-09-18",
+        "endDate": "2026-12-18",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3580,
+        "isFree": false,
+        "description": "3580元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 3,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-018-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/18 至 115/12/18\n週五 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 3 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "019",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "動力機械社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "林昀叡",
+      "schedule": {
+        "startDate": "2026-09-18",
+        "endDate": "2026-12-18",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3290,
+        "isFree": false,
+        "description": "3290元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 0,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-019-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/18 至 115/12/18\n週五 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 0 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "020",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "鬼滅達人 FUN日文兒童日語",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "王依凡",
+      "schedule": {
+        "startDate": "2026-09-18",
+        "endDate": "2026-12-18",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 4000,
+        "isFree": false,
+        "description": "4000元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 6,
+        "planned": 20,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-020-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/18 至 115/12/18\n週五 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 6 預計錄取: 20 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "021",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "AI 科技無人機社",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "葉政均",
+      "schedule": {
+        "startDate": "2026-09-18",
+        "endDate": "2026-12-18",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2890,
+        "isFree": false,
+        "description": "2890元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 18,
+        "planned": 20,
+        "actual": 18,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-021-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/18 至 115/12/18\n週五 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 18 預計錄取: 20 實際錄取: 18",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "022",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "美術社團 週五班",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "童沛文",
+      "schedule": {
+        "startDate": "2026-09-18",
+        "endDate": "2026-12-18",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3600,
+        "isFree": false,
+        "description": "3600元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 11,
+        "planned": 18,
+        "actual": 11,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-022-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/18 至 115/12/18\n週五 16:10~17:40",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 11 預計錄取: 18 實際錄取: 11",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "023",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "跆拳道社團",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "教練：林育德",
+      "schedule": {
+        "startDate": "2026-09-19",
+        "endDate": "2027-01-02",
+        "weekday": "週六",
+        "startTime": "09:00",
+        "endTime": "11:00"
+      },
+      "fee": {
+        "amount": 3600,
+        "isFree": false,
+        "description": "3600元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 12,
+        "planned": 30,
+        "actual": 12,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-023-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/19 至 116/01/02\n週六 09:00~11:00",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 12 預計錄取: 30 實際錄取: 12",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "024",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "SUPER 直排輪",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "教練：戴伯函",
+      "schedule": {
+        "startDate": "2026-09-20",
+        "endDate": "2027-01-10",
+        "weekday": "週日",
+        "startTime": "10:00",
+        "endTime": "11:30"
+      },
+      "fee": {
+        "amount": 3600,
+        "isFree": false,
+        "description": "3600元"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 31,
+        "planned": 35,
+        "actual": 31,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-024-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/20 至 116/01/10\n週日 10:00~11:30",
+        "fee": "無",
+        "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 31 預計錄取: 35 實際錄取: 31",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "025",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "足球",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "曾珉嫺",
+      "schedule": {
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-28",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1800,
+        "isFree": false,
+        "description": "$1800"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 17,
+        "planned": 14,
+        "actual": 3,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-025-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/28\n週一 16:10~17:40",
+        "fee": "$1800",
+        "eligibility": "3,4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 17 預計錄取: 14 實際錄取: 3",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "026",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "羽球A",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "賴芋廷",
+      "schedule": {
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-28",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2800,
+        "isFree": false,
+        "description": "$2800"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 20,
+        "planned": 14,
+        "actual": 6,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-026-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/28\n週一 16:10~17:40",
+        "fee": "$2800",
+        "eligibility": "本校一年級新生,1,2,3,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 20 預計錄取: 14 實際錄取: 6",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "027",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "羽球B",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "吳宣佩",
+      "schedule": {
+        "startDate": "2026-09-14",
+        "endDate": "2026-12-28",
+        "weekday": "週一",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2800,
+        "isFree": false,
+        "description": "$2800"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 22,
+        "planned": 14,
+        "actual": 8,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-027-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/14 至 115/12/28\n週一 16:10~17:40",
+        "fee": "$2800",
+        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 22 預計錄取: 14 實際錄取: 8",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "028",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "足球",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "曾珉嫺",
+      "schedule": {
+        "startDate": "2026-09-15",
+        "endDate": "2026-12-29",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2100,
+        "isFree": false,
+        "description": "$2100"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 24,
+        "planned": 14,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-028-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/15 至 115/12/29\n週二 16:10~17:40",
+        "fee": "$2100",
+        "eligibility": "本校一年級新生,1,2,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 24 預計錄取: 14 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "029",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "桌球",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "吳季軒",
+      "schedule": {
+        "startDate": "2026-09-15",
+        "endDate": "2026-12-29",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3200,
+        "isFree": false,
+        "description": "$3200"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 14,
+        "planned": 14,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-029-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/15 至 115/12/29\n週二 16:10~17:40",
+        "fee": "$3200",
+        "eligibility": "本校一年級新生,1,2,3,4,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 14 預計錄取: 14 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "030",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "躲避球",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "劉博皇",
+      "schedule": {
+        "startDate": "2026-09-15",
+        "endDate": "2026-12-29",
+        "weekday": "週二",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3200,
+        "isFree": false,
+        "description": "$3200"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 21,
+        "planned": 14,
+        "actual": 7,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-030-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/15 至 115/12/29\n週二 16:10~17:40",
+        "fee": "$3200",
+        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 21 預計錄取: 14 實際錄取: 7",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "031",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "桌球",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "吳季軒",
+      "schedule": {
+        "startDate": "2026-09-17",
+        "endDate": "2026-12-31",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3000,
+        "isFree": false,
+        "description": "$3000"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 22,
+        "planned": 14,
+        "actual": 8,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-031-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/17 至 115/12/31\n週四 16:10~17:40",
+        "fee": "$3000",
+        "eligibility": "本校一年級新生,1,2,3,4,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 22 預計錄取: 14 實際錄取: 8",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "032",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "羽球",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "陳佳瑜",
+      "schedule": {
+        "startDate": "2026-09-17",
+        "endDate": "2026-12-31",
+        "weekday": "週四",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 3000,
+        "isFree": false,
+        "description": "$3000"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 19,
+        "planned": 14,
+        "actual": 5,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-032-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/17 至 115/12/31\n週四 16:10~17:40",
+        "fee": "$3000",
+        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 19 預計錄取: 14 實際錄取: 5",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "schoolId": "014796",
+        "actId": "00056",
+        "courseId": "033",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "schoolName": "新北市中和區光復國民小學",
+      "campName": "115學年度上學期課後社團",
+      "originalSchool": "新北市中和區光復國民小學 - 115學年度上學期課後社團",
+      "address": "光復國小",
+      "category": "綜合球類",
+      "courseName": "115學年度上學期課後社團",
+      "teacher": "曾珉嫺",
+      "schedule": {
+        "startDate": "2026-09-18",
+        "endDate": "2026-12-18",
+        "weekday": "週五",
+        "startTime": "16:10",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1600,
+        "isFree": false,
+        "description": "$1600"
+      },
+      "eligibility": {
+        "grades": [
+          4,
+          5,
+          6
+        ],
+        "gradeNames": [
+          "四年級",
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": true,
+        "restrictions": [
+          "限制本縣市學生"
+        ]
+      },
+      "quota": {
+        "enrolled": 24,
+        "planned": 14,
+        "actual": 0,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-02T09:00:00+08:00",
+        "endTime": "2026-09-04T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014796&actmang_no=00056&week_filter=all&filter_mycourse=false",
+        "prospectus": "https://camp.ntpc.edu.tw/central/014796/uploadfile/act_register/public/file/00056-033-clsfile.PDF"
+      },
+      "tags": [
+        "開放外校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/09/18 至 115/12/18\n週五 16:10~17:40",
+        "fee": "$1600",
+        "eligibility": "4,5,6,外校學生- 限制本縣市學生",
+        "quota": "報名人數: 24 預計錄取: 14 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/02 09:00 至 09/04 16:00 公告期間 09/07 09:00 至 09/11 15:00"
       }
     },
     {
