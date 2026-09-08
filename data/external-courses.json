@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T02:03:08.168Z",
+  "lastUpdated": "2026-09-08T02:13:33.729Z",
   "description": "開放外校學生報名的課程",
   "total": 121,
   "courses": [
@@ -1554,9 +1554,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 7,
+        "enrolled": 8,
         "planned": 20,
-        "actual": 13,
+        "actual": 12,
         "isLottery": false
       },
       "registration": {
@@ -1583,7 +1583,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 08:40~10:10",
         "fee": "$4350",
         "eligibility": "3,4,5,6,外校學生",
-        "quota": "報名人數: 7 預計錄取: 20 實際錄取: 13",
+        "quota": "報名人數: 8 預計錄取: 20 實際錄取: 12",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -1637,9 +1637,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 10,
+        "enrolled": 11,
         "planned": 20,
-        "actual": 10,
+        "actual": 9,
         "isLottery": false
       },
       "registration": {
@@ -1666,7 +1666,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 10:30~12:00",
         "fee": "$4450",
         "eligibility": "2,3,4,5,6,外校學生",
-        "quota": "報名人數: 10 預計錄取: 20 實際錄取: 10",
+        "quota": "報名人數: 11 預計錄取: 20 實際錄取: 9",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -1722,9 +1722,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 2,
+        "enrolled": 1,
         "planned": 20,
-        "actual": 18,
+        "actual": 19,
         "isLottery": false
       },
       "registration": {
@@ -1750,7 +1750,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 08:40~10:10",
         "fee": "$1500",
         "eligibility": "1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 2 預計錄取: 20 實際錄取: 18",
+        "quota": "報名人數: 1 預計錄取: 20 實際錄取: 19",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -1972,9 +1972,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 20,
+        "enrolled": 19,
         "planned": 30,
-        "actual": 10,
+        "actual": 11,
         "isLottery": false
       },
       "registration": {
@@ -2000,7 +2000,7 @@
         "schedule": "115/09/14 至 116/01/19\n週六 08:40~12:00",
         "fee": "$2900",
         "eligibility": "2,3,4,5,6,外校學生",
-        "quota": "報名人數: 20 預計錄取: 30 實際錄取: 10",
+        "quota": "報名人數: 19 預計錄取: 30 實際錄取: 11",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -2056,9 +2056,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 30,
+        "enrolled": 29,
         "planned": 30,
-        "actual": 0,
+        "actual": 1,
         "isLottery": false
       },
       "registration": {
@@ -2085,7 +2085,7 @@
         "schedule": "115/09/14 至 116/01/19\n週五 19:30~21:00",
         "fee": "無",
         "eligibility": "中班,大班,本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 30 預計錄取: 30 實際錄取: 0",
+        "quota": "報名人數: 29 預計錄取: 30 實際錄取: 1",
         "status": "報名中",
         "activityRegistration": "報名期間 09/04 12:00 至 09/09 12:00"
       }
@@ -2902,20 +2902,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 3,
         "planned": 8,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -2930,8 +2930,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2910",
         "eligibility": "本校一年級新生,1,2,3,4,外校學生",
-        "quota": "報名人數: 0 預計錄取: 8 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 3 預計錄取: 8 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -2986,20 +2986,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 5,
         "planned": 7,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3014,8 +3014,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1240",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 7 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 5 預計錄取: 7 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3070,20 +3070,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 1,
         "planned": 6,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3098,8 +3098,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2060",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 6 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 1 預計錄取: 6 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3154,20 +3154,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 5,
         "planned": 10,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3182,8 +3182,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1440",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 5 預計錄取: 10 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3234,20 +3234,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 15,
         "planned": 11,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3262,8 +3262,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1030",
         "eligibility": "3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 11 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 15 預計錄取: 11 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3318,20 +3318,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 2,
         "planned": 9,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3346,8 +3346,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2190",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 2 預計錄取: 9 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3402,20 +3402,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 5,
         "planned": 10,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3430,8 +3430,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2680",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 5 預計錄取: 10 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3486,20 +3486,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 10,
         "planned": 8,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3514,8 +3514,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1440",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 8 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 10 預計錄取: 8 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3570,20 +3570,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 4,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3598,8 +3598,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1330",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 4 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3654,20 +3654,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 16,
         "planned": 19,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3682,8 +3682,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1440",
         "eligibility": "大班,本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 19 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 16 預計錄取: 19 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3738,20 +3738,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 17,
         "planned": 11,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3766,8 +3766,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 11 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 17 預計錄取: 11 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3822,20 +3822,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 2,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3850,8 +3850,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1530",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 2 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3906,20 +3906,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 1,
         "planned": 9,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -3934,8 +3934,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2180",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 1 預計錄取: 9 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -3990,20 +3990,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 8,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4018,8 +4018,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 8 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4074,20 +4074,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 2,
         "planned": 9,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4102,8 +4102,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 2 預計錄取: 9 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4158,20 +4158,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 11,
         "planned": 9,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4186,8 +4186,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$1240",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 11 預計錄取: 9 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4236,20 +4236,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 18,
         "planned": 10,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4264,8 +4264,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~11:00",
         "fee": "$1550",
         "eligibility": "4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 18 預計錄取: 10 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4320,20 +4320,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 13,
         "planned": 20,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4348,8 +4348,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~11:00",
         "fee": "$1860",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 20 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 13 預計錄取: 20 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4400,20 +4400,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 4,
         "planned": 8,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4428,8 +4428,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2910",
         "eligibility": "本校一年級新生,1,2,3,4,外校學生",
-        "quota": "報名人數: 0 預計錄取: 8 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 4 預計錄取: 8 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4484,20 +4484,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 5,
         "planned": 10,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4512,8 +4512,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1240",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 5 預計錄取: 10 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4568,20 +4568,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 1,
         "planned": 6,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4596,8 +4596,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2060",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 6 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 1 預計錄取: 6 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4652,20 +4652,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 13,
         "planned": 9,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4680,8 +4680,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1440",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 13 預計錄取: 9 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4732,20 +4732,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 18,
         "planned": 9,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4760,8 +4760,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1030",
         "eligibility": "3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 18 預計錄取: 9 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4816,20 +4816,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 6,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4844,8 +4844,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~10:20",
         "fee": "$3730",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 6 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4900,20 +4900,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 4,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -4928,8 +4928,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 4 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -4984,20 +4984,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 8,
         "planned": 8,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5012,8 +5012,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2190",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 8 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 8 預計錄取: 8 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5068,20 +5068,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 15,
         "planned": 11,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5096,8 +5096,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2180",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 11 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 15 預計錄取: 11 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5152,20 +5152,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 12,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5180,8 +5180,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1330",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 12 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5236,20 +5236,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 16,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5264,8 +5264,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 16 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5320,20 +5320,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 2,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5348,8 +5348,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2560",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 2 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5404,20 +5404,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 3,
         "planned": 10,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5432,8 +5432,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2140",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 3 預計錄取: 10 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5488,20 +5488,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 1,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5516,8 +5516,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1830",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 1 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5572,20 +5572,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 1,
         "planned": 9,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5600,8 +5600,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2180",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 1 預計錄取: 9 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5663,13 +5663,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5685,7 +5685,7 @@
         "fee": "$1830",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
         "quota": "報名人數: 0 預計錄取: 9 實際錄取: 0",
-        "status": "我要報名",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5738,20 +5738,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 13,
         "planned": 12,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5766,8 +5766,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$3680",
         "eligibility": "2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 12 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 13 預計錄取: 12 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
@@ -5822,20 +5822,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 10,
         "planned": 10,
         "actual": 0,
         "isLottery": true
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": true,
         "startTime": "2026-09-07T20:00:00+08:00",
         "endTime": "2026-09-08T20:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "尚未開放"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
@@ -5850,8 +5850,8 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$1240",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 10 實際錄取: 0",
-        "status": "我要報名",
+        "quota": "報名人數: 10 預計錄取: 10 實際錄取: 0",
+        "status": "報名中",
         "activityRegistration": "報名期間 09/07 20:00 至 09/08 20:00 公告及開放退選 09/09 15:00 至 09/10 19:55"
       }
     },
