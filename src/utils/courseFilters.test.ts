@@ -47,6 +47,37 @@ describe('course filters', () => {
         expect(applyCourseFilters([overlapping, outside], filters)).toEqual([overlapping]);
     });
 
+    it('matches any selected weekday, including additional days in the raw schedule', () => {
+        const now = new Date('2026-08-30T12:00:00+08:00');
+        const mondayAndWednesday = makeCourse({
+            schedule: { weekday: '週一' } as Course['schedule'],
+            _raw: { schedule: '週一 09:00~12:00\n週三 09:00~12:00' },
+        });
+        const sunday = makeCourse({ schedule: { weekday: '週日' } as Course['schedule'] });
+        const thursday = makeCourse();
+        const filters = createDefaultFilters();
+        filters.weekdays = ['週三', '週日'];
+
+        expect(applyCourseFilters([mondayAndWednesday, sunday, thursday], filters, now)).toEqual([mondayAndWednesday, sunday]);
+        expect(countActiveFilterGroups(filters)).toBe(1);
+        expect(applySchoolMapFilters([mondayAndWednesday, sunday, thursday], filters, now)).toEqual([mondayAndWednesday, sunday]);
+
+        filters.weekdays = [];
+        expect(applyCourseFilters([mondayAndWednesday, sunday, thursday], filters, now)).toHaveLength(3);
+    });
+
+    it('keeps weekday filtering combined with the other selected conditions', () => {
+        const now = new Date('2026-08-30T12:00:00+08:00');
+        const matching = makeCourse();
+        const paid = makeCourse({ fee: { isFree: false, amount: 500 } as Course['fee'] });
+        const monday = makeCourse({ schedule: { weekday: '週一' } as Course['schedule'] });
+        const filters = createDefaultFilters();
+        filters.weekdays = ['週四'];
+        filters.isFree = true;
+
+        expect(applyCourseFilters([matching, paid, monday], filters, now)).toEqual([matching]);
+    });
+
     it('sorts actionable registration states before closed courses', () => {
         const now = new Date('2026-08-30T12:00:00+08:00');
         const upcomingSoon = makeCourse({

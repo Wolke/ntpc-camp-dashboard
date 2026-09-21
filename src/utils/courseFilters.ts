@@ -1,6 +1,7 @@
 import type { Course, CourseTimeStatus, FilterOptions, QuotaStatus, RegistrationStatus } from '../types/course';
 import { classifyTheme, getCourseSearchText, normalizeText } from './courseTaxonomy';
 import { SCHOOL_COORDINATES } from './schoolCoordinates';
+import { getCourseWeekdays } from './courseSchedule';
 
 export type CourseSortMode =
     | 'actionable'
@@ -22,6 +23,7 @@ export const DEFAULT_FILTERS: FilterOptions = {
     isFree: null,
     allowExternalStudents: null,
     dateRange: { start: null, end: null },
+    weekdays: [],
     grades: [],
     themeIds: [],
     registrationStatus: [],
@@ -34,6 +36,7 @@ export function createDefaultFilters(): FilterOptions {
         ...DEFAULT_FILTERS,
         schoolTypes: [],
         dateRange: { start: null, end: null },
+        weekdays: [],
         grades: [],
         themeIds: [],
         registrationStatus: [],
@@ -116,6 +119,7 @@ export function applyCourseFilters(
         if (filters.isFree !== null && filters.isFree !== course.fee.isFree) return false;
         if (filters.grades.length > 0 && !filters.grades.every((grade) => course.eligibility.grades.includes(grade))) return false;
         if (filters.allowExternalStudents !== null && filters.allowExternalStudents !== course.eligibility.allowExternalStudents) return false;
+        if (filters.weekdays.length > 0 && !getCourseWeekdays(course).some((weekday) => filters.weekdays.includes(weekday))) return false;
 
         const courseStart = course.schedule.startDate;
         const courseEnd = course.schedule.endDate;
@@ -233,6 +237,7 @@ export function countActiveFilterGroups(filters: FilterOptions): number {
         filters.isFree !== null,
         filters.allowExternalStudents !== null,
         Boolean(filters.dateRange.start || filters.dateRange.end),
+        filters.weekdays.length > 0,
         filters.grades.length > 0,
         filters.themeIds.length > 0,
         filters.registrationStatus.length > 0,

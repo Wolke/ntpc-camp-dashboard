@@ -1,6 +1,6 @@
 import type { Course } from '../types/course';
 import { getCourseStatus, getSchoolType } from './courseFilters';
-import { formatCourseWeekSummary } from './courseSchedule';
+import { COURSE_WEEKDAYS, formatCourseWeekSummary, getCourseWeekdays } from './courseSchedule';
 
 // 狀態標籤顏色
 export const statusColors = {
@@ -71,8 +71,7 @@ export function formatDate(dateStr: string): string {
     return `${date.getMonth() + 1}/${date.getDate()}`;
 }
 
-const weekdayOrder = ['週一', '週二', '週三', '週四', '週五', '週六', '週日'];
-const weekdayByDateIndex = ['週日', '週一', '週二', '週三', '週四', '週五', '週六'];
+const weekdayOrder = COURSE_WEEKDAYS;
 
 interface ScheduleEntry {
     weekday: string;
@@ -88,11 +87,6 @@ function toMinutes(time: string): number | null {
     const match = time.match(/^(\d{1,2}):(\d{2})$/);
     if (!match) return null;
     return Number(match[1]) * 60 + Number(match[2]);
-}
-
-function normalizeWeekday(weekday: string): string | null {
-    const match = weekday.match(/週[一二三四五六日]/);
-    return match?.[0] ?? null;
 }
 
 function parseRawScheduleEntries(course: Course): ScheduleEntry[] {
@@ -117,32 +111,11 @@ function parseRawScheduleEntries(course: Course): ScheduleEntry[] {
     return entries;
 }
 
-function getDateRangeWeekdays(course: Course): string[] {
-    const start = new Date(course.schedule.startDate);
-    const end = new Date(course.schedule.endDate);
-    if (!isValidDate(start) || !isValidDate(end) || start > end) return [];
-
-    const weekdays = new Set<string>();
-    const current = new Date(start);
-    const maxDays = 31;
-    for (let day = 0; current <= end && day < maxDays; day += 1) {
-        weekdays.add(weekdayByDateIndex[current.getDay()]);
-        current.setDate(current.getDate() + 1);
-    }
-
-    return weekdayOrder.filter((weekday) => weekdays.has(weekday));
-}
-
 function getScheduleEntries(course: Course): ScheduleEntry[] {
     const rawEntries = parseRawScheduleEntries(course);
     if (rawEntries.length > 0) return rawEntries;
 
-    const weekday = normalizeWeekday(course.schedule.weekday);
-    if (weekday && course.schedule.startTime && course.schedule.endTime) {
-        return [{ weekday, startTime: course.schedule.startTime, endTime: course.schedule.endTime }];
-    }
-
-    return getDateRangeWeekdays(course).map((rangeWeekday) => ({
+    return getCourseWeekdays(course).map((rangeWeekday) => ({
         weekday: rangeWeekday,
         startTime: course.schedule.startTime,
         endTime: course.schedule.endTime,

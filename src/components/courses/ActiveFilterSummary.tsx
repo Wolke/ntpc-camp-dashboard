@@ -4,6 +4,7 @@ import { useCourseStore } from '../../store/courseStore';
 import { DEFAULT_FILTERS, UNKNOWN_DISTRICT } from '../../utils/courseFilters';
 import { getThemeById } from '../../utils/courseTaxonomy';
 import { formatGradeSummary } from '../../utils/courseUtils';
+import { COURSE_WEEKDAYS } from '../../utils/courseSchedule';
 
 const registrationLabels = { available: '可報名', closing_soon: '即將截止', closed: '已截止', not_started: '尚未開放' };
 const timeLabels = { upcoming: '即將開課', ongoing: '進行中', ended: '已結束' };
@@ -27,6 +28,7 @@ export default function ActiveFilterSummary() {
     if (filters.district) chips.push({ id: 'district', label: filters.district === UNKNOWN_DISTRICT ? '未標示行政區' : filters.district, clear: { district: null } });
     if (filters.schoolName) chips.push({ id: 'school', label: `學校：${filters.schoolName}`, clear: { schoolName: null } });
     if (filters.grades.length) chips.push({ id: 'grades', label: formatGradeSummary(filters.grades), clear: { grades: [] } });
+    if (filters.weekdays.length) chips.push({ id: 'weekdays', label: `上課星期：${COURSE_WEEKDAYS.filter((weekday) => filters.weekdays.includes(weekday)).join('、')}`, clear: { weekdays: [] } });
     if (filters.allowExternalStudents !== null) chips.push({ id: 'eligibility', label: filters.allowExternalStudents ? '開放外校' : '限本校', clear: { allowExternalStudents: null } });
     if (filters.isFree !== null) chips.push({ id: 'fee', label: filters.isFree ? '免費' : '付費', clear: { isFree: null } });
     if (filters.registrationStatus.length) chips.push({ id: 'reg', label: filters.registrationStatus.map((item) => registrationLabels[item]).join('、'), clear: { registrationStatus: [] } });

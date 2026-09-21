@@ -10,6 +10,7 @@ describe('course search URL state', () => {
             district: '新北市三重區',
             schoolName: '新北市三重區五華國民小學',
             grades: [4, 3],
+            weekdays: ['週日', '週一'],
             allowExternalStudents: true,
             isFree: true,
             registrationStatus: ['available'],
@@ -20,15 +21,16 @@ describe('course search URL state', () => {
         const params = serializeCourseSearchParams({ filters, sortMode: 'fee-asc' });
         const parsed = parseCourseSearchParams(params);
         expect(parsed).toEqual({
-            filters: { ...filters, grades: [3, 4] },
+            filters: { ...filters, grades: [3, 4], weekdays: ['週一', '週日'] },
             sortMode: 'fee-asc',
         });
     });
 
     it('omits defaults and ignores invalid or private distance state', () => {
         expect(serializeCourseSearchParams({ filters: createDefaultFilters(), sortMode: 'actionable' }).toString()).toBe('');
-        const parsed = parseCourseSearchParams(new URLSearchParams('grades=0,3,20&reg=bad&sort=distance&theme=missing'));
+        const parsed = parseCourseSearchParams(new URLSearchParams('grades=0,3,20&reg=bad&sort=distance&theme=missing&weekdays=週一,bad,週日,週一'));
         expect(parsed.filters.grades).toEqual([3]);
+        expect(parsed.filters.weekdays).toEqual(['週一', '週日']);
         expect(parsed.filters.registrationStatus).toEqual([]);
         expect(parsed.filters.themeIds).toEqual([]);
         expect(parsed.sortMode).toBe('actionable');

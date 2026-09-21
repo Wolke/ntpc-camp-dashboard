@@ -102,6 +102,8 @@ export interface CourseStatus {
 }
 
 // 篩選選項
+export type CourseWeekday = '週一' | '週二' | '週三' | '週四' | '週五' | '週六' | '週日';
+
 export interface FilterOptions {
     searchQuery: string;
     district: string | null;
@@ -110,6 +112,7 @@ export interface FilterOptions {
     isFree: boolean | null;
     allowExternalStudents: boolean | null; // 是否允許外校生
     dateRange: { start: string | null; end: string | null };
+    weekdays: CourseWeekday[];
     grades: number[];
     themeIds: string[];
     registrationStatus: RegistrationStatus[];

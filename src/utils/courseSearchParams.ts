@@ -6,6 +6,7 @@ import type {
 } from '../types/course';
 import { getThemeById } from './courseTaxonomy';
 import { createDefaultFilters, type CourseSortMode } from './courseFilters';
+import { COURSE_WEEKDAYS } from './courseSchedule';
 
 export interface CourseSearchState {
     filters: FilterOptions;
@@ -48,6 +49,7 @@ export function parseCourseSearchParams(params: URLSearchParams): CourseSearchSt
     filters.district = params.get('district') || null;
     filters.schoolName = params.get('school') || null;
     filters.grades = parseGrades(params.get('grades'));
+    filters.weekdays = parseList(params.get('weekdays'), COURSE_WEEKDAYS);
     filters.schoolTypes = parseList(params.get('types'), schoolTypes);
     filters.registrationStatus = parseList(params.get('reg'), registrationStatuses);
     filters.quotaStatus = parseList(params.get('quota'), quotaStatuses);
@@ -90,6 +92,7 @@ export function serializeCourseSearchParams({ filters, sortMode }: CourseSearchS
     if (filters.district) params.set('district', filters.district);
     if (filters.schoolName) params.set('school', filters.schoolName);
     if (filters.grades.length) params.set('grades', sorted(filters.grades));
+    if (filters.weekdays.length) params.set('weekdays', COURSE_WEEKDAYS.filter((weekday) => filters.weekdays.includes(weekday)).join(','));
     if (filters.allowExternalStudents === true) params.set('eligibility', 'external');
     if (filters.allowExternalStudents === false) params.set('eligibility', 'school');
     if (filters.isFree === true) params.set('fee', 'free');

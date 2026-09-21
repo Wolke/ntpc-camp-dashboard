@@ -6,6 +6,7 @@ import DateRangeFilter from './DateRangeFilter';
 import EligibilityFilter from './EligibilityFilter';
 import GradeFilter from './GradeFilter';
 import StatusFilter from './StatusFilter';
+import WeekdayFilter from './WeekdayFilter';
 
 interface MobileFilterDialogProps {
     open: boolean;
@@ -20,6 +21,7 @@ function cloneFilters(filters: FilterOptions): FilterOptions {
         ...filters,
         schoolTypes: [...filters.schoolTypes],
         dateRange: { ...filters.dateRange },
+        weekdays: [...filters.weekdays],
         grades: [...filters.grades],
         themeIds: [...filters.themeIds],
         registrationStatus: [...filters.registrationStatus],
@@ -101,6 +103,7 @@ export default function MobileFilterDialog({
                 <div className="flex-1 space-y-4 overflow-y-auto p-4">
                     <EligibilityFilter filters={draftFilters} onChange={updateDraft} />
                     <GradeFilter filters={draftFilters} onChange={updateDraft} />
+                    <WeekdayFilter filters={draftFilters} onChange={updateDraft} />
                     <StatusFilter filters={draftFilters} onChange={updateDraft} onReset={resetDraft} />
                     <DateRangeFilter filters={draftFilters} onChange={updateDraft} />
                 </div>

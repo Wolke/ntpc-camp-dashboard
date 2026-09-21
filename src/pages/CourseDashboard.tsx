@@ -11,6 +11,7 @@ import MobileFilterDialog from '../components/courses/MobileFilterDialog';
 import SchoolMap from '../components/courses/SchoolMap';
 import SearchBar from '../components/courses/SearchBar';
 import StatusFilter from '../components/courses/StatusFilter';
+import WeekdayFilter from '../components/courses/WeekdayFilter';
 import SubscribePanel from '../components/SubscribePanel';
 import { useCourses } from '../hooks/useCourses';
 import { useCourseStore } from '../store/courseStore';
@@ -132,6 +133,7 @@ export default function CourseDashboard() {
                         <div className="hidden space-y-4 lg:block">
                             <EligibilityFilter />
                             <GradeFilter />
+                            <WeekdayFilter />
                             <StatusFilter />
                             <DateRangeFilter />
                         </div>
