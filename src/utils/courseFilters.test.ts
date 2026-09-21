@@ -126,6 +126,6 @@ describe('course filters', () => {
         filters.district = '新北市中和區';
         filters.schoolName = wrongGrade.schoolName;
 
-        expect(applySchoolMapFilters([matching, wrongGrade], filters)).toEqual([matching]);
+        expect(applySchoolMapFilters([matching, wrongGrade], filters, new Date('2026-08-30T12:00:00+08:00'))).toEqual([matching]);
     });
 });

@@ -78,8 +78,17 @@ export interface Course {
     _raw: Record<string, string>;
 }
 
+export interface CourseSourceStatus {
+    type: CourseSource['type'];
+    name: string;
+    status: 'updated' | 'partial' | 'cached' | 'unavailable';
+    lastUpdated: string | null;
+    courseCount: number;
+}
+
 export interface CourseData {
     lastUpdated: string;
+    sourceStatus?: CourseSourceStatus[];
     stats: {
         total: number;
         allowExternalStudents: number;

@@ -25,6 +25,8 @@
 
 同一次爬取會將完整索引差異寫入 `data/unindexed-activities.json`，逐校補入的課程則直接合併至 `data/courses.json`，並標示 `ntpc_school_activity` 來源。由於部分報名期不到一週，GitHub Actions 會在台灣時間每天 08:00 更新資料。
 
+臺北補充來源暫時無法連線時，新北資料仍會更新；臺北保留最後成功取得的資料與原始日期，網站會顯示來源警示。`data/courses.json` 的 `sourceStatus` 記錄各來源的更新狀態。爬蟲主要流程失敗會讓排程失敗；提交前會檢查課程資料確實在本次執行中更新，除錯截圖只存為 Actions 附件。成功通知會在 GitHub Pages 部署完成、線上資料日期與筆數通過核對後發出，並列出未完整更新的來源。
+
 ## 本地開發
 
 ```bash

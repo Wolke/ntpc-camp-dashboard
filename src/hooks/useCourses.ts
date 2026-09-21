@@ -43,6 +43,7 @@ export function useCourses() {
         allCourses,
         stats: query.data?.stats,
         lastUpdated: query.data?.lastUpdated,
+        sourceStatus: query.data?.sourceStatus,
         isLoading: query.isLoading,
         error: (query.error as Error)?.message,
         filters,

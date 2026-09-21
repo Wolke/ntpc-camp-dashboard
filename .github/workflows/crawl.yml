@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: daily-crawl
+  cancel-in-progress: false
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
@@ -29,32 +33,36 @@ jobs:
         run: npx playwright install chromium --with-deps
 
       - name: Run crawler
-        run: npm run crawl
+        id: crawler
+        run: |
+          echo "started_at=$(date -u '+%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_OUTPUT"
+          npm run crawl
         timeout-minutes: 15
+
+      - name: Validate updated course data
+        env:
+          CRAWL_STARTED_AT: ${{ steps.crawler.outputs.started_at }}
+        run: node scripts/validate-crawl-output.js "$CRAWL_STARTED_AT"
+
+      - name: Upload crawler screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawler-screenshots
+          path: artifacts/*.png
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet data/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet -- data/courses.json && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/courses.json data/external-courses.json data/taipei-courses.json data/unindexed-activities.json
           git commit -m "🔄 自動更新課程資料 $(date -u '+%Y-%m-%d')"
           git push
-
-      - name: Send GitHub Notification
-        if: steps.changes.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          COMMIT_SHA=$(git rev-parse HEAD)
-          gh api \
-            --method POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            /repos/${{ github.repository }}/commits/$COMMIT_SHA/comments \
-            -f body="@${{ github.actor }} 🎉 爬蟲每日排程已成功執行，並更新了最新的課程資料！"

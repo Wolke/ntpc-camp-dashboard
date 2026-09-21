@@ -4,9 +4,10 @@ import { useCourses } from '../hooks/useCourses'
 import { isCourseDataStale } from '../utils/dataFreshness'
 
 const Header = () => {
-  const { lastUpdated, isLoading } = useCourses()
+  const { lastUpdated, sourceStatus, isLoading } = useCourses()
   const location = useLocation()
   const dataIsStale = isCourseDataStale(lastUpdated)
+  const hasSourceWarning = sourceStatus?.some((source) => source.status !== 'updated') ?? false
 
   const formatLastUpdated = (dateStr: string | undefined) => {
     if (!dateStr) return ''
@@ -69,9 +70,9 @@ const Header = () => {
 
           <div className="flex shrink-0 items-center space-x-2 sm:space-x-3">
             {lastUpdated && (
-              <span className={`hidden items-center gap-1 text-xs sm:inline-flex ${dataIsStale ? 'text-amber-700' : 'text-slate-500'}`}>
-                {dataIsStale && <AlertTriangle className="h-3.5 w-3.5" />}
-                {dataIsStale ? '資料可能已過期：' : '資料更新：'}{formatLastUpdated(lastUpdated)}
+              <span className={`hidden items-center gap-1 text-xs sm:inline-flex ${dataIsStale || hasSourceWarning ? 'text-amber-700' : 'text-slate-500'}`}>
+                {(dataIsStale || hasSourceWarning) && <AlertTriangle className="h-3.5 w-3.5" />}
+                {dataIsStale ? '資料可能已過期：' : hasSourceWarning ? '部分來源未更新：' : '資料更新：'}{formatLastUpdated(lastUpdated)}
               </span>
             )}
 

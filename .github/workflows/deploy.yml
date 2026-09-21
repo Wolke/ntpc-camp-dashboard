@@ -24,6 +24,8 @@ jobs:
     outputs:
       expected_last_updated: ${{ steps.expected.outputs.last_updated }}
       expected_course_count: ${{ steps.expected.outputs.course_count }}
+      data_commit: ${{ steps.expected.outputs.data_commit }}
+      source_warnings: ${{ steps.expected.outputs.source_warnings }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,6 +41,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate crawler data before deployment
+        if: github.event_name == 'workflow_run'
+        env:
+          CRAWL_STARTED_AT: ${{ github.event.workflow_run.run_started_at }}
+        run: node scripts/validate-crawl-output.js "$CRAWL_STARTED_AT"
+
       - name: Build
         run: npm run build
         env:
@@ -53,6 +61,8 @@ jobs:
         run: |
           echo "last_updated=$(jq -r '.lastUpdated' data/courses.json)" >> "$GITHUB_OUTPUT"
           echo "course_count=$(jq -r '.courses | length' data/courses.json)" >> "$GITHUB_OUTPUT"
+          echo "data_commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "source_warnings=$(jq -r '[.sourceStatus[]? | select(.status != "updated") | .name] | join("、")' data/courses.json)" >> "$GITHUB_OUTPUT"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -63,6 +73,10 @@ jobs:
           path: './dist'
 
   deploy:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -80,8 +94,8 @@ jobs:
           EXPECTED_COURSE_COUNT: ${{ needs.build.outputs.expected_course_count }}
         run: |
           for attempt in 1 2 3 4 5 6; do
-            published="$(curl --fail --silent --show-error --location "$DATA_URL" || true)"
-            actual_last_updated="$(jq -r '.lastUpdated // empty' <<< "$published")"
+            published="$(curl --fail --silent --show-error --location --compressed --max-time 30 "$DATA_URL" || true)"
+            actual_last_updated="$(jq -r '.lastUpdated // empty' <<< "$published" 2>/dev/null || true)"
             actual_course_count="$(jq -r '.courses | length' <<< "$published" 2>/dev/null || true)"
 
             if [[ "$actual_last_updated" == "$EXPECTED_LAST_UPDATED" && "$actual_course_count" == "$EXPECTED_COURSE_COUNT" ]]; then
@@ -95,3 +109,24 @@ jobs:
 
           echo "Published data does not match main."
           exit 1
+
+      - name: Notify after published data is verified
+        if: github.event_name == 'workflow_run'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          NOTIFY_USER: ${{ github.event.workflow_run.actor.login }}
+          DATA_COMMIT: ${{ needs.build.outputs.data_commit }}
+          LAST_UPDATED: ${{ needs.build.outputs.expected_last_updated }}
+          COURSE_COUNT: ${{ needs.build.outputs.expected_course_count }}
+          SOURCE_WARNINGS: ${{ needs.build.outputs.source_warnings }}
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          body="@$NOTIFY_USER 網站課程資料已發布並完成線上核對，共 $COURSE_COUNT 門課程。資料更新時間（UTC）：$LAST_UPDATED。網站：$PAGE_URL"
+          if [[ -n "$SOURCE_WARNINGS" ]]; then
+            body="$body 注意：$SOURCE_WARNINGS 未完整更新，請查看網站上的來源狀態與保留資料日期。"
+          fi
+          gh api --method POST \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/$REPOSITORY/commits/$DATA_COMMIT/comments" \
+            -f body="$body"

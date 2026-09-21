@@ -13,6 +13,7 @@ import SearchBar from '../components/courses/SearchBar';
 import StatusFilter from '../components/courses/StatusFilter';
 import WeekdayFilter from '../components/courses/WeekdayFilter';
 import SubscribePanel from '../components/SubscribePanel';
+import SourceUpdateWarnings from '../components/SourceUpdateWarnings';
 import { useCourses } from '../hooks/useCourses';
 import { useCourseStore } from '../store/courseStore';
 import { countActiveFilterGroups, sortCourses, type UserLocation } from '../utils/courseFilters';
@@ -23,7 +24,7 @@ const PAGE_SIZE = 24;
 type LocationStatus = 'idle' | 'requesting' | 'ready' | 'error' | 'unsupported';
 
 export default function CourseDashboard() {
-    const { courses, schoolMapCourses, allCourses, stats, lastUpdated, isLoading, error } = useCourses();
+    const { courses, schoolMapCourses, allCourses, stats, lastUpdated, sourceStatus, isLoading, error } = useCourses();
     const {
         filters,
         sortMode,
@@ -113,6 +114,7 @@ export default function CourseDashboard() {
                         {updatedDate && `，更新於 ${updatedDate}`}
                     </p>
                     {dataIsStale && <p role="status" className="mt-2 text-sm font-medium text-amber-700">資料已超過 8 天未更新，內容可能不是最新狀態。</p>}
+                    <SourceUpdateWarnings sources={sourceStatus} />
                     {supplementalCount > 0 && (
                         <details className="mt-2 text-sm text-slate-600">
                             <summary className="inline-flex min-h-9 cursor-pointer list-none items-center gap-1.5 font-medium text-violet-700">

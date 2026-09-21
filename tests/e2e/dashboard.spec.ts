@@ -1,5 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
+import { makeCourse } from '../../src/test/courseFactory';
 
 test('desktop prioritizes results, pagination, sorting and official links', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
@@ -30,6 +31,17 @@ test('desktop prioritizes results, pagination, sorting and official links', asyn
 
 test('school finder filters by district and restores a shared school URL', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 900 });
+    // A daily crawl can remove this school's expired courses. Keep the interaction fixture stable.
+    const base = makeCourse();
+    const course = makeCourse({
+        schoolName: '新北市中和區光復國民小學',
+        address: '新北市中和區',
+        schedule: { ...base.schedule, startDate: '2099-09-01', endDate: '2099-09-30' },
+    });
+    await page.route('**/data/courses.json', (route) => route.fulfill({ json: {
+        lastUpdated: new Date().toISOString(), courses: [course],
+        stats: { total: 1, schools: 1, allowExternalStudents: 1, free: 1, canRegister: 1 },
+    } }));
     await page.goto('./');
 
     await page.getByRole('button', { name: /用地圖找學校/ }).click();
@@ -91,7 +103,7 @@ test('distance sorting stays unchanged when location is denied', async ({ page, 
     const sort = page.getByRole('combobox', { name: '排序方式' });
     await sort.selectOption('distance');
     await expect(sort).toHaveValue('actionable');
-    await expect(page.getByRole('status')).toContainText(/無法取得位置|不支援定位/);
+    await expect(page.getByRole('status').filter({ hasText: /無法取得位置|不支援定位/ })).toBeVisible();
 });
 
 test('320px navigation stays on one line and has no serious axe violations', async ({ page }) => {

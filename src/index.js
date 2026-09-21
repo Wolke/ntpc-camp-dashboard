@@ -5,6 +5,7 @@
 
 import { chromium } from 'playwright';
 import { writeFileSync, mkdirSync } from 'fs';
+import { crawlWithFallback } from './crawl-source.js';
 import {
     parseEligibility,
     parseFee,
@@ -102,6 +103,7 @@ async function crawlNTPCCamp() {
         });
 
         console.log(`   查詢方式: ${searchResult}`);
+        if (searchResult !== 'subPage_success') throw new Error(`NTPC query failed: ${searchResult}`);
         // Step 4: 等待資料載入並檢查
         console.log('\n4️⃣ 等待資料載入...');
 
@@ -130,6 +132,7 @@ async function crawlNTPCCamp() {
         });
 
         console.log(`   表格狀態: ${JSON.stringify(tableStatus, null, 2)}`);
+        if (!tableStatus.exists) throw new Error('NTPC course table is missing');
 
         if (tableStatus.rowCount <= 2) {
             console.log('   ⚠️ 表格資料未載入，嘗試重新查詢...');
@@ -327,18 +330,39 @@ async function crawlNTPCCamp() {
         }
 
         console.log(`\n   📊 新北市總共找到 ${allCourses.length} 筆課程`);
+        const sourceStatus = [{
+            type: 'ntpc_camp',
+            name: '新北市寒暑假育樂營',
+            status: 'updated',
+            lastUpdated: new Date().toISOString(),
+            courseCount: allCourses.length,
+        }];
 
         // Step 5b: 逐校公開、但未被 Camp 全站索引的所有課程
         console.log('\n5️⃣ 補抓未被 Camp 全站索引的所有逐校公開課程...');
         const schoolActivityOutput = await crawlUnindexedSchoolCourses(allCourses, { now });
         allCourses.push(...schoolActivityOutput.courses);
         console.log(`   ✅ 補入 ${schoolActivityOutput.courses.length} 筆逐校公開課程`);
+        const schoolSummary = schoolActivityOutput.report.summary;
+        sourceStatus.push({
+            type: 'ntpc_school_activity',
+            name: '新北市逐校公開活動',
+            status: schoolSummary.failedSchools || schoolSummary.failedActivities || schoolSummary.failedCourseDetails ? 'partial' : 'updated',
+            lastUpdated: new Date().toISOString(),
+            courseCount: schoolActivityOutput.courses.length,
+        });
 
         // Step 5c: 台北市暑期體驗營
         console.log('\n5️⃣ 補抓台北市暑期體驗營...');
-        const taipeiOutput = await crawlTaipeiCamps({ year: currentYear });
-        allCourses.push(...taipeiOutput.courses);
-        console.log(`   ✅ 台北市找到 ${taipeiOutput.courses.length} 筆梯次課程`);
+        const taipeiResult = await crawlWithFallback({
+            crawl: () => crawlTaipeiCamps({ year: currentYear }),
+            cachePath: 'data/taipei-courses.json',
+            type: 'taipei_holiday',
+            name: '臺北市國民小學暑期體驗營',
+        });
+        sourceStatus.push(taipeiResult.status);
+        allCourses.push(...(taipeiResult.data?.courses ?? []));
+        console.log(`   台北市來源：${taipeiResult.status.status}，${taipeiResult.status.courseCount} 筆梯次課程`);
 
         // Step 5: 統計與篩選
         console.log('\n5️⃣ 資料統計...');
@@ -362,6 +386,7 @@ async function crawlNTPCCamp() {
 
         const output = {
             lastUpdated: new Date().toISOString(),
+            sourceStatus,
             stats,
             courses: allCourses
         };
@@ -370,8 +395,10 @@ async function crawlNTPCCamp() {
         writeFileSync('data/courses.json', JSON.stringify(output, null, 2));
         console.log('   ✅ 已保存至 data/courses.json');
 
-        writeFileSync('data/taipei-courses.json', JSON.stringify(taipeiOutput, null, 2));
-        console.log('   ✅ 已保存台北市課程至 data/taipei-courses.json');
+        if (taipeiResult.status.status === 'updated') {
+            writeFileSync('data/taipei-courses.json', JSON.stringify(taipeiResult.data, null, 2));
+            console.log('   ✅ 已保存台北市課程至 data/taipei-courses.json');
+        }
 
         schoolActivityOutput.report.sourceDataUpdatedAt = output.lastUpdated;
         writeFileSync('data/unindexed-activities.json', JSON.stringify(schoolActivityOutput.report, null, 2));
@@ -379,7 +406,8 @@ async function crawlNTPCCamp() {
 
         // 另外輸出一份「開放外校學生」的課程
         const externalCourses = {
-            lastUpdated: new Date().toISOString(),
+            lastUpdated: output.lastUpdated,
+            sourceStatus,
             description: '開放外校學生報名的課程',
             total: stats.allowExternalStudents,
             courses: allCourses.filter(c => c.eligibility?.allowExternalStudents)
@@ -388,8 +416,9 @@ async function crawlNTPCCamp() {
         console.log('   ✅ 已保存外校課程至 data/external-courses.json');
 
         // 截圖
-        await page.screenshot({ path: 'data/screenshot.png', fullPage: true });
-        console.log('   ✅ 已保存截圖');
+        mkdirSync('artifacts', { recursive: true });
+        await page.screenshot({ path: 'artifacts/screenshot.png', fullPage: true })
+            .catch((error) => console.warn(`截圖失敗：${error.message}`));
 
         console.log('\n✅ 爬蟲完成!');
         console.log(`⏰ 結束時間: ${new Date().toISOString()}`);
@@ -398,7 +427,8 @@ async function crawlNTPCCamp() {
 
     } catch (error) {
         console.error('❌ 爬蟲錯誤:', error.message);
-        await page.screenshot({ path: 'data/error-screenshot.png' }).catch(() => { });
+        mkdirSync('artifacts', { recursive: true });
+        await page.screenshot({ path: 'artifacts/error-screenshot.png' }).catch(() => { });
         throw error;
     } finally {
         await browser.close();
@@ -406,4 +436,7 @@ async function crawlNTPCCamp() {
 }
 
 // 執行
-crawlNTPCCamp().catch(console.error);
+crawlNTPCCamp().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});
