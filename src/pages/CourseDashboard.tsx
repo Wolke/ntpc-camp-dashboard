@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ChevronDown, ChevronUp, Info, MapPin, SlidersHorizontal } from 'lucide-react';
+import { ChevronDown, ChevronUp, Info, Mail, MapPin, SlidersHorizontal } from 'lucide-react';
 import { useSearchParams } from 'react-router-dom';
 import ActiveFilterSummary from '../components/courses/ActiveFilterSummary';
 import CourseList from '../components/courses/CourseList';
@@ -152,6 +152,7 @@ export default function CourseDashboard() {
                                 </div>
                                 <div className="flex flex-wrap items-start gap-2">
                                     <CourseSortControl sortMode={sortMode} hasLocation={Boolean(userLocation)} locationStatus={locationStatus} onSortModeChange={setSortMode} onRequestLocation={requestLocation} />
+                                    <a href="#email-subscription" className="inline-flex min-h-11 items-center gap-2 rounded-md border border-indigo-200 bg-white px-3 text-sm font-medium text-indigo-700 hover:bg-indigo-50"><Mail className="h-4 w-4" />訂閱這組條件</a>
                                     <button type="button" onClick={() => setSchoolFinderOpen((open) => !open)} aria-expanded={schoolFinderOpen} aria-controls="school-finder-panel" className="inline-flex min-h-11 items-center gap-2 rounded-md border border-slate-200 bg-white px-3 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50">
                                         <MapPin className="h-4 w-4 text-indigo-600" />用地圖找學校
                                         {schoolFinderOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
@@ -179,7 +180,7 @@ export default function CourseDashboard() {
                     </main>
                 </div>
 
-                <div className="mt-5 lg:ml-[380px]"><SubscribePanel /></div>
+                <div className="mt-5 lg:ml-[380px]"><SubscribePanel filters={filters} courses={courses} isLoading={isLoading} hasError={Boolean(error)} /></div>
             </div>
 
             <MobileFilterDialog

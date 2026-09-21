@@ -1,7 +1,24 @@
 {
   "subscribers": [
     {
-      "email": "parent@example.com"
+      "email": "parent@example.com",
+      "active": true,
+      "preferences": {
+        "schemaVersion": 1,
+        "frequency": "weekly",
+        "filters": {
+          "searchQuery": "籃球",
+          "district": "新北市板橋區",
+          "grades": [3],
+          "weekdays": ["週一", "週三"],
+          "allowExternalStudents": true,
+          "isFree": null,
+          "courseTimeStatus": ["upcoming", "ongoing"]
+        }
+      }
+    },
+    {
+      "email": "legacy-daily@example.com"
     }
   ]
 }

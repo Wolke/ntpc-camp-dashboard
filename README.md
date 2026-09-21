@@ -17,7 +17,7 @@
 - **官方詳情**：課程卡及分析頁可直接開啟官方課程頁或活動簡章
 - **智慧顧問**：依年級、興趣、時段及預算從既有資料整理建議
 - **加入行事曆**：一鍵加入 Google 日曆
-- **報名通知**：訂閱當天開放報名的活動通知，也可將單一課程加入 Google 日曆提醒
+- **客製化 email 通知**：訂閱目前的查詢條件，每週一更新後收到符合條件的課程摘要，也可選擇每日開放報名提醒；單一課程可加入 Google 日曆
 
 ## 資料來源
 
@@ -59,9 +59,13 @@ npm run test:e2e
 
 「新增報名通知」會開啟 Google 日曆新增事件頁，並自動帶入課程名稱、報名時間、費用、報名入口與簡章連結。這個做法不需要 Google OAuth 審核；使用者在 Google 日曆確認後即可儲存提醒。
 
-### Email 訂閱與每日通知
+### 客製化 email 訂閱
 
-前端訂閱表單需要一個可接收 email 的 endpoint，例如 Google Apps Script、Formspree、Cloudflare Worker 或自建 API：
+在查詢頁設定條件後，點「訂閱這組條件」，輸入 email 並選擇通知頻率。預設為每週一課程摘要，也可選擇每日報名提醒或兩者皆收。信件會逐人篩選、單獨寄送，沒有符合課程時不寄。每週摘要列出當週更新後所有符合條件的課程，並非只寄新增課程。
+
+訂閱會保存送出當下的關鍵字、行政區、學校、學制、年級、上課星期、費用、外校資格、日期、主題與狀態。比對規則與查詢頁共用（多個年級須全部符合，多個星期任一符合）；之後變更查詢不會改動已儲存的訂閱。相同 email 再次送出會更新設定。
+
+前端訂閱表單需要可保存 `email` 與 `preferences` 的 endpoint，例如下方的 Google Apps Script 或自建 API：
 
 ```bash
 VITE_SUBSCRIBE_ENDPOINT=https://example.com/subscribe
@@ -74,19 +78,25 @@ Execute as: Me
 Who has access: Anyone
 ```
 
-接著把 Web app URL 設為 GitHub repository variable：
+已有 GAS 訂閱服務時，請先用新版腳本更新部署。腳本會保留原有 `email`、`source`、`createdAt` 三欄，新增 `preferences`（JSON）、`updatedAt` 與 `active`。舊列未設定 preferences 時繼續收到每日提醒。停用訂閱可將該列 `active` 設為 FALSE；信件提供回覆管理者的說明。
+
+接著把 Web app URL 設為 GitHub repository variable，重新建置網站：
 
 ```bash
 VITE_SUBSCRIBE_ENDPOINT=https://script.google.com/macros/s/.../exec
 ```
 
-如果沒有 endpoint，也可以設定管理者信箱，前端會改開 email 草稿：
+自建 API 請回傳 `{ "ok": true, "preferencesSaved": true }`，才會顯示條件儲存成功。GAS 的跨來源請求無法讀取回應，畫面會如實顯示「已送出，無法確認儲存」。僅支援 email 的舊 endpoint 需先升級，不能當作已儲存條件。
+
+如果沒有 endpoint，也可以設定管理者信箱，前端會開啟包含頻率與完整條件的 email 草稿：
 
 ```bash
 VITE_SUBSCRIBE_CONTACT_EMAIL=admin@example.com
 ```
 
-GitHub Actions 每天台灣時間 08:05 執行 `.github/workflows/registration-notifications.yml`，寄出「今天開放報名」的活動。請在 GitHub repository secrets 設定：
+`.github/workflows/registration-notifications.yml` 會在 `Daily Crawl` 成功完成後才執行，取消原本獨立的 08:05 排程。台灣時間週一會寄每週摘要；每天會為選擇每日提醒的訂閱者寄出當天開放報名的課程。資料必須在本次爬取後更新且日期符合寄送日；未成功更新的來源不納入通知。排程延遲時不保證精確寄送時間。
+
+請在 GitHub repository secrets 設定：
 
 ```bash
 SUBSCRIBERS_JSON=[{"email":"parent@example.com"}]
@@ -96,7 +106,7 @@ SMTP_SECURE=false
 SMTP_USER=your-smtp-user
 SMTP_PASS=your-smtp-password
 MAIL_FROM="新北育樂營 <notice@example.com>"
-MAIL_TO=notice@example.com
+MAIL_REPLY_TO=admin@example.com
 ```
 
 若訂閱名單放在 GAS 的 Google Sheet，請在 Apps Script Project Settings 的 Script properties 設定 `SUBSCRIBERS_API_TOKEN`，再將帶 token 的讀取 URL 設為 GitHub repository secret：
@@ -105,7 +115,24 @@ MAIL_TO=notice@example.com
 SUBSCRIBERS_JSON_URL=https://script.google.com/macros/s/.../exec?token=你的_token
 ```
 
-Action 讀取訂閱名單的優先順序是 `SUBSCRIBERS_JSON`、`SUBSCRIBERS_JSON_URL`、私有 `data/subscribers.json`。`data/subscribers.json` 格式可參考 `data/subscribers.example.json`；實際訂閱名單已被 `.gitignore` 排除，避免誤提交個資。
+`MAIL_REPLY_TO` 可省略，預設回覆寄件者，請使用可收信的地址。`MAIL_TO` 已不再使用，每封信只有該訂閱者一位收件人。
+
+Action 讀取訂閱名單的優先順序是 `SUBSCRIBERS_JSON`、`SUBSCRIBERS_JSON_URL`、私有 `data/subscribers.json`。使用 GAS 時請移除舊的 `SUBSCRIBERS_JSON` secret，避免它遮蔽 Sheet 的最新設定。格式可參考 `data/subscribers.example.json`，`frequency` 支援 `weekly`、`daily`、`both`，`active: false` 可停用。無效的設定會略過該訂閱者，不會改寄所有課程。
+
+實際名單受 `.gitignore` 排除；網站建置只複製指定公開課程 JSON，不會將訂閱者資料發布至 Pages。每日每類通知的寄送紀錄保存在 `.cache/notifications/sent.json`，逐封成功後寫入，以 GitHub Actions cache 保留；紀錄只含 HMAC 識別值與日期。可設定固定的 `NOTIFICATION_STATE_SECRET`，否則使用 `SMTP_PASS` 作為 HMAC 金鑰。同日重跑會略過已寄出的通知；清除／淘汰 cache、變更金鑰，或寄出後尚未寫入紀錄就中斷時，仍可能重寄。
+
+#### 測試與手動補寄
+
+先用預覽模式測試，不會連線 SMTP 或寫入寄送紀錄：
+
+```bash
+TZ=Asia/Taipei DRY_RUN=true NOTIFICATION_MODE=weekly \
+  SUBSCRIBERS_FILE=data/subscribers.example.json npm run notify
+```
+
+也可手動執行 `Registration Notifications`，預設 `dry_run=true`。確認後關閉 dry run，選擇 `auto`、`weekly` 或 `daily` 補寄；實際寄送仍會檢查名單更新日期與既有寄送紀錄。`TARGET_DATE=YYYY-MM-DD` 可指定台灣日期進行歷史資料預覽，正式寄送要求資料更新日期一致。首次啟用時，建議先將訂閱名單設為自己的信箱。
+
+寄信腳本透過 [tsx](https://github.com/privatenumber/tsx) 共用前端的 TypeScript 篩選規則；重跑紀錄使用 [GitHub Actions cache](https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching)。
 
 ## 專案結構
 

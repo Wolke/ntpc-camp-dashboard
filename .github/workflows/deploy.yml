@@ -54,7 +54,7 @@ jobs:
           VITE_SUBSCRIBE_CONTACT_EMAIL: ${{ vars.VITE_SUBSCRIBE_CONTACT_EMAIL }}
 
       - name: Copy data to dist
-        run: cp -r data dist/
+        run: node scripts/copy-public-data.js
 
       - name: Read expected data metadata
         id: expected

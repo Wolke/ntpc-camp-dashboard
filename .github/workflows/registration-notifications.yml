@@ -1,22 +1,43 @@
 name: Registration Notifications
 
 on:
-  schedule:
-    # 台灣時間每天 08:05
-    - cron: '5 0 * * *'
+  workflow_run:
+    workflows: ["Daily Crawl"]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
     inputs:
       target_date:
         description: 'Target date in Asia/Taipei (YYYY-MM-DD). Empty means today.'
         required: false
         type: string
+      mode:
+        description: 'auto: weekly digest on Mondays and daily opening reminders'
+        type: choice
+        options: [auto, weekly, daily]
+        default: auto
+      dry_run:
+        description: 'Preview without sending email or changing delivery records'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: course-notification-delivery
+  cancel-in-progress: false
 
 jobs:
   notify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout refreshed course data
         uses: actions/checkout@v4
+        with:
+          # The crawler commits new data after its original head_sha.
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -27,10 +48,22 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Send registration notifications
-        run: node scripts/send-registration-notifications.js
+      - name: Restore delivery records
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/notifications
+          key: course-notifications-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: course-notifications-v1-
+
+      - name: Send personalized notifications after successful update
+        id: send
+        run: npm run notify
         env:
+          TZ: Asia/Taipei
           TARGET_DATE: ${{ inputs.target_date }}
+          CRAWL_STARTED_AT: ${{ github.event.workflow_run.run_started_at }}
+          NOTIFICATION_MODE: ${{ inputs.mode || 'auto' }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
           SUBSCRIBERS_JSON: ${{ secrets.SUBSCRIBERS_JSON }}
           SUBSCRIBERS_JSON_URL: ${{ secrets.SUBSCRIBERS_JSON_URL }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -39,4 +72,12 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           MAIL_FROM: ${{ secrets.MAIL_FROM }}
-          MAIL_TO: ${{ secrets.MAIL_TO }}
+          MAIL_REPLY_TO: ${{ secrets.MAIL_REPLY_TO }}
+          NOTIFICATION_STATE_SECRET: ${{ secrets.NOTIFICATION_STATE_SECRET }}
+
+      - name: Save delivery records even after a partial delivery failure
+        if: always() && steps.send.outcome != 'skipped' && !(github.event_name == 'workflow_dispatch' && inputs.dry_run)
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/notifications
+          key: course-notifications-v1-${{ github.run_id }}-${{ github.run_attempt }}
