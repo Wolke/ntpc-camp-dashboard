@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-09-21T02:54:03.586Z",
+  "lastUpdated": "2026-09-22T02:34:05.897Z",
   "sourceStatus": [
     {
       "type": "ntpc_camp",
       "name": "新北市寒暑假育樂營",
       "status": "updated",
-      "lastUpdated": "2026-09-21T02:51:12.156Z",
+      "lastUpdated": "2026-09-22T02:32:53.000Z",
       "courseCount": 72
     },
     {
       "type": "ntpc_school_activity",
       "name": "新北市逐校公開活動",
       "status": "updated",
-      "lastUpdated": "2026-09-21T02:54:03.547Z",
+      "lastUpdated": "2026-09-22T02:34:05.072Z",
       "courseCount": 341
     },
     {
@@ -2895,9 +2895,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 4,
+        "enrolled": 5,
         "planned": 5,
-        "actual": 4,
+        "actual": 0,
         "isLottery": false
       },
       "registration": {
@@ -2923,7 +2923,7 @@
         "schedule": "115/10/03 至 116/01/09\n週六 08:50~11:00",
         "fee": "$1860",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 4 預計錄取: 5 實際錄取: 4",
+        "quota": "報名人數: 5 預計錄取: 5 實際錄取: 0",
         "status": "截止報名",
         "activityRegistration": "報名期間 09/10 20:00 至 09/11 20:00 公告期間 09/14 13:00 至 09/30 23:55"
       }
@@ -3559,7 +3559,7 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 1,
         "planned": 1,
         "actual": 0,
         "isLottery": false
@@ -3587,7 +3587,7 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2190",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 1 實際錄取: 0",
+        "quota": "報名人數: 1 預計錄取: 1 實際錄取: 0",
         "status": "截止報名",
         "activityRegistration": "報名期間 09/10 20:00 至 09/11 20:00 公告期間 09/14 13:00 至 09/30 23:55"
       }
@@ -3811,7 +3811,7 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 0,
+        "enrolled": 1,
         "planned": 4,
         "actual": 0,
         "isLottery": false
@@ -3839,7 +3839,7 @@
         "schedule": "115/10/03 至 116/01/09\n週六 10:30~12:00",
         "fee": "$2230",
         "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-        "quota": "報名人數: 0 預計錄取: 4 實際錄取: 0",
+        "quota": "報名人數: 1 預計錄取: 4 實際錄取: 0",
         "status": "截止報名",
         "activityRegistration": "報名期間 09/10 20:00 至 09/11 20:00 公告期間 09/14 13:00 至 09/30 23:55"
       }
