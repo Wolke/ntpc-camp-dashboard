@@ -1,12 +1,12 @@
 {
-  "auditedAt": "2026-09-24T02:22:08.364Z",
+  "auditedAt": "2026-09-25T02:38:13.635Z",
   "summary": {
     "schoolsChecked": 345,
-    "publicActiveActivities": 24,
+    "publicActiveActivities": 25,
     "indexedActivities": 0,
-    "missingActivities": 24,
-    "missingSchools": 19,
-    "missingCourses": 331,
+    "missingActivities": 25,
+    "missingSchools": 20,
+    "missingCourses": 333,
     "openMissingActivities": 6,
     "upcomingMissingActivities": 0,
     "externalMissingActivities": 2,
@@ -14,7 +14,7 @@
     "externalMissingCourses": 45,
     "failedSchools": 0,
     "failedActivities": 0,
-    "importedCourses": 331,
+    "importedCourses": 333,
     "importedExternalCourses": 45,
     "failedCourseDetails": 0
   },
@@ -532,10 +532,10 @@
       "activityId": "00097",
       "activityName": "115學年度上學期課後才藝班",
       "courseCount": 28,
-      "selectionSummary": "依課程抽籤",
-      "registrationSummary": "報名期間 08/29 12:00 至 09/02 12:00 公告期間 09/10 07:40 至 09/25 07:50",
-      "registrationStart": "2026-08-29T12:00:00+08:00",
-      "registrationEnd": "2026-09-02T12:00:00+08:00",
+      "selectionSummary": "依報名順序錄取",
+      "registrationSummary": "報名期間 09/04 08:00 至 09/06 12:00",
+      "registrationStart": "2026-09-04T08:00:00+08:00",
+      "registrationEnd": "2026-09-06T12:00:00+08:00",
       "registrationState": "closed",
       "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014784&actmang_no=00097&week_filter=all&filter_mycourse=false",
       "parsedCourseCount": 28,
@@ -575,6 +575,24 @@
       "registrationState": "closed",
       "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014803&actmang_no=00387&week_filter=all&filter_mycourse=false",
       "parsedCourseCount": 9,
+      "externalCourseCount": 0,
+      "allowExternalStudents": false,
+      "externalCourses": []
+    },
+    {
+      "schoolId": "014634",
+      "schoolName": "新北市中和區復興國民小學",
+      "areaId": "22",
+      "activityId": "00226",
+      "activityName": "115上特色社團手球-週一、週三班",
+      "courseCount": 2,
+      "selectionSummary": "教師審核錄取",
+      "registrationSummary": "報名期間 09/22 09:00 至 09/23 16:00 公告期間 09/24 12:00 至 09/30 16:00",
+      "registrationStart": "2026-09-22T09:00:00+08:00",
+      "registrationEnd": "2026-09-23T16:00:00+08:00",
+      "registrationState": "closed",
+      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
+      "parsedCourseCount": 2,
       "externalCourseCount": 0,
       "allowExternalStudents": false,
       "externalCourses": []
@@ -819,5 +837,5 @@
     "activities": [],
     "courseDetails": []
   },
-  "sourceDataUpdatedAt": "2026-09-24T02:23:08.913Z"
+  "sourceDataUpdatedAt": "2026-09-25T02:39:09.069Z"
 }
