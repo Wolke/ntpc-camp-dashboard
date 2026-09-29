@@ -1,12 +1,12 @@
 {
-  "auditedAt": "2026-09-28T02:43:14.455Z",
+  "auditedAt": "2026-09-29T03:25:22.502Z",
   "summary": {
     "schoolsChecked": 345,
-    "publicActiveActivities": 25,
+    "publicActiveActivities": 24,
     "indexedActivities": 0,
-    "missingActivities": 25,
-    "missingSchools": 20,
-    "missingCourses": 333,
+    "missingActivities": 24,
+    "missingSchools": 19,
+    "missingCourses": 321,
     "openMissingActivities": 6,
     "upcomingMissingActivities": 0,
     "externalMissingActivities": 2,
@@ -14,7 +14,7 @@
     "externalMissingCourses": 45,
     "failedSchools": 0,
     "failedActivities": 0,
-    "importedCourses": 333,
+    "importedCourses": 321,
     "importedExternalCourses": 45,
     "failedCourseDetails": 0
   },
@@ -796,24 +796,6 @@
       "externalCourses": []
     },
     {
-      "schoolId": "014570",
-      "schoolName": "新北市立青山國民中小學",
-      "areaId": "29",
-      "activityId": "00099",
-      "activityName": "115學年度第一學期課後社團",
-      "courseCount": 12,
-      "selectionSummary": "依課程抽籤",
-      "registrationSummary": "報名期間 09/02 16:00 至 09/08 16:00 公告期間 09/09 16:00 至 09/28 16:00",
-      "registrationStart": "2026-09-02T16:00:00+08:00",
-      "registrationEnd": "2026-09-08T16:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014570&actmang_no=00099&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 12,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
       "schoolId": "014779",
       "schoolName": "新北市汐止區樟樹國民小學",
       "areaId": "29",
@@ -837,5 +819,5 @@
     "activities": [],
     "courseDetails": []
   },
-  "sourceDataUpdatedAt": "2026-09-28T02:44:42.345Z"
+  "sourceDataUpdatedAt": "2026-09-29T03:26:22.651Z"
 }
