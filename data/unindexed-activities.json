@@ -1,12 +1,12 @@
 {
-  "auditedAt": "2026-09-29T03:25:22.502Z",
+  "auditedAt": "2026-09-30T03:08:08.065Z",
   "summary": {
     "schoolsChecked": 345,
-    "publicActiveActivities": 24,
+    "publicActiveActivities": 23,
     "indexedActivities": 0,
-    "missingActivities": 24,
-    "missingSchools": 19,
-    "missingCourses": 321,
+    "missingActivities": 23,
+    "missingSchools": 18,
+    "missingCourses": 314,
     "openMissingActivities": 6,
     "upcomingMissingActivities": 0,
     "externalMissingActivities": 2,
@@ -14,7 +14,7 @@
     "externalMissingCourses": 45,
     "failedSchools": 0,
     "failedActivities": 0,
-    "importedCourses": 321,
+    "importedCourses": 314,
     "importedExternalCourses": 45,
     "failedCourseDetails": 0
   },
@@ -587,10 +587,10 @@
       "activityName": "115上特色社團手球-週一、週三班",
       "courseCount": 2,
       "selectionSummary": "教師審核錄取",
-      "registrationSummary": "報名期間 09/22 09:00 至 09/23 16:00 公告期間 09/24 12:00 至 09/30 16:00",
+      "registrationSummary": "報名期間 09/22 09:00 至 09/30 16:00 公告期間 10/01 12:00 至 10/02 16:00",
       "registrationStart": "2026-09-22T09:00:00+08:00",
-      "registrationEnd": "2026-09-23T16:00:00+08:00",
-      "registrationState": "closed",
+      "registrationEnd": "2026-09-30T16:00:00+08:00",
+      "registrationState": "open",
       "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
       "parsedCourseCount": 2,
       "externalCourseCount": 0,
@@ -611,24 +611,6 @@
       "registrationState": "closed",
       "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014638&actmang_no=00052&week_filter=all&filter_mycourse=false",
       "parsedCourseCount": 29,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
-      "schoolId": "014603",
-      "schoolName": "新北市板橋區新埔國民小學",
-      "areaId": "25",
-      "activityId": "00052",
-      "activityName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "courseCount": 7,
-      "selectionSummary": "教師審核錄取",
-      "registrationSummary": "報名期間 09/11 09:00 至 09/29 23:55 公告期間 09/11 09:00 至 09/11 15:00",
-      "registrationStart": "2026-09-11T09:00:00+08:00",
-      "registrationEnd": "2026-09-29T23:55:00+08:00",
-      "registrationState": "open",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 7,
       "externalCourseCount": 0,
       "allowExternalStudents": false,
       "externalCourses": []
@@ -819,5 +801,5 @@
     "activities": [],
     "courseDetails": []
   },
-  "sourceDataUpdatedAt": "2026-09-29T03:26:22.651Z"
+  "sourceDataUpdatedAt": "2026-09-30T03:09:04.824Z"
 }

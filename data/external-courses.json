@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-09-29T03:26:22.651Z",
+  "lastUpdated": "2026-09-30T03:09:04.824Z",
   "sourceStatus": [
     {
       "type": "ntpc_camp",
       "name": "新北市寒暑假育樂營",
       "status": "updated",
-      "lastUpdated": "2026-09-29T03:25:37.835Z",
+      "lastUpdated": "2026-09-30T03:08:22.916Z",
       "courseCount": 110
     },
     {
       "type": "ntpc_school_activity",
       "name": "新北市逐校公開活動",
       "status": "updated",
-      "lastUpdated": "2026-09-29T03:26:21.773Z",
-      "courseCount": 321
+      "lastUpdated": "2026-09-30T03:09:03.944Z",
+      "courseCount": 314
     },
     {
       "type": "taipei_holiday",

@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-09-29T03:26:22.651Z",
+  "lastUpdated": "2026-09-30T03:09:04.824Z",
   "sourceStatus": [
     {
       "type": "ntpc_camp",
       "name": "新北市寒暑假育樂營",
       "status": "updated",
-      "lastUpdated": "2026-09-29T03:25:37.835Z",
+      "lastUpdated": "2026-09-30T03:08:22.916Z",
       "courseCount": 110
     },
     {
       "type": "ntpc_school_activity",
       "name": "新北市逐校公開活動",
       "status": "updated",
-      "lastUpdated": "2026-09-29T03:26:21.773Z",
-      "courseCount": 321
+      "lastUpdated": "2026-09-30T03:09:03.944Z",
+      "courseCount": 314
     },
     {
       "type": "taipei_holiday",
@@ -24,11 +24,11 @@
     }
   ],
   "stats": {
-    "total": 431,
+    "total": 424,
     "allowExternalStudents": 54,
     "free": 105,
-    "canRegister": 17,
-    "schools": 24
+    "canRegister": 12,
+    "schools": 23
   },
   "courses": [
     {
@@ -20121,20 +20121,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 8,
+        "enrolled": 7,
         "planned": 8,
-        "actual": 0,
+        "actual": 7,
         "isLottery": false
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": false,
         "startTime": "2026-09-22T09:00:00+08:00",
-        "endTime": "2026-09-23T16:00:00+08:00",
+        "endTime": "2026-09-30T16:00:00+08:00",
         "lotteryTime": null,
         "isLottery": false,
-        "status": "已截止"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
@@ -20149,9 +20149,9 @@
         "schedule": "115/10/05 至 116/01/04\n週一 16:00~17:40",
         "fee": "$1200",
         "eligibility": "1,2",
-        "quota": "報名人數: 8 預計錄取: 8 實際錄取: 0",
-        "status": "截止報名",
-        "activityRegistration": "報名期間 09/22 09:00 至 09/23 16:00 公告期間 09/24 12:00 至 09/30 16:00"
+        "quota": "報名人數: 7 預計錄取: 8 實際錄取: 7",
+        "status": "報名中",
+        "activityRegistration": "報名期間 09/22 09:00 至 09/30 16:00 公告期間 10/01 12:00 至 10/02 16:00"
       }
     },
     {
@@ -20197,20 +20197,20 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 13,
+        "enrolled": 14,
         "planned": 13,
         "actual": 0,
         "isLottery": false
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": false,
+        "canRegister": true,
         "canWithdraw": false,
         "startTime": "2026-09-22T09:00:00+08:00",
-        "endTime": "2026-09-23T16:00:00+08:00",
+        "endTime": "2026-09-30T16:00:00+08:00",
         "lotteryTime": null,
         "isLottery": false,
-        "status": "已截止"
+        "status": "可報名"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
@@ -20225,9 +20225,9 @@
         "schedule": "115/10/07 至 116/01/06\n週三 16:00~17:40",
         "fee": "$1200",
         "eligibility": "3,4",
-        "quota": "報名人數: 13 預計錄取: 13 實際錄取: 0",
-        "status": "截止報名",
-        "activityRegistration": "報名期間 09/22 09:00 至 09/23 16:00 公告期間 09/24 12:00 至 09/30 16:00"
+        "quota": "報名人數: 14 預計錄取: 13 實際錄取: 0",
+        "status": "報名中",
+        "activityRegistration": "報名期間 09/22 09:00 至 09/30 16:00 公告期間 10/01 12:00 至 10/02 16:00"
       }
     },
     {
@@ -22611,536 +22611,6 @@
         "quota": "報名人數: 16 預計錄取: 0 實際錄取: 0",
         "status": "截止報名",
         "activityRegistration": "報名期間 09/07 16:00 至 09/08 16:00 公告期間 09/09 16:00 至 09/30 16:00"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "schoolId": "014603",
-        "actId": "00052",
-        "courseId": "001",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "schoolName": "新北市板橋區新埔國民小學",
-      "campName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "originalSchool": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "address": "操場體育館",
-      "category": "四年級籃球週三課後集訓",
-      "courseName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "teacher": "郭逸安",
-      "schedule": {
-        "startDate": "2026-08-31",
-        "endDate": "2027-01-04",
-        "weekday": "週三",
-        "startTime": "12:40",
-        "endTime": "16:00"
-      },
-      "fee": {
-        "amount": 2700,
-        "isFree": false,
-        "description": "$2700"
-      },
-      "eligibility": {
-        "grades": [
-          4
-        ],
-        "gradeNames": [
-          "四年級"
-        ],
-        "allowExternalStudents": false,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 15,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": false
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-09-11T09:00:00+08:00",
-        "endTime": "2026-09-29T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "限本校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/08/31 至 116/01/04\n週三 12:40~16:00",
-        "fee": "$2700",
-        "eligibility": "4",
-        "quota": "報名人數: 15 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 09/11 09:00 至 09/29 23:55 公告期間 09/11 09:00 至 09/11 15:00"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "schoolId": "014603",
-        "actId": "00052",
-        "courseId": "003",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "schoolName": "新北市板橋區新埔國民小學",
-      "campName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "originalSchool": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "address": "操場體育館",
-      "category": "五年級籃球週一課後集訓",
-      "courseName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "teacher": "梁如維",
-      "schedule": {
-        "startDate": "2026-08-31",
-        "endDate": "2027-01-04",
-        "weekday": "週一",
-        "startTime": "16:15",
-        "endTime": "17:40"
-      },
-      "fee": {
-        "amount": 2100,
-        "isFree": false,
-        "description": "$2100"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          5
-        ],
-        "gradeNames": [
-          "四年級",
-          "五年級"
-        ],
-        "allowExternalStudents": false,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 10,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": false
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-09-11T09:00:00+08:00",
-        "endTime": "2026-09-29T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "限本校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/08/31 至 116/01/04\n週一 16:15~17:40",
-        "fee": "$2100",
-        "eligibility": "4,5",
-        "quota": "報名人數: 10 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 09/11 09:00 至 09/29 23:55 公告期間 09/11 09:00 至 09/11 15:00"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "schoolId": "014603",
-        "actId": "00052",
-        "courseId": "002",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "schoolName": "新北市板橋區新埔國民小學",
-      "campName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "originalSchool": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "address": "操場體育館",
-      "category": "五年級籃球週三課後集訓",
-      "courseName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "teacher": "梁如維",
-      "schedule": {
-        "startDate": "2026-08-31",
-        "endDate": "2027-01-04",
-        "weekday": "週三",
-        "startTime": "12:40",
-        "endTime": "16:00"
-      },
-      "fee": {
-        "amount": 2300,
-        "isFree": false,
-        "description": "$2300"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          5
-        ],
-        "gradeNames": [
-          "四年級",
-          "五年級"
-        ],
-        "allowExternalStudents": false,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 17,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": false
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-09-11T09:00:00+08:00",
-        "endTime": "2026-09-29T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "限本校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/08/31 至 116/01/04\n週三 12:40~16:00",
-        "fee": "$2300",
-        "eligibility": "4,5",
-        "quota": "報名人數: 17 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 09/11 09:00 至 09/29 23:55 公告期間 09/11 09:00 至 09/11 15:00"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "schoolId": "014603",
-        "actId": "00052",
-        "courseId": "005",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "schoolName": "新北市板橋區新埔國民小學",
-      "campName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "originalSchool": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "address": "操場體育館",
-      "category": "六年級籃球早自習集訓",
-      "courseName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "teacher": "沈暉軒",
-      "schedule": {
-        "startDate": "2026-08-31",
-        "endDate": "2027-01-04",
-        "weekday": "週一",
-        "startTime": "07:50",
-        "endTime": "08:40"
-      },
-      "fee": {
-        "amount": 2700,
-        "isFree": false,
-        "description": "$2700"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          6
-        ],
-        "gradeNames": [
-          "四年級",
-          "六年級"
-        ],
-        "allowExternalStudents": false,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 17,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": false
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-09-11T09:00:00+08:00",
-        "endTime": "2026-09-29T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "限本校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/08/31 至 116/01/04\n週一 07:50~08:40\n週二 07:50~08:40\n週三 07:50~08:40\n週四 07:50~08:40\n週五 07:50~08:40",
-        "fee": "$2700",
-        "eligibility": "4,6",
-        "quota": "報名人數: 17 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 09/11 09:00 至 09/29 23:55 公告期間 09/11 09:00 至 09/11 15:00"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "schoolId": "014603",
-        "actId": "00052",
-        "courseId": "004",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "schoolName": "新北市板橋區新埔國民小學",
-      "campName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "originalSchool": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "address": "操場體育館",
-      "category": "六年級籃球週一課後集訓",
-      "courseName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "teacher": "沈暉軒",
-      "schedule": {
-        "startDate": "2026-08-31",
-        "endDate": "2027-01-04",
-        "weekday": "週一",
-        "startTime": "16:15",
-        "endTime": "17:40"
-      },
-      "fee": {
-        "amount": 1700,
-        "isFree": false,
-        "description": "$1700"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          6
-        ],
-        "gradeNames": [
-          "四年級",
-          "六年級"
-        ],
-        "allowExternalStudents": false,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 12,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": false
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-09-11T09:00:00+08:00",
-        "endTime": "2026-09-29T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "限本校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/08/31 至 116/01/04\n週一 16:15~17:40",
-        "fee": "$1700",
-        "eligibility": "4,6",
-        "quota": "報名人數: 12 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 09/11 09:00 至 09/29 23:55 公告期間 09/11 09:00 至 09/11 15:00"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "schoolId": "014603",
-        "actId": "00052",
-        "courseId": "007",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "schoolName": "新北市板橋區新埔國民小學",
-      "campName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "originalSchool": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "address": "操場體育館",
-      "category": "六年級籃球週三課後集訓",
-      "courseName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "teacher": "沈暉軒",
-      "schedule": {
-        "startDate": "2026-08-31",
-        "endDate": "2027-01-04",
-        "weekday": "週三",
-        "startTime": "12:40",
-        "endTime": "16:00"
-      },
-      "fee": {
-        "amount": 2300,
-        "isFree": false,
-        "description": "$2300"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          6
-        ],
-        "gradeNames": [
-          "四年級",
-          "六年級"
-        ],
-        "allowExternalStudents": false,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 17,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": false
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-09-11T09:00:00+08:00",
-        "endTime": "2026-09-29T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "限本校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/08/31 至 116/01/04\n週三 12:40~16:00",
-        "fee": "$2300",
-        "eligibility": "4,6",
-        "quota": "報名人數: 17 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 09/11 09:00 至 09/29 23:55 公告期間 09/11 09:00 至 09/11 15:00"
-      }
-    },
-    {
-      "source": {
-        "type": "ntpc_school_activity",
-        "name": "新北市校園活動報名（逐校公開頁）",
-        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "schoolId": "014603",
-        "actId": "00052",
-        "courseId": "006",
-        "visibility": "school_page_only"
-      },
-      "school": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "schoolName": "新北市板橋區新埔國民小學",
-      "campName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "originalSchool": "新北市板橋區新埔國民小學 - 新埔國小115學年度上學期籃球隊課後集訓",
-      "address": "操場體育館",
-      "category": "六年級籃球週五課後集訓",
-      "courseName": "新埔國小115學年度上學期籃球隊課後集訓",
-      "teacher": "沈暉軒",
-      "schedule": {
-        "startDate": "2026-08-31",
-        "endDate": "2027-01-04",
-        "weekday": "週五",
-        "startTime": "16:15",
-        "endTime": "17:40"
-      },
-      "fee": {
-        "amount": 1300,
-        "isFree": false,
-        "description": "$1300"
-      },
-      "eligibility": {
-        "grades": [
-          4,
-          6
-        ],
-        "gradeNames": [
-          "四年級",
-          "六年級"
-        ],
-        "allowExternalStudents": false,
-        "restrictions": []
-      },
-      "quota": {
-        "enrolled": 13,
-        "planned": 0,
-        "actual": 0,
-        "isLottery": false
-      },
-      "registration": {
-        "method": "網路線上報名",
-        "canRegister": true,
-        "canWithdraw": false,
-        "startTime": "2026-09-11T09:00:00+08:00",
-        "endTime": "2026-09-29T23:55:00+08:00",
-        "lotteryTime": null,
-        "isLottery": false,
-        "status": "可報名"
-      },
-      "urls": {
-        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false",
-        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014603&actmang_no=00052&week_filter=all&filter_mycourse=false"
-      },
-      "tags": [
-        "限本校",
-        "未被 Camp 全站索引",
-        "逐校公開頁"
-      ],
-      "_raw": {
-        "schedule": "115/08/31 至 116/01/04\n週五 16:15~17:40",
-        "fee": "$1300",
-        "eligibility": "4,6",
-        "quota": "報名人數: 13 預計錄取: 0 實際錄取: 0",
-        "status": "報名中",
-        "activityRegistration": "報名期間 09/11 09:00 至 09/29 23:55 公告期間 09/11 09:00 至 09/11 15:00"
       }
     },
     {
@@ -26215,9 +25685,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 9,
+        "enrolled": 8,
         "planned": 20,
-        "actual": 9,
+        "actual": 8,
         "isLottery": true
       },
       "registration": {
@@ -26243,7 +25713,7 @@
         "schedule": "115/09/14 至 116/01/07\n週二 16:05~17:35",
         "fee": "$2295",
         "eligibility": "1,2,3,4,5,6",
-        "quota": "報名人數: 9 預計錄取: 20 實際錄取: 9",
+        "quota": "報名人數: 8 預計錄取: 20 實際錄取: 8",
         "status": "截止報名",
         "activityRegistration": "報名期間 08/31 06:00 至 09/07 12:00 公告期間 09/09 12:00 至 09/30 15:00"
       }
@@ -26961,9 +26431,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 18,
+        "enrolled": 17,
         "planned": 25,
-        "actual": 18,
+        "actual": 17,
         "isLottery": true
       },
       "registration": {
@@ -26989,7 +26459,7 @@
         "schedule": "115/09/14 至 116/01/07\n週四 16:05~17:35",
         "fee": "$2295",
         "eligibility": "1,2,3,4,5,6",
-        "quota": "報名人數: 18 預計錄取: 25 實際錄取: 18",
+        "quota": "報名人數: 17 預計錄取: 25 實際錄取: 17",
         "status": "截止報名",
         "activityRegistration": "報名期間 08/31 06:00 至 09/07 12:00 公告期間 09/09 12:00 至 09/30 15:00"
       }
@@ -28453,7 +27923,7 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 22,
+        "enrolled": 20,
         "planned": 0,
         "actual": 0,
         "isLottery": true
@@ -28481,7 +27951,7 @@
         "schedule": "115/09/18 至 115/12/25\n週五 12:40~16:00",
         "fee": "$1500",
         "eligibility": "1,2,3,4",
-        "quota": "報名人數: 22 預計錄取: 0 實際錄取: 0",
+        "quota": "報名人數: 20 預計錄取: 0 實際錄取: 0",
         "status": "截止報名",
         "activityRegistration": "報名期間 08/31 09:00 至 09/04 12:00 公告期間 09/09 18:00 至 12/31 15:00"
       }
