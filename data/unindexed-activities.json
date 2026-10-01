@@ -1,21 +1,21 @@
 {
-  "auditedAt": "2026-09-30T03:08:08.065Z",
+  "auditedAt": "2026-10-01T03:14:37.965Z",
   "summary": {
     "schoolsChecked": 345,
-    "publicActiveActivities": 23,
+    "publicActiveActivities": 13,
     "indexedActivities": 0,
-    "missingActivities": 23,
-    "missingSchools": 18,
-    "missingCourses": 314,
-    "openMissingActivities": 6,
+    "missingActivities": 13,
+    "missingSchools": 9,
+    "missingCourses": 153,
+    "openMissingActivities": 3,
     "upcomingMissingActivities": 0,
-    "externalMissingActivities": 2,
-    "externalMissingSchools": 2,
-    "externalMissingCourses": 45,
+    "externalMissingActivities": 1,
+    "externalMissingSchools": 1,
+    "externalMissingCourses": 9,
     "failedSchools": 0,
     "failedActivities": 0,
-    "importedCourses": 314,
-    "importedExternalCourses": 45,
+    "importedCourses": 153,
+    "importedExternalCourses": 9,
     "failedCourseDetails": 0
   },
   "missingActivities": [
@@ -105,24 +105,6 @@
       "registrationState": "open",
       "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014629&actmang_no=00029&week_filter=all&filter_mycourse=false",
       "parsedCourseCount": 2,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
-      "schoolId": "014718",
-      "schoolName": "新北市立忠山實驗小學",
-      "areaId": "4",
-      "activityId": "00034",
-      "activityName": "測試用",
-      "courseCount": 1,
-      "selectionSummary": "教師審核錄取",
-      "registrationSummary": "報名期間 08/15 09:00 至 08/31 12:00 公告期間 08/31 09:00 至 09/30 15:00",
-      "registrationStart": "2026-08-15T09:00:00+08:00",
-      "registrationEnd": "2026-08-31T12:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014718&actmang_no=00034&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 1,
       "externalCourseCount": 0,
       "allowExternalStudents": false,
       "externalCourses": []
@@ -219,331 +201,6 @@
       ]
     },
     {
-      "schoolId": "014757",
-      "schoolName": "新北市三重區厚德國民小學",
-      "areaId": "12",
-      "activityId": "00086",
-      "activityName": "厚德國民小學115學年度上學期週六育樂營",
-      "courseCount": 36,
-      "selectionSummary": "教師審核錄取",
-      "registrationSummary": "報名期間 09/10 20:00 至 09/11 20:00 公告期間 09/14 13:00 至 09/30 23:55",
-      "registrationStart": "2026-09-10T20:00:00+08:00",
-      "registrationEnd": "2026-09-11T20:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014757&actmang_no=00086&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 36,
-      "externalCourseCount": 36,
-      "allowExternalStudents": true,
-      "externalCourses": [
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "001",
-          "courseName": "大大生活科學社A班",
-          "eligibility": "本校一年級新生,1,2,3,4,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "003",
-          "courseName": "繞指之舞：扯鈴高手之路A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "005",
-          "courseName": "書法社A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "009",
-          "courseName": "神奇心算A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "007",
-          "courseName": "籃球育樂營A班",
-          "eligibility": "3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "011",
-          "courseName": "小魔豆立體捏塑A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "013",
-          "courseName": "史淶姆實驗室A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "015",
-          "courseName": "串珠興趣A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "016",
-          "courseName": "象棋初學A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "018",
-          "courseName": "跆拳道體適能A班",
-          "eligibility": "大班,本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "019",
-          "courseName": "寶可夢卡牌大師A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "020",
-          "courseName": "歡樂桌遊社A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "022",
-          "courseName": "小小永續交響樂團： 3種樂器 × 全班大合奏A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "024",
-          "courseName": "3D列印筆A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "026",
-          "courseName": "魅力魔術A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "028",
-          "courseName": "歡樂直排輪初階A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "030",
-          "courseName": "羽球運動課B班",
-          "eligibility": "4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "031",
-          "courseName": "流行K-POP舞蹈班B班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "002",
-          "courseName": "大大生活科學D班",
-          "eligibility": "本校一年級新生,1,2,3,4,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "004",
-          "courseName": "繞指之舞：扯鈴高手之路D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "006",
-          "courseName": "書法社D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "010",
-          "courseName": "神奇心算D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "008",
-          "courseName": "籃球育樂營D班",
-          "eligibility": "3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "032",
-          "courseName": "AI工具應用與麥塊程式創作A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "033",
-          "courseName": "小小醫師D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "012",
-          "courseName": "小魔豆卡通插畫D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "034",
-          "courseName": "科技樂高機器人D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "017",
-          "courseName": "圍棋初學D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "025",
-          "courseName": "創意拼豆D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "014",
-          "courseName": "糖果森林：食物科學大冒險D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "035",
-          "courseName": "輕黏土藝術手作課D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "027",
-          "courseName": "立體創客3D實驗室D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "023",
-          "courseName": "小小永續交響樂團： 3種樂器 × 全班大合奏A班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "021",
-          "courseName": "神奇魔術D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "036",
-          "courseName": "麥塊AI程式魔法師D班",
-          "eligibility": "2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        },
-        {
-          "schoolId": "014757",
-          "activityId": "00086",
-          "courseId": "029",
-          "courseName": "歡樂直排輪進階D班",
-          "eligibility": "本校一年級新生,1,2,3,4,5,6,外校學生",
-          "allowExternalStudents": true
-        }
-      ]
-    },
-    {
-      "schoolId": "014784",
-      "schoolName": "新北市三重區重陽國民小學",
-      "areaId": "12",
-      "activityId": "00097",
-      "activityName": "115學年度上學期課後才藝班",
-      "courseCount": 28,
-      "selectionSummary": "依報名順序錄取",
-      "registrationSummary": "報名期間 09/04 08:00 至 09/06 12:00",
-      "registrationStart": "2026-09-04T08:00:00+08:00",
-      "registrationEnd": "2026-09-06T12:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014784&actmang_no=00097&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 28,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
       "schoolId": "014803",
       "schoolName": "新北市三重區集美國民小學",
       "areaId": "12",
@@ -580,42 +237,6 @@
       "externalCourses": []
     },
     {
-      "schoolId": "014634",
-      "schoolName": "新北市中和區復興國民小學",
-      "areaId": "22",
-      "activityId": "00226",
-      "activityName": "115上特色社團手球-週一、週三班",
-      "courseCount": 2,
-      "selectionSummary": "教師審核錄取",
-      "registrationSummary": "報名期間 09/22 09:00 至 09/30 16:00 公告期間 10/01 12:00 至 10/02 16:00",
-      "registrationStart": "2026-09-22T09:00:00+08:00",
-      "registrationEnd": "2026-09-30T16:00:00+08:00",
-      "registrationState": "open",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 2,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
-      "schoolId": "014638",
-      "schoolName": "新北市中和區自強國民小學",
-      "areaId": "22",
-      "activityId": "00052",
-      "activityName": "115學年度第一學期課後社團",
-      "courseCount": 29,
-      "selectionSummary": "依課程抽籤",
-      "registrationSummary": "報名期間 09/07 16:00 至 09/08 16:00 公告期間 09/09 16:00 至 09/30 16:00",
-      "registrationStart": "2026-09-07T16:00:00+08:00",
-      "registrationEnd": "2026-09-08T16:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014638&actmang_no=00052&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 29,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
       "schoolId": "014607",
       "schoolName": "新北市板橋區海山國民小學",
       "areaId": "25",
@@ -647,42 +268,6 @@
       "registrationState": "closed",
       "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014666&actmang_no=00071&week_filter=all&filter_mycourse=false",
       "parsedCourseCount": 19,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
-      "schoolId": "014781",
-      "schoolName": "新北市新店區新和國民小學",
-      "areaId": "26",
-      "activityId": "00126",
-      "activityName": "115學年度第一學期課後社團",
-      "courseCount": 18,
-      "selectionSummary": "依課程抽籤",
-      "registrationSummary": "報名期間 08/31 06:00 至 09/07 12:00 公告期間 09/09 12:00 至 09/30 15:00",
-      "registrationStart": "2026-08-31T06:00:00+08:00",
-      "registrationEnd": "2026-09-07T12:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014781&actmang_no=00126&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 18,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
-      "schoolId": "014781",
-      "schoolName": "新北市新店區新和國民小學",
-      "areaId": "26",
-      "activityId": "00127",
-      "activityName": "115學年第一學期籃球隊課後練習",
-      "courseCount": 4,
-      "selectionSummary": "依課程抽籤",
-      "registrationSummary": "報名期間 09/02 09:00 至 09/30 12:00 公告及開放退選 09/12 09:00 至 09/30 15:00",
-      "registrationStart": "2026-09-02T09:00:00+08:00",
-      "registrationEnd": "2026-09-30T12:00:00+08:00",
-      "registrationState": "open",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014781&actmang_no=00127&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 4,
       "externalCourseCount": 0,
       "allowExternalStudents": false,
       "externalCourses": []
@@ -740,60 +325,6 @@
       "externalCourseCount": 0,
       "allowExternalStudents": false,
       "externalCourses": []
-    },
-    {
-      "schoolId": "014789",
-      "schoolName": "新北市新莊區裕民國民小學",
-      "areaId": "27",
-      "activityId": "00159",
-      "activityName": "115年度第一學期課後社團",
-      "courseCount": 28,
-      "selectionSummary": "依課程抽籤",
-      "registrationSummary": "報名期間 09/04 13:00 至 09/07 17:00 公告期間 09/08 12:00 至 09/30 17:00",
-      "registrationStart": "2026-09-04T13:00:00+08:00",
-      "registrationEnd": "2026-09-07T17:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014789&actmang_no=00159&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 28,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
-      "schoolId": "014745",
-      "schoolName": "新北市蘆洲區鷺江國民小學",
-      "areaId": "28",
-      "activityId": "00268",
-      "activityName": "115學年度第1學期舞蹈班",
-      "courseCount": 1,
-      "selectionSummary": "教師審核錄取",
-      "registrationSummary": "報名期間 08/20 09:00 至 09/30 12:00 公告期間 09/01 09:00 至 09/30 15:00",
-      "registrationStart": "2026-08-20T09:00:00+08:00",
-      "registrationEnd": "2026-09-30T12:00:00+08:00",
-      "registrationState": "open",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00268&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 1,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
-      "schoolId": "014779",
-      "schoolName": "新北市汐止區樟樹國民小學",
-      "areaId": "29",
-      "activityId": "00048",
-      "activityName": "115學年度第一學期課後社團",
-      "courseCount": 14,
-      "selectionSummary": "依課程抽籤",
-      "registrationSummary": "報名期間 08/24 08:00 至 09/02 12:00 公告期間 09/03 09:00 至 09/30 20:00",
-      "registrationStart": "2026-08-24T08:00:00+08:00",
-      "registrationEnd": "2026-09-02T12:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014779&actmang_no=00048&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 14,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
     }
   ],
   "failures": {
@@ -801,5 +332,5 @@
     "activities": [],
     "courseDetails": []
   },
-  "sourceDataUpdatedAt": "2026-09-30T03:09:04.824Z"
+  "sourceDataUpdatedAt": "2026-10-01T03:15:32.784Z"
 }
