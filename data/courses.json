@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-10-01T03:15:32.784Z",
+  "lastUpdated": "2026-10-02T03:17:00.458Z",
   "sourceStatus": [
     {
       "type": "ntpc_camp",
       "name": "新北市寒暑假育樂營",
       "status": "updated",
-      "lastUpdated": "2026-10-01T03:14:52.724Z",
+      "lastUpdated": "2026-10-02T03:16:17.482Z",
       "courseCount": 101
     },
     {
       "type": "ntpc_school_activity",
       "name": "新北市逐校公開活動",
       "status": "updated",
-      "lastUpdated": "2026-10-01T03:15:31.904Z",
-      "courseCount": 153
+      "lastUpdated": "2026-10-02T03:16:57.128Z",
+      "courseCount": 182
     },
     {
       "type": "taipei_holiday",
@@ -24,11 +24,11 @@
     }
   ],
   "stats": {
-    "total": 254,
+    "total": 283,
     "allowExternalStudents": 9,
     "free": 68,
-    "canRegister": 5,
-    "schools": 13
+    "canRegister": 32,
+    "schools": 15
   },
   "courses": [
     {
@@ -14010,6 +14010,158 @@
       "source": {
         "type": "ntpc_school_activity",
         "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
+        "schoolId": "014634",
+        "actId": "00226",
+        "courseId": "001",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區復興國民小學 - 115上特色社團手球-週一、週三班",
+      "schoolName": "新北市中和區復興國民小學",
+      "campName": "115上特色社團手球-週一、週三班",
+      "originalSchool": "新北市中和區復興國民小學 - 115上特色社團手球-週一、週三班",
+      "address": "後棟體育館",
+      "category": "週一手球",
+      "courseName": "115上特色社團手球-週一、週三班",
+      "teacher": "曹仲康",
+      "schedule": {
+        "startDate": "2026-10-05",
+        "endDate": "2027-01-04",
+        "weekday": "週一",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1200,
+        "isFree": false,
+        "description": "$1200"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 7,
+        "planned": 8,
+        "actual": 7,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-22T09:00:00+08:00",
+        "endTime": "2026-09-30T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/10/05 至 116/01/04\n週一 16:00~17:40",
+        "fee": "$1200",
+        "eligibility": "1,2",
+        "quota": "報名人數: 7 預計錄取: 8 實際錄取: 7",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/22 09:00 至 09/30 16:00 公告期間 10/01 12:00 至 10/02 16:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
+        "schoolId": "014634",
+        "actId": "00226",
+        "courseId": "002",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市中和區復興國民小學 - 115上特色社團手球-週一、週三班",
+      "schoolName": "新北市中和區復興國民小學",
+      "campName": "115上特色社團手球-週一、週三班",
+      "originalSchool": "新北市中和區復興國民小學 - 115上特色社團手球-週一、週三班",
+      "address": "後棟體育館",
+      "category": "週三手球",
+      "courseName": "115上特色社團手球-週一、週三班",
+      "teacher": "林玉軒",
+      "schedule": {
+        "startDate": "2026-10-07",
+        "endDate": "2027-01-06",
+        "weekday": "週三",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1200,
+        "isFree": false,
+        "description": "$1200"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 14,
+        "planned": 13,
+        "actual": 0,
+        "isLottery": false
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": false,
+        "canWithdraw": false,
+        "startTime": "2026-09-22T09:00:00+08:00",
+        "endTime": "2026-09-30T16:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": false,
+        "status": "已截止"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/10/07 至 116/01/06\n週三 16:00~17:40",
+        "fee": "$1200",
+        "eligibility": "3,4",
+        "quota": "報名人數: 14 預計錄取: 13 實際錄取: 0",
+        "status": "截止報名",
+        "activityRegistration": "報名期間 09/22 09:00 至 09/30 16:00 公告期間 10/01 12:00 至 10/02 16:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
         "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014607&actmang_no=00038&week_filter=all&filter_mycourse=false",
         "schoolId": "014607",
         "actId": "00038",
@@ -20294,6 +20446,2074 @@
         "quota": "報名人數: 15 預計錄取: 20 實際錄取: 15",
         "status": "截止報名",
         "activityRegistration": "報名期間 05/18 09:00 至 08/31 19:00 公告期間 06/19 09:00 至 08/01 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "001",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期一專班12:40-16:00(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：薛致佳 教練：馬康偉",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "12:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 4008,
+        "isFree": false,
+        "description": "$4008"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 12,
+        "planned": 30,
+        "actual": 12,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週一 12:00~16:00",
+        "fee": "$4008",
+        "eligibility": "1,2",
+        "quota": "報名人數: 12 預計錄取: 30 實際錄取: 12",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "002",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期三專班12:40-16:00(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：薛致佳 教練：馬康偉",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "12:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 4219,
+        "isFree": false,
+        "description": "$4219"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 15,
+        "planned": 30,
+        "actual": 15,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週三 12:00~16:00",
+        "fee": "$4219",
+        "eligibility": "1,2",
+        "quota": "報名人數: 15 預計錄取: 30 實際錄取: 15",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "003",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期四專班12:40-16:00(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教師：馬康偉 教師：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "12:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 4219,
+        "isFree": false,
+        "description": "$4219"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 13,
+        "planned": 30,
+        "actual": 13,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週四 12:00~16:00",
+        "fee": "$4219",
+        "eligibility": "1,2",
+        "quota": "報名人數: 13 預計錄取: 30 實際錄取: 13",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "004",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期五專班12:40-16:00(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "12:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 3375,
+        "isFree": false,
+        "description": "$3375"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 12,
+        "planned": 30,
+        "actual": 12,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週五 12:00~16:00",
+        "fee": "$3375",
+        "eligibility": "1,2",
+        "quota": "報名人數: 12 預計錄取: 30 實際錄取: 12",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "005",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期一專班16:00-17:40(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1832,
+        "isFree": false,
+        "description": "$1832"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 3,
+        "planned": 30,
+        "actual": 3,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週一 16:00~17:40",
+        "fee": "$1832",
+        "eligibility": "1,2",
+        "quota": "報名人數: 3 預計錄取: 30 實際錄取: 3",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "006",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期二專班16:00-17:40(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教師：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2025,
+        "isFree": false,
+        "description": "$2025"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 2,
+        "planned": 30,
+        "actual": 2,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週二 16:00~17:40",
+        "fee": "$2025",
+        "eligibility": "1,2",
+        "quota": "報名人數: 2 預計錄取: 30 實際錄取: 2",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "007",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期三專班16:00-17:40(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教師：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1929,
+        "isFree": false,
+        "description": "$1929"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 2,
+        "planned": 30,
+        "actual": 2,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週三 16:00~17:40",
+        "fee": "$1929",
+        "eligibility": "1,2",
+        "quota": "報名人數: 2 預計錄取: 30 實際錄取: 2",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "008",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期四專班16:00-17:40(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1929,
+        "isFree": false,
+        "description": "$1929"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 2,
+        "planned": 30,
+        "actual": 2,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週四 16:00~17:40",
+        "fee": "$1929",
+        "eligibility": "1,2",
+        "quota": "報名人數: 2 預計錄取: 30 實際錄取: 2",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "010",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期六專班8:30-11:40(低年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週六",
+        "startTime": "00:00",
+        "endTime": "00:00"
+      },
+      "fee": {
+        "amount": 2700,
+        "isFree": false,
+        "description": "$2700"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 6,
+        "planned": 30,
+        "actual": 6,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週六 00:00~00:00",
+        "fee": "$2700",
+        "eligibility": "1,2",
+        "quota": "報名人數: 6 預計錄取: 30 實際錄取: 6",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "011",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期一專班16:00-17:40(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教師：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1832,
+        "isFree": false,
+        "description": "$1832"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 16,
+        "planned": 30,
+        "actual": 15,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週一 16:00~17:40",
+        "fee": "$1832",
+        "eligibility": "3,4",
+        "quota": "報名人數: 16 預計錄取: 30 實際錄取: 15",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "012",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期二專班16:00-17:40(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 2025,
+        "isFree": false,
+        "description": "$2025"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 21,
+        "planned": 30,
+        "actual": 21,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週二 16:00~17:40",
+        "fee": "$2025",
+        "eligibility": "3,4",
+        "quota": "報名人數: 21 預計錄取: 30 實際錄取: 21",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "013",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期四專班16:00-17:40(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1929,
+        "isFree": false,
+        "description": "$1929"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 15,
+        "planned": 30,
+        "actual": 15,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週四 16:00~17:40",
+        "fee": "$1929",
+        "eligibility": "3,4",
+        "quota": "報名人數: 15 預計錄取: 30 實際錄取: 15",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "014",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期一專班17:40-19:00(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "17:40",
+        "endTime": "19:00"
+      },
+      "fee": {
+        "amount": 1832,
+        "isFree": false,
+        "description": "$1832"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 5,
+        "planned": 30,
+        "actual": 5,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週一 17:40~19:00",
+        "fee": "$1832",
+        "eligibility": "1,2,3,4",
+        "quota": "報名人數: 5 預計錄取: 30 實際錄取: 5",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "015",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期二專班17:40-19:00(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "17:40",
+        "endTime": "19:00"
+      },
+      "fee": {
+        "amount": 2025,
+        "isFree": false,
+        "description": "$2025"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 2,
+        "planned": 30,
+        "actual": 2,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週二 17:40~19:00",
+        "fee": "$2025",
+        "eligibility": "1,2,3,4",
+        "quota": "報名人數: 2 預計錄取: 30 實際錄取: 2",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "016",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期四專班17:40-19:00(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "17:40",
+        "endTime": "19:00"
+      },
+      "fee": {
+        "amount": 1929,
+        "isFree": false,
+        "description": "$1929"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 3,
+        "planned": 30,
+        "actual": 3,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週四 17:40~19:00",
+        "fee": "$1929",
+        "eligibility": "1,2,3,4",
+        "quota": "報名人數: 3 預計錄取: 30 實際錄取: 3",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "017",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期五專班17:40-19:00(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "17:40",
+        "endTime": "19:00"
+      },
+      "fee": {
+        "amount": 1543,
+        "isFree": false,
+        "description": "$1543"
+      },
+      "eligibility": {
+        "grades": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gradeNames": [
+          "一年級",
+          "二年級",
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 3,
+        "planned": 30,
+        "actual": 3,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週五 17:40~19:00",
+        "fee": "$1543",
+        "eligibility": "1,2,3,4",
+        "quota": "報名人數: 3 預計錄取: 30 實際錄取: 3",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "018",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期三專班12:40-16:00(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "12:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 4219,
+        "isFree": false,
+        "description": "$4219"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 17,
+        "planned": 30,
+        "actual": 17,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週三 12:00~16:00",
+        "fee": "$4219",
+        "eligibility": "3,4",
+        "quota": "報名人數: 17 預計錄取: 30 實際錄取: 17",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "019",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期五專班12:40-16:00(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "12:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 3375,
+        "isFree": false,
+        "description": "$3375"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 23,
+        "planned": 30,
+        "actual": 23,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週五 12:00~16:00",
+        "fee": "$3375",
+        "eligibility": "3,4",
+        "quota": "報名人數: 23 預計錄取: 30 實際錄取: 23",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "020",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期三專班16:00-17:40(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1929,
+        "isFree": false,
+        "description": "$1929"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 3,
+        "planned": 30,
+        "actual": 3,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週三 16:00~17:40",
+        "fee": "$1929",
+        "eligibility": "3,4",
+        "quota": "報名人數: 3 預計錄取: 30 實際錄取: 3",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "022",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期六專班8:30-11:40(中年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週六",
+        "startTime": "08:30",
+        "endTime": "11:40"
+      },
+      "fee": {
+        "amount": 2700,
+        "isFree": false,
+        "description": "$2700"
+      },
+      "eligibility": {
+        "grades": [
+          3,
+          4
+        ],
+        "gradeNames": [
+          "三年級",
+          "四年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 17,
+        "planned": 30,
+        "actual": 16,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週六 08:30~11:40",
+        "fee": "$2700",
+        "eligibility": "3,4",
+        "quota": "報名人數: 17 預計錄取: 30 實際錄取: 16",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "027",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期一專班17:40-19:00(高年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週一",
+        "startTime": "17:40",
+        "endTime": "19:00"
+      },
+      "fee": {
+        "amount": 1832,
+        "isFree": false,
+        "description": "$1832"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 19,
+        "planned": 30,
+        "actual": 19,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週一 17:40~19:00",
+        "fee": "$1832",
+        "eligibility": "5,6",
+        "quota": "報名人數: 19 預計錄取: 30 實際錄取: 19",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "028",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期二專班17:40-19:00(高年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週二",
+        "startTime": "17:40",
+        "endTime": "19:00"
+      },
+      "fee": {
+        "amount": 2025,
+        "isFree": false,
+        "description": "$2025"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 18,
+        "planned": 30,
+        "actual": 18,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週二 17:40~19:00",
+        "fee": "$2025",
+        "eligibility": "5,6",
+        "quota": "報名人數: 18 預計錄取: 30 實際錄取: 18",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "029",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期四專班17:40-19:00(高年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週四",
+        "startTime": "17:40",
+        "endTime": "19:00"
+      },
+      "fee": {
+        "amount": 1929,
+        "isFree": false,
+        "description": "$1929"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 20,
+        "planned": 30,
+        "actual": 20,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週四 17:40~19:00",
+        "fee": "$1929",
+        "eligibility": "5,6",
+        "quota": "報名人數: 20 預計錄取: 30 實際錄取: 20",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "030",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期五專班17:40-19:00(高年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週五",
+        "startTime": "17:40",
+        "endTime": "19:00"
+      },
+      "fee": {
+        "amount": 1543,
+        "isFree": false,
+        "description": "$1543"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 13,
+        "planned": 30,
+        "actual": 13,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週五 17:40~19:00",
+        "fee": "$1543",
+        "eligibility": "5,6",
+        "quota": "報名人數: 13 預計錄取: 30 實際錄取: 13",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "031",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期三專班12:40-16:00(高年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "12:00",
+        "endTime": "16:00"
+      },
+      "fee": {
+        "amount": 4219,
+        "isFree": false,
+        "description": "$4219"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 19,
+        "planned": 30,
+        "actual": 19,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週三 12:00~16:00",
+        "fee": "$4219",
+        "eligibility": "5,6",
+        "quota": "報名人數: 19 預計錄取: 30 實際錄取: 19",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "032",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期三專班16:00-17:40(高年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週三",
+        "startTime": "16:00",
+        "endTime": "17:40"
+      },
+      "fee": {
+        "amount": 1929,
+        "isFree": false,
+        "description": "$1929"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 9,
+        "planned": 30,
+        "actual": 9,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週三 16:00~17:40",
+        "fee": "$1929",
+        "eligibility": "5,6",
+        "quota": "報名人數: 9 預計錄取: 30 實際錄取: 9",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
+      }
+    },
+    {
+      "source": {
+        "type": "ntpc_school_activity",
+        "name": "新北市校園活動報名（逐校公開頁）",
+        "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "schoolId": "014745",
+        "actId": "00269",
+        "courseId": "033",
+        "visibility": "school_page_only"
+      },
+      "school": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "schoolName": "新北市蘆洲區鷺江國民小學",
+      "campName": "115學年度第1學期羽球隊課後專班",
+      "originalSchool": "新北市蘆洲區鷺江國民小學 - 115學年度第1學期羽球隊課後專班",
+      "address": "鷺江國小鷺江樓5樓體育館",
+      "category": "星期六專班8:30-11:40(高年級)",
+      "courseName": "115學年度第1學期羽球隊課後專班",
+      "teacher": "教練：蕭淑婷 教練：馬康偉 教練：薛致佳",
+      "schedule": {
+        "startDate": "2026-08-31",
+        "endDate": "2027-01-19",
+        "weekday": "週六",
+        "startTime": "08:30",
+        "endTime": "11:40"
+      },
+      "fee": {
+        "amount": 2700,
+        "isFree": false,
+        "description": "$2700"
+      },
+      "eligibility": {
+        "grades": [
+          5,
+          6
+        ],
+        "gradeNames": [
+          "五年級",
+          "六年級"
+        ],
+        "allowExternalStudents": false,
+        "restrictions": []
+      },
+      "quota": {
+        "enrolled": 14,
+        "planned": 30,
+        "actual": 14,
+        "isLottery": true
+      },
+      "registration": {
+        "method": "網路線上報名",
+        "canRegister": true,
+        "canWithdraw": false,
+        "startTime": "2026-08-20T09:00:00+08:00",
+        "endTime": "2026-10-09T12:00:00+08:00",
+        "lotteryTime": null,
+        "isLottery": true,
+        "status": "可報名"
+      },
+      "urls": {
+        "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
+        "registration": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false"
+      },
+      "tags": [
+        "限本校",
+        "未被 Camp 全站索引",
+        "逐校公開頁"
+      ],
+      "_raw": {
+        "schedule": "115/08/31 至 116/01/19\n週六 08:30~11:40",
+        "fee": "$2700",
+        "eligibility": "5,6",
+        "quota": "報名人數: 14 預計錄取: 30 實際錄取: 14",
+        "status": "報名中",
+        "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     }
   ]
