@@ -1,12 +1,12 @@
 {
-  "auditedAt": "2026-10-02T03:16:02.951Z",
+  "auditedAt": "2026-10-03T03:01:53.631Z",
   "summary": {
     "schoolsChecked": 345,
-    "publicActiveActivities": 15,
+    "publicActiveActivities": 13,
     "indexedActivities": 0,
-    "missingActivities": 15,
-    "missingSchools": 11,
-    "missingCourses": 182,
+    "missingActivities": 13,
+    "missingSchools": 10,
+    "missingCourses": 171,
     "openMissingActivities": 4,
     "upcomingMissingActivities": 0,
     "externalMissingActivities": 1,
@@ -14,7 +14,7 @@
     "externalMissingCourses": 9,
     "failedSchools": 0,
     "failedActivities": 0,
-    "importedCourses": 182,
+    "importedCourses": 171,
     "importedExternalCourses": 9,
     "failedCourseDetails": 0
   },
@@ -219,42 +219,6 @@
       "externalCourses": []
     },
     {
-      "schoolId": "014803",
-      "schoolName": "新北市三重區集美國民小學",
-      "areaId": "12",
-      "activityId": "00387",
-      "activityName": "115年樂齡課程報名",
-      "courseCount": 9,
-      "selectionSummary": "教師審核錄取",
-      "registrationSummary": "報名期間 08/17 09:00 至 08/17 16:00 公告期間 08/18 17:00 至 10/02 15:00",
-      "registrationStart": "2026-08-17T09:00:00+08:00",
-      "registrationEnd": "2026-08-17T16:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014803&actmang_no=00387&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 9,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
-      "schoolId": "014634",
-      "schoolName": "新北市中和區復興國民小學",
-      "areaId": "22",
-      "activityId": "00226",
-      "activityName": "115上特色社團手球-週一、週三班",
-      "courseCount": 2,
-      "selectionSummary": "教師審核錄取",
-      "registrationSummary": "報名期間 09/22 09:00 至 09/30 16:00 公告期間 10/01 12:00 至 10/02 16:00",
-      "registrationStart": "2026-09-22T09:00:00+08:00",
-      "registrationEnd": "2026-09-30T16:00:00+08:00",
-      "registrationState": "closed",
-      "url": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014634&actmang_no=00226&week_filter=all&filter_mycourse=false",
-      "parsedCourseCount": 2,
-      "externalCourseCount": 0,
-      "allowExternalStudents": false,
-      "externalCourses": []
-    },
-    {
       "schoolId": "014607",
       "schoolName": "新北市板橋區海山國民小學",
       "areaId": "25",
@@ -368,5 +332,5 @@
     "activities": [],
     "courseDetails": []
   },
-  "sourceDataUpdatedAt": "2026-10-02T03:17:00.458Z"
+  "sourceDataUpdatedAt": "2026-10-03T03:02:40.132Z"
 }
