@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-10-05T03:11:22.671Z",
+  "lastUpdated": "2026-10-07T03:27:47.303Z",
   "sourceStatus": [
     {
       "type": "ntpc_camp",
       "name": "新北市寒暑假育樂營",
       "status": "updated",
-      "lastUpdated": "2026-10-05T03:10:40.061Z",
+      "lastUpdated": "2026-10-07T03:27:08.434Z",
       "courseCount": 101
     },
     {
       "type": "ntpc_school_activity",
       "name": "新北市逐校公開活動",
       "status": "updated",
-      "lastUpdated": "2026-10-05T03:11:22.100Z",
+      "lastUpdated": "2026-10-07T03:27:46.774Z",
       "courseCount": 171
     },
     {

@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-10-05T03:11:22.671Z",
+  "lastUpdated": "2026-10-07T03:27:47.303Z",
   "sourceStatus": [
     {
       "type": "ntpc_camp",
       "name": "新北市寒暑假育樂營",
       "status": "updated",
-      "lastUpdated": "2026-10-05T03:10:40.061Z",
+      "lastUpdated": "2026-10-07T03:27:08.434Z",
       "courseCount": 101
     },
     {
       "type": "ntpc_school_activity",
       "name": "新北市逐校公開活動",
       "status": "updated",
-      "lastUpdated": "2026-10-05T03:11:22.100Z",
+      "lastUpdated": "2026-10-07T03:27:46.774Z",
       "courseCount": 171
     },
     {
@@ -11112,9 +11112,9 @@
         "restrictions": []
       },
       "quota": {
-        "enrolled": 16,
+        "enrolled": 15,
         "planned": 18,
-        "actual": 16,
+        "actual": 15,
         "isLottery": true
       },
       "registration": {
@@ -11140,7 +11140,7 @@
         "schedule": "115/09/14 至 116/01/20\n週二 16:10~17:40",
         "fee": "$200",
         "eligibility": "3,4,5,6",
-        "quota": "報名人數: 16 預計錄取: 18 實際錄取: 16",
+        "quota": "報名人數: 15 預計錄取: 18 實際錄取: 15",
         "status": "截止報名",
         "activityRegistration": "報名期間 08/28 08:00 至 09/06 23:55 公告期間 09/06 08:00 至 10/31 16:00"
       }
