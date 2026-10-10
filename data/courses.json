@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-10-09T03:47:57.215Z",
+  "lastUpdated": "2026-10-10T03:30:25.883Z",
   "sourceStatus": [
     {
       "type": "ntpc_camp",
       "name": "新北市寒暑假育樂營",
       "status": "updated",
-      "lastUpdated": "2026-10-09T03:47:26.013Z",
+      "lastUpdated": "2026-10-10T03:29:52.954Z",
       "courseCount": 101
     },
     {
       "type": "ntpc_school_activity",
       "name": "新北市逐校公開活動",
       "status": "updated",
-      "lastUpdated": "2026-10-09T03:47:56.476Z",
+      "lastUpdated": "2026-10-10T03:30:23.806Z",
       "courseCount": 171
     },
     {
@@ -27,7 +27,7 @@
     "total": 272,
     "allowExternalStudents": 9,
     "free": 68,
-    "canRegister": 32,
+    "canRegister": 5,
     "schools": 14
   },
   "courses": [
@@ -19716,13 +19716,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -19738,7 +19738,7 @@
         "fee": "$4008",
         "eligibility": "1,2",
         "quota": "報名人數: 12 預計錄取: 30 實際錄取: 12",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -19792,13 +19792,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -19814,7 +19814,7 @@
         "fee": "$4219",
         "eligibility": "1,2",
         "quota": "報名人數: 15 預計錄取: 30 實際錄取: 15",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -19868,13 +19868,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -19890,7 +19890,7 @@
         "fee": "$4219",
         "eligibility": "1,2",
         "quota": "報名人數: 13 預計錄取: 30 實際錄取: 13",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -19944,13 +19944,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -19966,7 +19966,7 @@
         "fee": "$3375",
         "eligibility": "1,2",
         "quota": "報名人數: 12 預計錄取: 30 實際錄取: 12",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20020,13 +20020,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20042,7 +20042,7 @@
         "fee": "$1832",
         "eligibility": "1,2",
         "quota": "報名人數: 3 預計錄取: 30 實際錄取: 3",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20096,13 +20096,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20118,7 +20118,7 @@
         "fee": "$2025",
         "eligibility": "1,2",
         "quota": "報名人數: 2 預計錄取: 30 實際錄取: 2",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20172,13 +20172,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20194,7 +20194,7 @@
         "fee": "$1929",
         "eligibility": "1,2",
         "quota": "報名人數: 2 預計錄取: 30 實際錄取: 2",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20248,13 +20248,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20270,7 +20270,7 @@
         "fee": "$1929",
         "eligibility": "1,2",
         "quota": "報名人數: 2 預計錄取: 30 實際錄取: 2",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20324,13 +20324,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20346,7 +20346,7 @@
         "fee": "$2700",
         "eligibility": "1,2",
         "quota": "報名人數: 6 預計錄取: 30 實際錄取: 6",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20400,13 +20400,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20422,7 +20422,7 @@
         "fee": "$1832",
         "eligibility": "3,4",
         "quota": "報名人數: 16 預計錄取: 30 實際錄取: 15",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20476,13 +20476,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20498,7 +20498,7 @@
         "fee": "$2025",
         "eligibility": "3,4",
         "quota": "報名人數: 21 預計錄取: 30 實際錄取: 21",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20552,13 +20552,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20574,7 +20574,7 @@
         "fee": "$1929",
         "eligibility": "3,4",
         "quota": "報名人數: 15 預計錄取: 30 實際錄取: 15",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20632,13 +20632,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20654,7 +20654,7 @@
         "fee": "$1832",
         "eligibility": "1,2,3,4",
         "quota": "報名人數: 5 預計錄取: 30 實際錄取: 5",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20712,13 +20712,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20734,7 +20734,7 @@
         "fee": "$2025",
         "eligibility": "1,2,3,4",
         "quota": "報名人數: 2 預計錄取: 30 實際錄取: 2",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20792,13 +20792,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20814,7 +20814,7 @@
         "fee": "$1929",
         "eligibility": "1,2,3,4",
         "quota": "報名人數: 3 預計錄取: 30 實際錄取: 3",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20872,13 +20872,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20894,7 +20894,7 @@
         "fee": "$1543",
         "eligibility": "1,2,3,4",
         "quota": "報名人數: 3 預計錄取: 30 實際錄取: 3",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -20948,13 +20948,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -20970,7 +20970,7 @@
         "fee": "$4219",
         "eligibility": "3,4",
         "quota": "報名人數: 17 預計錄取: 30 實際錄取: 17",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21024,13 +21024,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21046,7 +21046,7 @@
         "fee": "$3375",
         "eligibility": "3,4",
         "quota": "報名人數: 23 預計錄取: 30 實際錄取: 23",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21100,13 +21100,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21122,7 +21122,7 @@
         "fee": "$1929",
         "eligibility": "3,4",
         "quota": "報名人數: 3 預計錄取: 30 實際錄取: 3",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21176,13 +21176,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21198,7 +21198,7 @@
         "fee": "$2700",
         "eligibility": "3,4",
         "quota": "報名人數: 17 預計錄取: 30 實際錄取: 16",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21252,13 +21252,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21274,7 +21274,7 @@
         "fee": "$1832",
         "eligibility": "5,6",
         "quota": "報名人數: 19 預計錄取: 30 實際錄取: 19",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21328,13 +21328,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21350,7 +21350,7 @@
         "fee": "$2025",
         "eligibility": "5,6",
         "quota": "報名人數: 18 預計錄取: 30 實際錄取: 18",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21404,13 +21404,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21426,7 +21426,7 @@
         "fee": "$1929",
         "eligibility": "5,6",
         "quota": "報名人數: 20 預計錄取: 30 實際錄取: 20",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21480,13 +21480,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21502,7 +21502,7 @@
         "fee": "$1543",
         "eligibility": "5,6",
         "quota": "報名人數: 13 預計錄取: 30 實際錄取: 13",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21556,13 +21556,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21578,7 +21578,7 @@
         "fee": "$4219",
         "eligibility": "5,6",
         "quota": "報名人數: 19 預計錄取: 30 實際錄取: 19",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21632,13 +21632,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21654,7 +21654,7 @@
         "fee": "$1929",
         "eligibility": "5,6",
         "quota": "報名人數: 9 預計錄取: 30 實際錄取: 9",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     },
@@ -21708,13 +21708,13 @@
       },
       "registration": {
         "method": "網路線上報名",
-        "canRegister": true,
+        "canRegister": false,
         "canWithdraw": false,
         "startTime": "2026-08-20T09:00:00+08:00",
         "endTime": "2026-10-09T12:00:00+08:00",
         "lotteryTime": null,
         "isLottery": true,
-        "status": "可報名"
+        "status": "已截止"
       },
       "urls": {
         "detail": "https://camp.ntpc.edu.tw/jsp/act_register/ACTOutIndexAction.do?method=ACTOutIndex_ClsList&schno=014745&actmang_no=00269&week_filter=all&filter_mycourse=false",
@@ -21730,7 +21730,7 @@
         "fee": "$2700",
         "eligibility": "5,6",
         "quota": "報名人數: 14 預計錄取: 30 實際錄取: 14",
-        "status": "報名中",
+        "status": "截止報名",
         "activityRegistration": "報名期間 08/20 09:00 至 10/09 12:00 公告期間 08/31 09:00 至 10/16 15:00"
       }
     }
