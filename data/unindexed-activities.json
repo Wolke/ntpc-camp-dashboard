@@ -1,5 +1,5 @@
 {
-  "auditedAt": "2026-10-10T03:29:38.985Z",
+  "auditedAt": "2026-10-11T03:02:42.012Z",
   "summary": {
     "schoolsChecked": 345,
     "publicActiveActivities": 13,
@@ -332,5 +332,5 @@
     "activities": [],
     "courseDetails": []
   },
-  "sourceDataUpdatedAt": "2026-10-10T03:30:25.883Z"
+  "sourceDataUpdatedAt": "2026-10-11T03:03:37.452Z"
 }
